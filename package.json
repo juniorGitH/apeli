@@ -1,0 +1,42 @@
+{
+  "name": "educator-js-codespace-template",
+  "version": "1.0.0",
+  "description": "Educator JS Codespace Template",
+  "homepage": "https://juniorGitH.github.io/Emmanuel_Amela",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "build-gh": "parcel build src/index.html --public-url \"/Emmanuel_Amela/\" && powershell -Command \"Copy-Item -Path dist/index.html -Destination dist/404.html\"",
+    "predeploy": "npm run build-gh",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juniorGitH/Emmanuel_Amela.git"
+  },
+  "author": "Microsoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juniorGitH/Emmanuel_Amela/issues"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.7",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10",
+    "serve": "^14.2.4"
+  }
+}
