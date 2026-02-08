@@ -2,7 +2,7 @@
   "name": "educator-js-codespace-template",
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
-  "homepage": "https://juniorGitH.github.io/Emmanuel_Amela",
+  "homepage": "https://e-a.codes",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
