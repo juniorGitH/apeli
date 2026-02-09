@@ -98,60 +98,34 @@ const Header = () => {
     };
   }, [isMenuOpen, showAuthModal]);
 
-  const closeMenus = () => {
+  // Gestion du clic sur Accueil
+  const handleHomeClick = (e) => {
+    if (e) e.preventDefault();
+    
     if (isMenuOpen) {
       setIsMenuOpen(false);
     }
     setShowProfileMenu(false);
-  };
-
-  // Gestion du clic sur Accueil (logo)
-  const handleHomeClick = (e) => {
-    if (e) e.preventDefault();
-    closeMenus();
-    if (location.pathname === "/") {
-      scrollToSection("home");
-    } else {
-      navigate("/#home");
-    }
-  };
-
-  // Fonction helper pour scroller vers une section
-  const scrollToSection = (sectionId) => {
-    if (!sectionId) return;
     
-    // Essayer de trouver l'élément
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerHeight = 70;
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - headerHeight;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    } else {
-      // Si l'élément n'est pas trouvé, réessayer après un délai
-      setTimeout(() => {
-        const retryElement = document.getElementById(sectionId);
-        if (retryElement) {
-          const headerHeight = 70;
-          const elementPosition = retryElement.getBoundingClientRect().top + window.pageYOffset;
-          const offsetPosition = elementPosition - headerHeight;
-          
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-          });
-        } else {
-          console.warn(`Élément avec l'ID ${sectionId} non trouvé.`);
-        }
-      }, 300);
-    }
+    // Always navigate to '/' with state to trigger Layout's scrolling logic
+    navigate('/', { state: { scrollTo: 'home' } });
   };
+
+
 
   // Gestion du scroll vers les sections
+  const handleSectionClick = (sectionId, e) => {
+    if (e) e.preventDefault();
+    
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+    setShowProfileMenu(false);
+    
+    // Always navigate to '/' with state to trigger Layout's scrolling logic
+    navigate('/', { state: { scrollTo: sectionId } });
+  };
+
   // Gestion de l'authentification
   const handleAuth = (e) => {
     e.preventDefault();
@@ -361,32 +335,29 @@ const Header = () => {
               maxWidth: "550px",
               margin: "0 1rem"
             }}>
-              <Link 
-                to={{ pathname: "/", hash: "#home" }}
-                onClick={closeMenus}
-                style={navLinkStyle(location.pathname === '/' && (!location.hash || location.hash === '#home'))}
+              <button 
+                onClick={handleHomeClick}
+                style={navLinkStyle(location.pathname === '/' && !location.hash)}
                 className="nav-link-button"
               >
                 Accueil
-              </Link>
+              </button>
               
-              <Link 
-                to={{ pathname: "/", hash: "#about" }}
-                onClick={closeMenus}
-                style={navLinkStyle(location.pathname === '/' && location.hash === '#about')}
+              <button 
+                onClick={(e) => handleSectionClick('about', e)}
+                style={navLinkStyle(false)}
                 className="nav-link-button"
               >
                 À propos
-              </Link>
+              </button>
               
-              <Link 
-                to={{ pathname: "/", hash: "#portfolio" }}
-                onClick={closeMenus}
-                style={navLinkStyle(location.pathname === '/' && location.hash === '#portfolio')}
+              <button 
+                onClick={(e) => handleSectionClick('portfolio', e)}
+                style={navLinkStyle(false)}
                 className="nav-link-button"
               >
                 Portfolio
-              </Link>
+              </button>
               
               <Link 
                 to="/ressources" 
@@ -776,35 +747,32 @@ const Header = () => {
             )}
             
             {/* Liens principaux */}
-            <Link 
-              to={{ pathname: "/", hash: "#home" }}
-              onClick={closeMenus}
-              style={mobileNavLinkStyle(location.pathname === '/' && (!location.hash || location.hash === '#home'))}
+            <button 
+              onClick={handleHomeClick}
+              style={mobileNavLinkStyle(location.pathname === '/' && !location.hash)}
               className="mobile-menu-item"
             >
               <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>🏠</span>
               Accueil
-            </Link>
+            </button>
             
-            <Link 
-              to={{ pathname: "/", hash: "#about" }}
-              onClick={closeMenus}
-              style={mobileNavLinkStyle(location.pathname === '/' && location.hash === '#about')}
+            <button 
+              onClick={(e) => handleSectionClick('about', e)}
+              style={mobileNavLinkStyle(false)}
               className="mobile-menu-item"
             >
               <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>ℹ️</span>
               À propos
-            </Link>
+            </button>
             
-            <Link 
-              to={{ pathname: "/", hash: "#portfolio" }}
-              onClick={closeMenus}
-              style={mobileNavLinkStyle(location.pathname === '/' && location.hash === '#portfolio')}
+            <button 
+              onClick={(e) => handleSectionClick('portfolio', e)}
+              style={mobileNavLinkStyle(false)}
               className="mobile-menu-item"
             >
               <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>🎨</span>
               Portfolio
-            </Link>
+            </button>
             
             <Link 
               to="/ressources" 
