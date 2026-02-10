@@ -1,6 +1,6 @@
 /**
  * Header component avec authentification multi-utilisateurs
- * Version responsive optimisée
+ * Version responsive optimisée - Boutons visibles sur tous les écrans
  */
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -37,8 +37,7 @@ const Header = () => {
   useEffect(() => {
     const checkScreenSize = () => {
       const width = window.innerWidth;
-      // Utilisation de breakpoints adaptés
-      const mobileBreakpoint = 992; // 992px pour tablette
+      const mobileBreakpoint = 992;
       setIsMobile(width <= mobileBreakpoint);
       
       if (width > mobileBreakpoint) {
@@ -57,7 +56,6 @@ const Header = () => {
   // Gérer les clics en dehors du menu profil et du menu mobile
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Fermer le menu mobile
       const hamburgerButton = document.querySelector('.hamburger-button');
       const mobileMenu = document.querySelector('.mobile-menu');
       
@@ -66,7 +64,6 @@ const Header = () => {
         setIsMenuOpen(false);
       }
       
-      // Fermer le menu profil
       if (showProfileMenu && 
           profileMenuRef.current && 
           !profileMenuRef.current.contains(event.target) &&
@@ -101,28 +98,16 @@ const Header = () => {
   // Gestion du clic sur Accueil
   const handleHomeClick = (e) => {
     if (e) e.preventDefault();
-    
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-    }
+    if (isMenuOpen) setIsMenuOpen(false);
     setShowProfileMenu(false);
-    
-    // Always navigate to '/' with state to trigger Layout's scrolling logic
     navigate('/', { state: { scrollTo: 'home' } });
   };
-
-
 
   // Gestion du scroll vers les sections
   const handleSectionClick = (sectionId, e) => {
     if (e) e.preventDefault();
-    
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-    }
+    if (isMenuOpen) setIsMenuOpen(false);
     setShowProfileMenu(false);
-    
-    // Always navigate to '/' with state to trigger Layout's scrolling logic
     navigate('/', { state: { scrollTo: sectionId } });
   };
 
@@ -131,7 +116,6 @@ const Header = () => {
     e.preventDefault();
     
     if (isLoginMode) {
-      // Connexion
       const users = JSON.parse(localStorage.getItem('users') || '[]');
       const user = users.find(u => 
         u.email === authData.email && u.password === authData.password
@@ -147,10 +131,8 @@ const Header = () => {
         alert("Identifiants incorrects. Inscrivez-vous si vous n'avez pas de compte.");
       }
     } else {
-      // Inscription
       const users = JSON.parse(localStorage.getItem('users') || '[]');
       
-      // Vérifier si l'email existe déjà
       if (users.find(u => u.email === authData.email)) {
         alert("Cet email est déjà utilisé. Connectez-vous ou utilisez un autre email.");
         return;
@@ -178,7 +160,9 @@ const Header = () => {
     setCurrentUser(null);
     localStorage.removeItem('currentUser');
     setShowProfileMenu(false);
-    if (location.pathname === '/dashboard' || location.pathname === '/admin' || location.pathname === '/mentoring' || location.pathname === '/projects' || location.pathname === '/profile') {
+    if (location.pathname === '/dashboard' || location.pathname === '/admin' || 
+        location.pathname === '/mentoring' || location.pathname === '/projects' || 
+        location.pathname === '/profile') {
       navigate('/');
     }
   };
@@ -192,7 +176,7 @@ const Header = () => {
     setShowProfileMenu(!showProfileMenu);
   };
 
-  // Styles optimisés pour mobile
+  // Styles optimisés
   const navLinkStyle = (isActive) => ({
     color: isActive ? "#3498db" : "#2c3e50",
     textDecoration: "none",
@@ -249,7 +233,6 @@ const Header = () => {
     return { ...baseStyle, padding: "0.55rem 1rem", fontSize: "0.85rem" };
   };
 
-  // Style pour les boutons du menu profil
   const profileMenuItemStyle = {
     width: "100%",
     padding: "0.7rem 0.85rem",
@@ -271,34 +254,9 @@ const Header = () => {
 
   return (
     <>
-      <header
-        style={{
-          position: "fixed",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          background: "rgba(255,255,255,0.98)",
-          padding: "0.85rem clamp(0.75rem, 3vw, 2rem)",
-          top: 0,
-          left: 0,
-          right: 0,
-          zIndex: 1000,
-          boxShadow: "0 2px 15px rgba(0, 0, 0, 0.1)",
-          backdropFilter: "blur(10px)",
-          maxWidth: "100vw",
-          boxSizing: "border-box",
-          overflow: "visible",
-          height: "65px",
-          WebkitTapHighlightColor: "transparent"
-        }}
-      >
+      <header className="site-header">
         {/* Logo */}
-        <div style={{ 
-          display: "flex", 
-          alignItems: "center", 
-          flexShrink: 0,
-          minWidth: "100px"
-        }}>
+        <div className="header-logo">
           <Link 
             to="/" 
             onClick={handleHomeClick}
@@ -325,16 +283,7 @@ const Header = () => {
         {/* Navigation Desktop */}
         {!isMobile && (
           <>
-            {/* Liens de navigation centrés */}
-            <nav style={{ 
-              display: "flex", 
-              gap: "clamp(0.8rem, 1.5vw, 1.8rem)", 
-              alignItems: "center",
-              justifyContent: "center",
-              flex: 1,
-              maxWidth: "550px",
-              margin: "0 1rem"
-            }}>
+            <nav className="desktop-nav">
               <button 
                 onClick={handleHomeClick}
                 style={navLinkStyle(location.pathname === '/' && !location.hash)}
@@ -368,212 +317,123 @@ const Header = () => {
               </Link>
             </nav>
 
-            {/* Actions utilisateur */}
-            <div style={{ 
-              display: "flex", 
-              alignItems: "center",
-              gap: "0.7rem",
-              flexShrink: 0,
-              minWidth: "50px",
-              justifyContent: "flex-end",
-              position: "relative"
-            }}>
+            {/* Actions utilisateur Desktop */}
+            <div className="header-actions">
               {currentUser ? (
-                <>
-                  {/* Menu Profil */}
-                  <div style={{ 
-                    position: "relative",
-                    zIndex: 9999
-                  }}>
-                    <button
-                      ref={profileButtonRef}
-                      onClick={toggleProfileMenu}
-                      style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "50%",
-                        backgroundColor: "#3498db",
-                        border: "none",
-                        cursor: "pointer",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontSize: "1.1rem",
-                        transition: "all 0.3s ease",
-                        boxShadow: showProfileMenu ? "0 0 0 3px rgba(52, 152, 219, 0.3)" : "none",
-                        color: "white",
-                        padding: 0,
-                        marginLeft: "0.3rem",
-                        fontWeight: "bold",
-                        WebkitTapHighlightColor: "transparent"
-                      }}
-                      title={currentUser.name}
-                      aria-label="Menu profil"
-                      aria-expanded={showProfileMenu}
-                    >
-                      {currentUser.name.charAt(0).toUpperCase()}
-                    </button>
-                    
-                    {/* Menu déroulant profil */}
-                    {showProfileMenu && (
-                      <div
-                        ref={profileMenuRef}
-                        style={{
-                          position: "fixed",
-                          top: "65px",
-                          right: "clamp(0.75rem, 3vw, 1rem)",
-                          backgroundColor: "white",
-                          border: "1px solid #ddd",
-                          borderRadius: "8px",
-                          boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
-                          zIndex: 99999,
-                          minWidth: "220px",
-                          maxWidth: "min(90vw, 280px)",
-                          overflow: "hidden",
-                          animation: "slideDown 0.2s ease"
-                        }}
-                      >
-                        <div style={{
-                          padding: "0.9rem",
-                          borderBottom: "1px solid #eee",
-                          backgroundColor: "#f8f9fa"
-                        }}>
-                          <div style={{
-                            fontWeight: "bold",
-                            color: "#2c3e50",
-                            fontSize: "0.9rem",
-                            marginBottom: "0.2rem",
-                            wordBreak: "break-word"
-                          }}>
-                            {currentUser.name}
-                          </div>
-                          <div style={{
-                            fontSize: "0.8rem",
-                            color: "#7f8c8d",
-                            wordBreak: "break-word"
-                          }}>
-                            {currentUser.email}
-                          </div>
-                          <div style={{
-                            fontSize: "0.7rem",
-                            color: currentUser.userType === 'admin' ? "#e74c3c" : "#3498db",
-                            marginTop: "0.3rem",
-                            fontWeight: "500"
-                          }}>
-                            {currentUser.userType === 'admin' ? 'Administrateur' : 'Client'}
-                          </div>
-                        </div>
-                        
-                        <div style={{ padding: "0.2rem 0" }}>
-                          {/* Options pour les clients */}
-                          {currentUser.userType === 'client' && (
-                            <>
-                              <button
-                                onClick={() => {
-                                  navigate('/dashboard');
-                                  setShowProfileMenu(false);
-                                }}
-                                style={profileMenuItemStyle}
-                                className="profile-menu-item"
-                              >
-                                <span style={{ minWidth: "22px", fontSize: "0.95rem" }}>📊</span>
-                                <span>Mon Tableau de Bord</span>
-                              </button>
-                              <button
-                                onClick={() => {
-                                  navigate('/mentoring');
-                                  setShowProfileMenu(false);
-                                }}
-                                style={profileMenuItemStyle}
-                                className="profile-menu-item"
-                              >
-                                <span style={{ minWidth: "22px", fontSize: "0.95rem" }}>👨‍🏫</span>
-                                <span>Mentorat</span>
-                              </button>
-                            </>
-                          )}
-                          
-                          {/* Options pour les administrateurs */}
-                          {currentUser.userType === 'admin' && (
-                            <>
-                              <button
-                                onClick={() => {
-                                  navigate('/admin');
-                                  setShowProfileMenu(false);
-                                }}
-                                style={profileMenuItemStyle}
-                                className="profile-menu-item"
-                              >
-                                <span style={{ minWidth: "22px", fontSize: "0.95rem" }}>⚙️</span>
-                                <span>Administration</span>
-                              </button>
-                              <button
-                                onClick={() => {
-                                  navigate('/projects');
-                                  setShowProfileMenu(false);
-                                }}
-                                style={profileMenuItemStyle}
-                                className="profile-menu-item"
-                              >
-                                <span style={{ minWidth: "22px", fontSize: "0.95rem" }}>📁</span>
-                                <span>Projets</span>
-                              </button>
-                            </>
-                          )}
-                          
-                          {/* Séparateur visuel */}
-                          <div style={{
-                            height: "1px",
-                            backgroundColor: "#eee",
-                            margin: "0.2rem 0"
-                          }}></div>
-                          
-                          {/* Option commune : Profile */}
-                          <button
-                            onClick={() => {
-                              navigate('/profile');
-                              setShowProfileMenu(false);
-                            }}
-                            style={profileMenuItemStyle}
-                            className="profile-menu-item"
-                          >
-                            <span style={{ minWidth: "22px", fontSize: "0.95rem" }}>👤</span>
-                            <span>Profile</span>
-                          </button>
-                        </div>
-                        
-                        <div style={{ 
-                          borderTop: "1px solid #eee",
-                          padding: "0.2rem 0" 
-                        }}>
-                          <button
-                            onClick={handleLogout}
-                            style={{
-                              ...profileMenuItemStyle,
-                              backgroundColor: "#fff5f5",
-                              color: "#e74c3c",
-                              fontWeight: "600",
-                              justifyContent: "center",
-                              gap: "0.5rem"
-                            }}
-                            className="profile-menu-item"
-                          >
-                            <span style={{ fontSize: "0.95rem" }}>🚪</span>
-                            <span>Déconnexion</span>
-                          </button>
+                <div className="profile-wrapper">
+                  <button
+                    ref={profileButtonRef}
+                    onClick={toggleProfileMenu}
+                    className="profile-button"
+                    style={{
+                      boxShadow: showProfileMenu ? "0 0 0 3px rgba(52, 152, 219, 0.3)" : "none"
+                    }}
+                    title={currentUser.name}
+                    aria-label="Menu profil"
+                    aria-expanded={showProfileMenu}
+                  >
+                    {currentUser.name.charAt(0).toUpperCase()}
+                  </button>
+                  
+                  {showProfileMenu && (
+                    <div ref={profileMenuRef} className="profile-menu">
+                      <div className="profile-menu-header">
+                        <div className="profile-name">{currentUser.name}</div>
+                        <div className="profile-email">{currentUser.email}</div>
+                        <div className="profile-type">
+                          {currentUser.userType === 'admin' ? 'Administrateur' : 'Client'}
                         </div>
                       </div>
-                    )}
-                  </div>
-                </>
+                      
+                      <div className="profile-menu-items">
+                        {currentUser.userType === 'client' ? (
+                          <>
+                            <button
+                              onClick={() => {
+                                navigate('/dashboard');
+                                setShowProfileMenu(false);
+                              }}
+                              style={profileMenuItemStyle}
+                              className="profile-menu-item"
+                            >
+                              <span>📊</span>
+                              <span>Mon Tableau de Bord</span>
+                            </button>
+                            <button
+                              onClick={() => {
+                                navigate('/mentoring');
+                                setShowProfileMenu(false);
+                              }}
+                              style={profileMenuItemStyle}
+                              className="profile-menu-item"
+                            >
+                              <span>👨‍🏫</span>
+                              <span>Mentorat</span>
+                            </button>
+                          </>
+                        ) : (
+                          <>
+                            <button
+                              onClick={() => {
+                                navigate('/admin');
+                                setShowProfileMenu(false);
+                              }}
+                              style={profileMenuItemStyle}
+                              className="profile-menu-item"
+                            >
+                              <span>⚙️</span>
+                              <span>Administration</span>
+                            </button>
+                            <button
+                              onClick={() => {
+                                navigate('/projects');
+                                setShowProfileMenu(false);
+                              }}
+                              style={profileMenuItemStyle}
+                              className="profile-menu-item"
+                            >
+                              <span>📁</span>
+                              <span>Projets</span>
+                            </button>
+                          </>
+                        )}
+                        
+                        <div className="menu-divider"></div>
+                        
+                        <button
+                          onClick={() => {
+                            navigate('/profile');
+                            setShowProfileMenu(false);
+                          }}
+                          style={profileMenuItemStyle}
+                          className="profile-menu-item"
+                        >
+                          <span>👤</span>
+                          <span>Profile</span>
+                        </button>
+                      </div>
+                      
+                      <div className="profile-menu-footer">
+                        <button
+                          onClick={handleLogout}
+                          className="logout-button"
+                        >
+                          <span>🚪</span>
+                          <span>Déconnexion</span>
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
               ) : (
-                <>
+                <div className="auth-buttons">
                   <button
                     onClick={() => {
                       setShowAuthModal(true);
                       setIsLoginMode(true);
                     }}
                     style={buttonStyle('primary', 'medium')}
+                    className="auth-btn"
                     aria-label="Se connecter"
                   >
                     Connexion
@@ -584,175 +444,105 @@ const Header = () => {
                       setIsLoginMode(false);
                     }}
                     style={buttonStyle('success', 'medium')}
+                    className="auth-btn"
                     aria-label="S'inscrire"
                   >
                     Inscription
                   </button>
-                </>
+                </div>
               )}
             </div>
           </>
         )}
 
-        {/* Bouton hamburger pour mobile */}
+        {/* Section Mobile: Boutons d'authentification + Hamburger */}
         {isMobile && (
-          <button
-            className="hamburger-button"
-            onClick={toggleMenu}
-            style={{
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              padding: "0.5rem",
-              zIndex: 1101,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "40px",
-              height: "40px",
-              borderRadius: "5px",
-              transition: "all 0.3s ease",
-              WebkitTapHighlightColor: "transparent"
-            }}
-            aria-label="Menu"
-            aria-expanded={isMenuOpen}
-          >
-            <span style={{
-              display: "block",
-              width: "22px",
-              height: "2px",
-              backgroundColor: isMenuOpen ? "#3498db" : "#2c3e50",
-              margin: "3.5px 0",
-              transition: "all 0.3s ease",
-              transform: isMenuOpen ? "rotate(45deg) translate(5px, 5px)" : "none"
-            }}></span>
-            <span style={{
-              display: "block",
-              width: "22px",
-              height: "2px",
-              backgroundColor: isMenuOpen ? "transparent" : "#2c3e50",
-              margin: "3.5px 0",
-              transition: "all 0.3s ease",
-              opacity: isMenuOpen ? 0 : 1
-            }}></span>
-            <span style={{
-              display: "block",
-              width: "22px",
-              height: "2px",
-              backgroundColor: isMenuOpen ? "#3498db" : "#2c3e50",
-              margin: "3.5px 0",
-              transition: "all 0.3s ease",
-              transform: isMenuOpen ? "rotate(-45deg) translate(6px, -5px)" : "none"
-            }}></span>
-          </button>
+          <div className="mobile-header-actions">
+            {!currentUser && (
+              <div className="mobile-auth-buttons">
+                <button
+                  onClick={() => {
+                    setShowAuthModal(true);
+                    setIsLoginMode(true);
+                  }}
+                  className="mobile-auth-btn login-btn"
+                  aria-label="Se connecter"
+                >
+                  <span className="btn-icon">🔑</span>
+                  <span className="btn-text">Connexion</span>
+                </button>
+                <button
+                  onClick={() => {
+                    setShowAuthModal(true);
+                    setIsLoginMode(false);
+                  }}
+                  className="mobile-auth-btn signup-btn"
+                  aria-label="S'inscrire"
+                >
+                  <span className="btn-icon">📝</span>
+                  <span className="btn-text">Inscription</span>
+                </button>
+              </div>
+            )}
+            
+            {currentUser && (
+              <div className="mobile-profile-button">
+                <button
+                  onClick={toggleMenu}
+                  className="profile-avatar-mobile"
+                  title={currentUser.name}
+                >
+                  {currentUser.name.charAt(0).toUpperCase()}
+                </button>
+              </div>
+            )}
+
+            {/* Bouton hamburger */}
+            <button
+              className="hamburger-button"
+              onClick={toggleMenu}
+              aria-label="Menu"
+              aria-expanded={isMenuOpen}
+            >
+              <span className={`hamburger-line ${isMenuOpen ? 'active' : ''}`}></span>
+              <span className={`hamburger-line ${isMenuOpen ? 'active' : ''}`}></span>
+              <span className={`hamburger-line ${isMenuOpen ? 'active' : ''}`}></span>
+            </button>
+          </div>
         )}
 
-        {/* Overlay sombre pour mobile */}
+        {/* Overlay pour mobile */}
         {isMobile && isMenuOpen && (
           <div 
+            className="mobile-overlay"
             onClick={() => setIsMenuOpen(false)}
-            style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              zIndex: 1099,
-              touchAction: "none"
-            }}
           />
         )}
 
         {/* Menu mobile */}
         {isMobile && (
-          <div 
-            className="mobile-menu"
-            style={{
-              position: "fixed",
-              top: "65px",
-              right: isMenuOpen ? "0" : "-100%",
-              width: "min(100%, 300px)",
-              height: "calc(100vh - 65px)",
-              backgroundColor: "white",
-              boxShadow: "-5px 0 20px rgba(0, 0, 0, 0.15)",
-              transition: "right 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-              zIndex: 1100,
-              overflowY: "auto",
-              display: "flex",
-              flexDirection: "column",
-              WebkitOverflowScrolling: "touch",
-              overscrollBehavior: "contain"
-            }}
-          >
-            {/* Informations utilisateur */}
+          <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
             {currentUser && (
-              <div style={{ 
-                padding: "1rem 0.9rem", 
-                backgroundColor: "#f8f9fa",
-                borderBottom: "1px solid #eee"
-              }}>
-                <div style={{ 
-                  display: "flex", 
-                  alignItems: "center", 
-                  gap: "0.7rem",
-                  marginBottom: "0.5rem"
-                }}>
-                  <div style={{
-                    width: "42px",
-                    height: "42px",
-                    borderRadius: "50%",
-                    backgroundColor: "#3498db",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "1.1rem",
-                    color: "white",
-                    fontWeight: "bold",
-                    flexShrink: 0
-                  }}>
-                    {currentUser.name.charAt(0).toUpperCase()}
-                  </div>
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <div style={{ 
-                      fontWeight: "bold", 
-                      color: "#2c3e50",
-                      fontSize: "0.9rem",
-                      wordBreak: "break-word",
-                      lineHeight: "1.2"
-                    }}>
-                      {currentUser.name}
-                    </div>
-                    <div style={{ 
-                      fontSize: "0.75rem", 
-                      color: "#7f8c8d",
-                      marginTop: "0.2rem",
-                      wordBreak: "break-word",
-                      lineHeight: "1.2"
-                    }}>
-                      {currentUser.email}
-                    </div>
-                    <div style={{ 
-                      fontSize: "0.7rem", 
-                      color: currentUser.userType === 'admin' ? "#e74c3c" : "#3498db",
-                      marginTop: "0.2rem",
-                      fontWeight: "500"
-                    }}>
-                      {currentUser.userType === 'admin' ? 'Administrateur' : 'Client'}
-                    </div>
+              <div className="mobile-user-info">
+                <div className="mobile-user-avatar">
+                  {currentUser.name.charAt(0).toUpperCase()}
+                </div>
+                <div className="mobile-user-details">
+                  <div className="mobile-user-name">{currentUser.name}</div>
+                  <div className="mobile-user-email">{currentUser.email}</div>
+                  <div className="mobile-user-type">
+                    {currentUser.userType === 'admin' ? 'Administrateur' : 'Client'}
                   </div>
                 </div>
               </div>
             )}
             
-            {/* Liens principaux */}
             <button 
               onClick={handleHomeClick}
               style={mobileNavLinkStyle(location.pathname === '/' && !location.hash)}
               className="mobile-menu-item"
             >
-              <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>🏠</span>
+              <span className="menu-icon">🏠</span>
               Accueil
             </button>
             
@@ -761,7 +551,7 @@ const Header = () => {
               style={mobileNavLinkStyle(false)}
               className="mobile-menu-item"
             >
-              <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>ℹ️</span>
+              <span className="menu-icon">ℹ️</span>
               À propos
             </button>
             
@@ -770,7 +560,7 @@ const Header = () => {
               style={mobileNavLinkStyle(false)}
               className="mobile-menu-item"
             >
-              <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>🎨</span>
+              <span className="menu-icon">🎨</span>
               Portfolio
             </button>
             
@@ -780,12 +570,11 @@ const Header = () => {
               style={mobileNavLinkStyle(location.pathname === '/ressources')}
               className="mobile-menu-item"
             >
-              <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>📚</span>
+              <span className="menu-icon">📚</span>
               Ressources
             </Link>
 
-            {/* Actions utilisateur selon le type */}
-            {currentUser ? (
+            {currentUser && (
               <>
                 {currentUser.userType === 'admin' ? (
                   <>
@@ -795,7 +584,7 @@ const Header = () => {
                       style={mobileNavLinkStyle(location.pathname === '/admin')}
                       className="mobile-menu-item"
                     >
-                      <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>⚙️</span>
+                      <span className="menu-icon">⚙️</span>
                       Administration
                     </Link>
                     <Link 
@@ -804,7 +593,7 @@ const Header = () => {
                       style={mobileNavLinkStyle(location.pathname === '/projects')}
                       className="mobile-menu-item"
                     >
-                      <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>📁</span>
+                      <span className="menu-icon">📁</span>
                       Projets Clients
                     </Link>
                   </>
@@ -816,7 +605,7 @@ const Header = () => {
                       style={mobileNavLinkStyle(location.pathname === '/dashboard')}
                       className="mobile-menu-item"
                     >
-                      <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>📊</span>
+                      <span className="menu-icon">📊</span>
                       Mon Tableau de Bord
                     </Link>
                     <Link 
@@ -825,115 +614,32 @@ const Header = () => {
                       style={mobileNavLinkStyle(location.pathname === '/mentoring')}
                       className="mobile-menu-item"
                     >
-                      <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>👨‍🏫</span>
+                      <span className="menu-icon">👨‍🏫</span>
                       Mentorat
                     </Link>
                   </>
                 )}
                 
-                {/* Option profil */}
                 <Link 
                   to="/profile" 
                   onClick={() => setIsMenuOpen(false)}
                   style={mobileNavLinkStyle(location.pathname === '/profile')}
                   className="mobile-menu-item"
                 >
-                  <span style={{ marginRight: "0.7rem", fontSize: "1.1rem" }}>👤</span>
+                  <span className="menu-icon">👤</span>
                   Profil
                 </Link>
                 
-                <div style={{ 
-                  padding: "1rem 0.9rem", 
-                  marginTop: "auto", 
-                  borderTop: "1px solid #eee",
-                  backgroundColor: "#f8f9fa"
-                }}>
+                <div className="mobile-menu-footer">
                   <button
                     onClick={handleLogout}
-                    style={{
-                      width: "100%",
-                      padding: "0.75rem",
-                      backgroundColor: "#e74c3c",
-                      color: "white",
-                      border: "none",
-                      borderRadius: "6px",
-                      cursor: "pointer",
-                      fontWeight: "600",
-                      fontSize: "0.9rem",
-                      transition: "all 0.3s ease",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "0.5rem"
-                    }}
-                    aria-label="Déconnexion"
+                    className="mobile-logout-btn"
                   >
-                    <span style={{ fontSize: "1rem" }}>🚪</span>
+                    <span>🚪</span>
                     Déconnexion
                   </button>
                 </div>
               </>
-            ) : (
-              <div style={{ 
-                padding: "1rem 0.9rem", 
-                marginTop: "auto", 
-                borderTop: "1px solid #eee",
-                backgroundColor: "#f8f9fa"
-              }}>
-                <button
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setShowAuthModal(true);
-                    setIsLoginMode(true);
-                  }}
-                  style={{
-                    width: "100%",
-                    padding: "0.75rem",
-                    backgroundColor: "#3498db",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: "pointer",
-                    fontWeight: "600",
-                    fontSize: "0.9rem",
-                    marginBottom: "0.7rem",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "0.5rem"
-                  }}
-                  aria-label="Se connecter"
-                >
-                  <span style={{ fontSize: "1rem" }}>🔑</span>
-                  Connexion
-                </button>
-                <button
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    setShowAuthModal(true);
-                    setIsLoginMode(false);
-                  }}
-                  style={{
-                    width: "100%",
-                    padding: "0.75rem",
-                    backgroundColor: "#2ecc71",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: "pointer",
-                    fontWeight: "600",
-                    fontSize: "0.9rem",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "0.5rem"
-                  }}
-                  aria-label="S'inscrire"
-                >
-                  <span style={{ fontSize: "1rem" }}>📝</span>
-                  Inscription
-                </button>
-              </div>
             )}
           </div>
         )}
@@ -941,296 +647,101 @@ const Header = () => {
 
       {/* Modal d'authentification */}
       {showAuthModal && (
-        <div 
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 99999,
-            padding: "clamp(0.5rem, 2vw, 1rem)",
-            overscrollBehavior: "contain"
-          }}
-          onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              setShowAuthModal(false);
-            }
-          }}
-        >
-          <div style={{
-            backgroundColor: "white",
-            padding: "clamp(1.2rem, 4vw, 1.8rem)",
-            borderRadius: "12px",
-            width: "100%",
-            maxWidth: "min(95vw, 400px)",
-            boxShadow: "0 20px 40px rgba(0, 0, 0, 0.25)",
-            maxHeight: "90vh",
-            overflowY: "auto",
-            WebkitOverflowScrolling: "touch"
-          }}>
-            <div style={{ 
-              display: "flex", 
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginBottom: "1.2rem"
-            }}>
-              <h3 style={{ 
-                margin: 0, 
-                color: "#2c3e50",
-                fontSize: "clamp(1.1rem, 4vw, 1.3rem)"
-              }}>
-                {isLoginMode ? "Connexion" : "Inscription"}
-              </h3>
+        <div className="auth-modal-overlay" onClick={(e) => {
+          if (e.target === e.currentTarget) setShowAuthModal(false);
+        }}>
+          <div className="auth-modal">
+            <div className="auth-modal-header">
+              <h3>{isLoginMode ? "Connexion" : "Inscription"}</h3>
               <button
                 onClick={() => {
                   setShowAuthModal(false);
                   setAuthData({ email: "", password: "", name: "", userType: "client" });
                 }}
-                style={{
-                  background: "none",
-                  border: "none",
-                  fontSize: "1.6rem",
-                  cursor: "pointer",
-                  color: "#7f8c8d",
-                  width: "28px",
-                  height: "28px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  borderRadius: "50%",
-                  transition: "all 0.2s ease",
-                  flexShrink: 0
-                }}
+                className="modal-close-btn"
                 aria-label="Fermer"
-                onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = "#f5f5f5";
-                  e.target.style.color = "#e74c3c";
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = "transparent";
-                  e.target.style.color = "#7f8c8d";
-                }}
               >
                 ×
               </button>
             </div>
             
-            <div style={{ 
-              display: "flex", 
-              marginBottom: "1.2rem",
-              borderRadius: "8px",
-              overflow: "hidden",
-              border: "1px solid #ddd"
-            }}>
+            <div className="auth-toggle">
               <button
                 onClick={() => setIsLoginMode(true)}
-                style={{
-                  flex: 1,
-                  padding: "clamp(0.65rem, 2vw, 0.75rem)",
-                  background: isLoginMode ? "#3498db" : "transparent",
-                  color: isLoginMode ? "white" : "#2c3e50",
-                  border: "none",
-                  cursor: "pointer",
-                  fontWeight: "500",
-                  fontSize: "clamp(0.85rem, 2vw, 0.9rem)",
-                  transition: "all 0.2s ease",
-                  whiteSpace: "nowrap"
-                }}
+                className={isLoginMode ? 'active' : ''}
               >
                 Connexion
               </button>
               <button
                 onClick={() => setIsLoginMode(false)}
-                style={{
-                  flex: 1,
-                  padding: "clamp(0.65rem, 2vw, 0.75rem)",
-                  background: !isLoginMode ? "#3498db" : "transparent",
-                  color: !isLoginMode ? "white" : "#2c3e50",
-                  border: "none",
-                  cursor: "pointer",
-                  fontWeight: "500",
-                  fontSize: "clamp(0.85rem, 2vw, 0.9rem)",
-                  transition: "all 0.2s ease",
-                  whiteSpace: "nowrap"
-                }}
+                className={!isLoginMode ? 'active' : ''}
               >
                 Inscription
               </button>
             </div>
             
-            <form onSubmit={handleAuth}>
+            <form onSubmit={handleAuth} className="auth-form">
               {!isLoginMode && (
-                <div style={{ marginBottom: "0.9rem" }}>
-                  <label style={{ 
-                    display: "block", 
-                    marginBottom: "0.4rem", 
-                    color: "#5d6d7e", 
-                    fontSize: "clamp(0.8rem, 2vw, 0.85rem)" 
-                  }}>
-                    Nom complet
-                  </label>
+                <div className="form-group">
+                  <label>Nom complet</label>
                   <input
                     type="text"
                     value={authData.name}
                     onChange={(e) => setAuthData({...authData, name: e.target.value})}
-                    style={{
-                      width: "100%",
-                      padding: "clamp(0.65rem, 2vw, 0.75rem)",
-                      border: "1px solid #ddd",
-                      borderRadius: "6px",
-                      fontSize: "clamp(0.85rem, 2vw, 0.9rem)",
-                      boxSizing: "border-box"
-                    }}
                     placeholder="Votre nom"
                     required={!isLoginMode}
                   />
                 </div>
               )}
               
-              <div style={{ marginBottom: "0.9rem" }}>
-                <label style={{ 
-                  display: "block", 
-                  marginBottom: "0.4rem", 
-                  color: "#5d6d7e", 
-                  fontSize: "clamp(0.8rem, 2vw, 0.85rem)" 
-                }}>
-                  Email
-                </label>
+              <div className="form-group">
+                <label>Email</label>
                 <input
                   type="email"
                   value={authData.email}
                   onChange={(e) => setAuthData({...authData, email: e.target.value})}
-                  style={{
-                    width: "100%",
-                    padding: "clamp(0.65rem, 2vw, 0.75rem)",
-                    border: "1px solid #ddd",
-                    borderRadius: "6px",
-                    fontSize: "clamp(0.85rem, 2vw, 0.9rem)",
-                    boxSizing: "border-box"
-                  }}
                   placeholder="votre@email.com"
                   required
                 />
               </div>
               
-              <div style={{ marginBottom: "1.2rem" }}>
-                <label style={{ 
-                  display: "block", 
-                  marginBottom: "0.4rem", 
-                  color: "#5d6d7e", 
-                  fontSize: "clamp(0.8rem, 2vw, 0.85rem)" 
-                }}>
-                  Mot de passe
-                </label>
+              <div className="form-group">
+                <label>Mot de passe</label>
                 <input
                   type="password"
                   value={authData.password}
                   onChange={(e) => setAuthData({...authData, password: e.target.value})}
-                  style={{
-                    width: "100%",
-                    padding: "clamp(0.65rem, 2vw, 0.75rem)",
-                    border: "1px solid #ddd",
-                    borderRadius: "6px",
-                    fontSize: "clamp(0.85rem, 2vw, 0.9rem)",
-                    boxSizing: "border-box"
-                  }}
                   placeholder={isLoginMode ? "Votre mot de passe" : "Créez un mot de passe"}
                   required
                 />
               </div>
               
               {!isLoginMode && (
-                <div style={{ marginBottom: "1.2rem" }}>
-                  <label style={{ 
-                    display: "block", 
-                    marginBottom: "0.4rem", 
-                    color: "#5d6d7e", 
-                    fontSize: "clamp(0.8rem, 2vw, 0.85rem)" 
-                  }}>
-                    Type de compte
-                  </label>
+                <div className="form-group">
+                  <label>Type de compte</label>
                   <select
                     value={authData.userType}
                     onChange={(e) => setAuthData({...authData, userType: e.target.value})}
-                    style={{
-                      width: "100%",
-                      padding: "clamp(0.65rem, 2vw, 0.75rem)",
-                      border: "1px solid #ddd",
-                      borderRadius: "6px",
-                      fontSize: "clamp(0.85rem, 2vw, 0.9rem)",
-                      boxSizing: "border-box",
-                      backgroundColor: "white",
-                      appearance: "auto"
-                    }}
                   >
                     <option value="client">Client (suivi de projet)</option>
                     <option value="admin">Administrateur (réservé)</option>
                   </select>
                   {authData.userType === 'admin' && (
-                    <p style={{ 
-                      fontSize: "0.75rem", 
-                      color: "#e74c3c", 
-                      marginTop: "0.4rem",
-                      lineHeight: "1.3"
-                    }}>
+                    <p className="form-note">
                       Note: Ce type de compte est réservé à l'administrateur.
                     </p>
                   )}
                 </div>
               )}
               
-              <div style={{ marginTop: "1.5rem" }}>
-                <button
-                  type="submit"
-                  style={{
-                    width: "100%",
-                    padding: "clamp(0.75rem, 2vw, 0.85rem)",
-                    backgroundColor: "#3498db",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "6px",
-                    cursor: "pointer",
-                    fontSize: "clamp(0.9rem, 2vw, 1rem)",
-                    fontWeight: "600",
-                    transition: "all 0.3s ease"
-                  }}
-                  aria-label={isLoginMode ? "Se connecter" : "S'inscrire"}
-                >
-                  {isLoginMode ? "Se connecter" : "S'inscrire"}
-                </button>
-              </div>
+              <button type="submit" className="auth-submit-btn">
+                {isLoginMode ? "Se connecter" : "S'inscrire"}
+              </button>
             </form>
             
-            <p style={{ 
-              marginTop: "1.2rem", 
-              fontSize: "clamp(0.75rem, 2vw, 0.8rem)", 
-              color: "#7f8c8d",
-              textAlign: "center",
-              lineHeight: "1.4"
-            }}>
-              {isLoginMode ? (
-                "Pas encore de compte ? "
-              ) : (
-                "Déjà un compte ? "
-              )}
-              <button
-                onClick={() => setIsLoginMode(!isLoginMode)}
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: "#3498db",
-                  cursor: "pointer",
-                  textDecoration: "underline",
-                  fontSize: "clamp(0.75rem, 2vw, 0.8rem)",
-                  fontWeight: "500",
-                  padding: "0.2rem 0.3rem"
-                }}
-              >
+            <p className="auth-switch">
+              {isLoginMode ? "Pas encore de compte ? " : "Déjà un compte ? "}
+              <button onClick={() => setIsLoginMode(!isLoginMode)}>
                 {isLoginMode ? "Inscrivez-vous" : "Connectez-vous"}
               </button>
             </p>
@@ -1238,9 +749,606 @@ const Header = () => {
         </div>
       )}
 
-      {/* Styles CSS globaux améliorés */}
+      {/* Styles CSS */}
       <style>{`
-        /* Animation pour le menu déroulant */
+        /* ===== HEADER BASE ===== */
+        .site-header {
+          position: fixed;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: rgba(255,255,255,0.98);
+          padding: 0.85rem clamp(0.75rem, 3vw, 2rem);
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(10px);
+          max-width: 100vw;
+          box-sizing: border-box;
+          height: 65px;
+        }
+
+        .header-logo {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+          min-width: 100px;
+        }
+
+        /* ===== NAVIGATION DESKTOP ===== */
+        .desktop-nav {
+          display: flex;
+          gap: clamp(0.8rem, 1.5vw, 1.8rem);
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          max-width: 550px;
+          margin: 0 1rem;
+        }
+
+        .nav-link-button {
+          background: none;
+          border: none;
+          font-family: inherit;
+          cursor: pointer;
+          position: relative;
+        }
+
+        .nav-link-button::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #3498db;
+          transition: width 0.3s ease;
+        }
+
+        .nav-link-button:hover::after {
+          width: 100%;
+        }
+
+        .nav-link-button:hover {
+          color: #3498db;
+        }
+
+        /* ===== ACTIONS HEADER ===== */
+        .header-actions {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          flex-shrink: 0;
+          min-width: 50px;
+          justify-content: flex-end;
+          position: relative;
+        }
+
+        .auth-buttons {
+          display: flex;
+          gap: 0.6rem;
+          align-items: center;
+        }
+
+        /* ===== PROFIL ===== */
+        .profile-wrapper {
+          position: relative;
+          z-index: 9999;
+        }
+
+        .profile-button {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #3498db;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+          transition: all 0.3s ease;
+          color: white;
+          padding: 0;
+          margin-left: 0.3rem;
+          font-weight: bold;
+        }
+
+        .profile-menu {
+          position: fixed;
+          top: 65px;
+          right: clamp(0.75rem, 3vw, 1rem);
+          background-color: white;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+          z-index: 99999;
+          min-width: 220px;
+          max-width: min(90vw, 280px);
+          overflow: hidden;
+          animation: slideDown 0.2s ease;
+        }
+
+        .profile-menu-header {
+          padding: 0.9rem;
+          border-bottom: 1px solid #eee;
+          background-color: #f8f9fa;
+        }
+
+        .profile-name {
+          font-weight: bold;
+          color: #2c3e50;
+          font-size: 0.9rem;
+          margin-bottom: 0.2rem;
+          word-break: break-word;
+        }
+
+        .profile-email {
+          font-size: 0.8rem;
+          color: #7f8c8d;
+          word-break: break-word;
+        }
+
+        .profile-type {
+          font-size: 0.7rem;
+          color: #3498db;
+          margin-top: 0.3rem;
+          font-weight: 500;
+        }
+
+        .profile-menu-items {
+          padding: 0.2rem 0;
+        }
+
+        .profile-menu-item:hover {
+          background-color: #f8f9fa !important;
+        }
+
+        .menu-divider {
+          height: 1px;
+          background-color: #eee;
+          margin: 0.2rem 0;
+        }
+
+        .profile-menu-footer {
+          border-top: 1px solid #eee;
+          padding: 0.2rem 0;
+        }
+
+        .logout-button {
+          width: 100%;
+          padding: 0.7rem 0.85rem;
+          border: none;
+          background-color: #fff5f5;
+          color: #e74c3c;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 0.85rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          transition: all 0.2s ease;
+        }
+
+        .logout-button:hover {
+          background-color: #ffe5e5 !important;
+        }
+
+        /* ===== MOBILE HEADER ACTIONS ===== */
+        .mobile-header-actions {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .mobile-auth-buttons {
+          display: flex;
+          gap: 0.4rem;
+          align-items: center;
+          margin-right: 0.3rem;
+        }
+
+        .mobile-auth-btn {
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+          padding: 0.45rem 0.7rem;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 0.8rem;
+          transition: all 0.3s ease;
+          white-space: nowrap;
+        }
+
+        .login-btn {
+          background-color: #3498db;
+          color: white;
+        }
+
+        .login-btn:hover {
+          background-color: #2980b9;
+        }
+
+        .signup-btn {
+          background-color: #2ecc71;
+          color: white;
+        }
+
+        .signup-btn:hover {
+          background-color: #27ae60;
+        }
+
+        .btn-icon {
+          font-size: 0.9rem;
+        }
+
+        .btn-text {
+          display: inline;
+        }
+
+        .mobile-profile-button {
+          margin-right: 0.3rem;
+        }
+
+        .profile-avatar-mobile {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          background-color: #3498db;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          color: white;
+          font-weight: bold;
+        }
+
+        /* ===== HAMBURGER ===== */
+        .hamburger-button {
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem;
+          z-index: 1101;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+        }
+
+        .hamburger-line {
+          display: block;
+          width: 22px;
+          height: 2px;
+          background-color: #2c3e50;
+          margin: 3.5px 0;
+          transition: all 0.3s ease;
+        }
+
+        .hamburger-line.active:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+          background-color: #3498db;
+        }
+
+        .hamburger-line.active:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger-line.active:nth-child(3) {
+          transform: rotate(-45deg) translate(6px, -5px);
+          background-color: #3498db;
+        }
+
+        /* ===== MOBILE OVERLAY ===== */
+        .mobile-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1099;
+          touch-action: none;
+        }
+
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu {
+          position: fixed;
+          top: 65px;
+          right: -100%;
+          width: min(100%, 300px);
+          height: calc(100vh - 65px);
+          background-color: white;
+          box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+          transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          z-index: 1100;
+          overflow-y: auto;
+          display: flex;
+          flex-direction: column;
+          -webkit-overflow-scrolling: touch;
+          overscroll-behavior: contain;
+        }
+
+        .mobile-menu.open {
+          right: 0;
+        }
+
+        .mobile-user-info {
+          padding: 1rem 0.9rem;
+          background-color: #f8f9fa;
+          border-bottom: 1px solid #eee;
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+        }
+
+        .mobile-user-avatar {
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          background-color: #3498db;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+          color: white;
+          font-weight: bold;
+          flex-shrink: 0;
+        }
+
+        .mobile-user-details {
+          min-width: 0;
+          flex: 1;
+        }
+
+        .mobile-user-name {
+          font-weight: bold;
+          color: #2c3e50;
+          font-size: 0.9rem;
+          word-break: break-word;
+          line-height: 1.2;
+        }
+
+        .mobile-user-email {
+          font-size: 0.75rem;
+          color: #7f8c8d;
+          margin-top: 0.2rem;
+          word-break: break-word;
+          line-height: 1.2;
+        }
+
+        .mobile-user-type {
+          font-size: 0.7rem;
+          color: #3498db;
+          margin-top: 0.2rem;
+          font-weight: 500;
+        }
+
+        .mobile-menu-item {
+          animation: slideDown 0.2s ease forwards;
+          opacity: 0;
+        }
+
+        .mobile-menu-item:nth-child(1) { animation-delay: 0.05s; }
+        .mobile-menu-item:nth-child(2) { animation-delay: 0.1s; }
+        .mobile-menu-item:nth-child(3) { animation-delay: 0.15s; }
+        .mobile-menu-item:nth-child(4) { animation-delay: 0.2s; }
+        .mobile-menu-item:nth-child(5) { animation-delay: 0.25s; }
+        .mobile-menu-item:nth-child(6) { animation-delay: 0.3s; }
+        .mobile-menu-item:nth-child(7) { animation-delay: 0.35s; }
+
+        .mobile-menu-item:hover,
+        .mobile-menu-item:active {
+          background-color: #f8f9fa !important;
+          padding-left: 1.2rem !important;
+        }
+
+        .menu-icon {
+          margin-right: 0.7rem;
+          font-size: 1.1rem;
+        }
+
+        .mobile-menu-footer {
+          padding: 1rem 0.9rem;
+          margin-top: auto;
+          border-top: 1px solid #eee;
+          background-color: #f8f9fa;
+        }
+
+        .mobile-logout-btn {
+          width: 100%;
+          padding: 0.75rem;
+          background-color: #e74c3c;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 0.9rem;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+
+        .mobile-logout-btn:hover {
+          background-color: #c0392b;
+        }
+
+        /* ===== AUTH MODAL ===== */
+        .auth-modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 99999;
+          padding: clamp(0.5rem, 2vw, 1rem);
+          overscroll-behavior: contain;
+        }
+
+        .auth-modal {
+          background-color: white;
+          padding: clamp(1.2rem, 4vw, 1.8rem);
+          border-radius: 12px;
+          width: 100%;
+          max-width: min(95vw, 400px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+          max-height: 90vh;
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .auth-modal-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1.2rem;
+        }
+
+        .auth-modal-header h3 {
+          margin: 0;
+          color: #2c3e50;
+          font-size: clamp(1.1rem, 4vw, 1.3rem);
+        }
+
+        .modal-close-btn {
+          background: none;
+          border: none;
+          font-size: 1.6rem;
+          cursor: pointer;
+          color: #7f8c8d;
+          width: 28px;
+          height: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: all 0.2s ease;
+        }
+
+        .modal-close-btn:hover {
+          background-color: #f5f5f5;
+          color: #e74c3c;
+        }
+
+        .auth-toggle {
+          display: flex;
+          margin-bottom: 1.2rem;
+          border-radius: 8px;
+          overflow: hidden;
+          border: 1px solid #ddd;
+        }
+
+        .auth-toggle button {
+          flex: 1;
+          padding: clamp(0.65rem, 2vw, 0.75rem);
+          background: transparent;
+          color: #2c3e50;
+          border: none;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: clamp(0.85rem, 2vw, 0.9rem);
+          transition: all 0.2s ease;
+        }
+
+        .auth-toggle button.active {
+          background: #3498db;
+          color: white;
+        }
+
+        .auth-form {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .form-group {
+          margin-bottom: 0.9rem;
+        }
+
+        .form-group label {
+          display: block;
+          margin-bottom: 0.4rem;
+          color: #5d6d7e;
+          font-size: clamp(0.8rem, 2vw, 0.85rem);
+        }
+
+        .form-group input,
+        .form-group select {
+          width: 100%;
+          padding: clamp(0.65rem, 2vw, 0.75rem);
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          font-size: clamp(0.85rem, 2vw, 0.9rem);
+          box-sizing: border-box;
+        }
+
+        .form-group select {
+          background-color: white;
+          appearance: auto;
+        }
+
+        .form-note {
+          font-size: 0.75rem;
+          color: #e74c3c;
+          margin-top: 0.4rem;
+          line-height: 1.3;
+        }
+
+        .auth-submit-btn {
+          width: 100%;
+          padding: clamp(0.75rem, 2vw, 0.85rem);
+          background-color: #3498db;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: clamp(0.9rem, 2vw, 1rem);
+          font-weight: 600;
+          transition: all 0.3s ease;
+          margin-top: 0.5rem;
+        }
+
+        .auth-submit-btn:hover {
+          background-color: #2980b9;
+        }
+
+        .auth-switch {
+          margin-top: 1.2rem;
+          font-size: clamp(0.75rem, 2vw, 0.8rem);
+          color: #7f8c8d;
+          text-align: center;
+          line-height: 1.4;
+        }
+
+        .auth-switch button {
+          background: none;
+          border: none;
+          color: #3498db;
+          cursor: pointer;
+          text-decoration: underline;
+          font-size: clamp(0.75rem, 2vw, 0.8rem);
+          font-weight: 500;
+          padding: 0.2rem 0.3rem;
+        }
+
+        /* ===== ANIMATIONS ===== */
         @keyframes slideDown {
           from {
             opacity: 0;
@@ -1251,166 +1359,126 @@ const Header = () => {
             transform: translateY(0);
           }
         }
+
+        /* ===== RESPONSIVE BREAKPOINTS ===== */
         
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-        
-        /* Styles pour les liens de navigation desktop */
-        .nav-link-button {
-          background: none;
-          border: none;
-          font-family: inherit;
-          cursor: pointer;
-        }
-        
-        nav button {
-          position: relative;
-        }
-        
-        nav button::after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 2px;
-          bottom: 0;
-          left: 0;
-          background-color: #3498db;
-          transition: width 0.3s ease;
-        }
-        
-        nav button:hover::after,
-        nav button[style*="color: #3498db"]::after {
-          width: 100%;
-        }
-        
-        nav button:hover {
-          color: #3498db;
-        }
-        
-        /* Styles pour les éléments du menu mobile */
-        .mobile-menu-item {
-          animation: slideDown 0.2s ease forwards;
-          opacity: 0;
-        }
-        
-        .mobile-menu-item:nth-child(1) { animation-delay: 0.05s; }
-        .mobile-menu-item:nth-child(2) { animation-delay: 0.1s; }
-        .mobile-menu-item:nth-child(3) { animation-delay: 0.15s; }
-        .mobile-menu-item:nth-child(4) { animation-delay: 0.2s; }
-        .mobile-menu-item:nth-child(5) { animation-delay: 0.25s; }
-        .mobile-menu-item:nth-child(6) { animation-delay: 0.3s; }
-        .mobile-menu-item:nth-child(7) { animation-delay: 0.35s; }
-        .mobile-menu-item:nth-child(8) { animation-delay: 0.4s; }
-        .mobile-menu-item:nth-child(9) { animation-delay: 0.45s; }
-        
-        /* Effets de survol pour les éléments du menu mobile */
-        .mobile-menu a:hover,
-        .mobile-menu button:hover,
-        .mobile-menu a:active,
-        .mobile-menu button:active {
-          background-color: #f8f9fa !important;
-          padding-left: 1.2rem !important;
-        }
-        
-        /* Effets de survol pour les éléments du menu profil */
-        .profile-menu-item:hover {
-          background-color: #f8f9fa !important;
-        }
-        
-        /* Améliorations pour le modal sur mobile */
+        /* Très petits écrans (320px - 480px) */
         @media (max-width: 480px) {
+          .site-header {
+            height: 60px;
+            padding: 0.7rem 0.8rem;
+          }
+
           .mobile-menu {
-            width: 100% !important;
-            right: isMenuOpen ? "0" : "-100%" !important;
+            top: 60px;
+            height: calc(100vh - 60px);
+            width: 100%;
           }
-          
-          /* Ajustements pour les très petits écrans */
-          header {
-            height: 60px !important;
-            padding: 0.7rem 0.8rem !important;
+
+          .mobile-auth-btn {
+            padding: 0.4rem 0.55rem;
+            font-size: 0.75rem;
+            gap: 0.25rem;
           }
-          
-          .mobile-menu {
-            top: 60px !important;
-            height: calc(100vh - 60px) !important;
+
+          .btn-icon {
+            font-size: 0.85rem;
           }
-          
+
+          .btn-text {
+            display: none;
+          }
+
           .hamburger-button {
-            width: 38px !important;
-            height: 38px !important;
+            width: 38px;
+            height: 38px;
           }
-          
-          .mobile-menu a,
-          .mobile-menu button {
+
+          .mobile-menu-item {
             padding: 0.75rem 0.9rem !important;
             font-size: 0.9rem !important;
           }
-          
-          .mobile-menu a:hover,
-          .mobile-menu button:hover {
-            padding-left: 1.1rem !important;
+
+          .profile-avatar-mobile {
+            width: 36px;
+            height: 36px;
+            font-size: 0.95rem;
           }
         }
-        
-        /* Tablettes (768px - 992px) */
-        @media (min-width: 768px) and (max-width: 992px) {
-          nav {
-            gap: 1rem !important;
-            margin: 0 0.5rem !important;
-          }
-          
-          button {
-            padding: 0.5rem 0.8rem !important;
-            font-size: 0.85rem !important;
-          }
-          
-          .profile-menu {
-            min-width: 200px !important;
-          }
-        }
-        
-        /* Petits mobiles (moins de 360px) */
+
+        /* Très très petits écrans (moins de 360px) */
         @media (max-width: 360px) {
-          header {
-            padding: 0.6rem 0.6rem !important;
-            height: 55px !important;
+          .site-header {
+            padding: 0.6rem 0.6rem;
+            height: 55px;
           }
-          
+
           .mobile-menu {
-            top: 55px !important;
-            height: calc(100vh - 55px) !important;
+            top: 55px;
+            height: calc(100vh - 55px);
           }
-          
+
+          .mobile-auth-btn {
+            padding: 0.35rem 0.5rem;
+            font-size: 0.7rem;
+          }
+
           .hamburger-button {
-            width: 36px !important;
-            height: 36px !important;
+            width: 36px;
+            height: 36px;
           }
-          
-          .mobile-menu a,
-          .mobile-menu button {
-            padding: 0.7rem 0.8rem !important;
-            font-size: 0.85rem !important;
-          }
-          
-          .logo img {
+
+          .header-logo img {
             height: 28px !important;
           }
         }
-        
-        /* Améliorations pour l'accessibilité et le tactile */
-        button, 
-        a, 
-        input, 
-        select {
+
+        /* Écrans moyens (481px - 767px) */
+        @media (min-width: 481px) and (max-width: 767px) {
+          .btn-text {
+            display: inline;
+          }
+
+          .mobile-auth-btn {
+            padding: 0.5rem 0.8rem;
+            font-size: 0.85rem;
+          }
+        }
+
+        /* Tablettes (768px - 992px) */
+        @media (min-width: 768px) and (max-width: 992px) {
+          .desktop-nav {
+            gap: 1rem;
+            margin: 0 0.5rem;
+          }
+
+          .auth-buttons button {
+            padding: 0.5rem 0.8rem !important;
+            font-size: 0.85rem !important;
+          }
+
+          .profile-menu {
+            min-width: 200px;
+          }
+        }
+
+        /* Mode paysage sur mobile */
+        @media (max-height: 500px) and (orientation: landscape) {
+          .mobile-menu {
+            max-height: 70vh;
+            overflow-y: auto;
+          }
+
+          .auth-modal {
+            max-height: 80vh;
+          }
+        }
+
+        /* Amélioration accessibilité */
+        * {
           -webkit-tap-highlight-color: transparent;
         }
-        
+
         button:focus-visible,
         a:focus-visible,
         input:focus-visible,
@@ -1418,39 +1486,11 @@ const Header = () => {
           outline: 2px solid #3498db;
           outline-offset: 2px;
         }
-        
-        /* Amélioration du défilement sur iOS */
-        .mobile-menu {
-          -webkit-overflow-scrolling: touch;
-        }
-        
-        /* Empêcher le zoom sur les inputs sur iOS */
+
+        /* Empêcher le zoom sur iOS */
         @media screen and (max-width: 992px) {
           input, select, textarea {
             font-size: 16px !important;
-          }
-        }
-        
-        /* Correction pour le menu profil sur mobile */
-        @media (max-width: 992px) {
-          .profile-menu {
-            position: absolute !important;
-            top: 100% !important;
-            right: 0 !important;
-            left: auto !important;
-            margin-top: 0.5rem;
-          }
-        }
-        
-        /* Mode paysage sur mobile */
-        @media (max-height: 500px) and (orientation: landscape) {
-          .mobile-menu {
-            max-height: 70vh !important;
-            overflow-y: auto !important;
-          }
-          
-          .auth-modal > div {
-            max-height: 80vh !important;
           }
         }
       `}</style>

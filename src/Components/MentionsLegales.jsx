@@ -136,7 +136,7 @@ const MentionsLegales = () => {
             wordBreak: "break-word"
           }}>
             <strong style={{ minWidth: "fit-content" }}>Statut :</strong>
-            <span style={{ flex: "1", minWidth: "0", wordBreak: "break-word" }}>Développeur web indépendant</span>
+            <span style={{ flex: "1", minWidth: "0", wordBreak: "break-word" }}>Développeur indépendant</span>
           </p>
           <p style={{ 
             margin: "0.5rem 0", 

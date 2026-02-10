@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "build-gh": "parcel build src/index.html --public-url \"/Emmanuel_Amela/\" && powershell -Command \"Copy-Item -Path dist/index.html -Destination dist/404.html\"",
+    "build-gh": "parcel build src/index.html --public-url \"/\" && powershell -Command \"Copy-Item -Path dist/index.html -Destination dist/404.html\" && powershell -Command \"Set-Content -Path dist/CNAME -Value 'e-a.codes'\"",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },

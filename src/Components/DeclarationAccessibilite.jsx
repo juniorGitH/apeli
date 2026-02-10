@@ -59,7 +59,7 @@ const DeclarationAccessibilite = () => {
           1. Engagement d'accessibilité
         </h2>
         <p style={{ overflowWrap: "break-word", wordBreak: "break-word", fontSize: "clamp(0.9rem, 1.8vw, 1rem)" }}>
-          <strong>Emmanuel AMELA</strong>, développeur web indépendant, s'engage à rendre son site 
+          <strong>Emmanuel AMELA</strong>, développeur indépendant, s'engage à rendre son site 
           internet accessible conformément aux standards internationaux et aux bonnes pratiques 
           en matière d'accessibilité numérique.
         </p>
@@ -510,6 +510,23 @@ const DeclarationAccessibilite = () => {
               Framework front-end
             </div>
           </div>
+          
+          <div style={{
+            backgroundColor: "#e8f4f8",
+            padding: "clamp(0.8rem, 2vw, 1rem)",
+            borderRadius: "6px",
+            textAlign: "center",
+            boxSizing: "border-box",
+            overflowWrap: "break-word",
+            wordBreak: "break-word"
+          }}>
+            <div style={{ fontWeight: "bold", color: "#3498db", marginBottom: "0.5rem", fontSize: "clamp(0.95rem, 2vw, 1.1rem)" }}>
+              .NET Web API
+            </div>
+            <div style={{ fontSize: "clamp(0.8rem, 1.6vw, 0.85rem)", overflowWrap: "break-word", wordBreak: "break-word" }}>
+              Services back-end
+            </div>
+          </div>
         </div>
         
         <div style={{ marginTop: "1.5rem" }}>
@@ -538,8 +555,11 @@ const DeclarationAccessibilite = () => {
             <li style={{ marginBottom: "0.5rem", overflowWrap: "break-word", wordBreak: "break-word" }}>
               <strong>Labels et instructions :</strong> Éléments de formulaire correctement étiquetés
             </li>
-            <li style={{ overflowWrap: "break-word", wordBreak: "break-word" }}>
+            <li style={{ marginBottom: "0.5rem", overflowWrap: "break-word", wordBreak: "break-word" }}>
               <strong>Redimensionnement du texte :</strong> Texte redimensionnable jusqu'à 200% sans perte de contenu
+            </li>
+            <li style={{ overflowWrap: "break-word", wordBreak: "break-word" }}>
+              <strong>API accessibles :</strong> Services back-end .NET Web API conçus pour garantir des réponses accessibles et conformes
             </li>
           </ul>
         </div>

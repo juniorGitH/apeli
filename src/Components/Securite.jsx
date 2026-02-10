@@ -59,7 +59,7 @@ const Securite = () => {
           1. Engagement en matière de sécurité
         </h2>
         <p style={{ overflowWrap: "break-word", wordBreak: "break-word", fontSize: "clamp(0.9rem, 1.8vw, 1rem)" }}>
-          <strong>Emmanuel AMELA</strong>, développeur web indépendant, s'engage à protéger 
+          <strong>Emmanuel AMELA</strong>, développeur indépendant, s'engage à protéger 
           l'intégrité, la confidentialité et la disponibilité des données qui lui sont confiées. 
           Cette politique s'applique à tous les systèmes, applications et infrastructures utilisés 
           pour fournir des services à mes clients.
