@@ -126,7 +126,7 @@ const HomePage = ({ name, title }) => {
 
 const App = () => {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         {/* Page d'accueil */}
         <Route path="/" element={

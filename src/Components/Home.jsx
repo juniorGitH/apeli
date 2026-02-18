@@ -82,6 +82,7 @@ const Home = ({ name, title }) => {
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
+          boxSizing: "border-box", // ← corrige le débordement horizontal sur mobile
         }}
       >
         <div
@@ -94,6 +95,7 @@ const Home = ({ name, title }) => {
             maxWidth: "800px",
             width: "100%",
             marginTop: "clamp(30vh, 40vh, 45vh)",
+            boxSizing: "border-box", // ← corrige le débordement horizontal sur mobile
           }}
         >
           <h1
