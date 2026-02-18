@@ -1,10 +1,12 @@
 /**
  * Header component avec authentification multi-utilisateurs
  * Version responsive optimisée - Boutons visibles sur tous les écrans
+ * Ajout du téléchargement du CV (accessible partout)
  */
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../images/logo.png";
+
 
 const Header = () => {
   const location = useLocation();
@@ -109,6 +111,22 @@ const Header = () => {
     if (isMenuOpen) setIsMenuOpen(false);
     setShowProfileMenu(false);
     navigate('/', { state: { scrollTo: sectionId } });
+  };
+
+  // Téléchargement du CV
+  const handleCVDownload = () => {
+    // Fermer les menus si ouverts
+    setIsMenuOpen(false);
+    setShowProfileMenu(false);
+    
+    // Créer un lien temporaire pour forcer le téléchargement
+      const cvUrl = new URL('../images/cv-emmanuel.pdf', import.meta.url).href;
+    const link = document.createElement('a');
+    link.href = cvUrl; // Chemin vers le fichier CV (dans le dossier public)
+    link.download = 'CV_Emmanuel_AMELA.pdf'; // Nom du fichier téléchargé
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   // Gestion de l'authentification
@@ -315,6 +333,21 @@ const Header = () => {
               >
                 Ressources
               </Link>
+
+              {/* Bouton CV - Desktop */}
+              <button
+                onClick={handleCVDownload}
+                style={{
+                  ...navLinkStyle(false),
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.3rem"
+                }}
+                className="nav-link-button"
+                title="Télécharger mon CV"
+              >
+                Cv
+              </button>
             </nav>
 
             {/* Actions utilisateur Desktop */}
@@ -455,9 +488,20 @@ const Header = () => {
           </>
         )}
 
-        {/* Section Mobile: Boutons d'authentification + Hamburger */}
+        {/* Section Mobile: Boutons d'authentification + Hamburger + CV */}
         {isMobile && (
           <div className="mobile-header-actions">
+            {/* Bouton CV compact (toujours visible) */}
+            <button
+              onClick={handleCVDownload}
+              className="mobile-cv-button"
+              title="Télécharger mon CV"
+              aria-label="Télécharger CV"
+            >
+              <span className="btn-icon">📄</span>
+              <span className="btn-text">CV</span>
+            </button>
+
             {!currentUser && (
               <div className="mobile-auth-buttons">
                 <button
@@ -573,6 +617,16 @@ const Header = () => {
               <span className="menu-icon">📚</span>
               Ressources
             </Link>
+
+            {/* Bouton CV dans le menu mobile (texte complet) */}
+            <button
+              onClick={handleCVDownload}
+              style={mobileNavLinkStyle(false)}
+              className="mobile-menu-item"
+            >
+              <span className="menu-icon">📄</span>
+              Télécharger mon CV
+            </button>
 
             {currentUser && (
               <>
@@ -784,7 +838,7 @@ const Header = () => {
           align-items: center;
           justify-content: center;
           flex: 1;
-          max-width: 550px;
+          max-width: 650px;
           margin: 0 1rem;
         }
 
@@ -935,6 +989,37 @@ const Header = () => {
 
         .logout-button:hover {
           background-color: #ffe5e5 !important;
+        }
+
+        /* ===== BOUTON CV MOBILE ===== */
+        .mobile-cv-button {
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+          padding: 0.45rem 0.7rem;
+          border: 1px solid #3498db;
+          border-radius: 6px;
+          background-color: white;
+          color: #3498db;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 0.8rem;
+          transition: all 0.3s ease;
+          white-space: nowrap;
+          margin-right: 0.3rem;
+        }
+
+        .mobile-cv-button:hover {
+          background-color: #3498db;
+          color: white;
+        }
+
+        .mobile-cv-button .btn-icon {
+          font-size: 0.9rem;
+        }
+
+        .mobile-cv-button .btn-text {
+          display: inline;
         }
 
         /* ===== MOBILE HEADER ACTIONS ===== */
@@ -1147,6 +1232,7 @@ const Header = () => {
         .mobile-menu-item:nth-child(5) { animation-delay: 0.25s; }
         .mobile-menu-item:nth-child(6) { animation-delay: 0.3s; }
         .mobile-menu-item:nth-child(7) { animation-delay: 0.35s; }
+        .mobile-menu-item:nth-child(8) { animation-delay: 0.4s; }
 
         .mobile-menu-item:hover,
         .mobile-menu-item:active {
@@ -1381,12 +1467,18 @@ const Header = () => {
             gap: 0.25rem;
           }
 
+          .mobile-cv-button {
+            padding: 0.4rem 0.55rem;
+            font-size: 0.75rem;
+            gap: 0.25rem;
+          }
+
           .btn-icon {
             font-size: 0.85rem;
           }
 
           .btn-text {
-            display: none;
+            display: none; /* Cache le texte "CV" sur très petits écrans, garde l'icône */
           }
 
           .hamburger-button {
@@ -1418,7 +1510,8 @@ const Header = () => {
             height: calc(100vh - 55px);
           }
 
-          .mobile-auth-btn {
+          .mobile-auth-btn,
+          .mobile-cv-button {
             padding: 0.35rem 0.5rem;
             font-size: 0.7rem;
           }
@@ -1436,10 +1529,11 @@ const Header = () => {
         /* Écrans moyens (481px - 767px) */
         @media (min-width: 481px) and (max-width: 767px) {
           .btn-text {
-            display: inline;
+            display: inline; /* Affiche le texte sur écrans moyens */
           }
 
-          .mobile-auth-btn {
+          .mobile-auth-btn,
+          .mobile-cv-button {
             padding: 0.5rem 0.8rem;
             font-size: 0.85rem;
           }
