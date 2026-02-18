@@ -3,6 +3,9 @@ import React from "react";
 const ConditionsGeneralesUtilisation = () => {
   return (
     <div className="cgu-container">
+      {/* Espace pour compenser le header fixe */}
+      <div className="header-spacer"></div>
+
       <h1 className="cgu-title">
         Conditions Générales d'Utilisation
       </h1>
@@ -229,6 +232,11 @@ const ConditionsGeneralesUtilisation = () => {
           word-break: break-word;
         }
 
+        /* Espace pour le header fixe */
+        .header-spacer {
+          height: 70px; /* Hauteur du header sur desktop */
+        }
+
         .cgu-title {
           color: #2c3e50;
           border-bottom: 3px solid #e74c3c;
@@ -344,44 +352,40 @@ const ConditionsGeneralesUtilisation = () => {
 
         /* Tablettes */
         @media (max-width: 768px) {
+          .header-spacer {
+            height: 60px;
+          }
           .cgu-container {
             padding: 1.2rem;
             border-radius: 0;
             box-shadow: none;
           }
-
           .cgu-title {
             font-size: 1.6rem;
             padding-bottom: 0.8rem;
             margin-bottom: 1.5rem;
           }
-
           .article-title {
             margin-top: 1.5rem;
             font-size: 1.25rem;
             padding-left: 0.4rem;
           }
-
           .paragraph {
             text-align: left;
             font-size: 0.95rem;
           }
-
           .list {
             padding-left: 1.3rem;
           }
-
           .list li {
             font-size: 0.95rem;
           }
-
           .disclaimer-box,
           .highlighted-box,
           .warning-box {
             padding: 1rem;
             font-size: 0.9rem;
           }
-
           .footer-box {
             padding: 1.2rem;
             margin-top: 2rem;
@@ -390,36 +394,33 @@ const ConditionsGeneralesUtilisation = () => {
 
         /* Mobile */
         @media (max-width: 480px) {
+          .header-spacer {
+            height: 50px;
+          }
           .cgu-container {
             padding: 1rem;
           }
-
           .cgu-title {
             font-size: 1.4rem;
             border-bottom-width: 2px;
           }
-
           .article-title {
             font-size: 1.15rem;
             margin-top: 1.2rem;
             padding-left: 0.3rem;
             border-left-width: 3px;
           }
-
           .paragraph {
             font-size: 0.9rem;
             margin-bottom: 1rem;
           }
-
           .list {
             padding-left: 1rem;
           }
-
           .list li {
             font-size: 0.9rem;
             margin-bottom: 0.6rem;
           }
-
           .disclaimer-box,
           .highlighted-box,
           .warning-box {
@@ -427,16 +428,13 @@ const ConditionsGeneralesUtilisation = () => {
             font-size: 0.85rem;
             margin: 1rem 0;
           }
-
           .footer-box {
             padding: 1rem;
             font-size: 0.85rem;
           }
-
           .footer-main {
             font-size: 0.9rem;
           }
-
           .footer-sub {
             font-size: 0.75rem;
           }
@@ -447,20 +445,16 @@ const ConditionsGeneralesUtilisation = () => {
           .cgu-container {
             padding: 0.8rem;
           }
-
           .cgu-title {
             font-size: 1.3rem;
           }
-
           .article-title {
             font-size: 1.1rem;
           }
-
           .paragraph,
           .list li {
             font-size: 0.85rem;
           }
-
           .disclaimer-box,
           .highlighted-box,
           .warning-box,
