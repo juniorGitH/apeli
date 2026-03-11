@@ -196,7 +196,7 @@ const Home = () => {
             lineHeight: "1.4",
           }}
         >
-          Cuisson Intelligente Assistée par IA
+          Optimisation et Cuisson Intelligente
         </h2>
 
         <p
@@ -229,10 +229,11 @@ const Home = () => {
           }}
         >
           {[
-            { label: "IA Cuisine" },
+            { label: "Foyer Apeli" },
+            { label: "Pellets Bio" },
             { label: "Capteurs IoT" },
+            { label: "IA Cuisine" },
             { label: "Ventilation MCP" },
-            { label: "Interface Web" },
           ].map((item) => (
             <div
               key={item.label}

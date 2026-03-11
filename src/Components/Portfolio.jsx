@@ -6,32 +6,32 @@ import { Link } from "react-router-dom";
 
 const featureList = [
   {
-    title: "Chatbot IA Cuisine",
+    title: "Reconception du Foyer Apeli",
     description:
-      "Un assistant intelligent basé sur un LLM avec RAG spécialisé en cuisine. Il guide les utilisateurs étape par étape dans la cuisson de leurs plats, en adaptant les instructions à la température réelle du foyer.",
+      "Optimisation de la structure du foyer pour améliorer les performances énergétiques : meilleure chambre de combustion, isolation renforcée, système d'évacuation des cendres repensé et support adaptable multi-tailles de marmites.",
+    link: "/foyer",
+    linkText: "Découvrir le foyer",
+  },
+  {
+    title: "Pellets — Combustible Bio",
+    description:
+      "Remplacement du bois traditionnel par des pellets issus de résidus agricoles (coques, tiges, sciure). Combustion plus propre, plus efficace et plus écologique, avec un approvisionnement local et durable.",
+    link: "/foyer",
+    linkText: "En savoir plus",
+  },
+  {
+    title: "Capteurs IoT + IA Cuisine",
+    description:
+      "Des capteurs de température et de poids transmettent les données en temps réel. Un chatbot IA (RAG + LLM) guide l'utilisateur étape par étape dans la cuisson, en adaptant les instructions aux conditions réelles du foyer.",
     link: "/chatbot",
-    linkText: "Accéder au Chatbot →",
+    linkText: "Accéder au Chatbot",
   },
   {
-    title: "Capteurs IoT Connectés",
-    description:
-      "Des capteurs de température et de poids installés sur le foyer Apeli transmettent les données en temps réel. Le dispositif connecté permet un suivi précis de la cuisson à tout moment.",
-    link: null,
-    linkText: "Voir les données →",
-  },
-  {
-    title: "Serveur MCP — Ventilateur",
+    title: "Ventilation Intelligente (MCP)",
     description:
       "Un serveur MCP (Model Context Protocol) permet à l'IA de contrôler automatiquement le ventilateur d'aération du foyer pour réguler la température selon les besoins de la recette en cours.",
-    link: null,
-    linkText: "En savoir plus →",
-  },
-  {
-    title: "Recherche Scientifique",
-    description:
-      "Ce projet s'appuie sur les travaux de recherche de Mme AMOUZOU-ATCHOE Akoua Gabriela, doctorante à l'Université de Lomé, qui a publié un article sur l'optimisation du foyer amélioré.",
     link: "/doctorante",
-    linkText: "Découvrir ses travaux →",
+    linkText: "Voir la recherche",
   },
 ];
 

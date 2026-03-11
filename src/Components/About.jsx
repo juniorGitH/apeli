@@ -44,7 +44,7 @@ const About = () => {
             color: "#555",
           }}
         >
-          Le projet <strong>Foyer Amélioré Apeli</strong> vise à optimiser un dispositif de cuisson innovant développé par la doctorante <strong>Mme AMOUZOU-ATCHOE Akoua Gabriela</strong> de l'Université de Lomé. Notre équipe <strong>Elephant</strong> (Team 19) intègre l'Intelligence Artificielle, l'Internet des Objets et l'automatisation pour rendre la cuisson plus précise, efficiente et accessible.
+          Le projet <strong>Foyer Amélioré Apeli</strong> vise à optimiser un dispositif de cuisson innovant développé par la doctorante <strong>Mme AMOUZOU-ATCHOE Akoua Gabriela</strong> de l'Université de Lomé. Notre équipe <strong>Elephant</strong> (Team 19) travaille sur la reconception du foyer en intégrant l'utilisation de pellets issus de résidus agricoles, l'adaptation aux différentes tailles de marmites, l'Intelligence Artificielle, l'Internet des Objets et l'automatisation pour rendre la cuisson plus précise, efficiente et accessible.
         </p>
 
         <hr style={{ margin: "2rem auto", width: "80%" }} />
@@ -71,13 +71,15 @@ const About = () => {
             }}
           >
             {[
+              "Reconception du foyer Apeli",
+              "Pellets (résidus agricoles)",
+              "Adaptation multi-tailles marmites",
+              "Evacuation optimisée des cendres",
               "Chatbot IA cuisine (RAG + LLM)",
               "Capteurs de température connectés",
               "Capteurs de poids de marmite",
               "Serveur MCP pour ventilateur",
-              "Interface web responsive",
               "Contrôle automatique d'aération",
-              "Suivi en temps réel des données",
               "Recettes guidées par l'IA",
             ].map((skill) => (
               <li
@@ -107,7 +109,7 @@ const About = () => {
             color: "#555",
           }}
         >
-          Grâce à un dispositif connecté installé sur le foyer Apeli, nous captons en temps réel la température et le poids de la marmite. Notre IA, via un serveur MCP, contrôle le ventilateur d'aération pour maintenir la température idéale de cuisson — guidant l'utilisateur pas à pas dans la préparation de ses plats.
+          Notre approche est double : d'abord résoudre les limites du foyer actuel (alimentation en combustible, évacuation des cendres, adaptation aux tailles de marmites) par une reconception utilisant des pellets, puis intégrer un dispositif connecté avec capteurs IoT et une IA qui, via un serveur MCP, contrôle le ventilateur d'aération pour maintenir la température idéale de cuisson — guidant l'utilisateur pas à pas dans la préparation de ses plats.
         </p>
       </div>
     </section>
