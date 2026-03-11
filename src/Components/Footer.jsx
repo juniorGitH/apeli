@@ -45,6 +45,7 @@ const Footer = ({
             >
                 <Link to="/" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Accueil</Link>
                 {isLoggedIn && <Link to="/chatbot" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Chatbot IA</Link>}
+                <Link to="/foyer" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Foyer Apeli</Link>
                 <Link to="/doctorante" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Doctorante</Link>
                 <Link to="/equipe" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Équipe</Link>
             </div>

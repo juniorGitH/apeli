@@ -3,12 +3,112 @@
  * Team Elephant - Innovation Crunch Time 2026
  */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import arrowSvg from "../images/down-arrow.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const [showAuthPrompt, setShowAuthPrompt] = useState(false);
+
+  const handleChatbotClick = (e) => {
+    e.preventDefault();
+    const user = localStorage.getItem("currentUser");
+    if (user) {
+      navigate("/chatbot");
+    } else {
+      setShowAuthPrompt(true);
+    }
+  };
+
   return (
+    <>
+    {showAuthPrompt && (
+      <div
+        style={{
+          position: "fixed",
+          top: 0, left: 0, right: 0, bottom: 0,
+          background: "rgba(0,0,0,0.6)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 10000,
+        }}
+        onClick={() => setShowAuthPrompt(false)}
+      >
+        <div
+          style={{
+            background: "white",
+            borderRadius: "16px",
+            padding: "2rem",
+            maxWidth: "400px",
+            width: "90%",
+            textAlign: "center",
+            boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div
+            style={{
+              width: "60px",
+              height: "60px",
+              borderRadius: "50%",
+              background: "#e67e22",
+              margin: "0 auto 1rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "white",
+              fontSize: "1.5rem",
+              fontWeight: "700",
+            }}
+          >
+            !
+          </div>
+          <h3 style={{ fontSize: "1.2rem", color: "#2c3e50", marginBottom: "0.8rem" }}>
+            Connexion requise
+          </h3>
+          <p style={{ fontSize: "0.9rem", color: "#666", lineHeight: "1.6", marginBottom: "1.5rem" }}>
+            Pour acceder au Chatbot IA Cuisine, vous devez d'abord vous connecter ou creer un compte.
+          </p>
+          <div style={{ display: "flex", gap: "0.8rem", justifyContent: "center" }}>
+            <button
+              onClick={() => setShowAuthPrompt(false)}
+              style={{
+                padding: "0.6rem 1.2rem",
+                borderRadius: "8px",
+                border: "1px solid #ddd",
+                background: "white",
+                color: "#666",
+                cursor: "pointer",
+                fontSize: "0.85rem",
+              }}
+            >
+              Annuler
+            </button>
+            <button
+              onClick={() => {
+                setShowAuthPrompt(false);
+                // Dispatch event to open auth modal in Header
+                window.dispatchEvent(new CustomEvent("openAuthModal", { detail: { mode: "signup" } }));
+              }}
+              style={{
+                padding: "0.6rem 1.2rem",
+                borderRadius: "8px",
+                border: "none",
+                background: "#e67e22",
+                color: "white",
+                cursor: "pointer",
+                fontSize: "0.85rem",
+                fontWeight: "600",
+              }}
+            >
+              S'inscrire
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
     <section
       id="home"
       style={{
@@ -185,8 +285,8 @@ const Home = () => {
             flexWrap: "wrap",
           }}
         >
-          <Link
-            to="/chatbot"
+          <button
+            onClick={handleChatbotClick}
             style={{
               display: "inline-block",
               padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 2rem)",
@@ -199,10 +299,11 @@ const Home = () => {
               border: "2px solid #e67e22",
               fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
               whiteSpace: "nowrap",
+              cursor: "pointer",
             }}
           >
             Accéder au Chatbot
-          </Link>
+          </button>
 
           <a
             href="#about"
@@ -250,6 +351,7 @@ const Home = () => {
         </a>
       </div>
     </section>
+    </>
   );
 };
 

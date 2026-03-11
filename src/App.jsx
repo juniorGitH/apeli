@@ -14,6 +14,7 @@ import Portfolio from "./Components/Portfolio";
 import Chatbot from "./Components/Chatbot";
 import Doctorante from "./Components/Doctorante";
 import Team from "./Components/Team";
+import FoyerApeli from "./Components/FoyerApeli";
 import Admin from "./Components/Admin";
 import Dashboard from "./Components/Dashboard";
 import ClientProfile from "./Components/ClientProfile";
@@ -124,6 +125,13 @@ const App = () => {
         <Route path="/equipe" element={
           <Layout>
             <Team />
+          </Layout>
+        } />
+
+        {/* Page Foyer Apeli */}
+        <Route path="/foyer" element={
+          <Layout>
+            <FoyerApeli />
           </Layout>
         } />
         

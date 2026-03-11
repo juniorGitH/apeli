@@ -97,6 +97,17 @@ const Header = () => {
     };
   }, [isMenuOpen, showAuthModal]);
 
+  // Écouter l'événement d'ouverture du modal d'auth depuis d'autres composants
+  useEffect(() => {
+    const handleOpenAuth = (e) => {
+      const mode = e.detail?.mode;
+      setIsLoginMode(mode !== "signup");
+      setShowAuthModal(true);
+    };
+    window.addEventListener("openAuthModal", handleOpenAuth);
+    return () => window.removeEventListener("openAuthModal", handleOpenAuth);
+  }, []);
+
   // Gestion du clic sur Accueil
   const handleHomeClick = (e) => {
     if (e) e.preventDefault();
@@ -296,6 +307,14 @@ const Header = () => {
                   Chatbot
                 </Link>
               )}
+              
+              <Link 
+                to="/foyer" 
+                style={navLinkStyle(location.pathname === '/foyer')}
+                onClick={() => setShowProfileMenu(false)}
+              >
+                Foyer Apeli
+              </Link>
               
               <Link 
                 to="/doctorante" 
@@ -552,6 +571,16 @@ const Header = () => {
                 Chatbot IA
               </Link>
             )}
+            
+            <Link 
+              to="/foyer" 
+              onClick={() => setIsMenuOpen(false)}
+              style={mobileNavLinkStyle(location.pathname === '/foyer')}
+              className="mobile-menu-item"
+            >
+              <span className="menu-icon"></span>
+              Foyer Apeli
+            </Link>
             
             <Link 
               to="/doctorante" 
