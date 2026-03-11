@@ -27233,6 +27233,8 @@ var _doctorante = require("./Components/Doctorante");
 var _doctoranteDefault = parcelHelpers.interopDefault(_doctorante);
 var _team = require("./Components/Team");
 var _teamDefault = parcelHelpers.interopDefault(_team);
+var _foyerApeli = require("./Components/FoyerApeli");
+var _foyerApeliDefault = parcelHelpers.interopDefault(_foyerApeli);
 var _admin = require("./Components/Admin");
 var _adminDefault = parcelHelpers.interopDefault(_admin);
 var _dashboard = require("./Components/Dashboard");
@@ -27309,7 +27311,7 @@ const Layout = ({ children , noFooter  })=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 78,
+                lineNumber: 79,
                 columnNumber: 7
             }, undefined),
             children,
@@ -27318,13 +27320,13 @@ const Layout = ({ children , noFooter  })=>{
                 secondaryColor: secondaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 81,
+                lineNumber: 82,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 77,
+        lineNumber: 78,
         columnNumber: 5
     }, undefined);
 };
@@ -27340,17 +27342,17 @@ const HomePage = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 91,
+                lineNumber: 92,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 92,
+                lineNumber: 93,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 93,
+                lineNumber: 94,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27372,7 +27374,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 103,
+                    lineNumber: 104,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27383,7 +27385,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 110,
+                    lineNumber: 111,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27393,7 +27395,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 117,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27403,7 +27405,17 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 124,
+                    lineNumber: 125,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/foyer",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foyerApeliDefault.default), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 132,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27413,7 +27425,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 131,
+                    lineNumber: 139,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27423,7 +27435,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 138,
+                    lineNumber: 146,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27433,7 +27445,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 145,
+                    lineNumber: 153,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27443,7 +27455,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 152,
+                    lineNumber: 160,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27453,7 +27465,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 159,
+                    lineNumber: 167,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27463,7 +27475,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 166,
+                    lineNumber: 174,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27473,7 +27485,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 173,
+                    lineNumber: 181,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27483,7 +27495,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 180,
+                    lineNumber: 188,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27493,7 +27505,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 187,
+                    lineNumber: 195,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27503,18 +27515,18 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 194,
+                    lineNumber: 202,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 101,
+            lineNumber: 102,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 100,
+        lineNumber: 101,
         columnNumber: 5
     }, undefined);
 };
@@ -27530,7 +27542,7 @@ $RefreshReg$(_c2, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./Components/Admin":"alYNl","./Components/Dashboard":"01Qkc","./Components/ClientProfile":"029VM","./Components/MentionsLegales":"3uBgY","./Components/ConditionsGeneralesUtilisation":"8nqWj","./Components/PolitiqueProtectionDonneesPersonnelles":"fr2BO","./Components/PolitiqueCookies":"2xWzK","./Components/DeclarationAccessibilite":"fDXDV","./Components/Securite":"lQ4iy","./styles.css":"lW6qc","./utils/initializeData":"b6dt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/Chatbot":"18zBy","./Components/Doctorante":"e5Nk6","./Components/Team":"YKbWR"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./Components/Chatbot":"18zBy","./Components/Doctorante":"e5Nk6","./Components/Team":"YKbWR","./Components/FoyerApeli":"dLVXT","./Components/Admin":"alYNl","./Components/Dashboard":"01Qkc","./Components/ClientProfile":"029VM","./Components/MentionsLegales":"3uBgY","./Components/ConditionsGeneralesUtilisation":"8nqWj","./Components/PolitiqueProtectionDonneesPersonnelles":"fr2BO","./Components/PolitiqueCookies":"2xWzK","./Components/DeclarationAccessibilite":"fDXDV","./Components/Securite":"lQ4iy","./styles.css":"lW6qc","./utils/initializeData":"b6dt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -35085,6 +35097,19 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         columnNumber: 32
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/foyer",
+                        style: {
+                            color: "rgba(255,255,255,0.8)",
+                            textDecoration: "none",
+                            fontSize: "0.9rem"
+                        },
+                        children: "Foyer Apeli"
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 48,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/doctorante",
                         style: {
                             color: "rgba(255,255,255,0.8)",
@@ -35094,7 +35119,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Doctorante"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 48,
+                        lineNumber: 49,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35107,7 +35132,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "\xc9quipe"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 17
                     }, undefined)
                 ]
@@ -35136,7 +35161,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Mentions l\xe9gales"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 63,
+                        lineNumber: 64,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35149,7 +35174,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "CGU"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35162,7 +35187,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Donn\xe9es personnelles"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35175,7 +35200,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Cookies"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 66,
+                        lineNumber: 67,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35188,13 +35213,13 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "S\xe9curit\xe9"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 53,
+                lineNumber: 54,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35213,7 +35238,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Team Elephant — \xc9quipe 19"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 77,
+                        lineNumber: 78,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -35228,7 +35253,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Innovation Crunch Time 2026 • Universit\xe9 de Lom\xe9"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 87,
+                        lineNumber: 88,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -35242,13 +35267,13 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Optimisation du Foyer Am\xe9lior\xe9 Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 99,
+                        lineNumber: 100,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 71,
+                lineNumber: 72,
                 columnNumber: 13
             }, undefined)
         ]
@@ -35355,6 +35380,16 @@ const Header = ()=>{
         isMenuOpen,
         showAuthModal
     ]);
+    // Écouter l'événement d'ouverture du modal d'auth depuis d'autres composants
+    (0, _react.useEffect)(()=>{
+        const handleOpenAuth = (e)=>{
+            const mode = e.detail?.mode;
+            setIsLoginMode(mode !== "signup");
+            setShowAuthModal(true);
+        };
+        window.addEventListener("openAuthModal", handleOpenAuth);
+        return ()=>window.removeEventListener("openAuthModal", handleOpenAuth);
+    }, []);
     // Gestion du clic sur Accueil
     const handleHomeClick = (e)=>{
         if (e) e.preventDefault();
@@ -35531,17 +35566,17 @@ const Header = ()=>{
                                 loading: "eager"
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 264,
+                                lineNumber: 275,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 253,
+                            lineNumber: 264,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 252,
+                        lineNumber: 263,
                         columnNumber: 9
                     }, undefined),
                     !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -35556,7 +35591,7 @@ const Header = ()=>{
                                         children: "Accueil"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 282,
+                                        lineNumber: 293,
                                         columnNumber: 15
                                     }, undefined),
                                     currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35566,8 +35601,18 @@ const Header = ()=>{
                                         children: "Chatbot"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 291,
+                                        lineNumber: 302,
                                         columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/foyer",
+                                        style: navLinkStyle(location.pathname === "/foyer"),
+                                        onClick: ()=>setShowProfileMenu(false),
+                                        children: "Foyer Apeli"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Header.jsx",
+                                        lineNumber: 311,
+                                        columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/doctorante",
@@ -35576,7 +35621,7 @@ const Header = ()=>{
                                         children: "Doctorante"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 300,
+                                        lineNumber: 319,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35586,13 +35631,13 @@ const Header = ()=>{
                                         children: "\xc9quipe"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 308,
+                                        lineNumber: 327,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 281,
+                                lineNumber: 292,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35613,7 +35658,7 @@ const Header = ()=>{
                                             children: currentUser.name.charAt(0).toUpperCase()
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 321,
+                                            lineNumber: 340,
                                             columnNumber: 19
                                         }, undefined),
                                         showProfileMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35628,7 +35673,7 @@ const Header = ()=>{
                                                             children: currentUser.name
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 338,
+                                                            lineNumber: 357,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35636,7 +35681,7 @@ const Header = ()=>{
                                                             children: currentUser.email
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 339,
+                                                            lineNumber: 358,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35644,13 +35689,13 @@ const Header = ()=>{
                                                             children: currentUser.userType === "admin" ? "Administrateur" : "Client"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 340,
+                                                            lineNumber: 359,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 337,
+                                                    lineNumber: 356,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35668,20 +35713,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 356,
+                                                                            lineNumber: 375,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Chatbot Cuisine"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 357,
+                                                                            lineNumber: 376,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 348,
+                                                                    lineNumber: 367,
                                                                     columnNumber: 29
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35694,20 +35739,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 367,
+                                                                            lineNumber: 386,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Mon Tableau de Bord"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 368,
+                                                                            lineNumber: 387,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 359,
+                                                                    lineNumber: 378,
                                                                     columnNumber: 29
                                                                 }, undefined)
                                                             ]
@@ -35723,20 +35768,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 381,
+                                                                            lineNumber: 400,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Administration"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 382,
+                                                                            lineNumber: 401,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 373,
+                                                                    lineNumber: 392,
                                                                     columnNumber: 29
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35749,20 +35794,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 392,
+                                                                            lineNumber: 411,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Chatbot Cuisine"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 393,
+                                                                            lineNumber: 412,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 384,
+                                                                    lineNumber: 403,
                                                                     columnNumber: 29
                                                                 }, undefined)
                                                             ]
@@ -35771,7 +35816,7 @@ const Header = ()=>{
                                                             className: "menu-divider"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 398,
+                                                            lineNumber: 417,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35784,26 +35829,26 @@ const Header = ()=>{
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 408,
+                                                                    lineNumber: 427,
                                                                     columnNumber: 27
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                     children: "Profile"
                                                                 }, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 409,
+                                                                    lineNumber: 428,
                                                                     columnNumber: 27
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 400,
+                                                            lineNumber: 419,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 345,
+                                                    lineNumber: 364,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35814,37 +35859,37 @@ const Header = ()=>{
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                 fileName: "src/Components/Header.jsx",
-                                                                lineNumber: 418,
+                                                                lineNumber: 437,
                                                                 columnNumber: 27
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                 children: "D\xe9connexion"
                                                             }, void 0, false, {
                                                                 fileName: "src/Components/Header.jsx",
-                                                                lineNumber: 419,
+                                                                lineNumber: 438,
                                                                 columnNumber: 27
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/Components/Header.jsx",
-                                                        lineNumber: 414,
+                                                        lineNumber: 433,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 413,
+                                                    lineNumber: 432,
                                                     columnNumber: 23
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 336,
+                                            lineNumber: 355,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 320,
+                                    lineNumber: 339,
                                     columnNumber: 17
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "auth-buttons",
@@ -35860,7 +35905,7 @@ const Header = ()=>{
                                             children: "Connexion"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 427,
+                                            lineNumber: 446,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35874,18 +35919,18 @@ const Header = ()=>{
                                             children: "Inscription"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 438,
+                                            lineNumber: 457,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 426,
+                                    lineNumber: 445,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 318,
+                                lineNumber: 337,
                                 columnNumber: 13
                             }, undefined)
                         ]
@@ -35908,12 +35953,12 @@ const Header = ()=>{
                                             children: "Connexion"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 468,
+                                            lineNumber: 487,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 460,
+                                        lineNumber: 479,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35928,18 +35973,18 @@ const Header = ()=>{
                                             children: "Inscription"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 478,
+                                            lineNumber: 497,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 470,
+                                        lineNumber: 489,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 459,
+                                lineNumber: 478,
                                 columnNumber: 15
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35951,12 +35996,12 @@ const Header = ()=>{
                                     children: currentUser.name.charAt(0).toUpperCase()
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 485,
+                                    lineNumber: 504,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 484,
+                                lineNumber: 503,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35969,33 +36014,33 @@ const Header = ()=>{
                                         className: `hamburger-line ${isMenuOpen ? "active" : ""}`
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 502,
+                                        lineNumber: 521,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         className: `hamburger-line ${isMenuOpen ? "active" : ""}`
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 503,
+                                        lineNumber: 522,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         className: `hamburger-line ${isMenuOpen ? "active" : ""}`
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 504,
+                                        lineNumber: 523,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 496,
+                                lineNumber: 515,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 457,
+                        lineNumber: 476,
                         columnNumber: 11
                     }, undefined),
                     isMobile && isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36003,7 +36048,7 @@ const Header = ()=>{
                         onClick: ()=>setIsMenuOpen(false)
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 511,
+                        lineNumber: 530,
                         columnNumber: 11
                     }, undefined),
                     isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36017,7 +36062,7 @@ const Header = ()=>{
                                         children: currentUser.name.charAt(0).toUpperCase()
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 522,
+                                        lineNumber: 541,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36028,7 +36073,7 @@ const Header = ()=>{
                                                 children: currentUser.name
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 526,
+                                                lineNumber: 545,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36036,7 +36081,7 @@ const Header = ()=>{
                                                 children: currentUser.email
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 527,
+                                                lineNumber: 546,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36044,19 +36089,19 @@ const Header = ()=>{
                                                 children: currentUser.userType === "admin" ? "Administrateur" : "Client"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 528,
+                                                lineNumber: 547,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 525,
+                                        lineNumber: 544,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 521,
+                                lineNumber: 540,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36068,14 +36113,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 540,
+                                        lineNumber: 559,
                                         columnNumber: 15
                                     }, undefined),
                                     "Accueil"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 535,
+                                lineNumber: 554,
                                 columnNumber: 13
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36088,15 +36133,35 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 551,
+                                        lineNumber: 570,
                                         columnNumber: 17
                                     }, undefined),
                                     "Chatbot IA"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 545,
+                                lineNumber: 564,
                                 columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/foyer",
+                                onClick: ()=>setIsMenuOpen(false),
+                                style: mobileNavLinkStyle(location.pathname === "/foyer"),
+                                className: "mobile-menu-item",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "menu-icon"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Header.jsx",
+                                        lineNumber: 581,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    "Foyer Apeli"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 575,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/doctorante",
@@ -36108,14 +36173,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 562,
+                                        lineNumber: 591,
                                         columnNumber: 15
                                     }, undefined),
                                     "Doctorante"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 556,
+                                lineNumber: 585,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36128,14 +36193,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 572,
+                                        lineNumber: 601,
                                         columnNumber: 15
                                     }, undefined),
                                     "\xc9quipe"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 566,
+                                lineNumber: 595,
                                 columnNumber: 13
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -36151,14 +36216,14 @@ const Header = ()=>{
                                                     className: "menu-icon"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 586,
+                                                    lineNumber: 615,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 "Administration"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 580,
+                                            lineNumber: 609,
                                             columnNumber: 21
                                         }, undefined)
                                     }, void 0, false) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -36172,14 +36237,14 @@ const Header = ()=>{
                                                     className: "menu-icon"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 598,
+                                                    lineNumber: 627,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 "Mon Tableau de Bord"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 592,
+                                            lineNumber: 621,
                                             columnNumber: 21
                                         }, undefined)
                                     }, void 0, false),
@@ -36193,14 +36258,14 @@ const Header = ()=>{
                                                 className: "menu-icon"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 610,
+                                                lineNumber: 639,
                                                 columnNumber: 19
                                             }, undefined),
                                             "Profil"
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 604,
+                                        lineNumber: 633,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36211,19 +36276,19 @@ const Header = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 619,
+                                                    lineNumber: 648,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 "D\xe9connexion"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 615,
+                                            lineNumber: 644,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 614,
+                                        lineNumber: 643,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
@@ -36231,13 +36296,13 @@ const Header = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 519,
+                        lineNumber: 538,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 250,
+                lineNumber: 261,
                 columnNumber: 7
             }, undefined),
             showAuthModal && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36255,7 +36320,7 @@ const Header = ()=>{
                                     children: isLoginMode ? "Connexion" : "Inscription"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 636,
+                                    lineNumber: 665,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36273,13 +36338,13 @@ const Header = ()=>{
                                     children: "\xd7"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 637,
+                                    lineNumber: 666,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 635,
+                            lineNumber: 664,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36291,7 +36356,7 @@ const Header = ()=>{
                                     children: "Connexion"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 650,
+                                    lineNumber: 679,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36300,13 +36365,13 @@ const Header = ()=>{
                                     children: "Inscription"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 656,
+                                    lineNumber: 685,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 649,
+                            lineNumber: 678,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -36320,7 +36385,7 @@ const Header = ()=>{
                                             children: "Nom complet"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 667,
+                                            lineNumber: 696,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36334,13 +36399,13 @@ const Header = ()=>{
                                             required: !isLoginMode
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 668,
+                                            lineNumber: 697,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 666,
+                                    lineNumber: 695,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36350,7 +36415,7 @@ const Header = ()=>{
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 679,
+                                            lineNumber: 708,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36364,13 +36429,13 @@ const Header = ()=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 680,
+                                            lineNumber: 709,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 678,
+                                    lineNumber: 707,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36380,7 +36445,7 @@ const Header = ()=>{
                                             children: "Mot de passe"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 690,
+                                            lineNumber: 719,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36394,13 +36459,13 @@ const Header = ()=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 691,
+                                            lineNumber: 720,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 689,
+                                    lineNumber: 718,
                                     columnNumber: 15
                                 }, undefined),
                                 !isLoginMode && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36410,7 +36475,7 @@ const Header = ()=>{
                                             children: "Type de compte"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 702,
+                                            lineNumber: 731,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -36425,7 +36490,7 @@ const Header = ()=>{
                                                     children: "Utilisateur (acc\xe8s chatbot)"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 707,
+                                                    lineNumber: 736,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -36433,13 +36498,13 @@ const Header = ()=>{
                                                     children: "Administrateur (r\xe9serv\xe9)"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 708,
+                                                    lineNumber: 737,
                                                     columnNumber: 21
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 703,
+                                            lineNumber: 732,
                                             columnNumber: 19
                                         }, undefined),
                                         authData.userType === "admin" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36447,13 +36512,13 @@ const Header = ()=>{
                                             children: "Note: Ce type de compte est r\xe9serv\xe9 \xe0 l'administrateur."
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 711,
+                                            lineNumber: 740,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 701,
+                                    lineNumber: 730,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36462,13 +36527,13 @@ const Header = ()=>{
                                     children: isLoginMode ? "Se connecter" : "S'inscrire"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 718,
+                                    lineNumber: 747,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 664,
+                            lineNumber: 693,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36480,24 +36545,24 @@ const Header = ()=>{
                                     children: isLoginMode ? "Inscrivez-vous" : "Connectez-vous"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 725,
+                                    lineNumber: 754,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 723,
+                            lineNumber: 752,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/Header.jsx",
-                    lineNumber: 634,
+                    lineNumber: 663,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 631,
+                lineNumber: 660,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
@@ -37292,13 +37357,13 @@ const Header = ()=>{
       `
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 734,
+                lineNumber: 763,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Header, "Rb4q8pbHgJbgwfUy1RmV/Ij3PTA=", false, function() {
+_s(Header, "0fuXJWYF98rDH+dlgxp+EToTY04=", false, function() {
     return [
         (0, _reactRouterDom.useLocation),
         (0, _reactRouterDom.useNavigate)
@@ -37369,327 +37434,485 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _downArrowSvg = require("../images/down-arrow.svg");
 var _downArrowSvgDefault = parcelHelpers.interopDefault(_downArrowSvg);
 var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const Home = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        id: "home",
-        style: {
-            position: "relative",
-            minHeight: "100vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden",
-            background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
-            paddingTop: "70px"
-        },
+    _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const [showAuthPrompt, setShowAuthPrompt] = (0, _react.useState)(false);
+    const handleChatbotClick = (e)=>{
+        e.preventDefault();
+        const user = localStorage.getItem("currentUser");
+        if (user) navigate("/chatbot");
+        else setShowAuthPrompt(true);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            showAuthPrompt && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
-                    position: "absolute",
-                    top: "10%",
-                    right: "10%",
-                    width: "clamp(100px, 20vw, 200px)",
-                    height: "clamp(100px, 20vw, 200px)",
-                    borderRadius: "50%",
-                    background: "rgba(230, 126, 34, 0.1)",
-                    filter: "blur(40px)"
-                }
-            }, void 0, false, {
-                fileName: "src/Components/Home.jsx",
-                lineNumber: 26,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    position: "absolute",
-                    bottom: "20%",
-                    left: "5%",
-                    width: "clamp(80px, 15vw, 150px)",
-                    height: "clamp(80px, 15vw, 150px)",
-                    borderRadius: "50%",
-                    background: "rgba(243, 156, 18, 0.08)",
-                    filter: "blur(30px)"
-                }
-            }, void 0, false, {
-                fileName: "src/Components/Home.jsx",
-                lineNumber: 38,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    position: "relative",
-                    zIndex: 3,
-                    width: "100%",
-                    maxWidth: "900px",
-                    margin: "0 auto",
-                    padding: "clamp(1rem, 4vw, 2rem)",
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: "rgba(0,0,0,0.6)",
                     display: "flex",
-                    flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
-                    textAlign: "center",
-                    boxSizing: "border-box"
+                    zIndex: 10000
                 },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            fontSize: "clamp(0.9rem, 2vw, 1.2rem)",
-                            marginBottom: "0.8rem",
-                            color: "#e67e22",
-                            fontWeight: "700",
-                            letterSpacing: "0.2em"
-                        },
-                        children: "APELI"
-                    }, void 0, false, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 69,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        style: {
-                            fontSize: "clamp(1.6rem, 5vw, 3rem)",
-                            marginBottom: "0.5rem",
-                            color: "white",
-                            fontWeight: "700",
-                            lineHeight: "1.2"
-                        },
-                        children: [
-                            "Foyer Am\xe9lior\xe9",
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                style: {
-                                    color: "#e67e22"
-                                },
-                                children: "Apeli"
-                            }, void 0, false, {
-                                fileName: "src/Components/Home.jsx",
-                                lineNumber: 87,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 77,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            fontSize: "clamp(0.9rem, 2.5vw, 1.4rem)",
-                            color: "rgba(255,255,255,0.8)",
-                            fontWeight: "400",
-                            marginBottom: "0.8rem",
-                            lineHeight: "1.4"
-                        },
-                        children: "Cuisson Intelligente Assist\xe9e par IA"
-                    }, void 0, false, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 90,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "clamp(0.8rem, 1.5vw, 0.95rem)",
-                            color: "rgba(255,255,255,0.6)",
-                            marginBottom: "0.3rem"
-                        },
-                        children: "Team Elephant — \xc9quipe 19 | Innovation Crunch Time 2026"
-                    }, void 0, false, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 102,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "clamp(0.75rem, 1.3vw, 0.9rem)",
-                            color: "rgba(255,255,255,0.5)",
-                            marginBottom: "1.5rem"
-                        },
-                        children: "Universit\xe9 de Lom\xe9"
-                    }, void 0, false, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 111,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "flex",
-                            gap: "clamp(1rem, 3vw, 2rem)",
-                            justifyContent: "center",
-                            flexWrap: "wrap",
-                            marginBottom: "2rem"
-                        },
-                        children: [
-                            {
-                                label: "IA Cuisine"
+                onClick: ()=>setShowAuthPrompt(false),
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    style: {
+                        background: "white",
+                        borderRadius: "16px",
+                        padding: "2rem",
+                        maxWidth: "400px",
+                        width: "90%",
+                        textAlign: "center",
+                        boxShadow: "0 20px 60px rgba(0,0,0,0.3)"
+                    },
+                    onClick: (e)=>e.stopPropagation(),
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            style: {
+                                width: "60px",
+                                height: "60px",
+                                borderRadius: "50%",
+                                background: "#e67e22",
+                                margin: "0 auto 1rem",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                color: "white",
+                                fontSize: "1.5rem",
+                                fontWeight: "700"
                             },
-                            {
-                                label: "Capteurs IoT"
+                            children: "!"
+                        }, void 0, false, {
+                            fileName: "src/Components/Home.jsx",
+                            lineNumber: 51,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            style: {
+                                fontSize: "1.2rem",
+                                color: "#2c3e50",
+                                marginBottom: "0.8rem"
                             },
-                            {
-                                label: "Ventilation MCP"
+                            children: "Connexion requise"
+                        }, void 0, false, {
+                            fileName: "src/Components/Home.jsx",
+                            lineNumber: 68,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            style: {
+                                fontSize: "0.9rem",
+                                color: "#666",
+                                lineHeight: "1.6",
+                                marginBottom: "1.5rem"
                             },
-                            {
-                                label: "Interface Web"
-                            }, 
-                        ].map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    alignItems: "center",
-                                    gap: "0.4rem"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            width: "clamp(45px, 8vw, 60px)",
-                                            height: "clamp(45px, 8vw, 60px)",
-                                            borderRadius: "50%",
-                                            background: "rgba(230, 126, 34, 0.15)",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            fontSize: "clamp(0.55rem, 1.2vw, 0.7rem)",
-                                            color: "#e67e22",
-                                            fontWeight: "700",
-                                            textTransform: "uppercase",
-                                            textAlign: "center",
-                                            lineHeight: "1.2",
-                                            padding: "0.2rem"
-                                        },
-                                        children: item.label.split(" ")[0]
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Home.jsx",
-                                        lineNumber: 146,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            color: "rgba(255,255,255,0.7)",
-                                            fontSize: "clamp(0.7rem, 1.3vw, 0.8rem)",
-                                            fontWeight: "500"
-                                        },
-                                        children: item.label
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Home.jsx",
-                                        lineNumber: 166,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, item.label, true, {
-                                fileName: "src/Components/Home.jsx",
-                                lineNumber: 137,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 122,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "flex",
-                            gap: "clamp(0.6rem, 2vw, 1.2rem)",
-                            justifyContent: "center",
-                            flexWrap: "wrap"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/chatbot",
-                                style: {
-                                    display: "inline-block",
-                                    padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 2rem)",
-                                    backgroundColor: "#e67e22",
-                                    color: "white",
-                                    textDecoration: "none",
-                                    borderRadius: "30px",
-                                    fontWeight: "600",
-                                    transition: "all 0.3s ease",
-                                    border: "2px solid #e67e22",
-                                    fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
-                                    whiteSpace: "nowrap"
-                                },
-                                children: "Acc\xe9der au Chatbot"
-                            }, void 0, false, {
-                                fileName: "src/Components/Home.jsx",
-                                lineNumber: 188,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "#about",
-                                style: {
-                                    display: "inline-block",
-                                    padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 2rem)",
-                                    backgroundColor: "transparent",
-                                    color: "white",
-                                    textDecoration: "none",
-                                    borderRadius: "30px",
-                                    fontWeight: "500",
-                                    transition: "all 0.3s ease",
-                                    border: "2px solid rgba(255,255,255,0.3)",
-                                    fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
-                                    whiteSpace: "nowrap"
-                                },
-                                children: "En savoir plus"
-                            }, void 0, false, {
-                                fileName: "src/Components/Home.jsx",
-                                lineNumber: 207,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 180,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Home.jsx",
-                lineNumber: 52,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    position: "absolute",
-                    bottom: "clamp(1rem, 3vh, 2rem)",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    zIndex: 4,
-                    animation: "bounce 2s infinite"
-                },
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "#about",
-                    "aria-label": "D\xe9couvrir le projet",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _downArrowSvgDefault.default),
-                        alt: "D\xe9filer vers le bas",
-                        style: {
-                            height: "clamp(1.5rem, 4vw, 2.5rem)",
-                            width: "clamp(1.5rem, 4vw, 2.5rem)",
-                            opacity: "0.6",
-                            filter: "brightness(10)"
-                        }
-                    }, void 0, false, {
-                        fileName: "src/Components/Home.jsx",
-                        lineNumber: 240,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
+                            children: "Pour acceder au Chatbot IA Cuisine, vous devez d'abord vous connecter ou creer un compte."
+                        }, void 0, false, {
+                            fileName: "src/Components/Home.jsx",
+                            lineNumber: 71,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            style: {
+                                display: "flex",
+                                gap: "0.8rem",
+                                justifyContent: "center"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>setShowAuthPrompt(false),
+                                    style: {
+                                        padding: "0.6rem 1.2rem",
+                                        borderRadius: "8px",
+                                        border: "1px solid #ddd",
+                                        background: "white",
+                                        color: "#666",
+                                        cursor: "pointer",
+                                        fontSize: "0.85rem"
+                                    },
+                                    children: "Annuler"
+                                }, void 0, false, {
+                                    fileName: "src/Components/Home.jsx",
+                                    lineNumber: 75,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>{
+                                        setShowAuthPrompt(false);
+                                        // Dispatch event to open auth modal in Header
+                                        window.dispatchEvent(new CustomEvent("openAuthModal", {
+                                            detail: {
+                                                mode: "signup"
+                                            }
+                                        }));
+                                    },
+                                    style: {
+                                        padding: "0.6rem 1.2rem",
+                                        borderRadius: "8px",
+                                        border: "none",
+                                        background: "#e67e22",
+                                        color: "white",
+                                        cursor: "pointer",
+                                        fontSize: "0.85rem",
+                                        fontWeight: "600"
+                                    },
+                                    children: "S'inscrire"
+                                }, void 0, false, {
+                                    fileName: "src/Components/Home.jsx",
+                                    lineNumber: 89,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/Home.jsx",
+                            lineNumber: 74,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 239,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 229,
+                lineNumber: 27,
                 columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                id: "home",
+                style: {
+                    position: "relative",
+                    minHeight: "100vh",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    overflow: "hidden",
+                    background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+                    paddingTop: "70px"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            position: "absolute",
+                            top: "10%",
+                            right: "10%",
+                            width: "clamp(100px, 20vw, 200px)",
+                            height: "clamp(100px, 20vw, 200px)",
+                            borderRadius: "50%",
+                            background: "rgba(230, 126, 34, 0.1)",
+                            filter: "blur(40px)"
+                        }
+                    }, void 0, false, {
+                        fileName: "src/Components/Home.jsx",
+                        lineNumber: 126,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            position: "absolute",
+                            bottom: "20%",
+                            left: "5%",
+                            width: "clamp(80px, 15vw, 150px)",
+                            height: "clamp(80px, 15vw, 150px)",
+                            borderRadius: "50%",
+                            background: "rgba(243, 156, 18, 0.08)",
+                            filter: "blur(30px)"
+                        }
+                    }, void 0, false, {
+                        fileName: "src/Components/Home.jsx",
+                        lineNumber: 138,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            position: "relative",
+                            zIndex: 3,
+                            width: "100%",
+                            maxWidth: "900px",
+                            margin: "0 auto",
+                            padding: "clamp(1rem, 4vw, 2rem)",
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            textAlign: "center",
+                            boxSizing: "border-box"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    fontSize: "clamp(0.9rem, 2vw, 1.2rem)",
+                                    marginBottom: "0.8rem",
+                                    color: "#e67e22",
+                                    fontWeight: "700",
+                                    letterSpacing: "0.2em"
+                                },
+                                children: "APELI"
+                            }, void 0, false, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 169,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                style: {
+                                    fontSize: "clamp(1.6rem, 5vw, 3rem)",
+                                    marginBottom: "0.5rem",
+                                    color: "white",
+                                    fontWeight: "700",
+                                    lineHeight: "1.2"
+                                },
+                                children: [
+                                    "Foyer Am\xe9lior\xe9",
+                                    " ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            color: "#e67e22"
+                                        },
+                                        children: "Apeli"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Home.jsx",
+                                        lineNumber: 187,
+                                        columnNumber: 11
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 177,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                style: {
+                                    fontSize: "clamp(0.9rem, 2.5vw, 1.4rem)",
+                                    color: "rgba(255,255,255,0.8)",
+                                    fontWeight: "400",
+                                    marginBottom: "0.8rem",
+                                    lineHeight: "1.4"
+                                },
+                                children: "Cuisson Intelligente Assist\xe9e par IA"
+                            }, void 0, false, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 190,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "clamp(0.8rem, 1.5vw, 0.95rem)",
+                                    color: "rgba(255,255,255,0.6)",
+                                    marginBottom: "0.3rem"
+                                },
+                                children: "Team Elephant — \xc9quipe 19 | Innovation Crunch Time 2026"
+                            }, void 0, false, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 202,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "clamp(0.75rem, 1.3vw, 0.9rem)",
+                                    color: "rgba(255,255,255,0.5)",
+                                    marginBottom: "1.5rem"
+                                },
+                                children: "Universit\xe9 de Lom\xe9"
+                            }, void 0, false, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 211,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    gap: "clamp(1rem, 3vw, 2rem)",
+                                    justifyContent: "center",
+                                    flexWrap: "wrap",
+                                    marginBottom: "2rem"
+                                },
+                                children: [
+                                    {
+                                        label: "IA Cuisine"
+                                    },
+                                    {
+                                        label: "Capteurs IoT"
+                                    },
+                                    {
+                                        label: "Ventilation MCP"
+                                    },
+                                    {
+                                        label: "Interface Web"
+                                    }, 
+                                ].map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            gap: "0.4rem"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                style: {
+                                                    width: "clamp(45px, 8vw, 60px)",
+                                                    height: "clamp(45px, 8vw, 60px)",
+                                                    borderRadius: "50%",
+                                                    background: "rgba(230, 126, 34, 0.15)",
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    justifyContent: "center",
+                                                    fontSize: "clamp(0.55rem, 1.2vw, 0.7rem)",
+                                                    color: "#e67e22",
+                                                    fontWeight: "700",
+                                                    textTransform: "uppercase",
+                                                    textAlign: "center",
+                                                    lineHeight: "1.2",
+                                                    padding: "0.2rem"
+                                                },
+                                                children: item.label.split(" ")[0]
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Home.jsx",
+                                                lineNumber: 246,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                style: {
+                                                    color: "rgba(255,255,255,0.7)",
+                                                    fontSize: "clamp(0.7rem, 1.3vw, 0.8rem)",
+                                                    fontWeight: "500"
+                                                },
+                                                children: item.label
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Home.jsx",
+                                                lineNumber: 266,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, item.label, true, {
+                                        fileName: "src/Components/Home.jsx",
+                                        lineNumber: 237,
+                                        columnNumber: 13
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 222,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    gap: "clamp(0.6rem, 2vw, 1.2rem)",
+                                    justifyContent: "center",
+                                    flexWrap: "wrap"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        onClick: handleChatbotClick,
+                                        style: {
+                                            display: "inline-block",
+                                            padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 2rem)",
+                                            backgroundColor: "#e67e22",
+                                            color: "white",
+                                            textDecoration: "none",
+                                            borderRadius: "30px",
+                                            fontWeight: "600",
+                                            transition: "all 0.3s ease",
+                                            border: "2px solid #e67e22",
+                                            fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
+                                            whiteSpace: "nowrap",
+                                            cursor: "pointer"
+                                        },
+                                        children: "Acc\xe9der au Chatbot"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Home.jsx",
+                                        lineNumber: 288,
+                                        columnNumber: 11
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "#about",
+                                        style: {
+                                            display: "inline-block",
+                                            padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 2rem)",
+                                            backgroundColor: "transparent",
+                                            color: "white",
+                                            textDecoration: "none",
+                                            borderRadius: "30px",
+                                            fontWeight: "500",
+                                            transition: "all 0.3s ease",
+                                            border: "2px solid rgba(255,255,255,0.3)",
+                                            fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
+                                            whiteSpace: "nowrap"
+                                        },
+                                        children: "En savoir plus"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Home.jsx",
+                                        lineNumber: 308,
+                                        columnNumber: 11
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 280,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Home.jsx",
+                        lineNumber: 152,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            position: "absolute",
+                            bottom: "clamp(1rem, 3vh, 2rem)",
+                            left: "50%",
+                            transform: "translateX(-50%)",
+                            zIndex: 4,
+                            animation: "bounce 2s infinite"
+                        },
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "#about",
+                            "aria-label": "D\xe9couvrir le projet",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _downArrowSvgDefault.default),
+                                alt: "D\xe9filer vers le bas",
+                                style: {
+                                    height: "clamp(1.5rem, 4vw, 2.5rem)",
+                                    width: "clamp(1.5rem, 4vw, 2.5rem)",
+                                    opacity: "0.6",
+                                    filter: "brightness(10)"
+                                }
+                            }, void 0, false, {
+                                fileName: "src/Components/Home.jsx",
+                                lineNumber: 341,
+                                columnNumber: 11
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/Home.jsx",
+                            lineNumber: 340,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Home.jsx",
+                        lineNumber: 330,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Home.jsx",
+                lineNumber: 112,
+                columnNumber: 5
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "src/Components/Home.jsx",
-        lineNumber: 12,
-        columnNumber: 5
-    }, undefined);
+    }, void 0, true);
 };
+_s(Home, "OUI+KGTJSWYAvY3WqGCzTFov4x0=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = Home;
 exports.default = Home;
 var _c;
@@ -37700,7 +37923,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/down-arrow.svg":"b5nCi","react-router-dom":"9xmpe"}],"b5nCi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/down-arrow.svg":"b5nCi","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b5nCi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "down-arrow.1037091f.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lCaEt":[function(require,module,exports) {
@@ -37901,7 +38124,2867 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"alYNl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"18zBy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a1f1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a1f1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Chatbot component - Interface style ChatGPT pour la cuisine connectée
+ * Connecté au foyer amélioré Apeli via MCP Server
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const Chatbot = ()=>{
+    _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const [messages, setMessages] = (0, _react.useState)([]);
+    const [input, setInput] = (0, _react.useState)("");
+    const [isLoading, setIsLoading] = (0, _react.useState)(false);
+    const [conversations, setConversations] = (0, _react.useState)([
+        {
+            id: 1,
+            title: "Nouvelle conversation",
+            date: new Date().toISOString()
+        }, 
+    ]);
+    const [activeConversation, setActiveConversation] = (0, _react.useState)(1);
+    const [sidebarOpen, setSidebarOpen] = (0, _react.useState)(false);
+    const [isMobile, setIsMobile] = (0, _react.useState)(false);
+    // Données IoT simulées du foyer Apeli
+    const [iotData, setIotData] = (0, _react.useState)({
+        temperature: 180,
+        poids: 2.5,
+        ventilateur: "auto",
+        statut: "connect\xe9"
+    });
+    const messagesEndRef = (0, _react.useRef)(null);
+    const inputRef = (0, _react.useRef)(null);
+    // Vérifier l'authentification
+    (0, _react.useEffect)(()=>{
+        const savedUser = localStorage.getItem("currentUser");
+        if (!savedUser) {
+            navigate("/");
+            return;
+        }
+    }, [
+        navigate
+    ]);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            const mobile = window.innerWidth < 768;
+            setIsMobile(mobile);
+            if (!mobile) setSidebarOpen(true);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
+    // Simuler les mises à jour IoT en temps réel
+    (0, _react.useEffect)(()=>{
+        const interval = setInterval(()=>{
+            setIotData((prev)=>({
+                    ...prev,
+                    temperature: Math.round(prev.temperature + (Math.random() - 0.5) * 5),
+                    poids: Math.round((prev.poids + (Math.random() - 0.5) * 0.1) * 100) / 100
+                }));
+        }, 3000);
+        return ()=>clearInterval(interval);
+    }, []);
+    // Auto-scroll vers le dernier message
+    (0, _react.useEffect)(()=>{
+        messagesEndRef.current?.scrollIntoView({
+            behavior: "smooth"
+        });
+    }, [
+        messages
+    ]);
+    // Message de bienvenue
+    (0, _react.useEffect)(()=>{
+        setMessages([
+            {
+                id: 1,
+                role: "assistant",
+                content: "Bonjour ! Je suis **ApeliChef**, votre assistant cuisine intelligent connect\xe9 au foyer am\xe9lior\xe9 Apeli.\n\nJe peux vous aider \xe0 :\n- **Cuire des plats** en contr\xf4lant la temp\xe9rature du foyer\n- **Surveiller** la temp\xe9rature et le poids de votre marmite en temps r\xe9el\n- **Ajuster le ventilateur** d'a\xe9ration via le serveur MCP\n- **Vous guider** \xe9tape par \xe9tape dans vos recettes\n\nQue souhaitez-vous cuisiner aujourd'hui ?",
+                timestamp: new Date().toISOString()
+            }, 
+        ]);
+    }, []);
+    // Réponses simulées du LLM cuisine
+    const getAIResponse = (userMessage)=>{
+        const msg = userMessage.toLowerCase();
+        if (msg.includes("riz") || msg.includes("rice")) return `## Cuisson du Riz au Foyer Apeli\n\n**Température recommandée :** 100°C\n**Temps de cuisson :** 20-25 minutes\n\n### Étapes :\n1. Versez **${iotData.poids}kg** d'eau dans la marmite (détecté par le capteur)\n2. *J'ajuste le ventilateur à 70% pour atteindre 100°C*\n3. Quand l'eau bout, ajoutez le riz lavé\n4. Réduisez à feu doux — *ventilateur à 30%*\n5. Couvrez et laissez cuire 20 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 70%*`;
+        if (msg.includes("p\xe2te") || msg.includes("pate") || msg.includes("fufu")) return `## Préparation de la Pâte (Fufu)\n\n**Température recommandée :** 95-100°C\n**Temps :** 15-20 minutes\n\n### Étapes :\n1. L'eau est en cours de chauffe sur le foyer\n2. *Ventilateur ajusté à 80% pour ébullition rapide*\n3. Versez la farine progressivement en remuant\n4. Réduisez le feu — *ventilateur à 40%*\n5. Tournez vigoureusement jusqu'à consistance lisse\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 80%*`;
+        if (msg.includes("sauce") || msg.includes("tomate")) return `## Sauce Tomate Maison\n\n**Température recommandée :** 85-90°C\n**Temps :** 30-40 minutes\n\n### Étapes :\n1. Faites chauffer l'huile — *ventilateur à 60%*\n2. Ajoutez les oignons et laissez revenir 5 min\n3. Ajoutez les tomates mixées\n4. *Réduction ventilateur à 45% pour mijotage doux*\n5. Assaisonnez et laissez mijoter 25 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 60%*`;
+        if (msg.includes("temp\xe9rature") || msg.includes("temp")) return `## État actuel du Foyer Apeli\n\n| Paramètre | Valeur |\n|---|---|\n| Température | **${iotData.temperature}°C** |\n| Poids marmite | **${iotData.poids}kg** |\n| Ventilateur | **${iotData.ventilateur}** |\n| Statut | **${iotData.statut}** |\n\nTout fonctionne normalement. Le foyer est prêt pour la cuisson !`;
+        if (msg.includes("ventilateur") || msg.includes("vent")) return `## Contrôle du Ventilateur d'Aération\n\nLe ventilateur du foyer Apeli est actuellement en mode **${iotData.ventilateur}**.\n\nVia le serveur MCP, je peux :\n- **Augmenter** la ventilation (monter la température)\n- **Réduire** la ventilation (baisser la température)\n- Passer en mode **auto** (régulation intelligente)\n\n> *Serveur MCP connecté et opérationnel*\n\nQuel réglage souhaitez-vous ?`;
+        if (msg.includes("bonjour") || msg.includes("salut") || msg.includes("hello")) return `Bonjour ! Je suis ravi de vous aider avec votre cuisine sur le foyer Apeli.\n\n**État du foyer :** ${iotData.statut}\n**Température :** ${iotData.temperature}°C\n\nQue souhaitez-vous préparer ? Je peux vous guider pas à pas tout en contrôlant automatiquement la température du foyer via le ventilateur d'aération.`;
+        return `Je comprends votre demande concernant "${userMessage}".\n\nEn tant qu'assistant cuisine du foyer Apeli, je peux vous aider avec :\n\n- **Recettes africaines et internationales** adaptées au foyer amélioré\n- **Contrôle de la température** via le ventilateur MCP\n- **Suivi en temps réel** du poids et de la température\n\nFoyer : **${iotData.statut}** | ${iotData.temperature}°C | ${iotData.poids}kg\n\nPourriez-vous préciser ce que vous souhaitez cuisiner ?`;
+    };
+    const handleSend = ()=>{
+        if (!input.trim() || isLoading) return;
+        const userMsg = {
+            id: Date.now(),
+            role: "user",
+            content: input,
+            timestamp: new Date().toISOString()
+        };
+        setMessages((prev)=>[
+                ...prev,
+                userMsg
+            ]);
+        setInput("");
+        setIsLoading(true);
+        // Simuler le délai de réponse du LLM
+        setTimeout(()=>{
+            const aiResponse = {
+                id: Date.now() + 1,
+                role: "assistant",
+                content: getAIResponse(input),
+                timestamp: new Date().toISOString()
+            };
+            setMessages((prev)=>[
+                    ...prev,
+                    aiResponse
+                ]);
+            setIsLoading(false);
+        }, 1000 + Math.random() * 1500);
+    };
+    const handleKeyPress = (e)=>{
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            handleSend();
+        }
+    };
+    const handleNewConversation = ()=>{
+        const newConv = {
+            id: Date.now(),
+            title: "Nouvelle conversation",
+            date: new Date().toISOString()
+        };
+        setConversations((prev)=>[
+                newConv,
+                ...prev
+            ]);
+        setActiveConversation(newConv.id);
+        setMessages([
+            {
+                id: 1,
+                role: "assistant",
+                content: "Nouvelle conversation ! Que souhaitez-vous cuisiner sur le foyer Apeli ?",
+                timestamp: new Date().toISOString()
+            }, 
+        ]);
+    };
+    // Rendu simple du markdown
+    const renderMarkdown = (text)=>{
+        return text.replace(/## (.*)/g, '<h3 style="margin: 0.8rem 0 0.5rem; color: #2c3e50;">$1</h3>').replace(/### (.*)/g, '<h4 style="margin: 0.6rem 0 0.3rem; color: #34495e;">$1</h4>').replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>").replace(/\*(.*?)\*/g, "<em>$1</em>").replace(/\n- /g, "<br/>• ").replace(/\n(\d+)\. /g, "<br/>$1. ").replace(/\n> (.*)/g, '<blockquote style="border-left: 3px solid #e67e22; padding: 0.5rem 1rem; margin: 0.5rem 0; background: rgba(230,126,34,0.08); border-radius: 0 6px 6px 0;">$1</blockquote>').replace(/\| (.*?) \|/g, (match)=>`<code style="background: rgba(0,0,0,0.05); padding: 0.1rem 0.3rem; border-radius: 3px;">${match}</code>`).replace(/\n\n/g, "<br/><br/>").replace(/\n/g, "<br/>");
+    };
+    const sidebarWidth = isMobile ? "100%" : "260px";
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            display: "flex",
+            height: "calc(100vh - 70px)",
+            marginTop: "70px",
+            background: "#f7f7f8",
+            overflow: "hidden"
+        },
+        children: [
+            (sidebarOpen || !isMobile) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    width: sidebarWidth,
+                    minWidth: isMobile ? "100%" : "260px",
+                    background: "#1a1a2e",
+                    color: "white",
+                    display: "flex",
+                    flexDirection: "column",
+                    position: isMobile ? "fixed" : "relative",
+                    top: isMobile ? "70px" : "auto",
+                    left: 0,
+                    bottom: 0,
+                    zIndex: isMobile ? 100 : 1
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleNewConversation,
+                        style: {
+                            margin: "1rem",
+                            padding: "0.75rem 1rem",
+                            background: "transparent",
+                            border: "1px solid rgba(255,255,255,0.2)",
+                            borderRadius: "8px",
+                            color: "white",
+                            cursor: "pointer",
+                            fontSize: "0.9rem",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.5rem",
+                            transition: "background 0.2s"
+                        },
+                        onMouseOver: (e)=>e.target.style.background = "rgba(255,255,255,0.1)",
+                        onMouseOut: (e)=>e.target.style.background = "transparent",
+                        children: "✚ Nouvelle conversation"
+                    }, void 0, false, {
+                        fileName: "src/Components/Chatbot.jsx",
+                        lineNumber: 210,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            margin: "0 1rem",
+                            padding: "0.8rem",
+                            background: "rgba(255,255,255,0.05)",
+                            borderRadius: "8px",
+                            fontSize: "0.8rem",
+                            marginBottom: "1rem"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    fontWeight: "600",
+                                    marginBottom: "0.5rem",
+                                    color: "#e67e22",
+                                    fontSize: "0.85rem"
+                                },
+                                children: "Foyer Apeli"
+                            }, void 0, false, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 243,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "0.3rem"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Temp."
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 254,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            color: iotData.temperature > 200 ? "#e74c3c" : "#2ecc71",
+                                            fontWeight: "600"
+                                        },
+                                        children: [
+                                            iotData.temperature,
+                                            "\xb0C"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 255,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 253,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "0.3rem"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Poids"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 260,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            fontWeight: "600"
+                                        },
+                                        children: [
+                                            iotData.poids,
+                                            "kg"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 261,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 259,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "0.3rem"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Ventilo"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 264,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            fontWeight: "600"
+                                        },
+                                        children: iotData.ventilateur
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 265,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 263,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "space-between"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Statut"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 268,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            color: "#2ecc71",
+                                            fontWeight: "600"
+                                        },
+                                        children: [
+                                            "● ",
+                                            iotData.statut
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 269,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 267,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Chatbot.jsx",
+                        lineNumber: 233,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            flex: 1,
+                            overflowY: "auto",
+                            padding: "0 0.5rem"
+                        },
+                        children: conversations.map((conv)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                onClick: ()=>{
+                                    setActiveConversation(conv.id);
+                                    if (isMobile) setSidebarOpen(false);
+                                },
+                                style: {
+                                    padding: "0.7rem 0.8rem",
+                                    borderRadius: "6px",
+                                    cursor: "pointer",
+                                    background: activeConversation === conv.id ? "rgba(255,255,255,0.1)" : "transparent",
+                                    marginBottom: "0.2rem",
+                                    fontSize: "0.85rem",
+                                    transition: "background 0.2s",
+                                    whiteSpace: "nowrap",
+                                    overflow: "hidden",
+                                    textOverflow: "ellipsis"
+                                },
+                                children: conv.title
+                            }, conv.id, false, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 276,
+                                columnNumber: 15
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/Chatbot.jsx",
+                        lineNumber: 274,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            padding: "1rem",
+                            borderTop: "1px solid rgba(255,255,255,0.1)",
+                            fontSize: "0.75rem",
+                            color: "rgba(255,255,255,0.5)"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: "0.5rem"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            color: "#2ecc71",
+                                            fontSize: "0.6rem"
+                                        },
+                                        children: "●"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 310,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    "Serveur MCP connect\xe9"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 309,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    marginTop: "0.3rem"
+                                },
+                                children: "Ventilateur d'a\xe9ration: Actif"
+                            }, void 0, false, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 313,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Chatbot.jsx",
+                        lineNumber: 301,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Chatbot.jsx",
+                lineNumber: 194,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    flex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    minWidth: 0
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            padding: isMobile ? "0.6rem 0.8rem" : "0.8rem 1rem",
+                            borderBottom: "1px solid #e5e5e5",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            background: "white",
+                            gap: "0.5rem"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: "0.5rem",
+                                    minWidth: 0,
+                                    flex: 1
+                                },
+                                children: [
+                                    isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        onClick: ()=>setSidebarOpen(!sidebarOpen),
+                                        style: {
+                                            background: "none",
+                                            border: "none",
+                                            fontSize: "1.3rem",
+                                            cursor: "pointer",
+                                            padding: "0.3rem",
+                                            flexShrink: 0
+                                        },
+                                        children: "☰"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 336,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            minWidth: 0
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                style: {
+                                                    fontWeight: "600",
+                                                    fontSize: isMobile ? "0.85rem" : "1rem",
+                                                    color: "#2c3e50",
+                                                    whiteSpace: "nowrap",
+                                                    overflow: "hidden",
+                                                    textOverflow: "ellipsis"
+                                                },
+                                                children: "ApeliChef — Assistant Cuisine IA"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Chatbot.jsx",
+                                                lineNumber: 351,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                style: {
+                                                    fontSize: "0.75rem",
+                                                    color: "#7f8c8d"
+                                                },
+                                                children: "RAG + LLM Cuisine • Connect\xe9 au foyer am\xe9lior\xe9 Apeli"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Chatbot.jsx",
+                                                lineNumber: 355,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 350,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 334,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    gap: isMobile ? "0.5rem" : "1rem",
+                                    fontSize: isMobile ? "0.7rem" : "0.8rem",
+                                    color: "#7f8c8d",
+                                    flexShrink: 0
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            background: "#f0f0f0",
+                                            padding: "0.2rem 0.5rem",
+                                            borderRadius: "6px"
+                                        },
+                                        children: [
+                                            iotData.temperature,
+                                            "\xb0C"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 370,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            background: "#f0f0f0",
+                                            padding: "0.2rem 0.5rem",
+                                            borderRadius: "6px"
+                                        },
+                                        children: [
+                                            iotData.poids,
+                                            "kg"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 371,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 361,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Chatbot.jsx",
+                        lineNumber: 323,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            flex: 1,
+                            overflowY: "auto",
+                            padding: isMobile ? "0.5rem" : "1rem",
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "1rem"
+                        },
+                        children: [
+                            messages.map((msg)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        display: "flex",
+                                        justifyContent: msg.role === "user" ? "flex-end" : "flex-start",
+                                        maxWidth: "100%"
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            maxWidth: isMobile ? "90%" : "70%",
+                                            padding: "1rem 1.2rem",
+                                            borderRadius: msg.role === "user" ? "18px 18px 4px 18px" : "18px 18px 18px 4px",
+                                            background: msg.role === "user" ? "#e67e22" : "white",
+                                            color: msg.role === "user" ? "white" : "#2c3e50",
+                                            boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
+                                            fontSize: "0.9rem",
+                                            lineHeight: "1.6",
+                                            wordBreak: "break-word"
+                                        },
+                                        children: [
+                                            msg.role === "assistant" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                dangerouslySetInnerHTML: {
+                                                    __html: renderMarkdown(msg.content)
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Chatbot.jsx",
+                                                lineNumber: 409,
+                                                columnNumber: 19
+                                            }, undefined) : msg.content,
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                style: {
+                                                    fontSize: "0.65rem",
+                                                    marginTop: "0.5rem",
+                                                    opacity: 0.5,
+                                                    textAlign: msg.role === "user" ? "right" : "left"
+                                                },
+                                                children: new Date(msg.timestamp).toLocaleTimeString("fr-FR", {
+                                                    hour: "2-digit",
+                                                    minute: "2-digit"
+                                                })
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Chatbot.jsx",
+                                                lineNumber: 413,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 395,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, msg.id, false, {
+                                    fileName: "src/Components/Chatbot.jsx",
+                                    lineNumber: 387,
+                                    columnNumber: 13
+                                }, undefined)),
+                            isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "flex-start"
+                                },
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        padding: "1rem 1.2rem",
+                                        borderRadius: "18px 18px 18px 4px",
+                                        background: "white",
+                                        boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
+                                        fontSize: "0.9rem",
+                                        color: "#7f8c8d"
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "typing-dots",
+                                        children: [
+                                            "ApeliChef r\xe9fl\xe9chit",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                style: {
+                                                    animation: "blink 1.4s infinite"
+                                                },
+                                                children: "."
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Chatbot.jsx",
+                                                lineNumber: 444,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                style: {
+                                                    animation: "blink 1.4s infinite 0.2s"
+                                                },
+                                                children: "."
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Chatbot.jsx",
+                                                lineNumber: 445,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                style: {
+                                                    animation: "blink 1.4s infinite 0.4s"
+                                                },
+                                                children: "."
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Chatbot.jsx",
+                                                lineNumber: 446,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 442,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/Components/Chatbot.jsx",
+                                    lineNumber: 432,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 431,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                ref: messagesEndRef
+                            }, void 0, false, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 452,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Chatbot.jsx",
+                        lineNumber: 376,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            padding: isMobile ? "0.6rem 0.5rem" : "1rem",
+                            borderTop: "1px solid #e5e5e5",
+                            background: "white"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    gap: "0.5rem",
+                                    maxWidth: "800px",
+                                    margin: "0 auto",
+                                    alignItems: "flex-end"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                        ref: inputRef,
+                                        value: input,
+                                        onChange: (e)=>setInput(e.target.value),
+                                        onKeyDown: handleKeyPress,
+                                        placeholder: isMobile ? "Posez votre question..." : "Demandez une recette, v\xe9rifiez la temp\xe9rature, contr\xf4lez le ventilateur...",
+                                        rows: 1,
+                                        style: {
+                                            flex: 1,
+                                            padding: isMobile ? "0.6rem 0.8rem" : "0.8rem 1rem",
+                                            border: "1px solid #ddd",
+                                            borderRadius: "12px",
+                                            fontSize: isMobile ? "16px" : "0.9rem",
+                                            resize: "none",
+                                            outline: "none",
+                                            fontFamily: "inherit",
+                                            maxHeight: "120px",
+                                            minHeight: "44px",
+                                            lineHeight: "1.4",
+                                            WebkitAppearance: "none"
+                                        },
+                                        onInput: (e)=>{
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = Math.min(e.target.scrollHeight, 120) + "px";
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 472,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        onClick: handleSend,
+                                        disabled: !input.trim() || isLoading,
+                                        style: {
+                                            padding: "0.8rem 1.2rem",
+                                            background: input.trim() && !isLoading ? "#e67e22" : "#ccc",
+                                            color: "white",
+                                            border: "none",
+                                            borderRadius: "12px",
+                                            cursor: input.trim() && !isLoading ? "pointer" : "default",
+                                            fontSize: "1rem",
+                                            transition: "background 0.2s",
+                                            minHeight: "44px",
+                                            minWidth: "44px"
+                                        },
+                                        children: "➤"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 498,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 463,
+                                columnNumber: 11
+                            }, undefined),
+                            !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    textAlign: "center",
+                                    fontSize: "0.7rem",
+                                    color: "#999",
+                                    margin: "0.5rem 0 0"
+                                },
+                                children: "ApeliChef — IA cuisine connect\xe9e au foyer am\xe9lior\xe9 Apeli • Innovation Crunch Time 2026"
+                            }, void 0, false, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 518,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Chatbot.jsx",
+                        lineNumber: 456,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Chatbot.jsx",
+                lineNumber: 321,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Chatbot.jsx",
+        lineNumber: 183,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Chatbot, "MCTzT8YQr/fFIJ8aL50IY5PQCsc=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = Chatbot;
+exports.default = Chatbot;
+var _c;
+$RefreshReg$(_c, "Chatbot");
+
+  $parcel$ReactRefreshHelpers$a1f1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e5Nk6":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e2fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e2fc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Doctorante component - Page dédiée à Mme AMOUZOU-ATCHOE Akoua Gabriela
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _doctorantePng = require("../images/doctorante.png");
+var _doctorantePngDefault = parcelHelpers.interopDefault(_doctorantePng);
+var _s = $RefreshSig$();
+const Doctorante = ()=>{
+    _s();
+    const [isMobile, setIsMobile] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>setIsMobile(window.innerWidth < 768);
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        style: {
+            padding: isMobile ? "5.5rem 0.8rem 2rem" : "7rem 2rem 3rem",
+            maxWidth: "1000px",
+            margin: "0 auto",
+            minHeight: "100vh"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    textAlign: "center",
+                    marginBottom: isMobile ? "2rem" : "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            width: isMobile ? "100px" : "140px",
+                            height: isMobile ? "100px" : "140px",
+                            borderRadius: "50%",
+                            margin: "0 auto 1.5rem",
+                            overflow: "hidden",
+                            boxShadow: "0 8px 25px rgba(230, 126, 34, 0.3)"
+                        },
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _doctorantePngDefault.default),
+                            alt: "Mme AMOUZOU-ATCHOE Akoua Gabriela",
+                            style: {
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover"
+                            }
+                        }, void 0, false, {
+                            fileName: "src/Components/Doctorante.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        style: {
+                            fontSize: isMobile ? "1.5rem" : "2.2rem",
+                            color: "#2c3e50",
+                            fontWeight: "700",
+                            marginBottom: "0.5rem",
+                            lineHeight: "1.3"
+                        },
+                        children: "Mme AMOUZOU-ATCHOE Akoua Gabriela"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: isMobile ? "1rem" : "1.2rem",
+                            color: "#e67e22",
+                            fontWeight: "500",
+                            marginBottom: "0.3rem"
+                        },
+                        children: "Doctorante — Chercheuse"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: "0.95rem",
+                            color: "#7f8c8d"
+                        },
+                        children: "Universit\xe9 de Lom\xe9"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 74,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Doctorante.jsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "white",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    padding: isMobile ? "1.2rem" : "2.5rem",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    marginBottom: isMobile ? "1.5rem" : "2rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.1rem" : "1.5rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.5rem",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.5rem"
+                        },
+                        children: "Article de Recherche"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 94,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            background: "linear-gradient(135deg, #fef9e7, #fdebd0)",
+                            borderRadius: "12px",
+                            padding: isMobile ? "1.2rem" : "2rem",
+                            borderLeft: "4px solid #e67e22"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    fontSize: isMobile ? "1rem" : "1.2rem",
+                                    color: "#2c3e50",
+                                    marginBottom: "1rem",
+                                    fontWeight: "600",
+                                    lineHeight: "1.4"
+                                },
+                                children: "\xc9tude et Optimisation du Foyer Am\xe9lior\xe9 Apeli : Vers une Cuisson Efficiente et Durable"
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 114,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "0.95rem",
+                                    color: "#555",
+                                    lineHeight: "1.8",
+                                    marginBottom: "1rem"
+                                },
+                                children: "Cet article pr\xe9sente une \xe9tude approfondie du foyer am\xe9lior\xe9 Apeli, un dispositif de cuisson con\xe7u pour r\xe9duire la consommation de combustible et am\xe9liorer l'efficacit\xe9 \xe9nerg\xe9tique dans les m\xe9nages. La recherche analyse les performances thermiques du foyer, identifie les axes d'am\xe9lioration et propose des solutions innovantes pour optimiser son fonctionnement."
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 125,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "0.95rem",
+                                    color: "#555",
+                                    lineHeight: "1.8",
+                                    marginBottom: "1rem"
+                                },
+                                children: "Les r\xe9sultats montrent que l'int\xe9gration de capteurs de temp\xe9rature et de syst\xe8mes de contr\xf4le automatis\xe9 de la ventilation peut significativement am\xe9liorer la r\xe9gulation thermique, permettant une cuisson plus pr\xe9cise et \xe9conome en \xe9nergie."
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 135,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    flexWrap: "wrap",
+                                    gap: "0.5rem",
+                                    marginTop: "1rem"
+                                },
+                                children: [
+                                    "Foyer am\xe9lior\xe9",
+                                    "Efficacit\xe9 \xe9nerg\xe9tique",
+                                    "Cuisson durable",
+                                    "IoT",
+                                    "Capteurs thermiques"
+                                ].map((tag)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            background: "rgba(230, 126, 34, 0.15)",
+                                            color: "#e67e22",
+                                            padding: "0.3rem 0.8rem",
+                                            borderRadius: "20px",
+                                            fontSize: "0.8rem",
+                                            fontWeight: "500"
+                                        },
+                                        children: tag
+                                    }, tag, false, {
+                                        fileName: "src/Components/Doctorante.jsx",
+                                        lineNumber: 154,
+                                        columnNumber: 15
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 145,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    marginTop: "1.5rem",
+                                    padding: "1rem 1.5rem",
+                                    background: "#fff",
+                                    borderRadius: "8px",
+                                    border: "1px solid rgba(230,126,34,0.2)"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                        style: {
+                                            fontSize: "0.95rem",
+                                            color: "#2c3e50",
+                                            marginBottom: "0.5rem"
+                                        },
+                                        children: "R\xe9f\xe9rences et liens"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Doctorante.jsx",
+                                        lineNumber: 178,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        style: {
+                                            margin: 0,
+                                            paddingLeft: "1.2rem",
+                                            fontSize: "0.85rem",
+                                            lineHeight: "1.8",
+                                            color: "#555"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: [
+                                                    "AMOUZOU-ATCHOE, A. G. (2024). ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                                                        children: "\xc9tude et Optimisation du Foyer Am\xe9lior\xe9 Apeli"
+                                                    }, void 0, false, {
+                                                        fileName: "src/Components/Doctorante.jsx",
+                                                        lineNumber: 183,
+                                                        columnNumber: 47
+                                                    }, undefined),
+                                                    ". Universit\xe9 de Lom\xe9."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/Components/Doctorante.jsx",
+                                                lineNumber: 182,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "https://www.researchgate.net/profile/Akoua-Gabriela-Amouzou-Atchoe",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    style: {
+                                                        color: "#e67e22",
+                                                        textDecoration: "none"
+                                                    },
+                                                    children: "Profil ResearchGate — Mme AMOUZOU-ATCHOE"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Doctorante.jsx",
+                                                    lineNumber: 186,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Doctorante.jsx",
+                                                lineNumber: 185,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "https://scholar.google.com/",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    style: {
+                                                        color: "#e67e22",
+                                                        textDecoration: "none"
+                                                    },
+                                                    children: "Google Scholar — Publications associ\xe9es"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Doctorante.jsx",
+                                                    lineNumber: 196,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Doctorante.jsx",
+                                                lineNumber: 195,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "https://www.univ-lome.tg/",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    style: {
+                                                        color: "#e67e22",
+                                                        textDecoration: "none"
+                                                    },
+                                                    children: "Universit\xe9 de Lom\xe9 — Site officiel"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Doctorante.jsx",
+                                                    lineNumber: 206,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Doctorante.jsx",
+                                                lineNumber: 205,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Doctorante.jsx",
+                                        lineNumber: 181,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 169,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 106,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Doctorante.jsx",
+                lineNumber: 85,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "white",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    padding: isMobile ? "1.2rem" : "2.5rem",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    marginBottom: isMobile ? "1.5rem" : "2rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.1rem" : "1.5rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.5rem",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.5rem"
+                        },
+                        children: "Le Foyer Am\xe9lior\xe9 Apeli"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 230,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: "0.95rem",
+                            color: "#555",
+                            lineHeight: "1.8",
+                            marginBottom: "1.5rem"
+                        },
+                        children: "Le foyer am\xe9lior\xe9 Apeli est un dispositif de cuisson innovant d\xe9velopp\xe9 dans le cadre des recherches de Mme AMOUZOU-ATCHOE. Con\xe7u pour les besoins sp\xe9cifiques des m\xe9nages togolais et ouest-africains, il vise \xe0 :"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 242,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "grid",
+                            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+                            gap: "1rem"
+                        },
+                        children: [
+                            {
+                                title: "Efficacit\xe9 thermique",
+                                desc: "R\xe9duction de 40% de la consommation de combustible par rapport aux foyers traditionnels"
+                            },
+                            {
+                                title: "Impact environnemental",
+                                desc: "R\xe9duction des \xe9missions de CO₂ et de la d\xe9forestation li\xe9e au bois de chauffe"
+                            },
+                            {
+                                title: "Qualit\xe9 de l'air",
+                                desc: "Diminution significative des fum\xe9es nocives gr\xe2ce \xe0 une meilleure combustion"
+                            },
+                            {
+                                title: "Impact social",
+                                desc: "Am\xe9lioration des conditions de vie des m\xe9nages, particuli\xe8rement des femmes et enfants"
+                            }, 
+                        ].map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    padding: "1.2rem",
+                                    background: "#f8f9fa",
+                                    borderRadius: "10px",
+                                    display: "flex",
+                                    gap: "1rem",
+                                    alignItems: "flex-start"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            width: "40px",
+                                            height: "40px",
+                                            borderRadius: "50%",
+                                            background: "linear-gradient(135deg, #e67e22, #f39c12)",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            color: "white",
+                                            fontWeight: "700",
+                                            fontSize: "0.85rem",
+                                            flexShrink: 0
+                                        },
+                                        children: item.title.charAt(0)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Doctorante.jsx",
+                                        lineNumber: 276,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                style: {
+                                                    fontSize: "0.95rem",
+                                                    color: "#2c3e50",
+                                                    marginBottom: "0.3rem"
+                                                },
+                                                children: item.title
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Doctorante.jsx",
+                                                lineNumber: 294,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    color: "#666",
+                                                    lineHeight: "1.5",
+                                                    margin: 0
+                                                },
+                                                children: item.desc
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Doctorante.jsx",
+                                                lineNumber: 297,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Doctorante.jsx",
+                                        lineNumber: 293,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, item.title, true, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 265,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 252,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Doctorante.jsx",
+                lineNumber: 221,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "white",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    padding: isMobile ? "1.2rem" : "2.5rem",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    marginBottom: isMobile ? "1.5rem" : "2rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.1rem" : "1.5rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.5rem",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.5rem"
+                        },
+                        children: "Notre Contribution — Innovation Crunch Time 2026"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 316,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: "0.95rem",
+                            color: "#555",
+                            lineHeight: "1.8",
+                            marginBottom: "1.5rem"
+                        },
+                        children: [
+                            "Dans le cadre de l'Innovation Crunch Time 2026 \xe0 l'Universit\xe9 de Lom\xe9, l'\xe9quipe ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "Elephant"
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 336,
+                                columnNumber: 91
+                            }, undefined),
+                            " (Team 19) travaille durant 5 jours intensifs pour am\xe9liorer le foyer Apeli de Mme AMOUZOU-ATCHOE avec des technologies innovantes :"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 328,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "1rem"
+                        },
+                        children: [
+                            {
+                                text: "Int\xe9gration d'un chatbot IA (RAG + LLM) sp\xe9cialis\xe9 en cuisine pour guider les utilisateurs"
+                            },
+                            {
+                                text: "Capteurs de temp\xe9rature et de poids connect\xe9s pour un suivi en temps r\xe9el"
+                            },
+                            {
+                                text: "Contr\xf4le automatis\xe9 du ventilateur d'a\xe9ration via un serveur MCP"
+                            },
+                            {
+                                text: "Interface web intuitive pour interagir avec le foyer \xe0 distance"
+                            }, 
+                        ].map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    gap: "1rem",
+                                    alignItems: "center",
+                                    padding: "0.8rem",
+                                    background: i % 2 === 0 ? "#fef9e7" : "#f8f9fa",
+                                    borderRadius: "8px"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            width: "32px",
+                                            height: "32px",
+                                            borderRadius: "50%",
+                                            background: "#e67e22",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            color: "white",
+                                            fontWeight: "700",
+                                            fontSize: "0.8rem",
+                                            flexShrink: 0
+                                        },
+                                        children: i + 1
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Doctorante.jsx",
+                                        lineNumber: 356,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        style: {
+                                            fontSize: "0.9rem",
+                                            color: "#555",
+                                            margin: 0,
+                                            lineHeight: "1.5"
+                                        },
+                                        children: item.text
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Doctorante.jsx",
+                                        lineNumber: 373,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, i, true, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 345,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 338,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Doctorante.jsx",
+                lineNumber: 307,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    textAlign: "center",
+                    padding: isMobile ? "1.5rem 1rem" : "2rem",
+                    background: "linear-gradient(135deg, #1a1a2e, #16213e)",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    color: "white"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: isMobile ? "1rem" : "1.15rem",
+                            fontStyle: "italic",
+                            lineHeight: "1.8",
+                            maxWidth: "700px",
+                            margin: "0 auto 1rem"
+                        },
+                        children: '"L\'innovation au service de la cuisson durable — ensemble, nous pouvons transformer le quotidien de millions de foyers africains."'
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 391,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: "0.85rem",
+                            opacity: 0.7
+                        },
+                        children: "— Mme AMOUZOU-ATCHOE Akoua Gabriela"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 402,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Doctorante.jsx",
+                lineNumber: 382,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Doctorante.jsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Doctorante, "0VTTNJATKABQPGLm9RVT0tKGUgU=");
+_c = Doctorante;
+exports.default = Doctorante;
+var _c;
+$RefreshReg$(_c, "Doctorante");
+
+  $parcel$ReactRefreshHelpers$e2fc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/doctorante.png":"1TZIt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1TZIt":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "doctorante.d91ebc71.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"YKbWR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5fdb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5fdb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Team component - Page dédiée à l'équipe Elephant (Team 19)
+ * Innovation Crunch Time 2026 - Université de Lomé
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _jr2Jpg = require("../images/jr2.jpg");
+var _jr2JpgDefault = parcelHelpers.interopDefault(_jr2Jpg);
+var _hycintasJpg = require("../images/Hycintas.jpg");
+var _hycintasJpgDefault = parcelHelpers.interopDefault(_hycintasJpg);
+var _s = $RefreshSig$();
+const teamMembers = [
+    {
+        name: "Emmanuel AMELA",
+        role: "Chef d'\xe9quipe",
+        description: "Coordination du projet et d\xe9veloppement de la plateforme web",
+        initials: "EA",
+        image: (0, _jr2JpgDefault.default)
+    },
+    {
+        name: "Lang-H\xe8zi\xe8 Palti\xebl AMEDRO",
+        role: "Analyste",
+        description: "Analyse des besoins et sp\xe9cifications fonctionnelles du projet",
+        initials: "LA"
+    },
+    {
+        name: "Sully BABELESSA",
+        role: "Analyste",
+        description: "Analyse des donn\xe9es et optimisation des performances du foyer",
+        initials: "SB"
+    },
+    {
+        name: "Kossi Shelter DABONI",
+        role: "Designer",
+        description: "Design de l'interface utilisateur et exp\xe9rience utilisateur",
+        initials: "KD"
+    },
+    {
+        name: "Hyacinthe d'ALMEIDA",
+        role: "Analyste",
+        description: "Analyse technique et recherche sur les technologies IoT",
+        initials: "Hd",
+        image: (0, _hycintasJpgDefault.default)
+    },
+    {
+        name: "Mathilde HOUNGBEDJI",
+        role: "D\xe9veloppeur",
+        description: "D\xe9veloppement du chatbot IA et int\xe9gration des capteurs",
+        initials: "MH"
+    },
+    {
+        name: "Josu\xe9 SOLAGNI",
+        role: "Gardien du temps",
+        description: "Gestion du planning et suivi des d\xe9lais du projet",
+        initials: "JS"
+    },
+    {
+        name: "Abalakata TCHASSEMA",
+        role: "Communication",
+        description: "Communication du projet et relations avec les parties prenantes",
+        initials: "AT"
+    }, 
+];
+const Team = ()=>{
+    _s();
+    const [isMobile, setIsMobile] = (0, _react.useState)(false);
+    const [isTablet, setIsTablet] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            setIsMobile(window.innerWidth < 576);
+            setIsTablet(window.innerWidth >= 576 && window.innerWidth < 992);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        style: {
+            padding: isMobile ? "5.5rem 0.8rem 2rem" : isTablet ? "6rem 1.5rem 3rem" : "7rem 2rem 3rem",
+            maxWidth: "1100px",
+            margin: "0 auto",
+            minHeight: "100vh"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    textAlign: "center",
+                    marginBottom: "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            fontSize: "1.5rem",
+                            fontWeight: "800",
+                            color: "#e67e22",
+                            letterSpacing: "0.3rem",
+                            marginBottom: "1rem"
+                        },
+                        children: "ELEPHANT"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 87,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        style: {
+                            fontSize: isMobile ? "1.5rem" : "2.5rem",
+                            color: "#2c3e50",
+                            fontWeight: "700",
+                            marginBottom: "0.5rem",
+                            lineHeight: "1.2"
+                        },
+                        children: "Team Elephant"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 98,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: isMobile ? "1rem" : "1.2rem",
+                            color: "#e67e22",
+                            fontWeight: "600",
+                            marginBottom: "0.3rem"
+                        },
+                        children: "\xc9quipe 19"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 109,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: "1rem",
+                            color: "#7f8c8d",
+                            maxWidth: "600px",
+                            margin: "0.5rem auto 0",
+                            lineHeight: "1.6"
+                        },
+                        children: "Innovation Crunch Time 2026 — Universit\xe9 de Lom\xe9"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 119,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Team.jsx",
+                lineNumber: 86,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "linear-gradient(135deg, #1a1a2e, #16213e)",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    padding: isMobile ? "1.2rem" : isTablet ? "2rem" : "2.5rem",
+                    color: "white",
+                    marginBottom: "3rem",
+                    textAlign: "center"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.2rem" : "1.5rem",
+                            marginBottom: "1rem",
+                            fontWeight: "600"
+                        },
+                        children: "Notre Mission"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 143,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: "1rem",
+                            lineHeight: "1.8",
+                            maxWidth: "750px",
+                            margin: "0 auto",
+                            opacity: 0.9
+                        },
+                        children: "Optimiser le foyer am\xe9lior\xe9 Apeli en int\xe9grant des technologies de pointe : Intelligence Artificielle, Internet des Objets (IoT) et automatisation. Notre objectif est de rendre la cuisson plus pr\xe9cise, plus efficiente et plus accessible gr\xe2ce \xe0 un assistant cuisine intelligent connect\xe9 directement au foyer."
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 152,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Team.jsx",
+                lineNumber: 133,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                style: {
+                    fontSize: isMobile ? "1.3rem" : "1.8rem",
+                    color: "#2c3e50",
+                    textAlign: "center",
+                    marginBottom: "2rem"
+                },
+                children: "Membres de l'\xc9quipe"
+            }, void 0, false, {
+                fileName: "src/Components/Team.jsx",
+                lineNumber: 166,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    display: "grid",
+                    gridTemplateColumns: isMobile ? "1fr" : isTablet ? "repeat(2, 1fr)" : "repeat(4, 1fr)",
+                    gap: isMobile ? "1rem" : "1.5rem",
+                    marginBottom: "3rem"
+                },
+                children: teamMembers.map((member, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            background: "white",
+                            borderRadius: "16px",
+                            padding: isMobile ? "1.5rem" : "2rem",
+                            boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
+                            textAlign: "center",
+                            transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    width: isMobile ? "60px" : "70px",
+                                    height: isMobile ? "60px" : "70px",
+                                    borderRadius: "50%",
+                                    background: member.image ? "none" : `linear-gradient(135deg, ${[
+                                        "#e67e22, #f39c12",
+                                        "#3498db, #2980b9",
+                                        "#2ecc71, #27ae60",
+                                        "#9b59b6, #8e44ad",
+                                        "#e74c3c, #c0392b",
+                                        "#1abc9c, #16a085",
+                                        "#34495e, #2c3e50",
+                                        "#d35400, #e67e22"
+                                    ][index]})`,
+                                    margin: "0 auto 1rem",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    fontSize: "2rem",
+                                    overflow: "hidden"
+                                },
+                                children: member.image ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: member.image,
+                                    alt: member.name,
+                                    style: {
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover"
+                                    }
+                                }, void 0, false, {
+                                    fileName: "src/Components/Team.jsx",
+                                    lineNumber: 214,
+                                    columnNumber: 17
+                                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    style: {
+                                        color: "white",
+                                        fontWeight: "700",
+                                        fontSize: "1rem"
+                                    },
+                                    children: member.initials
+                                }, void 0, false, {
+                                    fileName: "src/Components/Team.jsx",
+                                    lineNumber: 224,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/Team.jsx",
+                                lineNumber: 197,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    fontSize: "1.1rem",
+                                    color: "#2c3e50",
+                                    marginBottom: "0.3rem",
+                                    fontWeight: "600"
+                                },
+                                children: member.name
+                            }, void 0, false, {
+                                fileName: "src/Components/Team.jsx",
+                                lineNumber: 229,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "0.85rem",
+                                    color: "#e67e22",
+                                    fontWeight: "500",
+                                    marginBottom: "0.8rem"
+                                },
+                                children: member.role
+                            }, void 0, false, {
+                                fileName: "src/Components/Team.jsx",
+                                lineNumber: 239,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "0.9rem",
+                                    color: "#666",
+                                    lineHeight: "1.5",
+                                    margin: 0
+                                },
+                                children: member.description
+                            }, void 0, false, {
+                                fileName: "src/Components/Team.jsx",
+                                lineNumber: 249,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, index, true, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 186,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/Team.jsx",
+                lineNumber: 177,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "white",
+                    borderRadius: "16px",
+                    padding: isMobile ? "1.5rem" : "2.5rem",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    marginBottom: "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.2rem" : "1.5rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.5rem",
+                            textAlign: "center"
+                        },
+                        children: "Notre Projet : Optimisation du Foyer Apeli"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 273,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "grid",
+                            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+                            gap: isMobile ? "1rem" : "1.5rem"
+                        },
+                        children: [
+                            {
+                                title: "Chatbot IA Cuisine",
+                                desc: "Un assistant intelligent bas\xe9 sur un LLM avec RAG sp\xe9cialis\xe9 en cuisine. Il guide les utilisateurs \xe9tape par \xe9tape dans la pr\xe9paration de leurs plats."
+                            },
+                            {
+                                title: "Capteurs IoT",
+                                desc: "Des capteurs de temp\xe9rature et de poids connect\xe9s au foyer transmettent les donn\xe9es en temps r\xe9el \xe0 l'interface web."
+                            },
+                            {
+                                title: "Serveur MCP",
+                                desc: "Un serveur MCP (Model Context Protocol) permet \xe0 l'IA de contr\xf4ler le ventilateur d'a\xe9ration pour r\xe9guler la temp\xe9rature du foyer."
+                            },
+                            {
+                                title: "Interface Web",
+                                desc: "Une plateforme web responsive permettant aux utilisateurs d'interagir avec le foyer et l'IA depuis n'importe quel appareil."
+                            }, 
+                        ].map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    padding: "1.5rem",
+                                    background: "#f8f9fa",
+                                    borderRadius: "12px",
+                                    borderLeft: "4px solid #e67e22"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: "0.8rem",
+                                            marginBottom: "0.8rem"
+                                        },
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            style: {
+                                                fontSize: "1rem",
+                                                color: "#2c3e50",
+                                                fontWeight: "600",
+                                                margin: 0
+                                            },
+                                            children: item.title
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Team.jsx",
+                                            lineNumber: 319,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Team.jsx",
+                                        lineNumber: 318,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        style: {
+                                            fontSize: "0.9rem",
+                                            color: "#666",
+                                            lineHeight: "1.6",
+                                            margin: 0
+                                        },
+                                        children: item.desc
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Team.jsx",
+                                        lineNumber: 323,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, i, true, {
+                                fileName: "src/Components/Team.jsx",
+                                lineNumber: 309,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 284,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Team.jsx",
+                lineNumber: 264,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "white",
+                    borderRadius: "16px",
+                    padding: isMobile ? "1.5rem" : "2.5rem",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+                    marginBottom: "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.2rem" : "1.5rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.5rem",
+                            textAlign: "center"
+                        },
+                        children: "5 Jours d'Innovation"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 341,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: isMobile ? "0.8rem" : "1rem"
+                        },
+                        children: [
+                            {
+                                day: "Jour 1",
+                                title: "Id\xe9ation & Conception",
+                                desc: "Brainstorming, d\xe9finition du concept et planification technique"
+                            },
+                            {
+                                day: "Jour 2",
+                                title: "Prototype Hardware",
+                                desc: "Assemblage des capteurs IoT et configuration du foyer Apeli"
+                            },
+                            {
+                                day: "Jour 3",
+                                title: "D\xe9veloppement Software",
+                                desc: "Cr\xe9ation de la plateforme web et int\xe9gration du chatbot IA"
+                            },
+                            {
+                                day: "Jour 4",
+                                title: "Int\xe9gration & Tests",
+                                desc: "Connexion MCP, tests de cuisson r\xe9elle et ajustements"
+                            },
+                            {
+                                day: "Jour 5",
+                                title: "Pr\xe9sentation Finale",
+                                desc: "D\xe9monstration live du foyer intelligent devant le jury"
+                            }, 
+                        ].map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    gap: "1rem",
+                                    alignItems: "center",
+                                    padding: "1rem",
+                                    background: i % 2 === 0 ? "#fef9e7" : "#f8f9fa",
+                                    borderRadius: "10px"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            minWidth: "55px",
+                                            height: "55px",
+                                            borderRadius: "50%",
+                                            background: "#e67e22",
+                                            color: "white",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            fontWeight: "700",
+                                            fontSize: "0.75rem",
+                                            textAlign: "center",
+                                            lineHeight: "1.2"
+                                        },
+                                        children: item.day
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Team.jsx",
+                                        lineNumber: 370,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                style: {
+                                                    fontSize: "0.95rem",
+                                                    color: "#2c3e50",
+                                                    margin: "0 0 0.2rem"
+                                                },
+                                                children: item.title
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Team.jsx",
+                                                lineNumber: 389,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    color: "#666",
+                                                    margin: 0,
+                                                    lineHeight: "1.4"
+                                                },
+                                                children: item.desc
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Team.jsx",
+                                                lineNumber: 392,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Team.jsx",
+                                        lineNumber: 388,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, i, true, {
+                                fileName: "src/Components/Team.jsx",
+                                lineNumber: 359,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 351,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Team.jsx",
+                lineNumber: 332,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    textAlign: "center",
+                    padding: "2rem",
+                    background: "linear-gradient(135deg, #e67e22, #f39c12)",
+                    borderRadius: "16px",
+                    color: "white"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        style: {
+                            fontSize: isMobile ? "1.1rem" : "1.3rem",
+                            marginBottom: "0.8rem"
+                        },
+                        children: "Team Elephant — \xc9quipe 19"
+                    }, void 0, false, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 411,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: "0.95rem",
+                            opacity: 0.9,
+                            lineHeight: "1.6",
+                            maxWidth: "600px",
+                            margin: "0 auto"
+                        },
+                        children: [
+                            "Innovation Crunch Time 2026 • Universit\xe9 de Lom\xe9",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/Components/Team.jsx",
+                                lineNumber: 429,
+                                columnNumber: 11
+                            }, undefined),
+                            "Optimisation du Foyer Am\xe9lior\xe9 Apeli"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Team.jsx",
+                        lineNumber: 419,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Team.jsx",
+                lineNumber: 402,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Team.jsx",
+        lineNumber: 77,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Team, "i20DGJle2MZSs9tS3yHdn4A9Fow=");
+_c = Team;
+exports.default = Team;
+var _c;
+$RefreshReg$(_c, "Team");
+
+  $parcel$ReactRefreshHelpers$5fdb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/jr2.jpg":"l6CBF","../images/Hycintas.jpg":"7yGaI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l6CBF":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "jr2.85b4a567.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"7yGaI":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Hycintas.22a4829d.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dLVXT":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$80a0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$80a0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * FoyerApeli component - Page dédiée au Foyer Amélioré Apeli
+ * Présentation, composants, évolution et problématique
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const foyerParts = [
+    {
+        name: "Chambre de combustion",
+        description: "Zone principale de combustion des pellets. Con\xe7ue pour optimiser la circulation d'air et maintenir une temp\xe9rature \xe9lev\xe9e pour une combustion compl\xe8te.",
+        placeholder: "CC"
+    },
+    {
+        name: "Grille de support",
+        description: "Support perfor\xe9 qui maintient le combustible en place tout en permettant la circulation d'air par le bas et l'\xe9vacuation des cendres.",
+        placeholder: "GS"
+    },
+    {
+        name: "Cendrier",
+        description: "Compartiment amovible situ\xe9 sous la grille pour collecter et faciliter l'\xe9vacuation des cendres produites par la combustion.",
+        placeholder: "CE"
+    },
+    {
+        name: "Support de marmite",
+        description: "Structure adaptable con\xe7ue pour accueillir diff\xe9rentes tailles de marmites, assurant un transfert thermique optimal entre la flamme et le r\xe9cipient.",
+        placeholder: "SM"
+    },
+    {
+        name: "Paroi isolante",
+        description: "Rev\xeatement en mat\xe9riau r\xe9fractaire qui retient la chaleur \xe0 l'int\xe9rieur du foyer, r\xe9duisant les pertes \xe9nerg\xe9tiques et prot\xe9geant l'utilisateur.",
+        placeholder: "PI"
+    },
+    {
+        name: "Entr\xe9e d'air (ventilation)",
+        description: "Ouverture r\xe9glable permettant de contr\xf4ler le flux d'air entrant dans la chambre de combustion pour moduler l'intensit\xe9 de la flamme.",
+        placeholder: "EA"
+    }, 
+];
+const evolution = [
+    {
+        phase: "Foyer traditionnel",
+        period: "Avant Apeli",
+        description: "Foyer \xe0 trois pierres ou foyer ouvert. Rendement \xe9nerg\xe9tique tr\xe8s faible (environ 10-15%), forte \xe9mission de fum\xe9es nocives, consommation excessive de bois.",
+        improvements: [
+            "Aucune isolation",
+            "Pas de contr\xf4le d'air",
+            "Pertes thermiques importantes"
+        ]
+    },
+    {
+        phase: "Foyer Apeli v1",
+        period: "Conception initiale",
+        description: "Premier mod\xe8le du foyer am\xe9lior\xe9 avec chambre de combustion ferm\xe9e. Introduction de la paroi isolante et du support de marmite standardis\xe9.",
+        improvements: [
+            "Chambre de combustion ferm\xe9e",
+            "Paroi isolante ajout\xe9e",
+            "Rendement am\xe9lior\xe9 (30-40%)"
+        ]
+    },
+    {
+        phase: "Foyer Apeli v2",
+        period: "Am\xe9liorations",
+        description: "Ajout du cendrier amovible et de la grille de support. Optimisation de la circulation d'air pour une meilleure combustion.",
+        improvements: [
+            "Cendrier amovible",
+            "Grille de support",
+            "Meilleure circulation d'air"
+        ]
+    },
+    {
+        phase: "Foyer Apeli v3 (Crunch Time)",
+        period: "Innovation 2026",
+        description: "Reconception compl\xe8te avec utilisation de pellets, capteurs IoT (temp\xe9rature, poids), ventilateur d'a\xe9ration contr\xf4l\xe9 par IA, et adaptation multi-tailles de marmites.",
+        improvements: [
+            "Pellets (r\xe9sidus agricoles)",
+            "Capteurs IoT int\xe9gr\xe9s",
+            "IA + MCP Server",
+            "Multi-tailles de marmites",
+            "Ventilation intelligente"
+        ]
+    }, 
+];
+const FoyerApeli = ()=>{
+    _s();
+    const [isMobile, setIsMobile] = (0, _react.useState)(false);
+    const [isTablet, setIsTablet] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            setIsMobile(window.innerWidth < 768);
+            setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        style: {
+            padding: isMobile ? "5.5rem 0.8rem 2rem" : "7rem 2rem 3rem",
+            maxWidth: "1000px",
+            margin: "0 auto",
+            minHeight: "100vh"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    textAlign: "center",
+                    marginBottom: isMobile ? "2rem" : "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        style: {
+                            fontSize: isMobile ? "1.5rem" : "2rem",
+                            color: "#2c3e50",
+                            marginBottom: "1rem",
+                            fontWeight: "700"
+                        },
+                        children: "Le Foyer Ameliore Apeli"
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 92,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: isMobile ? "0.9rem" : "1rem",
+                            color: "#666",
+                            maxWidth: "700px",
+                            margin: "0 auto",
+                            lineHeight: "1.7"
+                        },
+                        children: "Decouvrez le foyer ameliore Apeli, ses composants, son evolution et la problematique que notre equipe cherche a resoudre durant l'Innovation Crunch Time 2026."
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 102,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/FoyerApeli.jsx",
+                lineNumber: 91,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "linear-gradient(135deg, #2c3e50, #34495e)",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    padding: isMobile ? "1.5rem" : "2.5rem",
+                    marginBottom: isMobile ? "2rem" : "3rem",
+                    color: "white"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.1rem" : "1.4rem",
+                            marginBottom: "1rem",
+                            fontWeight: "600",
+                            color: "#e67e22"
+                        },
+                        children: "Problematique"
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 126,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: isMobile ? "0.85rem" : "0.95rem",
+                            lineHeight: "1.8",
+                            color: "rgba(255,255,255,0.9)",
+                            textAlign: "justify"
+                        },
+                        children: "Bien que le foyer Apeli constitue une solution prometteuse pour ameliorer l'efficacite de la cuisson domestique, certaines limites liees a l'alimentation en combustible, a l'evacuation des cendres et a l'adaptation aux differentes tailles de marmites persistent."
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 136,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: isMobile ? "0.85rem" : "0.95rem",
+                            lineHeight: "1.8",
+                            color: "rgba(255,255,255,0.9)",
+                            marginTop: "1rem",
+                            textAlign: "justify",
+                            fontStyle: "italic"
+                        },
+                        children: "Comment optimiser le foyer Apeli (reconception) avec l'utilisation de pellets (combustibles issus de residus agricoles) pour ameliorer les performances energetiques ainsi que ses conditions d'utilisation (differentes tailles de menage et differents environnements de cuisine) ?"
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 149,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            marginTop: "1.2rem",
+                            fontSize: "0.8rem",
+                            color: "rgba(255,255,255,0.6)"
+                        },
+                        children: "-- Problematique posee par Mme AMOUZOU-ATCHOE Akoua Gabriela, Doctorante"
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 164,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/FoyerApeli.jsx",
+                lineNumber: 117,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    marginBottom: isMobile ? "2rem" : "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.2rem" : "1.5rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.5rem",
+                            fontWeight: "600",
+                            textAlign: "center"
+                        },
+                        children: "Composants du Foyer Apeli"
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 177,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "grid",
+                            gridTemplateColumns: isMobile ? "1fr" : isTablet ? "1fr 1fr" : "1fr 1fr 1fr",
+                            gap: isMobile ? "1rem" : "1.5rem"
+                        },
+                        children: foyerParts.map((part, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    background: "white",
+                                    borderRadius: "12px",
+                                    padding: isMobile ? "1.2rem" : "1.5rem",
+                                    boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
+                                    border: "1px solid #f0f0f0",
+                                    transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            width: "100%",
+                                            height: isMobile ? "120px" : "140px",
+                                            borderRadius: "8px",
+                                            background: "linear-gradient(135deg, #f5f5f5, #e8e8e8)",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            marginBottom: "1rem",
+                                            border: "2px dashed #ddd"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                style: {
+                                                    fontSize: isMobile ? "1.5rem" : "1.8rem",
+                                                    fontWeight: "700",
+                                                    color: "#e67e22"
+                                                },
+                                                children: part.placeholder
+                                            }, void 0, false, {
+                                                fileName: "src/Components/FoyerApeli.jsx",
+                                                lineNumber: 222,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                style: {
+                                                    fontSize: "0.7rem",
+                                                    color: "#999",
+                                                    marginTop: "0.3rem"
+                                                },
+                                                children: "Photo a venir"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/FoyerApeli.jsx",
+                                                lineNumber: 231,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/FoyerApeli.jsx",
+                                        lineNumber: 208,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        style: {
+                                            fontSize: isMobile ? "0.95rem" : "1.05rem",
+                                            color: "#2c3e50",
+                                            marginBottom: "0.5rem",
+                                            fontWeight: "600"
+                                        },
+                                        children: part.name
+                                    }, void 0, false, {
+                                        fileName: "src/Components/FoyerApeli.jsx",
+                                        lineNumber: 241,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        style: {
+                                            fontSize: "0.8rem",
+                                            color: "#666",
+                                            lineHeight: "1.6"
+                                        },
+                                        children: part.description
+                                    }, void 0, false, {
+                                        fileName: "src/Components/FoyerApeli.jsx",
+                                        lineNumber: 251,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, index, true, {
+                                fileName: "src/Components/FoyerApeli.jsx",
+                                lineNumber: 196,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 188,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/FoyerApeli.jsx",
+                lineNumber: 176,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    marginBottom: isMobile ? "2rem" : "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.2rem" : "1.5rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.5rem",
+                            fontWeight: "600",
+                            textAlign: "center"
+                        },
+                        children: "Evolution du Foyer Apeli"
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 267,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            position: "relative"
+                        },
+                        children: [
+                            !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    position: "absolute",
+                                    left: "20px",
+                                    top: "0",
+                                    bottom: "0",
+                                    width: "3px",
+                                    background: "linear-gradient(to bottom, #e67e22, #f39c12, #2ecc71)",
+                                    borderRadius: "2px"
+                                }
+                            }, void 0, false, {
+                                fileName: "src/Components/FoyerApeli.jsx",
+                                lineNumber: 281,
+                                columnNumber: 13
+                            }, undefined),
+                            evolution.map((step, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        display: "flex",
+                                        gap: isMobile ? "0" : "2rem",
+                                        marginBottom: "1.5rem",
+                                        position: "relative"
+                                    },
+                                    children: [
+                                        !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            style: {
+                                                width: "42px",
+                                                minWidth: "42px",
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                paddingTop: "1.5rem",
+                                                zIndex: 1
+                                            },
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                style: {
+                                                    width: "16px",
+                                                    height: "16px",
+                                                    borderRadius: "50%",
+                                                    background: index === evolution.length - 1 ? "#e67e22" : "#bdc3c7",
+                                                    border: index === evolution.length - 1 ? "3px solid #f39c12" : "3px solid #ecf0f1",
+                                                    boxShadow: index === evolution.length - 1 ? "0 0 10px rgba(230,126,34,0.4)" : "none"
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "src/Components/FoyerApeli.jsx",
+                                                lineNumber: 316,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/Components/FoyerApeli.jsx",
+                                            lineNumber: 306,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            style: {
+                                                flex: 1,
+                                                background: index === evolution.length - 1 ? "linear-gradient(135deg, #fef9f3, #fdf2e9)" : "white",
+                                                borderRadius: "12px",
+                                                padding: isMobile ? "1.2rem" : "1.5rem",
+                                                boxShadow: index === evolution.length - 1 ? "0 4px 20px rgba(230,126,34,0.15)" : "0 4px 15px rgba(0,0,0,0.08)",
+                                                border: index === evolution.length - 1 ? "2px solid #e67e22" : "1px solid #f0f0f0"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    style: {
+                                                        display: "flex",
+                                                        justifyContent: "space-between",
+                                                        alignItems: "center",
+                                                        marginBottom: "0.8rem",
+                                                        flexWrap: "wrap",
+                                                        gap: "0.5rem"
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                            style: {
+                                                                fontSize: isMobile ? "1rem" : "1.1rem",
+                                                                color: index === evolution.length - 1 ? "#e67e22" : "#2c3e50",
+                                                                fontWeight: "600"
+                                                            },
+                                                            children: step.phase
+                                                        }, void 0, false, {
+                                                            fileName: "src/Components/FoyerApeli.jsx",
+                                                            lineNumber: 356,
+                                                            columnNumber: 19
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            style: {
+                                                                fontSize: "0.75rem",
+                                                                color: "white",
+                                                                background: index === evolution.length - 1 ? "#e67e22" : "#95a5a6",
+                                                                padding: "0.2rem 0.8rem",
+                                                                borderRadius: "12px",
+                                                                fontWeight: "500"
+                                                            },
+                                                            children: step.period
+                                                        }, void 0, false, {
+                                                            fileName: "src/Components/FoyerApeli.jsx",
+                                                            lineNumber: 365,
+                                                            columnNumber: 19
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/Components/FoyerApeli.jsx",
+                                                    lineNumber: 346,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    style: {
+                                                        fontSize: isMobile ? "0.8rem" : "0.88rem",
+                                                        color: "#555",
+                                                        lineHeight: "1.7",
+                                                        marginBottom: "0.8rem"
+                                                    },
+                                                    children: step.description
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/FoyerApeli.jsx",
+                                                    lineNumber: 378,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    style: {
+                                                        display: "flex",
+                                                        flexWrap: "wrap",
+                                                        gap: "0.5rem"
+                                                    },
+                                                    children: step.improvements.map((imp, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            style: {
+                                                                fontSize: "0.72rem",
+                                                                background: index === evolution.length - 1 ? "rgba(230,126,34,0.1)" : "#f8f9fa",
+                                                                color: index === evolution.length - 1 ? "#e67e22" : "#666",
+                                                                padding: "0.25rem 0.6rem",
+                                                                borderRadius: "6px",
+                                                                fontWeight: "500"
+                                                            },
+                                                            children: imp
+                                                        }, i, false, {
+                                                            fileName: "src/Components/FoyerApeli.jsx",
+                                                            lineNumber: 396,
+                                                            columnNumber: 21
+                                                        }, undefined))
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/FoyerApeli.jsx",
+                                                    lineNumber: 388,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/Components/FoyerApeli.jsx",
+                                            lineNumber: 330,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, index, true, {
+                                    fileName: "src/Components/FoyerApeli.jsx",
+                                    lineNumber: 295,
+                                    columnNumber: 13
+                                }, undefined))
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 278,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/FoyerApeli.jsx",
+                lineNumber: 266,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "linear-gradient(135deg, #fef9f3, #fdf2e9)",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    padding: isMobile ? "1.5rem" : "2rem",
+                    border: "1px solid rgba(230,126,34,0.2)"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            fontSize: isMobile ? "1.1rem" : "1.3rem",
+                            color: "#2c3e50",
+                            marginBottom: "1.2rem",
+                            fontWeight: "600",
+                            textAlign: "center"
+                        },
+                        children: "Objectifs de l'optimisation"
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 428,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "grid",
+                            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+                            gap: "1rem"
+                        },
+                        children: [
+                            {
+                                title: "Alimentation en pellets",
+                                desc: "Remplacer le bois par des pellets issus de residus agricoles pour une combustion plus propre et efficace."
+                            },
+                            {
+                                title: "Evacuation des cendres",
+                                desc: "Systeme de cendrier amovible optimise pour un nettoyage facile et rapide entre les cuissons."
+                            },
+                            {
+                                title: "Adaptation multi-marmites",
+                                desc: "Support ajustable pour accueillir differentes tailles de marmites selon la taille du menage."
+                            },
+                            {
+                                title: "Controle intelligent",
+                                desc: "Capteurs IoT et ventilation pilotee par IA via MCP Server pour un controle precis de la temperature."
+                            }, 
+                        ].map((obj, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    background: "white",
+                                    borderRadius: "10px",
+                                    padding: isMobile ? "1rem" : "1.2rem",
+                                    boxShadow: "0 2px 10px rgba(0,0,0,0.05)"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        style: {
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: "0.8rem",
+                                            marginBottom: "0.6rem"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                style: {
+                                                    width: "32px",
+                                                    height: "32px",
+                                                    borderRadius: "50%",
+                                                    background: "#e67e22",
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    justifyContent: "center",
+                                                    color: "white",
+                                                    fontSize: "0.8rem",
+                                                    fontWeight: "700",
+                                                    flexShrink: 0
+                                                },
+                                                children: i + 1
+                                            }, void 0, false, {
+                                                fileName: "src/Components/FoyerApeli.jsx",
+                                                lineNumber: 481,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                style: {
+                                                    fontSize: isMobile ? "0.9rem" : "0.95rem",
+                                                    color: "#2c3e50",
+                                                    fontWeight: "600"
+                                                },
+                                                children: obj.title
+                                            }, void 0, false, {
+                                                fileName: "src/Components/FoyerApeli.jsx",
+                                                lineNumber: 498,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/FoyerApeli.jsx",
+                                        lineNumber: 473,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        style: {
+                                            fontSize: "0.8rem",
+                                            color: "#666",
+                                            lineHeight: "1.6",
+                                            paddingLeft: "2.8rem"
+                                        },
+                                        children: obj.desc
+                                    }, void 0, false, {
+                                        fileName: "src/Components/FoyerApeli.jsx",
+                                        lineNumber: 508,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, i, true, {
+                                fileName: "src/Components/FoyerApeli.jsx",
+                                lineNumber: 464,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/FoyerApeli.jsx",
+                        lineNumber: 439,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/FoyerApeli.jsx",
+                lineNumber: 420,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/FoyerApeli.jsx",
+        lineNumber: 82,
+        columnNumber: 5
+    }, undefined);
+};
+_s(FoyerApeli, "i20DGJle2MZSs9tS3yHdn4A9Fow=");
+_c = FoyerApeli;
+exports.default = FoyerApeli;
+var _c;
+$RefreshReg$(_c, "FoyerApeli");
+
+  $parcel$ReactRefreshHelpers$80a0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"alYNl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4c29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -54459,2187 +57542,6 @@ const formatTime = (dateString)=>{
     });
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"18zBy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a1f1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a1f1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Chatbot component - Interface style ChatGPT pour la cuisine connectée
- * Connecté au foyer amélioré Apeli via MCP Server
- */ var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-const Chatbot = ()=>{
-    _s();
-    const navigate = (0, _reactRouterDom.useNavigate)();
-    const [messages, setMessages] = (0, _react.useState)([]);
-    const [input, setInput] = (0, _react.useState)("");
-    const [isLoading, setIsLoading] = (0, _react.useState)(false);
-    const [conversations, setConversations] = (0, _react.useState)([
-        {
-            id: 1,
-            title: "Nouvelle conversation",
-            date: new Date().toISOString()
-        }, 
-    ]);
-    const [activeConversation, setActiveConversation] = (0, _react.useState)(1);
-    const [sidebarOpen, setSidebarOpen] = (0, _react.useState)(false);
-    const [isMobile, setIsMobile] = (0, _react.useState)(false);
-    // Données IoT simulées du foyer Apeli
-    const [iotData, setIotData] = (0, _react.useState)({
-        temperature: 180,
-        poids: 2.5,
-        ventilateur: "auto",
-        statut: "connect\xe9"
-    });
-    const messagesEndRef = (0, _react.useRef)(null);
-    const inputRef = (0, _react.useRef)(null);
-    // Vérifier l'authentification
-    (0, _react.useEffect)(()=>{
-        const savedUser = localStorage.getItem("currentUser");
-        if (!savedUser) {
-            navigate("/");
-            return;
-        }
-    }, [
-        navigate
-    ]);
-    (0, _react.useEffect)(()=>{
-        const handleResize = ()=>{
-            const mobile = window.innerWidth < 768;
-            setIsMobile(mobile);
-            if (!mobile) setSidebarOpen(true);
-        };
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return ()=>window.removeEventListener("resize", handleResize);
-    }, []);
-    // Simuler les mises à jour IoT en temps réel
-    (0, _react.useEffect)(()=>{
-        const interval = setInterval(()=>{
-            setIotData((prev)=>({
-                    ...prev,
-                    temperature: Math.round(prev.temperature + (Math.random() - 0.5) * 5),
-                    poids: Math.round((prev.poids + (Math.random() - 0.5) * 0.1) * 100) / 100
-                }));
-        }, 3000);
-        return ()=>clearInterval(interval);
-    }, []);
-    // Auto-scroll vers le dernier message
-    (0, _react.useEffect)(()=>{
-        messagesEndRef.current?.scrollIntoView({
-            behavior: "smooth"
-        });
-    }, [
-        messages
-    ]);
-    // Message de bienvenue
-    (0, _react.useEffect)(()=>{
-        setMessages([
-            {
-                id: 1,
-                role: "assistant",
-                content: "Bonjour ! Je suis **ApeliChef**, votre assistant cuisine intelligent connect\xe9 au foyer am\xe9lior\xe9 Apeli.\n\nJe peux vous aider \xe0 :\n- **Cuire des plats** en contr\xf4lant la temp\xe9rature du foyer\n- **Surveiller** la temp\xe9rature et le poids de votre marmite en temps r\xe9el\n- **Ajuster le ventilateur** d'a\xe9ration via le serveur MCP\n- **Vous guider** \xe9tape par \xe9tape dans vos recettes\n\nQue souhaitez-vous cuisiner aujourd'hui ?",
-                timestamp: new Date().toISOString()
-            }, 
-        ]);
-    }, []);
-    // Réponses simulées du LLM cuisine
-    const getAIResponse = (userMessage)=>{
-        const msg = userMessage.toLowerCase();
-        if (msg.includes("riz") || msg.includes("rice")) return `## Cuisson du Riz au Foyer Apeli\n\n**Température recommandée :** 100°C\n**Temps de cuisson :** 20-25 minutes\n\n### Étapes :\n1. Versez **${iotData.poids}kg** d'eau dans la marmite (détecté par le capteur)\n2. *J'ajuste le ventilateur à 70% pour atteindre 100°C*\n3. Quand l'eau bout, ajoutez le riz lavé\n4. Réduisez à feu doux — *ventilateur à 30%*\n5. Couvrez et laissez cuire 20 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 70%*`;
-        if (msg.includes("p\xe2te") || msg.includes("pate") || msg.includes("fufu")) return `## Préparation de la Pâte (Fufu)\n\n**Température recommandée :** 95-100°C\n**Temps :** 15-20 minutes\n\n### Étapes :\n1. L'eau est en cours de chauffe sur le foyer\n2. *Ventilateur ajusté à 80% pour ébullition rapide*\n3. Versez la farine progressivement en remuant\n4. Réduisez le feu — *ventilateur à 40%*\n5. Tournez vigoureusement jusqu'à consistance lisse\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 80%*`;
-        if (msg.includes("sauce") || msg.includes("tomate")) return `## Sauce Tomate Maison\n\n**Température recommandée :** 85-90°C\n**Temps :** 30-40 minutes\n\n### Étapes :\n1. Faites chauffer l'huile — *ventilateur à 60%*\n2. Ajoutez les oignons et laissez revenir 5 min\n3. Ajoutez les tomates mixées\n4. *Réduction ventilateur à 45% pour mijotage doux*\n5. Assaisonnez et laissez mijoter 25 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 60%*`;
-        if (msg.includes("temp\xe9rature") || msg.includes("temp")) return `## État actuel du Foyer Apeli\n\n| Paramètre | Valeur |\n|---|---|\n| Température | **${iotData.temperature}°C** |\n| Poids marmite | **${iotData.poids}kg** |\n| Ventilateur | **${iotData.ventilateur}** |\n| Statut | **${iotData.statut}** |\n\nTout fonctionne normalement. Le foyer est prêt pour la cuisson !`;
-        if (msg.includes("ventilateur") || msg.includes("vent")) return `## Contrôle du Ventilateur d'Aération\n\nLe ventilateur du foyer Apeli est actuellement en mode **${iotData.ventilateur}**.\n\nVia le serveur MCP, je peux :\n- **Augmenter** la ventilation (monter la température)\n- **Réduire** la ventilation (baisser la température)\n- Passer en mode **auto** (régulation intelligente)\n\n> *Serveur MCP connecté et opérationnel*\n\nQuel réglage souhaitez-vous ?`;
-        if (msg.includes("bonjour") || msg.includes("salut") || msg.includes("hello")) return `Bonjour ! Je suis ravi de vous aider avec votre cuisine sur le foyer Apeli.\n\n**État du foyer :** ${iotData.statut}\n**Température :** ${iotData.temperature}°C\n\nQue souhaitez-vous préparer ? Je peux vous guider pas à pas tout en contrôlant automatiquement la température du foyer via le ventilateur d'aération.`;
-        return `Je comprends votre demande concernant "${userMessage}".\n\nEn tant qu'assistant cuisine du foyer Apeli, je peux vous aider avec :\n\n- **Recettes africaines et internationales** adaptées au foyer amélioré\n- **Contrôle de la température** via le ventilateur MCP\n- **Suivi en temps réel** du poids et de la température\n\nFoyer : **${iotData.statut}** | ${iotData.temperature}°C | ${iotData.poids}kg\n\nPourriez-vous préciser ce que vous souhaitez cuisiner ?`;
-    };
-    const handleSend = ()=>{
-        if (!input.trim() || isLoading) return;
-        const userMsg = {
-            id: Date.now(),
-            role: "user",
-            content: input,
-            timestamp: new Date().toISOString()
-        };
-        setMessages((prev)=>[
-                ...prev,
-                userMsg
-            ]);
-        setInput("");
-        setIsLoading(true);
-        // Simuler le délai de réponse du LLM
-        setTimeout(()=>{
-            const aiResponse = {
-                id: Date.now() + 1,
-                role: "assistant",
-                content: getAIResponse(input),
-                timestamp: new Date().toISOString()
-            };
-            setMessages((prev)=>[
-                    ...prev,
-                    aiResponse
-                ]);
-            setIsLoading(false);
-        }, 1000 + Math.random() * 1500);
-    };
-    const handleKeyPress = (e)=>{
-        if (e.key === "Enter" && !e.shiftKey) {
-            e.preventDefault();
-            handleSend();
-        }
-    };
-    const handleNewConversation = ()=>{
-        const newConv = {
-            id: Date.now(),
-            title: "Nouvelle conversation",
-            date: new Date().toISOString()
-        };
-        setConversations((prev)=>[
-                newConv,
-                ...prev
-            ]);
-        setActiveConversation(newConv.id);
-        setMessages([
-            {
-                id: 1,
-                role: "assistant",
-                content: "Nouvelle conversation ! Que souhaitez-vous cuisiner sur le foyer Apeli ?",
-                timestamp: new Date().toISOString()
-            }, 
-        ]);
-    };
-    // Rendu simple du markdown
-    const renderMarkdown = (text)=>{
-        return text.replace(/## (.*)/g, '<h3 style="margin: 0.8rem 0 0.5rem; color: #2c3e50;">$1</h3>').replace(/### (.*)/g, '<h4 style="margin: 0.6rem 0 0.3rem; color: #34495e;">$1</h4>').replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>").replace(/\*(.*?)\*/g, "<em>$1</em>").replace(/\n- /g, "<br/>• ").replace(/\n(\d+)\. /g, "<br/>$1. ").replace(/\n> (.*)/g, '<blockquote style="border-left: 3px solid #e67e22; padding: 0.5rem 1rem; margin: 0.5rem 0; background: rgba(230,126,34,0.08); border-radius: 0 6px 6px 0;">$1</blockquote>').replace(/\| (.*?) \|/g, (match)=>`<code style="background: rgba(0,0,0,0.05); padding: 0.1rem 0.3rem; border-radius: 3px;">${match}</code>`).replace(/\n\n/g, "<br/><br/>").replace(/\n/g, "<br/>");
-    };
-    const sidebarWidth = isMobile ? "100%" : "260px";
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            display: "flex",
-            height: "calc(100vh - 70px)",
-            marginTop: "70px",
-            background: "#f7f7f8",
-            overflow: "hidden"
-        },
-        children: [
-            (sidebarOpen || !isMobile) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    width: sidebarWidth,
-                    minWidth: isMobile ? "100%" : "260px",
-                    background: "#1a1a2e",
-                    color: "white",
-                    display: "flex",
-                    flexDirection: "column",
-                    position: isMobile ? "fixed" : "relative",
-                    top: isMobile ? "70px" : "auto",
-                    left: 0,
-                    bottom: 0,
-                    zIndex: isMobile ? 100 : 1
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: handleNewConversation,
-                        style: {
-                            margin: "1rem",
-                            padding: "0.75rem 1rem",
-                            background: "transparent",
-                            border: "1px solid rgba(255,255,255,0.2)",
-                            borderRadius: "8px",
-                            color: "white",
-                            cursor: "pointer",
-                            fontSize: "0.9rem",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.5rem",
-                            transition: "background 0.2s"
-                        },
-                        onMouseOver: (e)=>e.target.style.background = "rgba(255,255,255,0.1)",
-                        onMouseOut: (e)=>e.target.style.background = "transparent",
-                        children: "✚ Nouvelle conversation"
-                    }, void 0, false, {
-                        fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 210,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            margin: "0 1rem",
-                            padding: "0.8rem",
-                            background: "rgba(255,255,255,0.05)",
-                            borderRadius: "8px",
-                            fontSize: "0.8rem",
-                            marginBottom: "1rem"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    fontWeight: "600",
-                                    marginBottom: "0.5rem",
-                                    color: "#e67e22",
-                                    fontSize: "0.85rem"
-                                },
-                                children: "Foyer Apeli"
-                            }, void 0, false, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 243,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    marginBottom: "0.3rem"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Temp."
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 254,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            color: iotData.temperature > 200 ? "#e74c3c" : "#2ecc71",
-                                            fontWeight: "600"
-                                        },
-                                        children: [
-                                            iotData.temperature,
-                                            "\xb0C"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 255,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 253,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    marginBottom: "0.3rem"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Poids"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 260,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            fontWeight: "600"
-                                        },
-                                        children: [
-                                            iotData.poids,
-                                            "kg"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 261,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 259,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    marginBottom: "0.3rem"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Ventilo"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 264,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            fontWeight: "600"
-                                        },
-                                        children: iotData.ventilateur
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 265,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 263,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    justifyContent: "space-between"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Statut"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 268,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            color: "#2ecc71",
-                                            fontWeight: "600"
-                                        },
-                                        children: [
-                                            "● ",
-                                            iotData.statut
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 269,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 267,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 233,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            flex: 1,
-                            overflowY: "auto",
-                            padding: "0 0.5rem"
-                        },
-                        children: conversations.map((conv)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                onClick: ()=>{
-                                    setActiveConversation(conv.id);
-                                    if (isMobile) setSidebarOpen(false);
-                                },
-                                style: {
-                                    padding: "0.7rem 0.8rem",
-                                    borderRadius: "6px",
-                                    cursor: "pointer",
-                                    background: activeConversation === conv.id ? "rgba(255,255,255,0.1)" : "transparent",
-                                    marginBottom: "0.2rem",
-                                    fontSize: "0.85rem",
-                                    transition: "background 0.2s",
-                                    whiteSpace: "nowrap",
-                                    overflow: "hidden",
-                                    textOverflow: "ellipsis"
-                                },
-                                children: conv.title
-                            }, conv.id, false, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 276,
-                                columnNumber: 15
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 274,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            padding: "1rem",
-                            borderTop: "1px solid rgba(255,255,255,0.1)",
-                            fontSize: "0.75rem",
-                            color: "rgba(255,255,255,0.5)"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "0.5rem"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            color: "#2ecc71",
-                                            fontSize: "0.6rem"
-                                        },
-                                        children: "●"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 310,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    "Serveur MCP connect\xe9"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 309,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    marginTop: "0.3rem"
-                                },
-                                children: "Ventilateur d'a\xe9ration: Actif"
-                            }, void 0, false, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 313,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 301,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Chatbot.jsx",
-                lineNumber: 194,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    flex: 1,
-                    display: "flex",
-                    flexDirection: "column",
-                    minWidth: 0
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            padding: isMobile ? "0.6rem 0.8rem" : "0.8rem 1rem",
-                            borderBottom: "1px solid #e5e5e5",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "space-between",
-                            background: "white",
-                            gap: "0.5rem"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "0.5rem",
-                                    minWidth: 0,
-                                    flex: 1
-                                },
-                                children: [
-                                    isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        onClick: ()=>setSidebarOpen(!sidebarOpen),
-                                        style: {
-                                            background: "none",
-                                            border: "none",
-                                            fontSize: "1.3rem",
-                                            cursor: "pointer",
-                                            padding: "0.3rem",
-                                            flexShrink: 0
-                                        },
-                                        children: "☰"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 336,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            minWidth: 0
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    fontWeight: "600",
-                                                    fontSize: isMobile ? "0.85rem" : "1rem",
-                                                    color: "#2c3e50",
-                                                    whiteSpace: "nowrap",
-                                                    overflow: "hidden",
-                                                    textOverflow: "ellipsis"
-                                                },
-                                                children: "ApeliChef — Assistant Cuisine IA"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 351,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    fontSize: "0.75rem",
-                                                    color: "#7f8c8d"
-                                                },
-                                                children: "RAG + LLM Cuisine • Connect\xe9 au foyer am\xe9lior\xe9 Apeli"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 355,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 350,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 334,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    gap: isMobile ? "0.5rem" : "1rem",
-                                    fontSize: isMobile ? "0.7rem" : "0.8rem",
-                                    color: "#7f8c8d",
-                                    flexShrink: 0
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            background: "#f0f0f0",
-                                            padding: "0.2rem 0.5rem",
-                                            borderRadius: "6px"
-                                        },
-                                        children: [
-                                            iotData.temperature,
-                                            "\xb0C"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 370,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            background: "#f0f0f0",
-                                            padding: "0.2rem 0.5rem",
-                                            borderRadius: "6px"
-                                        },
-                                        children: [
-                                            iotData.poids,
-                                            "kg"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 371,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 361,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 323,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            flex: 1,
-                            overflowY: "auto",
-                            padding: isMobile ? "0.5rem" : "1rem",
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "1rem"
-                        },
-                        children: [
-                            messages.map((msg)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    style: {
-                                        display: "flex",
-                                        justifyContent: msg.role === "user" ? "flex-end" : "flex-start",
-                                        maxWidth: "100%"
-                                    },
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            maxWidth: isMobile ? "90%" : "70%",
-                                            padding: "1rem 1.2rem",
-                                            borderRadius: msg.role === "user" ? "18px 18px 4px 18px" : "18px 18px 18px 4px",
-                                            background: msg.role === "user" ? "#e67e22" : "white",
-                                            color: msg.role === "user" ? "white" : "#2c3e50",
-                                            boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
-                                            fontSize: "0.9rem",
-                                            lineHeight: "1.6",
-                                            wordBreak: "break-word"
-                                        },
-                                        children: [
-                                            msg.role === "assistant" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                dangerouslySetInnerHTML: {
-                                                    __html: renderMarkdown(msg.content)
-                                                }
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 409,
-                                                columnNumber: 19
-                                            }, undefined) : msg.content,
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    fontSize: "0.65rem",
-                                                    marginTop: "0.5rem",
-                                                    opacity: 0.5,
-                                                    textAlign: msg.role === "user" ? "right" : "left"
-                                                },
-                                                children: new Date(msg.timestamp).toLocaleTimeString("fr-FR", {
-                                                    hour: "2-digit",
-                                                    minute: "2-digit"
-                                                })
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 413,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 395,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, msg.id, false, {
-                                    fileName: "src/Components/Chatbot.jsx",
-                                    lineNumber: 387,
-                                    columnNumber: 13
-                                }, undefined)),
-                            isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    justifyContent: "flex-start"
-                                },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    style: {
-                                        padding: "1rem 1.2rem",
-                                        borderRadius: "18px 18px 18px 4px",
-                                        background: "white",
-                                        boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
-                                        fontSize: "0.9rem",
-                                        color: "#7f8c8d"
-                                    },
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "typing-dots",
-                                        children: [
-                                            "ApeliChef r\xe9fl\xe9chit",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                style: {
-                                                    animation: "blink 1.4s infinite"
-                                                },
-                                                children: "."
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 444,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                style: {
-                                                    animation: "blink 1.4s infinite 0.2s"
-                                                },
-                                                children: "."
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 445,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                style: {
-                                                    animation: "blink 1.4s infinite 0.4s"
-                                                },
-                                                children: "."
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 446,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 442,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/Components/Chatbot.jsx",
-                                    lineNumber: 432,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 431,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                ref: messagesEndRef
-                            }, void 0, false, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 452,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 376,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            padding: isMobile ? "0.6rem 0.5rem" : "1rem",
-                            borderTop: "1px solid #e5e5e5",
-                            background: "white"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    gap: "0.5rem",
-                                    maxWidth: "800px",
-                                    margin: "0 auto",
-                                    alignItems: "flex-end"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                        ref: inputRef,
-                                        value: input,
-                                        onChange: (e)=>setInput(e.target.value),
-                                        onKeyDown: handleKeyPress,
-                                        placeholder: isMobile ? "Posez votre question..." : "Demandez une recette, v\xe9rifiez la temp\xe9rature, contr\xf4lez le ventilateur...",
-                                        rows: 1,
-                                        style: {
-                                            flex: 1,
-                                            padding: isMobile ? "0.6rem 0.8rem" : "0.8rem 1rem",
-                                            border: "1px solid #ddd",
-                                            borderRadius: "12px",
-                                            fontSize: isMobile ? "16px" : "0.9rem",
-                                            resize: "none",
-                                            outline: "none",
-                                            fontFamily: "inherit",
-                                            maxHeight: "120px",
-                                            minHeight: "44px",
-                                            lineHeight: "1.4",
-                                            WebkitAppearance: "none"
-                                        },
-                                        onInput: (e)=>{
-                                            e.target.style.height = "auto";
-                                            e.target.style.height = Math.min(e.target.scrollHeight, 120) + "px";
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 472,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        onClick: handleSend,
-                                        disabled: !input.trim() || isLoading,
-                                        style: {
-                                            padding: "0.8rem 1.2rem",
-                                            background: input.trim() && !isLoading ? "#e67e22" : "#ccc",
-                                            color: "white",
-                                            border: "none",
-                                            borderRadius: "12px",
-                                            cursor: input.trim() && !isLoading ? "pointer" : "default",
-                                            fontSize: "1rem",
-                                            transition: "background 0.2s",
-                                            minHeight: "44px",
-                                            minWidth: "44px"
-                                        },
-                                        children: "➤"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 498,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 463,
-                                columnNumber: 11
-                            }, undefined),
-                            !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                style: {
-                                    textAlign: "center",
-                                    fontSize: "0.7rem",
-                                    color: "#999",
-                                    margin: "0.5rem 0 0"
-                                },
-                                children: "ApeliChef — IA cuisine connect\xe9e au foyer am\xe9lior\xe9 Apeli • Innovation Crunch Time 2026"
-                            }, void 0, false, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 518,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 456,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Chatbot.jsx",
-                lineNumber: 321,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Chatbot.jsx",
-        lineNumber: 183,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Chatbot, "MCTzT8YQr/fFIJ8aL50IY5PQCsc=", false, function() {
-    return [
-        (0, _reactRouterDom.useNavigate)
-    ];
-});
-_c = Chatbot;
-exports.default = Chatbot;
-var _c;
-$RefreshReg$(_c, "Chatbot");
-
-  $parcel$ReactRefreshHelpers$a1f1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e5Nk6":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e2fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e2fc.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Doctorante component - Page dédiée à Mme AMOUZOU-ATCHOE Akoua Gabriela
- */ var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _doctorantePng = require("../images/doctorante.png");
-var _doctorantePngDefault = parcelHelpers.interopDefault(_doctorantePng);
-var _s = $RefreshSig$();
-const Doctorante = ()=>{
-    _s();
-    const [isMobile, setIsMobile] = (0, _react.useState)(false);
-    (0, _react.useEffect)(()=>{
-        const handleResize = ()=>setIsMobile(window.innerWidth < 768);
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return ()=>window.removeEventListener("resize", handleResize);
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        style: {
-            padding: isMobile ? "5.5rem 0.8rem 2rem" : "7rem 2rem 3rem",
-            maxWidth: "1000px",
-            margin: "0 auto",
-            minHeight: "100vh"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    textAlign: "center",
-                    marginBottom: isMobile ? "2rem" : "3rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            width: isMobile ? "100px" : "140px",
-                            height: isMobile ? "100px" : "140px",
-                            borderRadius: "50%",
-                            margin: "0 auto 1.5rem",
-                            overflow: "hidden",
-                            boxShadow: "0 8px 25px rgba(230, 126, 34, 0.3)"
-                        },
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _doctorantePngDefault.default),
-                            alt: "Mme AMOUZOU-ATCHOE Akoua Gabriela",
-                            style: {
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "cover"
-                            }
-                        }, void 0, false, {
-                            fileName: "src/Components/Doctorante.jsx",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        style: {
-                            fontSize: isMobile ? "1.5rem" : "2.2rem",
-                            color: "#2c3e50",
-                            fontWeight: "700",
-                            marginBottom: "0.5rem",
-                            lineHeight: "1.3"
-                        },
-                        children: "Mme AMOUZOU-ATCHOE Akoua Gabriela"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: isMobile ? "1rem" : "1.2rem",
-                            color: "#e67e22",
-                            fontWeight: "500",
-                            marginBottom: "0.3rem"
-                        },
-                        children: "Doctorante — Chercheuse"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 64,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "0.95rem",
-                            color: "#7f8c8d"
-                        },
-                        children: "Universit\xe9 de Lom\xe9"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 74,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    background: "white",
-                    borderRadius: isMobile ? "12px" : "16px",
-                    padding: isMobile ? "1.2rem" : "2.5rem",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    marginBottom: isMobile ? "1.5rem" : "2rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            fontSize: isMobile ? "1.1rem" : "1.5rem",
-                            color: "#2c3e50",
-                            marginBottom: "1.5rem",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.5rem"
-                        },
-                        children: "Article de Recherche"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 94,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            background: "linear-gradient(135deg, #fef9e7, #fdebd0)",
-                            borderRadius: "12px",
-                            padding: isMobile ? "1.2rem" : "2rem",
-                            borderLeft: "4px solid #e67e22"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                style: {
-                                    fontSize: isMobile ? "1rem" : "1.2rem",
-                                    color: "#2c3e50",
-                                    marginBottom: "1rem",
-                                    fontWeight: "600",
-                                    lineHeight: "1.4"
-                                },
-                                children: "\xc9tude et Optimisation du Foyer Am\xe9lior\xe9 Apeli : Vers une Cuisson Efficiente et Durable"
-                            }, void 0, false, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 114,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                style: {
-                                    fontSize: "0.95rem",
-                                    color: "#555",
-                                    lineHeight: "1.8",
-                                    marginBottom: "1rem"
-                                },
-                                children: "Cet article pr\xe9sente une \xe9tude approfondie du foyer am\xe9lior\xe9 Apeli, un dispositif de cuisson con\xe7u pour r\xe9duire la consommation de combustible et am\xe9liorer l'efficacit\xe9 \xe9nerg\xe9tique dans les m\xe9nages. La recherche analyse les performances thermiques du foyer, identifie les axes d'am\xe9lioration et propose des solutions innovantes pour optimiser son fonctionnement."
-                            }, void 0, false, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 125,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                style: {
-                                    fontSize: "0.95rem",
-                                    color: "#555",
-                                    lineHeight: "1.8",
-                                    marginBottom: "1rem"
-                                },
-                                children: "Les r\xe9sultats montrent que l'int\xe9gration de capteurs de temp\xe9rature et de syst\xe8mes de contr\xf4le automatis\xe9 de la ventilation peut significativement am\xe9liorer la r\xe9gulation thermique, permettant une cuisson plus pr\xe9cise et \xe9conome en \xe9nergie."
-                            }, void 0, false, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 135,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    flexWrap: "wrap",
-                                    gap: "0.5rem",
-                                    marginTop: "1rem"
-                                },
-                                children: [
-                                    "Foyer am\xe9lior\xe9",
-                                    "Efficacit\xe9 \xe9nerg\xe9tique",
-                                    "Cuisson durable",
-                                    "IoT",
-                                    "Capteurs thermiques"
-                                ].map((tag)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            background: "rgba(230, 126, 34, 0.15)",
-                                            color: "#e67e22",
-                                            padding: "0.3rem 0.8rem",
-                                            borderRadius: "20px",
-                                            fontSize: "0.8rem",
-                                            fontWeight: "500"
-                                        },
-                                        children: tag
-                                    }, tag, false, {
-                                        fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 154,
-                                        columnNumber: 15
-                                    }, undefined))
-                            }, void 0, false, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 145,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    marginTop: "1.5rem",
-                                    padding: "1rem 1.5rem",
-                                    background: "#fff",
-                                    borderRadius: "8px",
-                                    border: "1px solid rgba(230,126,34,0.2)"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                        style: {
-                                            fontSize: "0.95rem",
-                                            color: "#2c3e50",
-                                            marginBottom: "0.5rem"
-                                        },
-                                        children: "R\xe9f\xe9rences et liens"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 178,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                        style: {
-                                            margin: 0,
-                                            paddingLeft: "1.2rem",
-                                            fontSize: "0.85rem",
-                                            lineHeight: "1.8",
-                                            color: "#555"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: [
-                                                    "AMOUZOU-ATCHOE, A. G. (2024). ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
-                                                        children: "\xc9tude et Optimisation du Foyer Am\xe9lior\xe9 Apeli"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Doctorante.jsx",
-                                                        lineNumber: 183,
-                                                        columnNumber: 47
-                                                    }, undefined),
-                                                    ". Universit\xe9 de Lom\xe9."
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 182,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "https://www.researchgate.net/profile/Akoua-Gabriela-Amouzou-Atchoe",
-                                                    target: "_blank",
-                                                    rel: "noopener noreferrer",
-                                                    style: {
-                                                        color: "#e67e22",
-                                                        textDecoration: "none"
-                                                    },
-                                                    children: "Profil ResearchGate — Mme AMOUZOU-ATCHOE"
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Doctorante.jsx",
-                                                    lineNumber: 186,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 185,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "https://scholar.google.com/",
-                                                    target: "_blank",
-                                                    rel: "noopener noreferrer",
-                                                    style: {
-                                                        color: "#e67e22",
-                                                        textDecoration: "none"
-                                                    },
-                                                    children: "Google Scholar — Publications associ\xe9es"
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Doctorante.jsx",
-                                                    lineNumber: 196,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 195,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: "https://www.univ-lome.tg/",
-                                                    target: "_blank",
-                                                    rel: "noopener noreferrer",
-                                                    style: {
-                                                        color: "#e67e22",
-                                                        textDecoration: "none"
-                                                    },
-                                                    children: "Universit\xe9 de Lom\xe9 — Site officiel"
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Doctorante.jsx",
-                                                    lineNumber: 206,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 205,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 181,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 169,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 106,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 85,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    background: "white",
-                    borderRadius: isMobile ? "12px" : "16px",
-                    padding: isMobile ? "1.2rem" : "2.5rem",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    marginBottom: isMobile ? "1.5rem" : "2rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            fontSize: isMobile ? "1.1rem" : "1.5rem",
-                            color: "#2c3e50",
-                            marginBottom: "1.5rem",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.5rem"
-                        },
-                        children: "Le Foyer Am\xe9lior\xe9 Apeli"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 230,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "0.95rem",
-                            color: "#555",
-                            lineHeight: "1.8",
-                            marginBottom: "1.5rem"
-                        },
-                        children: "Le foyer am\xe9lior\xe9 Apeli est un dispositif de cuisson innovant d\xe9velopp\xe9 dans le cadre des recherches de Mme AMOUZOU-ATCHOE. Con\xe7u pour les besoins sp\xe9cifiques des m\xe9nages togolais et ouest-africains, il vise \xe0 :"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 242,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "grid",
-                            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-                            gap: "1rem"
-                        },
-                        children: [
-                            {
-                                title: "Efficacit\xe9 thermique",
-                                desc: "R\xe9duction de 40% de la consommation de combustible par rapport aux foyers traditionnels"
-                            },
-                            {
-                                title: "Impact environnemental",
-                                desc: "R\xe9duction des \xe9missions de CO₂ et de la d\xe9forestation li\xe9e au bois de chauffe"
-                            },
-                            {
-                                title: "Qualit\xe9 de l'air",
-                                desc: "Diminution significative des fum\xe9es nocives gr\xe2ce \xe0 une meilleure combustion"
-                            },
-                            {
-                                title: "Impact social",
-                                desc: "Am\xe9lioration des conditions de vie des m\xe9nages, particuli\xe8rement des femmes et enfants"
-                            }, 
-                        ].map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    padding: "1.2rem",
-                                    background: "#f8f9fa",
-                                    borderRadius: "10px",
-                                    display: "flex",
-                                    gap: "1rem",
-                                    alignItems: "flex-start"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            width: "40px",
-                                            height: "40px",
-                                            borderRadius: "50%",
-                                            background: "linear-gradient(135deg, #e67e22, #f39c12)",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            color: "white",
-                                            fontWeight: "700",
-                                            fontSize: "0.85rem",
-                                            flexShrink: 0
-                                        },
-                                        children: item.title.charAt(0)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 276,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                style: {
-                                                    fontSize: "0.95rem",
-                                                    color: "#2c3e50",
-                                                    marginBottom: "0.3rem"
-                                                },
-                                                children: item.title
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 294,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    fontSize: "0.85rem",
-                                                    color: "#666",
-                                                    lineHeight: "1.5",
-                                                    margin: 0
-                                                },
-                                                children: item.desc
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 297,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 293,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, item.title, true, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 265,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 252,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 221,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    background: "white",
-                    borderRadius: isMobile ? "12px" : "16px",
-                    padding: isMobile ? "1.2rem" : "2.5rem",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    marginBottom: isMobile ? "1.5rem" : "2rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            fontSize: isMobile ? "1.1rem" : "1.5rem",
-                            color: "#2c3e50",
-                            marginBottom: "1.5rem",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.5rem"
-                        },
-                        children: "Notre Contribution — Innovation Crunch Time 2026"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 316,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "0.95rem",
-                            color: "#555",
-                            lineHeight: "1.8",
-                            marginBottom: "1.5rem"
-                        },
-                        children: [
-                            "Dans le cadre de l'Innovation Crunch Time 2026 \xe0 l'Universit\xe9 de Lom\xe9, l'\xe9quipe ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "Elephant"
-                            }, void 0, false, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 336,
-                                columnNumber: 91
-                            }, undefined),
-                            " (Team 19) travaille durant 5 jours intensifs pour am\xe9liorer le foyer Apeli de Mme AMOUZOU-ATCHOE avec des technologies innovantes :"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 328,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "1rem"
-                        },
-                        children: [
-                            {
-                                text: "Int\xe9gration d'un chatbot IA (RAG + LLM) sp\xe9cialis\xe9 en cuisine pour guider les utilisateurs"
-                            },
-                            {
-                                text: "Capteurs de temp\xe9rature et de poids connect\xe9s pour un suivi en temps r\xe9el"
-                            },
-                            {
-                                text: "Contr\xf4le automatis\xe9 du ventilateur d'a\xe9ration via un serveur MCP"
-                            },
-                            {
-                                text: "Interface web intuitive pour interagir avec le foyer \xe0 distance"
-                            }, 
-                        ].map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    gap: "1rem",
-                                    alignItems: "center",
-                                    padding: "0.8rem",
-                                    background: i % 2 === 0 ? "#fef9e7" : "#f8f9fa",
-                                    borderRadius: "8px"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            width: "32px",
-                                            height: "32px",
-                                            borderRadius: "50%",
-                                            background: "#e67e22",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            color: "white",
-                                            fontWeight: "700",
-                                            fontSize: "0.8rem",
-                                            flexShrink: 0
-                                        },
-                                        children: i + 1
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 356,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            color: "#555",
-                                            margin: 0,
-                                            lineHeight: "1.5"
-                                        },
-                                        children: item.text
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 373,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, i, true, {
-                                fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 345,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 338,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 307,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    textAlign: "center",
-                    padding: isMobile ? "1.5rem 1rem" : "2rem",
-                    background: "linear-gradient(135deg, #1a1a2e, #16213e)",
-                    borderRadius: isMobile ? "12px" : "16px",
-                    color: "white"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: isMobile ? "1rem" : "1.15rem",
-                            fontStyle: "italic",
-                            lineHeight: "1.8",
-                            maxWidth: "700px",
-                            margin: "0 auto 1rem"
-                        },
-                        children: '"L\'innovation au service de la cuisson durable — ensemble, nous pouvons transformer le quotidien de millions de foyers africains."'
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 391,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "0.85rem",
-                            opacity: 0.7
-                        },
-                        children: "— Mme AMOUZOU-ATCHOE Akoua Gabriela"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 402,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 382,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Doctorante.jsx",
-        lineNumber: 18,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Doctorante, "0VTTNJATKABQPGLm9RVT0tKGUgU=");
-_c = Doctorante;
-exports.default = Doctorante;
-var _c;
-$RefreshReg$(_c, "Doctorante");
-
-  $parcel$ReactRefreshHelpers$e2fc.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/doctorante.png":"1TZIt"}],"1TZIt":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "doctorante.d91ebc71.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"YKbWR":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5fdb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5fdb.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Team component - Page dédiée à l'équipe Elephant (Team 19)
- * Innovation Crunch Time 2026 - Université de Lomé
- */ var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _jr2Jpg = require("../images/jr2.jpg");
-var _jr2JpgDefault = parcelHelpers.interopDefault(_jr2Jpg);
-var _hycintasJpg = require("../images/Hycintas.jpg");
-var _hycintasJpgDefault = parcelHelpers.interopDefault(_hycintasJpg);
-var _s = $RefreshSig$();
-const teamMembers = [
-    {
-        name: "Emmanuel AMELA",
-        role: "Chef d'\xe9quipe",
-        description: "Coordination du projet et d\xe9veloppement de la plateforme web",
-        initials: "EA",
-        image: (0, _jr2JpgDefault.default)
-    },
-    {
-        name: "Lang-H\xe8zi\xe8 Palti\xebl AMEDRO",
-        role: "Analyste",
-        description: "Analyse des besoins et sp\xe9cifications fonctionnelles du projet",
-        initials: "LA"
-    },
-    {
-        name: "Sully BABELESSA",
-        role: "Analyste",
-        description: "Analyse des donn\xe9es et optimisation des performances du foyer",
-        initials: "SB"
-    },
-    {
-        name: "Kossi Shelter DABONI",
-        role: "Designer",
-        description: "Design de l'interface utilisateur et exp\xe9rience utilisateur",
-        initials: "KD"
-    },
-    {
-        name: "Hyacinthe d'ALMEIDA",
-        role: "Analyste",
-        description: "Analyse technique et recherche sur les technologies IoT",
-        initials: "Hd",
-        image: (0, _hycintasJpgDefault.default)
-    },
-    {
-        name: "Mathilde HOUNGBEDJI",
-        role: "D\xe9veloppeur",
-        description: "D\xe9veloppement du chatbot IA et int\xe9gration des capteurs",
-        initials: "MH"
-    },
-    {
-        name: "Josu\xe9 SOLAGNI",
-        role: "Gardien du temps",
-        description: "Gestion du planning et suivi des d\xe9lais du projet",
-        initials: "JS"
-    },
-    {
-        name: "Abalakata TCHASSEMA",
-        role: "Communication",
-        description: "Communication du projet et relations avec les parties prenantes",
-        initials: "AT"
-    }, 
-];
-const Team = ()=>{
-    _s();
-    const [isMobile, setIsMobile] = (0, _react.useState)(false);
-    const [isTablet, setIsTablet] = (0, _react.useState)(false);
-    (0, _react.useEffect)(()=>{
-        const handleResize = ()=>{
-            setIsMobile(window.innerWidth < 576);
-            setIsTablet(window.innerWidth >= 576 && window.innerWidth < 992);
-        };
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return ()=>window.removeEventListener("resize", handleResize);
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        style: {
-            padding: isMobile ? "5.5rem 0.8rem 2rem" : isTablet ? "6rem 1.5rem 3rem" : "7rem 2rem 3rem",
-            maxWidth: "1100px",
-            margin: "0 auto",
-            minHeight: "100vh"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    textAlign: "center",
-                    marginBottom: "3rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            fontSize: "1.5rem",
-                            fontWeight: "800",
-                            color: "#e67e22",
-                            letterSpacing: "0.3rem",
-                            marginBottom: "1rem"
-                        },
-                        children: "ELEPHANT"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 87,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        style: {
-                            fontSize: isMobile ? "1.5rem" : "2.5rem",
-                            color: "#2c3e50",
-                            fontWeight: "700",
-                            marginBottom: "0.5rem",
-                            lineHeight: "1.2"
-                        },
-                        children: "Team Elephant"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 98,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: isMobile ? "1rem" : "1.2rem",
-                            color: "#e67e22",
-                            fontWeight: "600",
-                            marginBottom: "0.3rem"
-                        },
-                        children: "\xc9quipe 19"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 109,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "1rem",
-                            color: "#7f8c8d",
-                            maxWidth: "600px",
-                            margin: "0.5rem auto 0",
-                            lineHeight: "1.6"
-                        },
-                        children: "Innovation Crunch Time 2026 — Universit\xe9 de Lom\xe9"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 119,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Team.jsx",
-                lineNumber: 86,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    background: "linear-gradient(135deg, #1a1a2e, #16213e)",
-                    borderRadius: isMobile ? "12px" : "16px",
-                    padding: isMobile ? "1.2rem" : isTablet ? "2rem" : "2.5rem",
-                    color: "white",
-                    marginBottom: "3rem",
-                    textAlign: "center"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            fontSize: isMobile ? "1.2rem" : "1.5rem",
-                            marginBottom: "1rem",
-                            fontWeight: "600"
-                        },
-                        children: "Notre Mission"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 143,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "1rem",
-                            lineHeight: "1.8",
-                            maxWidth: "750px",
-                            margin: "0 auto",
-                            opacity: 0.9
-                        },
-                        children: "Optimiser le foyer am\xe9lior\xe9 Apeli en int\xe9grant des technologies de pointe : Intelligence Artificielle, Internet des Objets (IoT) et automatisation. Notre objectif est de rendre la cuisson plus pr\xe9cise, plus efficiente et plus accessible gr\xe2ce \xe0 un assistant cuisine intelligent connect\xe9 directement au foyer."
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 152,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Team.jsx",
-                lineNumber: 133,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                style: {
-                    fontSize: isMobile ? "1.3rem" : "1.8rem",
-                    color: "#2c3e50",
-                    textAlign: "center",
-                    marginBottom: "2rem"
-                },
-                children: "Membres de l'\xc9quipe"
-            }, void 0, false, {
-                fileName: "src/Components/Team.jsx",
-                lineNumber: 166,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    display: "grid",
-                    gridTemplateColumns: isMobile ? "1fr" : isTablet ? "repeat(2, 1fr)" : "repeat(4, 1fr)",
-                    gap: isMobile ? "1rem" : "1.5rem",
-                    marginBottom: "3rem"
-                },
-                children: teamMembers.map((member, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            background: "white",
-                            borderRadius: "16px",
-                            padding: isMobile ? "1.5rem" : "2rem",
-                            boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
-                            textAlign: "center",
-                            transition: "transform 0.3s ease, box-shadow 0.3s ease"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    width: isMobile ? "60px" : "70px",
-                                    height: isMobile ? "60px" : "70px",
-                                    borderRadius: "50%",
-                                    background: member.image ? "none" : `linear-gradient(135deg, ${[
-                                        "#e67e22, #f39c12",
-                                        "#3498db, #2980b9",
-                                        "#2ecc71, #27ae60",
-                                        "#9b59b6, #8e44ad",
-                                        "#e74c3c, #c0392b",
-                                        "#1abc9c, #16a085",
-                                        "#34495e, #2c3e50",
-                                        "#d35400, #e67e22"
-                                    ][index]})`,
-                                    margin: "0 auto 1rem",
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    fontSize: "2rem",
-                                    overflow: "hidden"
-                                },
-                                children: member.image ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: member.image,
-                                    alt: member.name,
-                                    style: {
-                                        width: "100%",
-                                        height: "100%",
-                                        objectFit: "cover"
-                                    }
-                                }, void 0, false, {
-                                    fileName: "src/Components/Team.jsx",
-                                    lineNumber: 214,
-                                    columnNumber: 17
-                                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    style: {
-                                        color: "white",
-                                        fontWeight: "700",
-                                        fontSize: "1rem"
-                                    },
-                                    children: member.initials
-                                }, void 0, false, {
-                                    fileName: "src/Components/Team.jsx",
-                                    lineNumber: 224,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/Team.jsx",
-                                lineNumber: 197,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                style: {
-                                    fontSize: "1.1rem",
-                                    color: "#2c3e50",
-                                    marginBottom: "0.3rem",
-                                    fontWeight: "600"
-                                },
-                                children: member.name
-                            }, void 0, false, {
-                                fileName: "src/Components/Team.jsx",
-                                lineNumber: 229,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                style: {
-                                    fontSize: "0.85rem",
-                                    color: "#e67e22",
-                                    fontWeight: "500",
-                                    marginBottom: "0.8rem"
-                                },
-                                children: member.role
-                            }, void 0, false, {
-                                fileName: "src/Components/Team.jsx",
-                                lineNumber: 239,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                style: {
-                                    fontSize: "0.9rem",
-                                    color: "#666",
-                                    lineHeight: "1.5",
-                                    margin: 0
-                                },
-                                children: member.description
-                            }, void 0, false, {
-                                fileName: "src/Components/Team.jsx",
-                                lineNumber: 249,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, index, true, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 186,
-                        columnNumber: 11
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/Components/Team.jsx",
-                lineNumber: 177,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    background: "white",
-                    borderRadius: "16px",
-                    padding: isMobile ? "1.5rem" : "2.5rem",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    marginBottom: "3rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            fontSize: isMobile ? "1.2rem" : "1.5rem",
-                            color: "#2c3e50",
-                            marginBottom: "1.5rem",
-                            textAlign: "center"
-                        },
-                        children: "Notre Projet : Optimisation du Foyer Apeli"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 273,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "grid",
-                            gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-                            gap: isMobile ? "1rem" : "1.5rem"
-                        },
-                        children: [
-                            {
-                                title: "Chatbot IA Cuisine",
-                                desc: "Un assistant intelligent bas\xe9 sur un LLM avec RAG sp\xe9cialis\xe9 en cuisine. Il guide les utilisateurs \xe9tape par \xe9tape dans la pr\xe9paration de leurs plats."
-                            },
-                            {
-                                title: "Capteurs IoT",
-                                desc: "Des capteurs de temp\xe9rature et de poids connect\xe9s au foyer transmettent les donn\xe9es en temps r\xe9el \xe0 l'interface web."
-                            },
-                            {
-                                title: "Serveur MCP",
-                                desc: "Un serveur MCP (Model Context Protocol) permet \xe0 l'IA de contr\xf4ler le ventilateur d'a\xe9ration pour r\xe9guler la temp\xe9rature du foyer."
-                            },
-                            {
-                                title: "Interface Web",
-                                desc: "Une plateforme web responsive permettant aux utilisateurs d'interagir avec le foyer et l'IA depuis n'importe quel appareil."
-                            }, 
-                        ].map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    padding: "1.5rem",
-                                    background: "#f8f9fa",
-                                    borderRadius: "12px",
-                                    borderLeft: "4px solid #e67e22"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            display: "flex",
-                                            alignItems: "center",
-                                            gap: "0.8rem",
-                                            marginBottom: "0.8rem"
-                                        },
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            style: {
-                                                fontSize: "1rem",
-                                                color: "#2c3e50",
-                                                fontWeight: "600",
-                                                margin: 0
-                                            },
-                                            children: item.title
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Team.jsx",
-                                            lineNumber: 319,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Team.jsx",
-                                        lineNumber: 318,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            color: "#666",
-                                            lineHeight: "1.6",
-                                            margin: 0
-                                        },
-                                        children: item.desc
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Team.jsx",
-                                        lineNumber: 323,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, i, true, {
-                                fileName: "src/Components/Team.jsx",
-                                lineNumber: 309,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 284,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Team.jsx",
-                lineNumber: 264,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    background: "white",
-                    borderRadius: "16px",
-                    padding: isMobile ? "1.5rem" : "2.5rem",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                    marginBottom: "3rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            fontSize: isMobile ? "1.2rem" : "1.5rem",
-                            color: "#2c3e50",
-                            marginBottom: "1.5rem",
-                            textAlign: "center"
-                        },
-                        children: "5 Jours d'Innovation"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 341,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: isMobile ? "0.8rem" : "1rem"
-                        },
-                        children: [
-                            {
-                                day: "Jour 1",
-                                title: "Id\xe9ation & Conception",
-                                desc: "Brainstorming, d\xe9finition du concept et planification technique"
-                            },
-                            {
-                                day: "Jour 2",
-                                title: "Prototype Hardware",
-                                desc: "Assemblage des capteurs IoT et configuration du foyer Apeli"
-                            },
-                            {
-                                day: "Jour 3",
-                                title: "D\xe9veloppement Software",
-                                desc: "Cr\xe9ation de la plateforme web et int\xe9gration du chatbot IA"
-                            },
-                            {
-                                day: "Jour 4",
-                                title: "Int\xe9gration & Tests",
-                                desc: "Connexion MCP, tests de cuisson r\xe9elle et ajustements"
-                            },
-                            {
-                                day: "Jour 5",
-                                title: "Pr\xe9sentation Finale",
-                                desc: "D\xe9monstration live du foyer intelligent devant le jury"
-                            }, 
-                        ].map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    gap: "1rem",
-                                    alignItems: "center",
-                                    padding: "1rem",
-                                    background: i % 2 === 0 ? "#fef9e7" : "#f8f9fa",
-                                    borderRadius: "10px"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            minWidth: "55px",
-                                            height: "55px",
-                                            borderRadius: "50%",
-                                            background: "#e67e22",
-                                            color: "white",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            fontWeight: "700",
-                                            fontSize: "0.75rem",
-                                            textAlign: "center",
-                                            lineHeight: "1.2"
-                                        },
-                                        children: item.day
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Team.jsx",
-                                        lineNumber: 370,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                style: {
-                                                    fontSize: "0.95rem",
-                                                    color: "#2c3e50",
-                                                    margin: "0 0 0.2rem"
-                                                },
-                                                children: item.title
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Team.jsx",
-                                                lineNumber: 389,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    fontSize: "0.85rem",
-                                                    color: "#666",
-                                                    margin: 0,
-                                                    lineHeight: "1.4"
-                                                },
-                                                children: item.desc
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Team.jsx",
-                                                lineNumber: 392,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Team.jsx",
-                                        lineNumber: 388,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, i, true, {
-                                fileName: "src/Components/Team.jsx",
-                                lineNumber: 359,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 351,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Team.jsx",
-                lineNumber: 332,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    textAlign: "center",
-                    padding: "2rem",
-                    background: "linear-gradient(135deg, #e67e22, #f39c12)",
-                    borderRadius: "16px",
-                    color: "white"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        style: {
-                            fontSize: isMobile ? "1.1rem" : "1.3rem",
-                            marginBottom: "0.8rem"
-                        },
-                        children: "Team Elephant — \xc9quipe 19"
-                    }, void 0, false, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 411,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "0.95rem",
-                            opacity: 0.9,
-                            lineHeight: "1.6",
-                            maxWidth: "600px",
-                            margin: "0 auto"
-                        },
-                        children: [
-                            "Innovation Crunch Time 2026 • Universit\xe9 de Lom\xe9",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/Components/Team.jsx",
-                                lineNumber: 429,
-                                columnNumber: 11
-                            }, undefined),
-                            "Optimisation du Foyer Am\xe9lior\xe9 Apeli"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Team.jsx",
-                        lineNumber: 419,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Team.jsx",
-                lineNumber: 402,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Team.jsx",
-        lineNumber: 77,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Team, "i20DGJle2MZSs9tS3yHdn4A9Fow=");
-_c = Team;
-exports.default = Team;
-var _c;
-$RefreshReg$(_c, "Team");
-
-  $parcel$ReactRefreshHelpers$5fdb.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/jr2.jpg":"l6CBF","../images/Hycintas.jpg":"7yGaI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l6CBF":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "jr2.85b4a567.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"7yGaI":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Hycintas.22a4829d.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
 //# sourceMappingURL=index.975ef6c8.js.map
