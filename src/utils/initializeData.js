@@ -6,8 +6,8 @@ export const initializeData = () => {
   // Créer l'admin par défaut s'il n'existe pas
   const adminUser = {
     id: 1,
-    name: "Emmanuel Admin",
-    email: "admin@emmanuel.com",
+    name: "Admin Apeli",
+    email: "admin@apeli.com",
     password: "admin123",
     userType: "admin",
     createdAt: new Date().toISOString()
@@ -28,45 +28,6 @@ export const initializeData = () => {
   
   if (!localStorage.getItem('mentoringSessions')) {
     localStorage.setItem('mentoringSessions', JSON.stringify([]));
-  }
-
-  // Créer quelques données de démonstration pour les ressources
-  const resources = JSON.parse(localStorage.getItem('adminResources') || '[]');
-  if (resources.length === 0) {
-    const demoResources = [
-      {
-        id: 1,
-        title: "Guide complet React Hooks",
-        description: "Tout ce que vous devez savoir sur les hooks React, avec des exemples pratiques et des cas d'utilisation avancés.",
-        type: "tutorial",
-        category: "React",
-        date: new Date().toISOString(),
-        author: "Emmanuel AMELA",
-        status: "published"
-      },
-      {
-        id: 2,
-        title: "Package NPM: utils-js",
-        description: "Collection d'utilitaires JavaScript réutilisables pour les projets modernes.",
-        type: "package",
-        category: "JavaScript",
-        date: new Date().toISOString(),
-        author: "Emmanuel AMELA",
-        status: "published"
-      },
-      {
-        id: 3,
-        title: "Snippet: Hook useFetch personnalisé",
-        description: "Hook React pour gérer les appels API avec gestion d'état (loading, error, data).",
-        type: "snippet",
-        category: "React",
-        date: new Date().toISOString(),
-        author: "Emmanuel AMELA",
-        status: "published"
-      }
-    ];
-    
-    localStorage.setItem('adminResources', JSON.stringify(demoResources));
   }
 };
 

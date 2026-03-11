@@ -1,27 +1,7 @@
 /**
- * About component
+ * About component - À propos du projet Foyer Amélioré Apeli
  */
 import React from "react";
-import image from "../images/fondo-tecnologia.jpg";
-
-const imageAltText = "purple and blue abstract technology background";
-
-const description =
-  "I am a Software Engineer and Microsoft Student Ambassador, currently pursuing a Master of Science (MSc) in Computer Systems through a double-degree program between the École Polytechnique de Lomé (EPL) and the Université de Technologie de Belfort-Montbéliard (UTBM). My academic focus is on advanced computing, intelligent systems, and scientific computing, with a strong interest in research-driven technological innovation.";
-
-const skillsList = [
-  "Software engineering and system design",
-  "Backend and RESTful API development",
-  "Artificial intelligence and machine learning fundamentals",
-  "Scientific computing and data-driven modeling",
-  "Cloud computing and containerized deployment",
-  "CI/CD pipelines and DevOps practices",
-  "Database design and data management",
-  "Research-oriented problem solving and experimentation",
-];
-
-const detailOrQuote =
-  "I am driven by the application of computing to scientific and societal challenges. Through research, engineering, and community engagement, I strive to contribute to the development of intelligent, reliable, and accessible systems that can create meaningful impact in Africa and beyond.";
 
 const About = () => {
   return (
@@ -34,45 +14,37 @@ const About = () => {
         boxSizing: "border-box",
         overflowX: "hidden",
         position: "relative",
+        background: "#f8f9fa",
       }}
     >
-      <img
-        className="background"
-        src={image}
-        alt={imageAltText}
-        style={{
-          width: "100%",
-          height: "auto",
-          objectFit: "cover",
-          display: "block",
-        }}
-      />
-
       <div
         style={{
           backgroundColor: "white",
           width: "90%",
-          maxWidth: "1000px",
+          maxWidth: "900px",
           padding: "clamp(1rem, 4vw, 2rem)",
-          margin: "3rem auto",
+          margin: "0 auto",
           textAlign: "center",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-          borderRadius: "8px",
+          borderRadius: "12px",
           boxSizing: "border-box",
           wordBreak: "break-word",
         }}
       >
-        <h2 style={{ fontSize: "calc(1.5rem + 1vw)" }}>About Myself</h2>
+        <h2 style={{ fontSize: "clamp(1.3rem, 3vw, 1.8rem)", color: "#2c3e50", paddingTop: 0 }}>
+          À propos du Projet
+        </h2>
 
         <p
           className="large"
           style={{
-            fontSize: "calc(0.9rem + 0.4vw)",
+            fontSize: "clamp(0.85rem, 1.8vw, 1.05rem)",
             lineHeight: "1.7",
             wordBreak: "break-word",
+            color: "#555",
           }}
         >
-          {description}
+          Le projet <strong>Foyer Amélioré Apeli</strong> vise à optimiser un dispositif de cuisson innovant développé par la doctorante <strong>Mme AMOUZOU-ATCHOE Akoua Gabriela</strong> de l'Université de Lomé. Notre équipe <strong>Elephant</strong> (Team 19) intègre l'Intelligence Artificielle, l'Internet des Objets et l'automatisation pour rendre la cuisson plus précise, efficiente et accessible.
         </p>
 
         <hr style={{ margin: "2rem auto", width: "80%" }} />
@@ -85,22 +57,34 @@ const About = () => {
             boxSizing: "border-box",
           }}
         >
+          <h3 style={{ textAlign: "center", color: "#e67e22", marginBottom: "1rem", fontSize: "clamp(1rem, 2vw, 1.25rem)" }}>
+            Technologies & Innovations
+          </h3>
           <ul
             style={{
               columns: "auto 2",
               columnGap: "2rem",
-              fontSize: "calc(0.85rem + 0.3vw)",
+              fontSize: "clamp(0.8rem, 1.5vw, 0.95rem)",
               padding: "0 0.5rem",
               listStylePosition: "inside",
               boxSizing: "border-box",
             }}
           >
-            {skillsList.map((skill) => (
+            {[
+              "Chatbot IA cuisine (RAG + LLM)",
+              "Capteurs de température connectés",
+              "Capteurs de poids de marmite",
+              "Serveur MCP pour ventilateur",
+              "Interface web responsive",
+              "Contrôle automatique d'aération",
+              "Suivi en temps réel des données",
+              "Recettes guidées par l'IA",
+            ].map((skill) => (
               <li
                 key={skill}
                 style={{
                   marginBottom: "0.75rem",
-                  breakInside: "avoid", // évite qu'un item soit coupé entre 2 colonnes
+                  breakInside: "avoid",
                   wordBreak: "break-word",
                 }}
               >
@@ -115,14 +99,15 @@ const About = () => {
         <p
           style={{
             padding: "1rem",
-            fontSize: "calc(0.85rem + 0.3vw)",
+            fontSize: "clamp(0.8rem, 1.5vw, 0.95rem)",
             maxWidth: "800px",
             margin: "0 auto",
             lineHeight: "1.7",
             wordBreak: "break-word",
+            color: "#555",
           }}
         >
-          {detailOrQuote}
+          Grâce à un dispositif connecté installé sur le foyer Apeli, nous captons en temps réel la température et le poids de la marmite. Notre IA, via un serveur MCP, contrôle le ventilateur d'aération pour maintenir la température idéale de cuisson — guidant l'utilisateur pas à pas dans la préparation de ses plats.
         </p>
       </div>
     </section>

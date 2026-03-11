@@ -4,6 +4,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -13,17 +19,19 @@ body {
   padding: 0;
   width: 100%;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 div#main {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  min-height: 100vh;
 }
 
 section {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 section.min-height {
@@ -31,7 +39,7 @@ section.min-height {
 }
 
 section.padding {
-  padding: 5rem 0;
+  padding: clamp(3rem, 8vw, 5rem) 0;
 }
 
 section img.background {
@@ -46,18 +54,17 @@ section img.background {
   z-index: -1;
 }
 
-
 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   font-weight: 400;
-  line-height: 0.8;
+  line-height: 1.1;
   margin: 0;
   color: white;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
@@ -66,27 +73,27 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   margin: 0;
 }
 
 p {
-  font-size: 18px;
+  font-size: clamp(14px, 2.5vw, 18px);
   line-height: 1.5;
   margin-bottom: 0;
   font-weight: 300;
 }
 
 p.large {
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 24px);
 }
 
 p.small {
-  font-size: 15px;
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 hr {
-  margin: 2.5rem;
+  margin: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 li {
@@ -94,7 +101,7 @@ li {
 }
 
 li::marker {
-  color: #4e567e;
+  color: #e67e22;
 }
 
 a {
@@ -103,14 +110,15 @@ a {
 }
 
 a:hover {
-  color: #4e567e;
+  color: #e67e22;
 }
 
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 330px 300px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin: 20px auto;
+  padding: 0 1rem;
 }
 
 .container .box {
@@ -126,4 +134,62 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* Chatbot typing animation */
+@keyframes blink {
+  0%, 20% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-10px); }
+  60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Smooth transitions for interactive elements */
+button, a {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Better focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #e67e22;
+  outline-offset: 2px;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  section.padding {
+    padding: 3rem 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
 }

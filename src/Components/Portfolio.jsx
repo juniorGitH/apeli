@@ -1,48 +1,46 @@
 /**
- * Portfolio component
- *
- * Highlights some of Emmanuel AMELA's creations and projects.
+ * Portfolio component - Fonctionnalités du Foyer Amélioré Apeli
  */
 import React, { useState, useEffect } from "react";
-import image from "../images/design-desk.jpeg";
+import { Link } from "react-router-dom";
 
-const imageAltText = "Laptop and coding books on a desk";
-
-const projectList = [
+const featureList = [
   {
-    title: "Workshop .NET C# - RESTful API",
+    title: "Chatbot IA Cuisine",
     description:
-      "I led an online workshop titled 'Mastering the Basics of RESTful API with .NET C# (Web API)' on December 28, 2024. I handled everything from the presentation to the live coding session.",
-    url: "https://mvp.microsoft.com/fr-FR/events/47078",
+      "Un assistant intelligent basé sur un LLM avec RAG spécialisé en cuisine. Il guide les utilisateurs étape par étape dans la cuisson de leurs plats, en adaptant les instructions à la température réelle du foyer.",
+    link: "/chatbot",
+    linkText: "Accéder au Chatbot →",
   },
   {
-    title: "Accounting Application - CompaPlus",
+    title: "Capteurs IoT Connectés",
     description:
-      "A personal accounting management project built with ASP.NET Web API and React, featuring a full set of tools such as journal entries, ledger, balance sheet, income statement, import/export, and more.",
-    url: "https://comptaplus-app.azurewebsites.net",
+      "Des capteurs de température et de poids installés sur le foyer Apeli transmettent les données en temps réel. Le dispositif connecté permet un suivi précis de la cuisson à tout moment.",
+    link: null,
+    linkText: "Voir les données →",
   },
   {
-    title: "International Hackathon – Quantum Computing",
+    title: "Serveur MCP — Ventilateur",
     description:
-      "Participated in the 12th Annual International Hackathon for Social Good, contributing to a quantum computing project with Quantum Arise in Lomé.",
-    url: "https://hackathon.nyuad.nyu.edu/year/2024/",
+      "Un serveur MCP (Model Context Protocol) permet à l'IA de contrôler automatiquement le ventilateur d'aération du foyer pour réguler la température selon les besoins de la recette en cours.",
+    link: null,
+    linkText: "En savoir plus →",
   },
   {
-    title: "Microsoft Learn Student Ambassador Activities",
+    title: "Recherche Scientifique",
     description:
-      "As a Microsoft Learn Student Ambassador, I have organized and participated in multiple events and tech workshops, promoted student engagement in technology, and contributed to the global tech community through mentorship and knowledge sharing.",
-    url: "https://mvp.microsoft.com/fr-FR/studentambassadors/profile/8a9ab462-afce-4e4c-b222-abc409bac550",
+      "Ce projet s'appuie sur les travaux de recherche de Mme AMOUZOU-ATCHOE Akoua Gabriela, doctorante à l'Université de Lomé, qui a publié un article sur l'optimisation du foyer amélioré.",
+    link: "/doctorante",
+    linkText: "Découvrir ses travaux →",
   },
 ];
 
 const Portfolio = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [isTablet, setIsTablet] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -53,8 +51,7 @@ const Portfolio = () => {
     <section
       id="portfolio"
       style={{
-        padding: "2rem 1rem",
-        marginTop: "2rem",
+        padding: "clamp(1.5rem, 4vw, 3rem) 1rem",
         width: "100%",
         maxWidth: "100%",
         boxSizing: "border-box",
@@ -64,127 +61,99 @@ const Portfolio = () => {
       <h2
         style={{
           textAlign: "center",
-          fontSize: isMobile ? "1.75rem" : "2.25rem",
-          marginBottom: isMobile ? "1.5rem" : "2rem",
-          color: "#0f0202",
+          fontSize: isMobile ? "1.4rem" : "1.8rem",
+          marginBottom: isMobile ? "1.2rem" : "2rem",
+          color: "#2c3e50",
+          paddingTop: 0,
         }}
       >
-        Portfolio
+        Fonctionnalités
       </h2>
 
       <div
         style={{
-          display: "flex",
-          flexDirection: isMobile ? "column" : "row",
-          gap: isMobile ? "2rem" : "3rem",
-          paddingTop: isMobile ? "1rem" : "3rem",
-          width: "100%",
+          display: "grid",
+          gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+          gap: isMobile ? "1rem" : "1.5rem",
+          maxWidth: "900px",
+          margin: "0 auto",
+          padding: "0 1rem",
           boxSizing: "border-box",
         }}
       >
-        {/* Image */}
-        {!isMobile && (
+        {featureList.map((feature) => (
           <div
+            key={feature.title}
             style={{
-              width: isTablet ? "35%" : "40%",
-              flexShrink: 0,
-              alignSelf: "center",
+              backgroundColor: "#f9f9f9",
+              borderRadius: "12px",
+              padding: isMobile ? "1.2rem" : "1.5rem",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              boxSizing: "border-box",
+              minWidth: 0,
+              wordBreak: "break-word",
+              borderLeft: "4px solid #e67e22",
             }}
           >
-            <img
-              src={image}
-              style={{
-                height: "auto",
-                width: "100%",
-                objectFit: "cover",
-                borderRadius: "8px",
-                boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-                display: "block",
-              }}
-              alt={imageAltText}
-            />
-          </div>
-        )}
+            <div>
+              <h3
+                style={{
+                  marginTop: 0,
+                  marginBottom: "1rem",
+                  fontSize: isMobile ? "1rem" : "1.15rem",
+                  lineHeight: "1.3",
+                  fontWeight: "600",
+                  wordBreak: "break-word",
+                  color: "#2c3e50",
+                }}
+              >
+                {feature.title}
+              </h3>
+              <p
+                style={{
+                  fontSize: "0.95rem",
+                  lineHeight: "1.6",
+                  color: "#555",
+                  margin: 0,
+                  wordBreak: "break-word",
+                }}
+              >
+                {feature.description}
+              </p>
+            </div>
 
-        {/* Grille de projets */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: isMobile || isTablet ? "1fr" : "1fr 1fr",
-            gap: "1.5rem",
-            flex: 1,
-            minWidth: 0, // ← crucial : empêche le grid de déborder
-            width: isMobile ? "100%" : "auto",
-            boxSizing: "border-box",
-          }}
-        >
-          {projectList.map((project) => (
-            <div
-              key={project.title}
-              style={{
-                backgroundColor: "#f9f9f9",
-                borderRadius: "8px",
-                padding: "1.25rem",
-                boxShadow: "0 2px 5px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                boxSizing: "border-box",
-                minWidth: 0, // ← crucial
-                wordBreak: "break-word",
-              }}
-            >
-              <div>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "#222" }}
-                >
-                  <h3
-                    style={{
-                      marginTop: 0,
-                      marginBottom: "1rem",
-                      fontSize: isMobile ? "1.1rem" : "1.25rem",
-                      lineHeight: "1.3",
-                      fontWeight: "600",
-                      wordBreak: "break-word",
-                    }}
-                  >
-                    {project.title}
-                  </h3>
-                </a>
-                <p
-                  style={{
-                    fontSize: "0.95rem",
-                    lineHeight: "1.6",
-                    color: "#444",
-                    margin: 0,
-                    wordBreak: "break-word",
-                  }}
-                >
-                  {project.description}
-                </p>
-              </div>
-
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
+            {feature.link ? (
+              <Link
+                to={feature.link}
                 style={{
                   display: "inline-block",
                   marginTop: "1rem",
                   fontSize: "0.9rem",
-                  color: "#0066cc",
+                  color: "#e67e22",
                   fontWeight: "500",
                   textDecoration: "none",
                 }}
               >
-                Voir le projet →
-              </a>
-            </div>
-          ))}
-        </div>
+                {feature.linkText}
+              </Link>
+            ) : (
+              <span
+                style={{
+                  display: "inline-block",
+                  marginTop: "1rem",
+                  fontSize: "0.9rem",
+                  color: "#999",
+                  fontWeight: "500",
+                }}
+              >
+                {feature.linkText}
+              </span>
+            )}
+          </div>
+        ))}
       </div>
     </section>
   );

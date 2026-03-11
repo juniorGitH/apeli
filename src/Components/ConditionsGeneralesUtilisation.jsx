@@ -12,7 +12,7 @@ const ConditionsGeneralesUtilisation = () => {
 
       <div className="disclaimer-box">
         <p>
-          ⚖️ <strong>Note juridique importante :</strong> Ces conditions générales d'utilisation 
+          <strong>Note juridique importante :</strong> Ces conditions générales d'utilisation 
           ont été rédigées conformément aux dispositions du droit togolais, notamment la loi 
           n°2004-005 du 23 avril 2004 relative à la communication électronique et la loi 
           n°2019-014 du 20 septembre 2019 sur la protection des données personnelles. Elles 
@@ -59,7 +59,7 @@ const ConditionsGeneralesUtilisation = () => {
       </p>
       <div className="highlighted-box">
         <p>
-          <strong>📱 Accessibilité :</strong> Le Site est conçu pour être accessible sur tous les 
+          <strong>Accessibilité :</strong> Le Site est conçu pour être accessible sur tous les 
           supports (ordinateur, tablette, smartphone) et navigateurs modernes. L'Éditeur s'efforce 
           de maintenir un accès permanent mais ne peut garantir l'absence d'interruption pour 
           maintenance technique ou cas de force majeure.

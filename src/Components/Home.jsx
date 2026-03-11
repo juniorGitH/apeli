@@ -1,23 +1,13 @@
 /**
- * Home component
- *
- * The section at the top of the page to display image of your
- * choice, name and title that describes your academic and professional focus.
+ * Home component - Page d'accueil du Foyer Amélioré Apeli
+ * Team Elephant - Innovation Crunch Time 2026
  */
 
 import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-/**
- * Home background image
- */
-import image from "../images/jr2.jpg";
-
-const imageAltText =
-  "Graduate software engineer in a professional setting, representing research, innovation, and advanced computing";
-
-const Home = ({ name, title }) => {
+const Home = () => {
   return (
     <section
       id="home"
@@ -28,45 +18,35 @@ const Home = ({ name, title }) => {
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
+        background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+        paddingTop: "70px",
       }}
     >
-      {/* Background image */}
+      {/* Decorative elements */}
       <div
         style={{
           position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          height: "clamp(50vh, 65vh, 70vh)",
-          zIndex: 1,
-          overflow: "hidden",
+          top: "10%",
+          right: "10%",
+          width: "clamp(100px, 20vw, 200px)",
+          height: "clamp(100px, 20vw, 200px)",
+          borderRadius: "50%",
+          background: "rgba(230, 126, 34, 0.1)",
+          filter: "blur(40px)",
         }}
-      >
-        <img
-          src={image}
-          alt={imageAltText}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "center 30%",
-            filter: "brightness(0.85)",
-          }}
-        />
-        {/* Gradient overlay */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: 0,
-            left: 0,
-            right: 0,
-            height: "40%",
-            background:
-              "linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9) 70%)",
-            zIndex: 2,
-          }}
-        ></div>
-      </div>
+      />
+      <div
+        style={{
+          position: "absolute",
+          bottom: "20%",
+          left: "5%",
+          width: "clamp(80px, 15vw, 150px)",
+          height: "clamp(80px, 15vw, 150px)",
+          borderRadius: "50%",
+          background: "rgba(243, 156, 18, 0.08)",
+          filter: "blur(30px)",
+        }}
+      />
 
       {/* Main content */}
       <div
@@ -74,116 +54,174 @@ const Home = ({ name, title }) => {
           position: "relative",
           zIndex: 3,
           width: "100%",
-          maxWidth: "1200px",
+          maxWidth: "900px",
           margin: "0 auto",
-          padding: "clamp(1rem, 5vw, 3rem)",
+          padding: "clamp(1rem, 4vw, 2rem)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
-          boxSizing: "border-box", // ← corrige le débordement horizontal sur mobile
+          boxSizing: "border-box",
         }}
       >
-        <div
+        {/* Logo text */}
+        <div style={{ 
+          fontSize: "clamp(0.9rem, 2vw, 1.2rem)", 
+          marginBottom: "0.8rem",
+          color: "#e67e22",
+          fontWeight: "700",
+          letterSpacing: "0.2em",
+        }}>APELI</div>
+
+        <h1
           style={{
-            backgroundColor: "rgba(255, 255, 255, 0.92)",
-            borderRadius: "clamp(12px, 2vw, 20px)",
-            padding: "clamp(1.5rem, 4vw, 3rem)",
-            boxShadow: "0 15px 40px rgba(0, 0, 0, 0.1)",
-            backdropFilter: "blur(10px)",
-            maxWidth: "800px",
-            width: "100%",
-            marginTop: "clamp(30vh, 40vh, 45vh)",
-            boxSizing: "border-box", // ← corrige le débordement horizontal sur mobile
+            fontSize: "clamp(1.6rem, 5vw, 3rem)",
+            marginBottom: "0.5rem",
+            color: "white",
+            fontWeight: "700",
+            lineHeight: "1.2",
           }}
         >
-          <h1
-            style={{
-              fontSize: "clamp(1.8rem, 6vw, 3.5rem)",
-              marginBottom: "clamp(0.8rem, 2vw, 1.5rem)",
-              color: "#2c3e50",
-              fontWeight: "700",
-              lineHeight: "1.2",
-            }}
-          >
-            {name}
-          </h1>
+          Foyer Amélioré{" "}
+          <span style={{ color: "#e67e22" }}>Apeli</span>
+        </h1>
 
-          <h2
-            style={{
-              fontSize: "clamp(1.2rem, 4vw, 2.2rem)",
-              color: "#34495e",
-              fontWeight: "400",
-              marginBottom: "clamp(1rem, 2vw, 1.8rem)",
-              lineHeight: "1.3",
-            }}
-          >
-            {title}
-          </h2>
+        <h2
+          style={{
+            fontSize: "clamp(0.9rem, 2.5vw, 1.4rem)",
+            color: "rgba(255,255,255,0.8)",
+            fontWeight: "400",
+            marginBottom: "0.8rem",
+            lineHeight: "1.4",
+          }}
+        >
+          Cuisson Intelligente Assistée par IA
+        </h2>
 
-          <p
-            style={{
-              fontSize: "clamp(0.95rem, 2vw, 1.2rem)",
-              color: "#5d6d7e",
-              lineHeight: "1.6",
-              maxWidth: "600px",
-              margin: "0 auto clamp(1.5rem, 3vw, 2rem)",
-            }}
-          >
-            Welcome to my academic and professional portfolio, where I share my
-            work, research interests, and contributions in computer systems and
-            intelligent technologies.
-          </p>
+        <p
+          style={{
+            fontSize: "clamp(0.8rem, 1.5vw, 0.95rem)",
+            color: "rgba(255,255,255,0.6)",
+            marginBottom: "0.3rem",
+          }}
+        >
+          Team Elephant — Équipe 19 | Innovation Crunch Time 2026
+        </p>
+        <p
+          style={{
+            fontSize: "clamp(0.75rem, 1.3vw, 0.9rem)",
+            color: "rgba(255,255,255,0.5)",
+            marginBottom: "1.5rem",
+          }}
+        >
+          Université de Lomé
+        </p>
 
-          <div
-            style={{
-              display: "flex",
-              gap: "clamp(0.8rem, 2vw, 1.5rem)",
-              justifyContent: "center",
-              flexWrap: "wrap",
-            }}
-          >
-            <a
-              href="#about"
+        {/* Features icons */}
+        <div
+          style={{
+            display: "flex",
+            gap: "clamp(1rem, 3vw, 2rem)",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            marginBottom: "2rem",
+          }}
+        >
+          {[
+            { label: "IA Cuisine" },
+            { label: "Capteurs IoT" },
+            { label: "Ventilation MCP" },
+            { label: "Interface Web" },
+          ].map((item) => (
+            <div
+              key={item.label}
               style={{
-                display: "inline-block",
-                padding:
-                  "clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.2rem, 2.5vw, 1.8rem)",
-                backgroundColor: "#3498db",
-                color: "white",
-                textDecoration: "none",
-                borderRadius: "clamp(25px, 3vw, 30px)",
-                fontWeight: "500",
-                transition: "all 0.3s ease",
-                border: "2px solid #3498db",
-                fontSize: "clamp(0.9rem, 1.8vw, 1.1rem)",
-                whiteSpace: "nowrap",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "0.4rem",
               }}
             >
-              Explore my work
-            </a>
+              <div
+                style={{
+                  width: "clamp(45px, 8vw, 60px)",
+                  height: "clamp(45px, 8vw, 60px)",
+                  borderRadius: "50%",
+                  background: "rgba(230, 126, 34, 0.15)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "clamp(0.55rem, 1.2vw, 0.7rem)",
+                  color: "#e67e22",
+                  fontWeight: "700",
+                  textTransform: "uppercase",
+                  textAlign: "center",
+                  lineHeight: "1.2",
+                  padding: "0.2rem",
+                }}
+              >
+                {item.label.split(" ")[0]}
+              </div>
+              <span
+                style={{
+                  color: "rgba(255,255,255,0.7)",
+                  fontSize: "clamp(0.7rem, 1.3vw, 0.8rem)",
+                  fontWeight: "500",
+                }}
+              >
+                {item.label}
+              </span>
+            </div>
+          ))}
+        </div>
 
-            <a
-              href="#contact"
-              style={{
-                display: "inline-block",
-                padding:
-                  "clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.2rem, 2.5vw, 1.8rem)",
-                backgroundColor: "transparent",
-                color: "#3498db",
-                textDecoration: "none",
-                borderRadius: "clamp(25px, 3vw, 30px)",
-                fontWeight: "500",
-                transition: "all 0.3s ease",
-                border: "2px solid #3498db",
-                fontSize: "clamp(0.9rem, 1.8vw, 1.1rem)",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Contact me
-            </a>
-          </div>
+        {/* CTA buttons */}
+        <div
+          style={{
+            display: "flex",
+            gap: "clamp(0.6rem, 2vw, 1.2rem)",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <Link
+            to="/chatbot"
+            style={{
+              display: "inline-block",
+              padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 2rem)",
+              backgroundColor: "#e67e22",
+              color: "white",
+              textDecoration: "none",
+              borderRadius: "30px",
+              fontWeight: "600",
+              transition: "all 0.3s ease",
+              border: "2px solid #e67e22",
+              fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Accéder au Chatbot
+          </Link>
+
+          <a
+            href="#about"
+            style={{
+              display: "inline-block",
+              padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 2rem)",
+              backgroundColor: "transparent",
+              color: "white",
+              textDecoration: "none",
+              borderRadius: "30px",
+              fontWeight: "500",
+              transition: "all 0.3s ease",
+              border: "2px solid rgba(255,255,255,0.3)",
+              fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
+              whiteSpace: "nowrap",
+            }}
+          >
+            En savoir plus
+          </a>
         </div>
       </div>
 
@@ -191,37 +229,28 @@ const Home = ({ name, title }) => {
       <div
         style={{
           position: "absolute",
-          bottom: "clamp(1.5rem, 4vh, 2.5rem)",
+          bottom: "clamp(1rem, 3vh, 2rem)",
           left: "50%",
           transform: "translateX(-50%)",
           zIndex: 4,
           animation: "bounce 2s infinite",
         }}
       >
-        <a href="#about" aria-label="Go to next section">
+        <a href="#about" aria-label="Découvrir le projet">
           <img
             src={arrowSvg}
-            alt="Scroll down"
+            alt="Défiler vers le bas"
             style={{
-              height: "clamp(2rem, 5vw, 3rem)",
-              width: "clamp(2rem, 5vw, 3rem)",
-              opacity: "0.8",
+              height: "clamp(1.5rem, 4vw, 2.5rem)",
+              width: "clamp(1.5rem, 4vw, 2.5rem)",
+              opacity: "0.6",
+              filter: "brightness(10)",
             }}
           />
         </a>
       </div>
     </section>
   );
-};
-
-Home.defaultProps = {
-  name: "",
-  title: "",
-};
-
-Home.propTypes = {
-  name: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
 };
 
 export default Home;

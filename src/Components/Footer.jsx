@@ -1,31 +1,12 @@
 /**
- * Footer component
- *
- * Displays avenues to contact you.
- * Contact information is passed in from the App component that
- * renders the Footer.
- *
- * If a social value has an empty string it will not be displayed.
+ * Footer component - Foyer Amélioré Apeli
+ * Team Elephant - Innovation Crunch Time 2026
  */
 import React from "react";
-import devDotToIcon from "../images/socials/devdotto.svg";
-import envelopeIcon from "../images/socials/envelope.svg";
-import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
-import linkedInIcon from "../images/socials/linkedin.svg";
-import twitterIcon from "../images/socials/twitter.svg";
-import youTubeIcon from "../images/socials/youtube.svg";
+import { Link } from "react-router-dom";
 
 const Footer = ({
-    devDotTo = "",
-    email = "Emmanuel.Amela@studentambassadors.com",
-    gitHub = "https://github.com/juniorGitH",
-    instagram = "https://www.instagram.com/amela_emmanuel/",
-    linkedIn = "linkedin.com/in/emmanuel-amela/",
-    name = "Emmanuel Amela",
-    primaryColor = "#000", // tu peux ajuster selon ton thème
-    twitter = "https://x.com/AmelaJunior",
-    youTube = "https://www.youtube.com/@codeAiMastery",
+    primaryColor = "#1a1a2e",
 }) => {
     return (
         <div
@@ -34,89 +15,89 @@ const Footer = ({
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                gap: "2rem",
-                padding: "3rem 1rem",
+                gap: "1.2rem",
+                padding: "clamp(1.5rem, 4vw, 3rem) 1rem",
                 backgroundColor: primaryColor,
                 width: "100%",
                 boxSizing: "border-box",
             }}
         >
+            {/* Navigation rapide */}
             <div
                 style={{
                     display: "flex",
                     justifyContent: "center",
                     flexWrap: "wrap",
-                    gap: "1.5rem",
+                    gap: "clamp(0.8rem, 2vw, 1.5rem)",
                     maxWidth: "100%",
-                    padding: "0 1rem",
+                    padding: "0 0.5rem",
                 }}
             >
-                {email && (
-                    <a href={`mailto:${email}`} style={{ margin: "0.5rem" }}>
-                        <img src={envelopeIcon} alt="email" className="socialIcon" style={{ maxWidth: "100%", height: "auto" }} />
-                    </a>
-                )}
-                {devDotTo && (
-                    <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer" style={{ margin: "0.5rem" }}>
-                        <img src={devDotToIcon} alt="Dev.to" className="socialIcon" style={{ maxWidth: "100%", height: "auto" }} />
-                    </a>
-                )}
-                {gitHub && (
-                    <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer" style={{ margin: "0.5rem" }}>
-                        <img src={gitHubIcon} alt="GitHub" className="socialIcon" style={{ maxWidth: "100%", height: "auto" }} />
-                    </a>
-                )}
-                {instagram && (
-                    <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer" style={{ margin: "0.5rem" }}>
-                        <img src={instagramIcon} alt="Instagram" className="socialIcon" style={{ maxWidth: "100%", height: "auto" }} />
-                    </a>
-                )}
-                {linkedIn && (
-                    <a href={`https://www.linkedin.com/in/${linkedIn}`} target="_blank" rel="noopener noreferrer" style={{ margin: "0.5rem" }}>
-                        <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" style={{ maxWidth: "100%", height: "auto" }} />
-                    </a>
-                )}
-                {twitter && (
-                    <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer" style={{ margin: "0.5rem" }}>
-                        <img src={twitterIcon} alt="Twitter" className="socialIcon" style={{ maxWidth: "100%", height: "auto" }} />
-                    </a>
-                )}
-                {youTube && (
-                    <a href={`https://www.youtube.com/${youTube}`} target="_blank" rel="noopener noreferrer" style={{ margin: "0.5rem" }}>
-                        <img src={youTubeIcon} alt="YouTube" className="socialIcon" style={{ maxWidth: "100%", height: "auto" }} />
-                    </a>
-                )}
+                <Link to="/" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Accueil</Link>
+                <Link to="/chatbot" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Chatbot IA</Link>
+                <Link to="/doctorante" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Doctorante</Link>
+                <Link to="/equipe" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Équipe</Link>
             </div>
+
+            {/* Liens légaux */}
             <div
                 style={{
                     display: "flex",
                     justifyContent: "center",
                     flexWrap: "wrap",
-                    gap: "1.5rem",
+                    gap: "clamp(0.6rem, 2vw, 1.5rem)",
                     maxWidth: "100%",
-                    padding: "0 1rem",
-                    marginTop: "1rem",
+                    padding: "0 0.5rem",
                 }}
             >
-                <a href="/mentions-legales" style={{ color: "white", textDecoration: "none" }}>Mentions légales</a>
-                <a href="/conditions-generales-utilisation" style={{ color: "white", textDecoration: "none" }}>Conditions générales d'utilisation</a>
-                <a href="/politique-protection-donnees-personnelles" style={{ color: "white", textDecoration: "none" }}>Politique de protection des données personnelles</a>
-                <a href="/politique-cookies" style={{ color: "white", textDecoration: "none" }}>Cookies</a>
-                <a href="/declaration-accessibilite" style={{ color: "white", textDecoration: "none" }}>Déclaration d'accessibilité</a>
-                <a href="/securite" style={{ color: "white", textDecoration: "none" }}>Sécurité</a>
+                <Link to="/mentions-legales" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>Mentions légales</Link>
+                <Link to="/conditions-generales-utilisation" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>CGU</Link>
+                <Link to="/politique-protection-donnees-personnelles" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>Données personnelles</Link>
+                <Link to="/politique-cookies" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>Cookies</Link>
+                <Link to="/securite" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>Sécurité</Link>
             </div>
-            <p
-                className="small"
+
+            {/* Branding */}
+            <div
                 style={{
-                    marginTop: 0,
-                    color: "white",
                     textAlign: "center",
                     padding: "0 1rem",
-                    wordWrap: "break-word",
                 }}
             >
-                 {name}
-            </p>
+                <p
+                    style={{
+                        color: "#e67e22",
+                        fontWeight: "600",
+                        fontSize: "0.95rem",
+                        marginBottom: "0.3rem",
+                    }}
+                >
+                    Team Elephant — Équipe 19
+                </p>
+                <p
+                    className="small"
+                    style={{
+                        marginTop: 0,
+                        color: "rgba(255,255,255,0.5)",
+                        textAlign: "center",
+                        wordWrap: "break-word",
+                        fontSize: "0.8rem",
+                    }}
+                >
+                    Innovation Crunch Time 2026 • Université de Lomé
+                </p>
+                <p
+                    className="small"
+                    style={{
+                        marginTop: "0.2rem",
+                        color: "rgba(255,255,255,0.35)",
+                        textAlign: "center",
+                        fontSize: "0.75rem",
+                    }}
+                >
+                    Optimisation du Foyer Amélioré Apeli
+                </p>
+            </div>
         </div>
     );
 };

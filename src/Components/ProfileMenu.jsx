@@ -150,7 +150,7 @@ const ProfileMenu = ({ currentUser, onLogout, onUpdateProfile, showProfileMenu, 
         title={currentUser?.name}
         aria-label="Menu profil"
       >
-        {currentUser?.name?.charAt(0)?.toUpperCase() || "👤"}
+        {currentUser?.name?.charAt(0)?.toUpperCase() || "A"}
       </button>
       
       {showProfileMenu && (
@@ -204,7 +204,7 @@ const ProfileMenu = ({ currentUser, onLogout, onUpdateProfile, showProfileMenu, 
                     onMouseEnter={(e) => e.target.style.backgroundColor = "#f0f0f0"}
                     onMouseLeave={(e) => e.target.style.backgroundColor = "white"}
                   >
-                    <span style={{ minWidth: "24px", fontSize: "1rem" }}>⚙️</span>
+                    <span style={{ minWidth: "24px", fontSize: "1rem" }}></span>
                     <span>Administration</span>
                   </button>
                   <button
@@ -243,7 +243,7 @@ const ProfileMenu = ({ currentUser, onLogout, onUpdateProfile, showProfileMenu, 
                     onMouseEnter={(e) => e.target.style.backgroundColor = "#f0f0f0"}
                     onMouseLeave={(e) => e.target.style.backgroundColor = "white"}
                   >
-                    <span style={{ minWidth: "24px", fontSize: "1rem" }}>📊</span>
+                    <span style={{ minWidth: "24px", fontSize: "1rem" }}></span>
                     <span>Mon Tableau de Bord</span>
                   </button>
                   <button
@@ -284,7 +284,7 @@ const ProfileMenu = ({ currentUser, onLogout, onUpdateProfile, showProfileMenu, 
                 onMouseEnter={(e) => e.target.style.backgroundColor = "#f0f0f0"}
                 onMouseLeave={(e) => e.target.style.backgroundColor = "white"}
               >
-                <span style={{ minWidth: "24px", fontSize: "1rem" }}>👤</span>
+                <span style={{ minWidth: "24px", fontSize: "1rem" }}></span>
                 <span>Page Profil Complète</span>
               </button>
 
@@ -304,7 +304,7 @@ const ProfileMenu = ({ currentUser, onLogout, onUpdateProfile, showProfileMenu, 
                 onMouseEnter={(e) => e.target.style.backgroundColor = "#ffe5e5"}
                 onMouseLeave={(e) => e.target.style.backgroundColor = "#fff5f5"}
               >
-                <span style={{ fontSize: "1rem" }}>🚪</span>
+                <span style={{ fontSize: "1rem" }}></span>
                 <span>Déconnexion</span>
               </button>
             </>

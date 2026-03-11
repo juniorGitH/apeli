@@ -105,30 +105,6 @@ const Header = () => {
     navigate('/', { state: { scrollTo: 'home' } });
   };
 
-  // Gestion du scroll vers les sections
-  const handleSectionClick = (sectionId, e) => {
-    if (e) e.preventDefault();
-    if (isMenuOpen) setIsMenuOpen(false);
-    setShowProfileMenu(false);
-    navigate('/', { state: { scrollTo: sectionId } });
-  };
-
-  // Téléchargement du CV
-  const handleCVDownload = () => {
-    // Fermer les menus si ouverts
-    setIsMenuOpen(false);
-    setShowProfileMenu(false);
-    
-    // Créer un lien temporaire pour forcer le téléchargement
-      const cvUrl = new URL('../images/cv-emmanuel.pdf', import.meta.url).href;
-    const link = document.createElement('a');
-    link.href = cvUrl; // Chemin vers le fichier CV (dans le dossier public)
-    link.download = 'CV_Emmanuel_AMELA.pdf'; // Nom du fichier téléchargé
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   // Gestion de l'authentification
   const handleAuth = (e) => {
     e.preventDefault();
@@ -179,8 +155,7 @@ const Header = () => {
     localStorage.removeItem('currentUser');
     setShowProfileMenu(false);
     if (location.pathname === '/dashboard' || location.pathname === '/admin' || 
-        location.pathname === '/mentoring' || location.pathname === '/projects' || 
-        location.pathname === '/profile') {
+        location.pathname === '/chatbot' || location.pathname === '/profile') {
       navigate('/');
     }
   };
@@ -196,7 +171,7 @@ const Header = () => {
 
   // Styles optimisés
   const navLinkStyle = (isActive) => ({
-    color: isActive ? "#3498db" : "#2c3e50",
+    color: isActive ? "#e67e22" : "#2c3e50",
     textDecoration: "none",
     fontWeight: "500",
     fontSize: "clamp(0.85rem, 1.1vw, 1rem)",
@@ -209,7 +184,7 @@ const Header = () => {
   });
 
   const mobileNavLinkStyle = (isActive) => ({
-    color: isActive ? "#3498db" : "#2c3e50",
+    color: isActive ? "#e67e22" : "#2c3e50",
     textDecoration: "none",
     fontWeight: "500",
     fontSize: "0.95rem",
@@ -225,9 +200,9 @@ const Header = () => {
 
   const buttonStyle = (variant = 'primary', size = 'medium') => {
     const baseStyle = {
-      backgroundColor: variant === 'primary' ? "#3498db" : 
+      backgroundColor: variant === 'primary' ? "#e67e22" : 
                      variant === 'success' ? "#2ecc71" : 
-                     variant === 'warning' ? "#f39c12" : "#3498db",
+                     variant === 'warning' ? "#f39c12" : "#e67e22",
       color: "white",
       border: "none",
       borderRadius: "5px",
@@ -291,7 +266,9 @@ const Header = () => {
               alt="Logo"
               style={{ 
                 height: "clamp(30px, 4.5vw, 38px)",
-                width: "auto"
+                width: "auto",
+                objectFit: "contain",
+                borderRadius: "0",
               }}
               loading="eager"
             />
@@ -310,44 +287,29 @@ const Header = () => {
                 Accueil
               </button>
               
-              <button 
-                onClick={(e) => handleSectionClick('about', e)}
-                style={navLinkStyle(false)}
-                className="nav-link-button"
-              >
-                À propos
-              </button>
-              
-              <button 
-                onClick={(e) => handleSectionClick('portfolio', e)}
-                style={navLinkStyle(false)}
-                className="nav-link-button"
-              >
-                Portfolio
-              </button>
-              
               <Link 
-                to="/ressources" 
-                style={navLinkStyle(location.pathname === '/ressources')}
+                to="/chatbot" 
+                style={navLinkStyle(location.pathname === '/chatbot')}
                 onClick={() => setShowProfileMenu(false)}
               >
-                Ressources
+                Chatbot
               </Link>
-
-              {/* Bouton CV - Desktop */}
-              <button
-                onClick={handleCVDownload}
-                style={{
-                  ...navLinkStyle(false),
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.3rem"
-                }}
-                className="nav-link-button"
-                title="Télécharger mon CV"
+              
+              <Link 
+                to="/doctorante" 
+                style={navLinkStyle(location.pathname === '/doctorante')}
+                onClick={() => setShowProfileMenu(false)}
               >
-                Cv
-              </button>
+                Doctorante
+              </Link>
+              
+              <Link 
+                to="/equipe" 
+                style={navLinkStyle(location.pathname === '/equipe')}
+                onClick={() => setShowProfileMenu(false)}
+              >
+                Équipe
+              </Link>
             </nav>
 
             {/* Actions utilisateur Desktop */}
@@ -383,25 +345,25 @@ const Header = () => {
                           <>
                             <button
                               onClick={() => {
+                                navigate('/chatbot');
+                                setShowProfileMenu(false);
+                              }}
+                              style={profileMenuItemStyle}
+                              className="profile-menu-item"
+                            >
+                              <span></span>
+                              <span>Chatbot Cuisine</span>
+                            </button>
+                            <button
+                              onClick={() => {
                                 navigate('/dashboard');
                                 setShowProfileMenu(false);
                               }}
                               style={profileMenuItemStyle}
                               className="profile-menu-item"
                             >
-                              <span>📊</span>
+                              <span></span>
                               <span>Mon Tableau de Bord</span>
-                            </button>
-                            <button
-                              onClick={() => {
-                                navigate('/mentoring');
-                                setShowProfileMenu(false);
-                              }}
-                              style={profileMenuItemStyle}
-                              className="profile-menu-item"
-                            >
-                              <span>👨‍🏫</span>
-                              <span>Mentorat</span>
                             </button>
                           </>
                         ) : (
@@ -414,19 +376,19 @@ const Header = () => {
                               style={profileMenuItemStyle}
                               className="profile-menu-item"
                             >
-                              <span>⚙️</span>
+                              <span></span>
                               <span>Administration</span>
                             </button>
                             <button
                               onClick={() => {
-                                navigate('/projects');
+                                navigate('/chatbot');
                                 setShowProfileMenu(false);
                               }}
                               style={profileMenuItemStyle}
                               className="profile-menu-item"
                             >
-                              <span>📁</span>
-                              <span>Projets</span>
+                              <span></span>
+                              <span>Chatbot Cuisine</span>
                             </button>
                           </>
                         )}
@@ -441,7 +403,7 @@ const Header = () => {
                           style={profileMenuItemStyle}
                           className="profile-menu-item"
                         >
-                          <span>👤</span>
+                          <span></span>
                           <span>Profile</span>
                         </button>
                       </div>
@@ -451,7 +413,7 @@ const Header = () => {
                           onClick={handleLogout}
                           className="logout-button"
                         >
-                          <span>🚪</span>
+                          <span></span>
                           <span>Déconnexion</span>
                         </button>
                       </div>
@@ -491,17 +453,6 @@ const Header = () => {
         {/* Section Mobile: Boutons d'authentification + Hamburger + CV */}
         {isMobile && (
           <div className="mobile-header-actions">
-            {/* Bouton CV compact (toujours visible) */}
-            <button
-              onClick={handleCVDownload}
-              className="mobile-cv-button"
-              title="Télécharger mon CV"
-              aria-label="Télécharger CV"
-            >
-              <span className="btn-icon">📄</span>
-              <span className="btn-text">CV</span>
-            </button>
-
             {!currentUser && (
               <div className="mobile-auth-buttons">
                 <button
@@ -512,7 +463,6 @@ const Header = () => {
                   className="mobile-auth-btn login-btn"
                   aria-label="Se connecter"
                 >
-                  <span className="btn-icon">🔑</span>
                   <span className="btn-text">Connexion</span>
                 </button>
                 <button
@@ -523,7 +473,6 @@ const Header = () => {
                   className="mobile-auth-btn signup-btn"
                   aria-label="S'inscrire"
                 >
-                  <span className="btn-icon">📝</span>
                   <span className="btn-text">Inscription</span>
                 </button>
               </div>
@@ -586,47 +535,39 @@ const Header = () => {
               style={mobileNavLinkStyle(location.pathname === '/' && !location.hash)}
               className="mobile-menu-item"
             >
-              <span className="menu-icon">🏠</span>
+              <span className="menu-icon"></span>
               Accueil
             </button>
             
-            <button 
-              onClick={(e) => handleSectionClick('about', e)}
-              style={mobileNavLinkStyle(false)}
+            <Link 
+              to="/chatbot" 
+              onClick={() => setIsMenuOpen(false)}
+              style={mobileNavLinkStyle(location.pathname === '/chatbot')}
               className="mobile-menu-item"
             >
-              <span className="menu-icon">ℹ️</span>
-              À propos
-            </button>
-            
-            <button 
-              onClick={(e) => handleSectionClick('portfolio', e)}
-              style={mobileNavLinkStyle(false)}
-              className="mobile-menu-item"
-            >
-              <span className="menu-icon">🎨</span>
-              Portfolio
-            </button>
+              <span className="menu-icon"></span>
+              Chatbot IA
+            </Link>
             
             <Link 
-              to="/ressources" 
+              to="/doctorante" 
               onClick={() => setIsMenuOpen(false)}
-              style={mobileNavLinkStyle(location.pathname === '/ressources')}
+              style={mobileNavLinkStyle(location.pathname === '/doctorante')}
               className="mobile-menu-item"
             >
-              <span className="menu-icon">📚</span>
-              Ressources
+              <span className="menu-icon"></span>
+              Doctorante
             </Link>
-
-            {/* Bouton CV dans le menu mobile (texte complet) */}
-            <button
-              onClick={handleCVDownload}
-              style={mobileNavLinkStyle(false)}
+            
+            <Link 
+              to="/equipe" 
+              onClick={() => setIsMenuOpen(false)}
+              style={mobileNavLinkStyle(location.pathname === '/equipe')}
               className="mobile-menu-item"
             >
-              <span className="menu-icon">📄</span>
-              Télécharger mon CV
-            </button>
+              <span className="menu-icon"></span>
+              Équipe
+            </Link>
 
             {currentUser && (
               <>
@@ -638,17 +579,8 @@ const Header = () => {
                       style={mobileNavLinkStyle(location.pathname === '/admin')}
                       className="mobile-menu-item"
                     >
-                      <span className="menu-icon">⚙️</span>
+                      <span className="menu-icon"></span>
                       Administration
-                    </Link>
-                    <Link 
-                      to="/projects" 
-                      onClick={() => setIsMenuOpen(false)}
-                      style={mobileNavLinkStyle(location.pathname === '/projects')}
-                      className="mobile-menu-item"
-                    >
-                      <span className="menu-icon">📁</span>
-                      Projets Clients
                     </Link>
                   </>
                 ) : (
@@ -659,17 +591,8 @@ const Header = () => {
                       style={mobileNavLinkStyle(location.pathname === '/dashboard')}
                       className="mobile-menu-item"
                     >
-                      <span className="menu-icon">📊</span>
+                      <span className="menu-icon"></span>
                       Mon Tableau de Bord
-                    </Link>
-                    <Link 
-                      to="/mentoring" 
-                      onClick={() => setIsMenuOpen(false)}
-                      style={mobileNavLinkStyle(location.pathname === '/mentoring')}
-                      className="mobile-menu-item"
-                    >
-                      <span className="menu-icon">👨‍🏫</span>
-                      Mentorat
                     </Link>
                   </>
                 )}
@@ -680,7 +603,7 @@ const Header = () => {
                   style={mobileNavLinkStyle(location.pathname === '/profile')}
                   className="mobile-menu-item"
                 >
-                  <span className="menu-icon">👤</span>
+                  <span className="menu-icon"></span>
                   Profil
                 </Link>
                 
@@ -689,7 +612,7 @@ const Header = () => {
                     onClick={handleLogout}
                     className="mobile-logout-btn"
                   >
-                    <span>🚪</span>
+                    <span></span>
                     Déconnexion
                   </button>
                 </div>
@@ -777,7 +700,7 @@ const Header = () => {
                     value={authData.userType}
                     onChange={(e) => setAuthData({...authData, userType: e.target.value})}
                   >
-                    <option value="client">Client (suivi de projet)</option>
+                    <option value="client">Utilisateur (accès chatbot)</option>
                     <option value="admin">Administrateur (réservé)</option>
                   </select>
                   {authData.userType === 'admin' && (
@@ -831,6 +754,11 @@ const Header = () => {
           min-width: 100px;
         }
 
+        .header-logo img {
+          object-fit: contain;
+          border-radius: 0;
+        }
+
         /* ===== NAVIGATION DESKTOP ===== */
         .desktop-nav {
           display: flex;
@@ -857,7 +785,7 @@ const Header = () => {
           height: 2px;
           bottom: 0;
           left: 0;
-          background-color: #3498db;
+          background-color: #e67e22;
           transition: width 0.3s ease;
         }
 
@@ -866,7 +794,7 @@ const Header = () => {
         }
 
         .nav-link-button:hover {
-          color: #3498db;
+          color: #e67e22;
         }
 
         /* ===== ACTIONS HEADER ===== */
@@ -896,7 +824,7 @@ const Header = () => {
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          background-color: #3498db;
+          background-color: #e67e22;
           border: none;
           cursor: pointer;
           display: flex;
@@ -947,7 +875,7 @@ const Header = () => {
 
         .profile-type {
           font-size: 0.7rem;
-          color: #3498db;
+          color: #e67e22;
           margin-top: 0.3rem;
           font-weight: 500;
         }
@@ -997,10 +925,10 @@ const Header = () => {
           align-items: center;
           gap: 0.3rem;
           padding: 0.45rem 0.7rem;
-          border: 1px solid #3498db;
+          border: 1px solid #e67e22;
           border-radius: 6px;
           background-color: white;
-          color: #3498db;
+          color: #e67e22;
           cursor: pointer;
           font-weight: 500;
           font-size: 0.8rem;
@@ -1010,7 +938,7 @@ const Header = () => {
         }
 
         .mobile-cv-button:hover {
-          background-color: #3498db;
+          background-color: #e67e22;
           color: white;
         }
 
@@ -1051,12 +979,12 @@ const Header = () => {
         }
 
         .login-btn {
-          background-color: #3498db;
+          background-color: #e67e22;
           color: white;
         }
 
         .login-btn:hover {
-          background-color: #2980b9;
+          background-color: #d35400;
         }
 
         .signup-btn {
@@ -1084,7 +1012,7 @@ const Header = () => {
           width: 38px;
           height: 38px;
           border-radius: 50%;
-          background-color: #3498db;
+          background-color: #e67e22;
           border: none;
           cursor: pointer;
           display: flex;
@@ -1123,7 +1051,7 @@ const Header = () => {
 
         .hamburger-line.active:nth-child(1) {
           transform: rotate(45deg) translate(5px, 5px);
-          background-color: #3498db;
+          background-color: #e67e22;
         }
 
         .hamburger-line.active:nth-child(2) {
@@ -1132,7 +1060,7 @@ const Header = () => {
 
         .hamburger-line.active:nth-child(3) {
           transform: rotate(-45deg) translate(6px, -5px);
-          background-color: #3498db;
+          background-color: #e67e22;
         }
 
         /* ===== MOBILE OVERLAY ===== */
@@ -1182,7 +1110,7 @@ const Header = () => {
           width: 42px;
           height: 42px;
           border-radius: 50%;
-          background-color: #3498db;
+          background-color: #e67e22;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1215,7 +1143,7 @@ const Header = () => {
 
         .mobile-user-type {
           font-size: 0.7rem;
-          color: #3498db;
+          color: #e67e22;
           margin-top: 0.2rem;
           font-weight: 500;
         }
@@ -1355,7 +1283,7 @@ const Header = () => {
         }
 
         .auth-toggle button.active {
-          background: #3498db;
+          background: #e67e22;
           color: white;
         }
 
@@ -1400,7 +1328,7 @@ const Header = () => {
         .auth-submit-btn {
           width: 100%;
           padding: clamp(0.75rem, 2vw, 0.85rem);
-          background-color: #3498db;
+          background-color: #e67e22;
           color: white;
           border: none;
           border-radius: 6px;
@@ -1426,7 +1354,7 @@ const Header = () => {
         .auth-switch button {
           background: none;
           border: none;
-          color: #3498db;
+          color: #e67e22;
           cursor: pointer;
           text-decoration: underline;
           font-size: clamp(0.75rem, 2vw, 0.8rem);
@@ -1577,7 +1505,7 @@ const Header = () => {
         a:focus-visible,
         input:focus-visible,
         select:focus-visible {
-          outline: 2px solid #3498db;
+          outline: 2px solid #e67e22;
           outline-offset: 2px;
         }
 
