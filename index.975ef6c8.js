@@ -34890,7 +34890,7 @@ const About = ()=>{
                             lineNumber: 47,
                             columnNumber: 227
                         }, undefined),
-                        " (Team 19) int\xe8gre l'Intelligence Artificielle, l'Internet des Objets et l'automatisation pour rendre la cuisson plus pr\xe9cise, efficiente et accessible."
+                        " (Team 19) travaille sur la reconception du foyer en int\xe9grant l'utilisation de pellets issus de r\xe9sidus agricoles, l'adaptation aux diff\xe9rentes tailles de marmites, l'Intelligence Artificielle, l'Internet des Objets et l'automatisation pour rendre la cuisson plus pr\xe9cise, efficiente et accessible."
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/About.jsx",
@@ -34938,13 +34938,15 @@ const About = ()=>{
                                 boxSizing: "border-box"
                             },
                             children: [
+                                "Reconception du foyer Apeli",
+                                "Pellets (r\xe9sidus agricoles)",
+                                "Adaptation multi-tailles marmites",
+                                "Evacuation optimis\xe9e des cendres",
                                 "Chatbot IA cuisine (RAG + LLM)",
                                 "Capteurs de temp\xe9rature connect\xe9s",
                                 "Capteurs de poids de marmite",
                                 "Serveur MCP pour ventilateur",
-                                "Interface web responsive",
                                 "Contr\xf4le automatique d'a\xe9ration",
-                                "Suivi en temps r\xe9el des donn\xe9es",
                                 "Recettes guid\xe9es par l'IA", 
                             ].map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                     style: {
@@ -34955,7 +34957,7 @@ const About = ()=>{
                                     children: skill
                                 }, skill, false, {
                                     fileName: "src/Components/About.jsx",
-                                    lineNumber: 83,
+                                    lineNumber: 85,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
@@ -34976,7 +34978,7 @@ const About = ()=>{
                     }
                 }, void 0, false, {
                     fileName: "src/Components/About.jsx",
-                    lineNumber: 97,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -34989,10 +34991,10 @@ const About = ()=>{
                         wordBreak: "break-word",
                         color: "#555"
                     },
-                    children: "Gr\xe2ce \xe0 un dispositif connect\xe9 install\xe9 sur le foyer Apeli, nous captons en temps r\xe9el la temp\xe9rature et le poids de la marmite. Notre IA, via un serveur MCP, contr\xf4le le ventilateur d'a\xe9ration pour maintenir la temp\xe9rature id\xe9ale de cuisson — guidant l'utilisateur pas \xe0 pas dans la pr\xe9paration de ses plats."
+                    children: "Notre approche est double : d'abord r\xe9soudre les limites du foyer actuel (alimentation en combustible, \xe9vacuation des cendres, adaptation aux tailles de marmites) par une reconception utilisant des pellets, puis int\xe9grer un dispositif connect\xe9 avec capteurs IoT et une IA qui, via un serveur MCP, contr\xf4le le ventilateur d'a\xe9ration pour maintenir la temp\xe9rature id\xe9ale de cuisson — guidant l'utilisateur pas \xe0 pas dans la pr\xe9paration de ses plats."
                 }, void 0, false, {
                     fileName: "src/Components/About.jsx",
-                    lineNumber: 99,
+                    lineNumber: 101,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -37695,7 +37697,7 @@ const Home = ()=>{
                                     marginBottom: "0.8rem",
                                     lineHeight: "1.4"
                                 },
-                                children: "Cuisson Intelligente Assist\xe9e par IA"
+                                children: "Optimisation et Cuisson Intelligente"
                             }, void 0, false, {
                                 fileName: "src/Components/Home.jsx",
                                 lineNumber: 190,
@@ -37735,16 +37737,19 @@ const Home = ()=>{
                                 },
                                 children: [
                                     {
-                                        label: "IA Cuisine"
+                                        label: "Foyer Apeli"
+                                    },
+                                    {
+                                        label: "Pellets Bio"
                                     },
                                     {
                                         label: "Capteurs IoT"
                                     },
                                     {
-                                        label: "Ventilation MCP"
+                                        label: "IA Cuisine"
                                     },
                                     {
-                                        label: "Interface Web"
+                                        label: "Ventilation MCP"
                                     }, 
                                 ].map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         style: {
@@ -37774,7 +37779,7 @@ const Home = ()=>{
                                                 children: item.label.split(" ")[0]
                                             }, void 0, false, {
                                                 fileName: "src/Components/Home.jsx",
-                                                lineNumber: 246,
+                                                lineNumber: 247,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -37786,13 +37791,13 @@ const Home = ()=>{
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "src/Components/Home.jsx",
-                                                lineNumber: 266,
+                                                lineNumber: 267,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, item.label, true, {
                                         fileName: "src/Components/Home.jsx",
-                                        lineNumber: 237,
+                                        lineNumber: 238,
                                         columnNumber: 13
                                     }, undefined))
                             }, void 0, false, {
@@ -37827,7 +37832,7 @@ const Home = ()=>{
                                         children: "Acc\xe9der au Chatbot"
                                     }, void 0, false, {
                                         fileName: "src/Components/Home.jsx",
-                                        lineNumber: 288,
+                                        lineNumber: 289,
                                         columnNumber: 11
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -37848,13 +37853,13 @@ const Home = ()=>{
                                         children: "En savoir plus"
                                     }, void 0, false, {
                                         fileName: "src/Components/Home.jsx",
-                                        lineNumber: 308,
+                                        lineNumber: 309,
                                         columnNumber: 11
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Home.jsx",
-                                lineNumber: 280,
+                                lineNumber: 281,
                                 columnNumber: 9
                             }, undefined)
                         ]
@@ -37886,17 +37891,17 @@ const Home = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/Components/Home.jsx",
-                                lineNumber: 341,
+                                lineNumber: 342,
                                 columnNumber: 11
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/Home.jsx",
-                            lineNumber: 340,
+                            lineNumber: 341,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
-                        lineNumber: 330,
+                        lineNumber: 331,
                         columnNumber: 7
                     }, undefined)
                 ]
@@ -37944,28 +37949,28 @@ var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const featureList = [
     {
-        title: "Chatbot IA Cuisine",
-        description: "Un assistant intelligent bas\xe9 sur un LLM avec RAG sp\xe9cialis\xe9 en cuisine. Il guide les utilisateurs \xe9tape par \xe9tape dans la cuisson de leurs plats, en adaptant les instructions \xe0 la temp\xe9rature r\xe9elle du foyer.",
+        title: "Reconception du Foyer Apeli",
+        description: "Optimisation de la structure du foyer pour am\xe9liorer les performances \xe9nerg\xe9tiques : meilleure chambre de combustion, isolation renforc\xe9e, syst\xe8me d'\xe9vacuation des cendres repens\xe9 et support adaptable multi-tailles de marmites.",
+        link: "/foyer",
+        linkText: "D\xe9couvrir le foyer"
+    },
+    {
+        title: "Pellets — Combustible Bio",
+        description: "Remplacement du bois traditionnel par des pellets issus de r\xe9sidus agricoles (coques, tiges, sciure). Combustion plus propre, plus efficace et plus \xe9cologique, avec un approvisionnement local et durable.",
+        link: "/foyer",
+        linkText: "En savoir plus"
+    },
+    {
+        title: "Capteurs IoT + IA Cuisine",
+        description: "Des capteurs de temp\xe9rature et de poids transmettent les donn\xe9es en temps r\xe9el. Un chatbot IA (RAG + LLM) guide l'utilisateur \xe9tape par \xe9tape dans la cuisson, en adaptant les instructions aux conditions r\xe9elles du foyer.",
         link: "/chatbot",
-        linkText: "Acc\xe9der au Chatbot →"
+        linkText: "Acc\xe9der au Chatbot"
     },
     {
-        title: "Capteurs IoT Connect\xe9s",
-        description: "Des capteurs de temp\xe9rature et de poids install\xe9s sur le foyer Apeli transmettent les donn\xe9es en temps r\xe9el. Le dispositif connect\xe9 permet un suivi pr\xe9cis de la cuisson \xe0 tout moment.",
-        link: null,
-        linkText: "Voir les donn\xe9es →"
-    },
-    {
-        title: "Serveur MCP — Ventilateur",
+        title: "Ventilation Intelligente (MCP)",
         description: "Un serveur MCP (Model Context Protocol) permet \xe0 l'IA de contr\xf4ler automatiquement le ventilateur d'a\xe9ration du foyer pour r\xe9guler la temp\xe9rature selon les besoins de la recette en cours.",
-        link: null,
-        linkText: "En savoir plus →"
-    },
-    {
-        title: "Recherche Scientifique",
-        description: "Ce projet s'appuie sur les travaux de recherche de Mme AMOUZOU-ATCHOE Akoua Gabriela, doctorante \xe0 l'Universit\xe9 de Lom\xe9, qui a publi\xe9 un article sur l'optimisation du foyer am\xe9lior\xe9.",
         link: "/doctorante",
-        linkText: "D\xe9couvrir ses travaux →"
+        linkText: "Voir la recherche"
     }, 
 ];
 const Portfolio = ()=>{
