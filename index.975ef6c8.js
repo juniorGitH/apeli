@@ -35021,7 +35021,20 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
+    _s();
+    const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        const checkAuth = ()=>setIsLoggedIn(!!localStorage.getItem("currentUser"));
+        checkAuth();
+        window.addEventListener("storage", checkAuth);
+        const interval = setInterval(checkAuth, 1000);
+        return ()=>{
+            window.removeEventListener("storage", checkAuth);
+            clearInterval(interval);
+        };
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "footer",
         style: {
@@ -35055,10 +35068,10 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Accueil"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 36,
+                        lineNumber: 46,
                         columnNumber: 17
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    isLoggedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/chatbot",
                         style: {
                             color: "rgba(255,255,255,0.8)",
@@ -35068,8 +35081,8 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Chatbot IA"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 37,
-                        columnNumber: 17
+                        lineNumber: 47,
+                        columnNumber: 32
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/doctorante",
@@ -35081,7 +35094,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Doctorante"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 38,
+                        lineNumber: 48,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35094,13 +35107,13 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "\xc9quipe"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 39,
+                        lineNumber: 49,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 26,
+                lineNumber: 36,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35123,7 +35136,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Mentions l\xe9gales"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 53,
+                        lineNumber: 63,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35136,7 +35149,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "CGU"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 54,
+                        lineNumber: 64,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35149,7 +35162,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Donn\xe9es personnelles"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 55,
+                        lineNumber: 65,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35162,7 +35175,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Cookies"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 56,
+                        lineNumber: 66,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35175,13 +35188,13 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "S\xe9curit\xe9"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 57,
+                        lineNumber: 67,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 43,
+                lineNumber: 53,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35200,7 +35213,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Team Elephant — \xc9quipe 19"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 67,
+                        lineNumber: 77,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -35215,7 +35228,7 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Innovation Crunch Time 2026 • Universit\xe9 de Lom\xe9"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 77,
+                        lineNumber: 87,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -35229,22 +35242,23 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         children: "Optimisation du Foyer Am\xe9lior\xe9 Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 89,
+                        lineNumber: 99,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 61,
+                lineNumber: 71,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Footer.jsx",
-        lineNumber: 12,
+        lineNumber: 22,
         columnNumber: 9
     }, undefined);
 };
+_s(Footer, "fKLMlyFH2GMrhNeUDpp+0z1yiCo=");
 _c = Footer;
 exports.default = Footer;
 var _c;
@@ -35255,7 +35269,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"9Dt2F":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9Dt2F":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35545,15 +35559,15 @@ const Header = ()=>{
                                         lineNumber: 282,
                                         columnNumber: 15
                                     }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/chatbot",
                                         style: navLinkStyle(location.pathname === "/chatbot"),
                                         onClick: ()=>setShowProfileMenu(false),
                                         children: "Chatbot"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 290,
-                                        columnNumber: 15
+                                        lineNumber: 291,
+                                        columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/doctorante",
@@ -35562,7 +35576,7 @@ const Header = ()=>{
                                         children: "Doctorante"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 298,
+                                        lineNumber: 300,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35572,7 +35586,7 @@ const Header = ()=>{
                                         children: "\xc9quipe"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 306,
+                                        lineNumber: 308,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
@@ -35599,7 +35613,7 @@ const Header = ()=>{
                                             children: currentUser.name.charAt(0).toUpperCase()
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 319,
+                                            lineNumber: 321,
                                             columnNumber: 19
                                         }, undefined),
                                         showProfileMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35614,7 +35628,7 @@ const Header = ()=>{
                                                             children: currentUser.name
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 336,
+                                                            lineNumber: 338,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35622,7 +35636,7 @@ const Header = ()=>{
                                                             children: currentUser.email
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 337,
+                                                            lineNumber: 339,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35630,13 +35644,13 @@ const Header = ()=>{
                                                             children: currentUser.userType === "admin" ? "Administrateur" : "Client"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 338,
+                                                            lineNumber: 340,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 335,
+                                                    lineNumber: 337,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35654,20 +35668,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 354,
+                                                                            lineNumber: 356,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Chatbot Cuisine"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 355,
+                                                                            lineNumber: 357,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 346,
+                                                                    lineNumber: 348,
                                                                     columnNumber: 29
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35680,20 +35694,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 365,
+                                                                            lineNumber: 367,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Mon Tableau de Bord"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 366,
+                                                                            lineNumber: 368,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 357,
+                                                                    lineNumber: 359,
                                                                     columnNumber: 29
                                                                 }, undefined)
                                                             ]
@@ -35709,20 +35723,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 379,
+                                                                            lineNumber: 381,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Administration"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 380,
+                                                                            lineNumber: 382,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 371,
+                                                                    lineNumber: 373,
                                                                     columnNumber: 29
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35735,20 +35749,20 @@ const Header = ()=>{
                                                                     children: [
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 390,
+                                                                            lineNumber: 392,
                                                                             columnNumber: 31
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                             children: "Chatbot Cuisine"
                                                                         }, void 0, false, {
                                                                             fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 391,
+                                                                            lineNumber: 393,
                                                                             columnNumber: 31
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 382,
+                                                                    lineNumber: 384,
                                                                     columnNumber: 29
                                                                 }, undefined)
                                                             ]
@@ -35757,7 +35771,7 @@ const Header = ()=>{
                                                             className: "menu-divider"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 396,
+                                                            lineNumber: 398,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35770,26 +35784,26 @@ const Header = ()=>{
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 406,
+                                                                    lineNumber: 408,
                                                                     columnNumber: 27
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                     children: "Profile"
                                                                 }, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 407,
+                                                                    lineNumber: 409,
                                                                     columnNumber: 27
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 398,
+                                                            lineNumber: 400,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 343,
+                                                    lineNumber: 345,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35800,37 +35814,37 @@ const Header = ()=>{
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                 fileName: "src/Components/Header.jsx",
-                                                                lineNumber: 416,
+                                                                lineNumber: 418,
                                                                 columnNumber: 27
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                 children: "D\xe9connexion"
                                                             }, void 0, false, {
                                                                 fileName: "src/Components/Header.jsx",
-                                                                lineNumber: 417,
+                                                                lineNumber: 419,
                                                                 columnNumber: 27
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/Components/Header.jsx",
-                                                        lineNumber: 412,
+                                                        lineNumber: 414,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 411,
+                                                    lineNumber: 413,
                                                     columnNumber: 23
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 334,
+                                            lineNumber: 336,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 318,
+                                    lineNumber: 320,
                                     columnNumber: 17
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "auth-buttons",
@@ -35846,7 +35860,7 @@ const Header = ()=>{
                                             children: "Connexion"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 425,
+                                            lineNumber: 427,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35860,18 +35874,18 @@ const Header = ()=>{
                                             children: "Inscription"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 436,
+                                            lineNumber: 438,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 424,
+                                    lineNumber: 426,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 316,
+                                lineNumber: 318,
                                 columnNumber: 13
                             }, undefined)
                         ]
@@ -35894,12 +35908,12 @@ const Header = ()=>{
                                             children: "Connexion"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 466,
+                                            lineNumber: 468,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 458,
+                                        lineNumber: 460,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35914,18 +35928,18 @@ const Header = ()=>{
                                             children: "Inscription"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 476,
+                                            lineNumber: 478,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 468,
+                                        lineNumber: 470,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 457,
+                                lineNumber: 459,
                                 columnNumber: 15
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35937,12 +35951,12 @@ const Header = ()=>{
                                     children: currentUser.name.charAt(0).toUpperCase()
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 483,
+                                    lineNumber: 485,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 482,
+                                lineNumber: 484,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35955,33 +35969,33 @@ const Header = ()=>{
                                         className: `hamburger-line ${isMenuOpen ? "active" : ""}`
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 500,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: `hamburger-line ${isMenuOpen ? "active" : ""}`
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Header.jsx",
-                                        lineNumber: 501,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: `hamburger-line ${isMenuOpen ? "active" : ""}`
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Header.jsx",
                                         lineNumber: 502,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: `hamburger-line ${isMenuOpen ? "active" : ""}`
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Header.jsx",
+                                        lineNumber: 503,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: `hamburger-line ${isMenuOpen ? "active" : ""}`
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Header.jsx",
+                                        lineNumber: 504,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 494,
+                                lineNumber: 496,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 455,
+                        lineNumber: 457,
                         columnNumber: 11
                     }, undefined),
                     isMobile && isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35989,7 +36003,7 @@ const Header = ()=>{
                         onClick: ()=>setIsMenuOpen(false)
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 509,
+                        lineNumber: 511,
                         columnNumber: 11
                     }, undefined),
                     isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36003,7 +36017,7 @@ const Header = ()=>{
                                         children: currentUser.name.charAt(0).toUpperCase()
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 520,
+                                        lineNumber: 522,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36014,7 +36028,7 @@ const Header = ()=>{
                                                 children: currentUser.name
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 524,
+                                                lineNumber: 526,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36022,7 +36036,7 @@ const Header = ()=>{
                                                 children: currentUser.email
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 525,
+                                                lineNumber: 527,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36030,19 +36044,19 @@ const Header = ()=>{
                                                 children: currentUser.userType === "admin" ? "Administrateur" : "Client"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 526,
+                                                lineNumber: 528,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 523,
+                                        lineNumber: 525,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 519,
+                                lineNumber: 521,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36054,17 +36068,17 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 538,
+                                        lineNumber: 540,
                                         columnNumber: 15
                                     }, undefined),
                                     "Accueil"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 533,
+                                lineNumber: 535,
                                 columnNumber: 13
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/chatbot",
                                 onClick: ()=>setIsMenuOpen(false),
                                 style: mobileNavLinkStyle(location.pathname === "/chatbot"),
@@ -36074,15 +36088,15 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 548,
-                                        columnNumber: 15
+                                        lineNumber: 551,
+                                        columnNumber: 17
                                     }, undefined),
                                     "Chatbot IA"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 542,
-                                columnNumber: 13
+                                lineNumber: 545,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/doctorante",
@@ -36094,14 +36108,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 558,
+                                        lineNumber: 562,
                                         columnNumber: 15
                                     }, undefined),
                                     "Doctorante"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 552,
+                                lineNumber: 556,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36114,14 +36128,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 568,
+                                        lineNumber: 572,
                                         columnNumber: 15
                                     }, undefined),
                                     "\xc9quipe"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 562,
+                                lineNumber: 566,
                                 columnNumber: 13
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -36137,14 +36151,14 @@ const Header = ()=>{
                                                     className: "menu-icon"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 582,
+                                                    lineNumber: 586,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 "Administration"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 576,
+                                            lineNumber: 580,
                                             columnNumber: 21
                                         }, undefined)
                                     }, void 0, false) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -36158,14 +36172,14 @@ const Header = ()=>{
                                                     className: "menu-icon"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 594,
+                                                    lineNumber: 598,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 "Mon Tableau de Bord"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 588,
+                                            lineNumber: 592,
                                             columnNumber: 21
                                         }, undefined)
                                     }, void 0, false),
@@ -36179,14 +36193,14 @@ const Header = ()=>{
                                                 className: "menu-icon"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 606,
+                                                lineNumber: 610,
                                                 columnNumber: 19
                                             }, undefined),
                                             "Profil"
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 600,
+                                        lineNumber: 604,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36197,19 +36211,19 @@ const Header = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 615,
+                                                    lineNumber: 619,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 "D\xe9connexion"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 611,
+                                            lineNumber: 615,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 610,
+                                        lineNumber: 614,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
@@ -36217,7 +36231,7 @@ const Header = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 517,
+                        lineNumber: 519,
                         columnNumber: 11
                     }, undefined)
                 ]
@@ -36241,7 +36255,7 @@ const Header = ()=>{
                                     children: isLoginMode ? "Connexion" : "Inscription"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 632,
+                                    lineNumber: 636,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36259,13 +36273,13 @@ const Header = ()=>{
                                     children: "\xd7"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 633,
+                                    lineNumber: 637,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 631,
+                            lineNumber: 635,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36277,7 +36291,7 @@ const Header = ()=>{
                                     children: "Connexion"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 646,
+                                    lineNumber: 650,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36286,13 +36300,13 @@ const Header = ()=>{
                                     children: "Inscription"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 652,
+                                    lineNumber: 656,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 645,
+                            lineNumber: 649,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -36306,7 +36320,7 @@ const Header = ()=>{
                                             children: "Nom complet"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 663,
+                                            lineNumber: 667,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36320,13 +36334,13 @@ const Header = ()=>{
                                             required: !isLoginMode
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 664,
+                                            lineNumber: 668,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 662,
+                                    lineNumber: 666,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36336,7 +36350,7 @@ const Header = ()=>{
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 675,
+                                            lineNumber: 679,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36350,13 +36364,13 @@ const Header = ()=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 676,
+                                            lineNumber: 680,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 674,
+                                    lineNumber: 678,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36366,7 +36380,7 @@ const Header = ()=>{
                                             children: "Mot de passe"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 686,
+                                            lineNumber: 690,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36380,13 +36394,13 @@ const Header = ()=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 687,
+                                            lineNumber: 691,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 685,
+                                    lineNumber: 689,
                                     columnNumber: 15
                                 }, undefined),
                                 !isLoginMode && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36396,7 +36410,7 @@ const Header = ()=>{
                                             children: "Type de compte"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 698,
+                                            lineNumber: 702,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -36411,7 +36425,7 @@ const Header = ()=>{
                                                     children: "Utilisateur (acc\xe8s chatbot)"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 703,
+                                                    lineNumber: 707,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -36419,13 +36433,13 @@ const Header = ()=>{
                                                     children: "Administrateur (r\xe9serv\xe9)"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 704,
+                                                    lineNumber: 708,
                                                     columnNumber: 21
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 699,
+                                            lineNumber: 703,
                                             columnNumber: 19
                                         }, undefined),
                                         authData.userType === "admin" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36433,13 +36447,13 @@ const Header = ()=>{
                                             children: "Note: Ce type de compte est r\xe9serv\xe9 \xe0 l'administrateur."
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 707,
+                                            lineNumber: 711,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 697,
+                                    lineNumber: 701,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36448,13 +36462,13 @@ const Header = ()=>{
                                     children: isLoginMode ? "Se connecter" : "S'inscrire"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 714,
+                                    lineNumber: 718,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 660,
+                            lineNumber: 664,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36466,24 +36480,24 @@ const Header = ()=>{
                                     children: isLoginMode ? "Inscrivez-vous" : "Connectez-vous"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 721,
+                                    lineNumber: 725,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 719,
+                            lineNumber: 723,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/Header.jsx",
-                    lineNumber: 630,
+                    lineNumber: 634,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 627,
+                lineNumber: 631,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
@@ -37278,7 +37292,7 @@ const Header = ()=>{
       `
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 730,
+                lineNumber: 734,
                 columnNumber: 7
             }, undefined)
         ]
@@ -55995,6 +56009,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _jr2Jpg = require("../images/jr2.jpg");
 var _jr2JpgDefault = parcelHelpers.interopDefault(_jr2Jpg);
+var _hycintasJpg = require("../images/Hycintas.jpg");
+var _hycintasJpgDefault = parcelHelpers.interopDefault(_hycintasJpg);
 var _s = $RefreshSig$();
 const teamMembers = [
     {
@@ -56026,7 +56042,8 @@ const teamMembers = [
         name: "Hyacinthe d'ALMEIDA",
         role: "Analyste",
         description: "Analyse technique et recherche sur les technologies IoT",
-        initials: "Hd"
+        initials: "Hd",
+        image: (0, _hycintasJpgDefault.default)
     },
     {
         name: "Mathilde HOUNGBEDJI",
@@ -56085,7 +56102,7 @@ const Team = ()=>{
                         children: "ELEPHANT"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 85,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -56099,7 +56116,7 @@ const Team = ()=>{
                         children: "Team Elephant"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 96,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56112,7 +56129,7 @@ const Team = ()=>{
                         children: "\xc9quipe 19"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 107,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56126,13 +56143,13 @@ const Team = ()=>{
                         children: "Innovation Crunch Time 2026 — Universit\xe9 de Lom\xe9"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 117,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 84,
+                lineNumber: 86,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56154,7 +56171,7 @@ const Team = ()=>{
                         children: "Notre Mission"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 141,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56168,13 +56185,13 @@ const Team = ()=>{
                         children: "Optimiser le foyer am\xe9lior\xe9 Apeli en int\xe9grant des technologies de pointe : Intelligence Artificielle, Internet des Objets (IoT) et automatisation. Notre objectif est de rendre la cuisson plus pr\xe9cise, plus efficiente et plus accessible gr\xe2ce \xe0 un assistant cuisine intelligent connect\xe9 directement au foyer."
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 150,
+                        lineNumber: 152,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 131,
+                lineNumber: 133,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -56187,7 +56204,7 @@ const Team = ()=>{
                 children: "Membres de l'\xc9quipe"
             }, void 0, false, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 164,
+                lineNumber: 166,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56239,7 +56256,7 @@ const Team = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "src/Components/Team.jsx",
-                                    lineNumber: 212,
+                                    lineNumber: 214,
                                     columnNumber: 17
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     style: {
@@ -56250,12 +56267,12 @@ const Team = ()=>{
                                     children: member.initials
                                 }, void 0, false, {
                                     fileName: "src/Components/Team.jsx",
-                                    lineNumber: 222,
+                                    lineNumber: 224,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 195,
+                                lineNumber: 197,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -56268,7 +56285,7 @@ const Team = ()=>{
                                 children: member.name
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 227,
+                                lineNumber: 229,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56281,7 +56298,7 @@ const Team = ()=>{
                                 children: member.role
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 237,
+                                lineNumber: 239,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56294,18 +56311,18 @@ const Team = ()=>{
                                 children: member.description
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 247,
+                                lineNumber: 249,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, index, true, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 184,
+                        lineNumber: 186,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 175,
+                lineNumber: 177,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56327,7 +56344,7 @@ const Team = ()=>{
                         children: "Notre Projet : Optimisation du Foyer Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 271,
+                        lineNumber: 273,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56378,12 +56395,12 @@ const Team = ()=>{
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Team.jsx",
-                                            lineNumber: 317,
+                                            lineNumber: 319,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 316,
+                                        lineNumber: 318,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56396,24 +56413,24 @@ const Team = ()=>{
                                         children: item.desc
                                     }, void 0, false, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 321,
+                                        lineNumber: 323,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, i, true, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 307,
+                                lineNumber: 309,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 282,
+                        lineNumber: 284,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 262,
+                lineNumber: 264,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56435,7 +56452,7 @@ const Team = ()=>{
                         children: "5 Jours d'Innovation"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 339,
+                        lineNumber: 341,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56498,7 +56515,7 @@ const Team = ()=>{
                                         children: item.day
                                     }, void 0, false, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 368,
+                                        lineNumber: 370,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56512,7 +56529,7 @@ const Team = ()=>{
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "src/Components/Team.jsx",
-                                                lineNumber: 387,
+                                                lineNumber: 389,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56525,30 +56542,30 @@ const Team = ()=>{
                                                 children: item.desc
                                             }, void 0, false, {
                                                 fileName: "src/Components/Team.jsx",
-                                                lineNumber: 390,
+                                                lineNumber: 392,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 386,
+                                        lineNumber: 388,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, i, true, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 357,
+                                lineNumber: 359,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 349,
+                        lineNumber: 351,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 330,
+                lineNumber: 332,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56568,7 +56585,7 @@ const Team = ()=>{
                         children: "Team Elephant — \xc9quipe 19"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 409,
+                        lineNumber: 411,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56583,26 +56600,26 @@ const Team = ()=>{
                             "Innovation Crunch Time 2026 • Universit\xe9 de Lom\xe9",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 427,
+                                lineNumber: 429,
                                 columnNumber: 11
                             }, undefined),
                             "Optimisation du Foyer Am\xe9lior\xe9 Apeli"
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 417,
+                        lineNumber: 419,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 400,
+                lineNumber: 402,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Team.jsx",
-        lineNumber: 75,
+        lineNumber: 77,
         columnNumber: 5
     }, undefined);
 };
@@ -56617,8 +56634,11 @@ $RefreshReg$(_c, "Team");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/jr2.jpg":"l6CBF"}],"l6CBF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/jr2.jpg":"l6CBF","../images/Hycintas.jpg":"7yGaI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l6CBF":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "jr2.85b4a567.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"7yGaI":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Hycintas.22a4829d.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
