@@ -2,12 +2,22 @@
  * Footer component - Foyer Amélioré Apeli
  * Team Elephant - Innovation Crunch Time 2026
  */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = ({
     primaryColor = "#1a1a2e",
 }) => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    useEffect(() => {
+        const checkAuth = () => setIsLoggedIn(!!localStorage.getItem("currentUser"));
+        checkAuth();
+        window.addEventListener("storage", checkAuth);
+        const interval = setInterval(checkAuth, 1000);
+        return () => { window.removeEventListener("storage", checkAuth); clearInterval(interval); };
+    }, []);
+
     return (
         <div
             id="footer"
@@ -34,7 +44,7 @@ const Footer = ({
                 }}
             >
                 <Link to="/" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Accueil</Link>
-                <Link to="/chatbot" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Chatbot IA</Link>
+                {isLoggedIn && <Link to="/chatbot" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Chatbot IA</Link>}
                 <Link to="/doctorante" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Doctorante</Link>
                 <Link to="/equipe" style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.9rem" }}>Équipe</Link>
             </div>

@@ -4,6 +4,7 @@
  */
 import React, { useState, useEffect } from "react";
 import amelaPhoto from "../images/jr2.jpg";
+import hyacinthaPhoto from "../images/Hycintas.jpg";
 
 const teamMembers = [
   {
@@ -36,6 +37,7 @@ const teamMembers = [
     role: "Analyste",
     description: "Analyse technique et recherche sur les technologies IoT",
     initials: "Hd",
+    image: hyacinthaPhoto,
   },
   {
     name: "Mathilde HOUNGBEDJI",

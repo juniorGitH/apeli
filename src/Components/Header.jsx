@@ -287,13 +287,15 @@ const Header = () => {
                 Accueil
               </button>
               
-              <Link 
-                to="/chatbot" 
-                style={navLinkStyle(location.pathname === '/chatbot')}
-                onClick={() => setShowProfileMenu(false)}
-              >
-                Chatbot
-              </Link>
+              {currentUser && (
+                <Link 
+                  to="/chatbot" 
+                  style={navLinkStyle(location.pathname === '/chatbot')}
+                  onClick={() => setShowProfileMenu(false)}
+                >
+                  Chatbot
+                </Link>
+              )}
               
               <Link 
                 to="/doctorante" 
@@ -539,15 +541,17 @@ const Header = () => {
               Accueil
             </button>
             
-            <Link 
-              to="/chatbot" 
-              onClick={() => setIsMenuOpen(false)}
-              style={mobileNavLinkStyle(location.pathname === '/chatbot')}
-              className="mobile-menu-item"
-            >
-              <span className="menu-icon"></span>
-              Chatbot IA
-            </Link>
+            {currentUser && (
+              <Link 
+                to="/chatbot" 
+                onClick={() => setIsMenuOpen(false)}
+                style={mobileNavLinkStyle(location.pathname === '/chatbot')}
+                className="mobile-menu-item"
+              >
+                <span className="menu-icon"></span>
+                Chatbot IA
+              </Link>
+            )}
             
             <Link 
               to="/doctorante" 
