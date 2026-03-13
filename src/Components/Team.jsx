@@ -57,6 +57,18 @@ const teamMembers = [
     description: "Communication du projet et relations avec les parties prenantes",
     initials: "AT",
   },
+  {
+    name: "Kisito AGBEHOM",
+    role: "Designer 3D",
+    description: "Modélisation 3D et conception visuelle du projet",
+    initials: "KA",
+  },
+  {
+    name: "Tagnambime Julie BLOACK",
+    role: "Communication",
+    description: "Stratégie de communication et promotion du projet",
+    initials: "JB",
+  },
 ];
 
 const Team = () => {
@@ -200,7 +212,7 @@ const Team = () => {
                 height: isMobile ? "60px" : "70px",
                 borderRadius: "50%",
                 background: member.image ? "none" : `linear-gradient(135deg, ${
-                  ["#e67e22, #f39c12", "#3498db, #2980b9", "#2ecc71, #27ae60", "#9b59b6, #8e44ad", "#e74c3c, #c0392b", "#1abc9c, #16a085", "#34495e, #2c3e50", "#d35400, #e67e22"][index]
+                  ["#e67e22, #f39c12", "#3498db, #2980b9", "#2ecc71, #27ae60", "#9b59b6, #8e44ad", "#e74c3c, #c0392b", "#1abc9c, #16a085", "#34495e, #2c3e50", "#d35400, #e67e22", "#8e44ad, #9b59b6", "#2980b9, #3498db"][index]
                 })`,
                 margin: "0 auto 1rem",
                 display: "flex",
