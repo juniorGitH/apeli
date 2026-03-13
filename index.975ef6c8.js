@@ -27235,10 +27235,6 @@ var _team = require("./Components/Team");
 var _teamDefault = parcelHelpers.interopDefault(_team);
 var _foyerApeli = require("./Components/FoyerApeli");
 var _foyerApeliDefault = parcelHelpers.interopDefault(_foyerApeli);
-var _admin = require("./Components/Admin");
-var _adminDefault = parcelHelpers.interopDefault(_admin);
-var _dashboard = require("./Components/Dashboard");
-var _dashboardDefault = parcelHelpers.interopDefault(_dashboard);
 var _clientProfile = require("./Components/ClientProfile");
 var _clientProfileDefault = parcelHelpers.interopDefault(_clientProfile);
 var _mentionsLegales = require("./Components/MentionsLegales");
@@ -27311,7 +27307,7 @@ const Layout = ({ children , noFooter  })=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 79,
+                lineNumber: 77,
                 columnNumber: 7
             }, undefined),
             children,
@@ -27320,13 +27316,13 @@ const Layout = ({ children , noFooter  })=>{
                 secondaryColor: secondaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 82,
+                lineNumber: 80,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 78,
+        lineNumber: 76,
         columnNumber: 5
     }, undefined);
 };
@@ -27342,17 +27338,17 @@ const HomePage = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 92,
+                lineNumber: 90,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 93,
+                lineNumber: 91,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 94,
+                lineNumber: 92,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27374,7 +27370,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 104,
+                    lineNumber: 102,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27385,7 +27381,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 111,
+                    lineNumber: 109,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27395,7 +27391,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 118,
+                    lineNumber: 116,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27405,7 +27401,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 125,
+                    lineNumber: 123,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27415,27 +27411,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 132,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/admin",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminDefault.default), {}, void 0, false, void 0, void 0)
-                    }, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/App.jsx",
-                    lineNumber: 139,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/dashboard",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dashboardDefault.default), {}, void 0, false, void 0, void 0)
-                    }, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/App.jsx",
-                    lineNumber: 146,
+                    lineNumber: 130,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27445,7 +27421,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 153,
+                    lineNumber: 137,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27455,7 +27431,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 160,
+                    lineNumber: 144,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27465,7 +27441,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 167,
+                    lineNumber: 151,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27475,7 +27451,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 174,
+                    lineNumber: 158,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27485,7 +27461,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 181,
+                    lineNumber: 165,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27495,7 +27471,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 188,
+                    lineNumber: 172,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27505,7 +27481,7 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 195,
+                    lineNumber: 179,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27515,18 +27491,18 @@ const App = ()=>{
                     }, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 202,
+                    lineNumber: 186,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 102,
+            lineNumber: 100,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 101,
+        lineNumber: 99,
         columnNumber: 5
     }, undefined);
 };
@@ -27542,7 +27518,7 @@ $RefreshReg$(_c2, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./Components/Chatbot":"18zBy","./Components/Doctorante":"e5Nk6","./Components/Team":"YKbWR","./Components/FoyerApeli":"dLVXT","./Components/Admin":"alYNl","./Components/Dashboard":"01Qkc","./Components/ClientProfile":"029VM","./Components/MentionsLegales":"3uBgY","./Components/ConditionsGeneralesUtilisation":"8nqWj","./Components/PolitiqueProtectionDonneesPersonnelles":"fr2BO","./Components/PolitiqueCookies":"2xWzK","./Components/DeclarationAccessibilite":"fDXDV","./Components/Securite":"lQ4iy","./styles.css":"lW6qc","./utils/initializeData":"b6dt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./Components/Chatbot":"18zBy","./Components/Doctorante":"e5Nk6","./Components/Team":"YKbWR","./Components/FoyerApeli":"dLVXT","./Components/ClientProfile":"029VM","./Components/MentionsLegales":"3uBgY","./Components/ConditionsGeneralesUtilisation":"8nqWj","./Components/PolitiqueProtectionDonneesPersonnelles":"fr2BO","./Components/PolitiqueCookies":"2xWzK","./Components/DeclarationAccessibilite":"fDXDV","./Components/Securite":"lQ4iy","./styles.css":"lW6qc","./utils/initializeData":"b6dt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -35313,6 +35289,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _api = require("../utils/api");
 var _logoPng = require("../images/logo.png");
 var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 var _s = $RefreshSig$();
@@ -35404,42 +35381,21 @@ const Header = ()=>{
         });
     };
     // Gestion de l'authentification
-    const handleAuth = (e)=>{
+    const [authError, setAuthError] = (0, _react.useState)("");
+    const [authLoading, setAuthLoading] = (0, _react.useState)(false);
+    const handleAuth = async (e)=>{
         e.preventDefault();
-        if (isLoginMode) {
-            const users = JSON.parse(localStorage.getItem("users") || "[]");
-            const user = users.find((u)=>u.email === authData.email && u.password === authData.password);
-            if (user) {
-                setCurrentUser(user);
-                localStorage.setItem("currentUser", JSON.stringify(user));
-                setShowAuthModal(false);
-                setAuthData({
-                    email: "",
-                    password: "",
-                    name: "",
-                    userType: "client"
-                });
-                navigate(user.userType === "admin" ? "/admin" : "/dashboard");
-            } else alert("Identifiants incorrects. Inscrivez-vous si vous n'avez pas de compte.");
-        } else {
-            const users1 = JSON.parse(localStorage.getItem("users") || "[]");
-            if (users1.find((u)=>u.email === authData.email)) {
-                alert("Cet email est d\xe9j\xe0 utilis\xe9. Connectez-vous ou utilisez un autre email.");
-                return;
-            }
-            const newUser = {
-                id: Date.now(),
-                ...authData,
-                createdAt: new Date().toISOString(),
-                projects: []
-            };
-            const updatedUsers = [
-                ...users1,
-                newUser
-            ];
-            localStorage.setItem("users", JSON.stringify(updatedUsers));
-            setCurrentUser(newUser);
-            localStorage.setItem("currentUser", JSON.stringify(newUser));
+        setAuthError("");
+        setAuthLoading(true);
+        try {
+            let user;
+            if (isLoginMode) user = await (0, _api.loginUser)(authData.email, authData.password);
+            else user = await (0, _api.registerUser)({
+                name: authData.name,
+                email: authData.email,
+                password: authData.password
+            });
+            setCurrentUser(user);
             setShowAuthModal(false);
             setAuthData({
                 email: "",
@@ -35447,15 +35403,19 @@ const Header = ()=>{
                 name: "",
                 userType: "client"
             });
-            navigate(newUser.userType === "admin" ? "/admin" : "/dashboard");
+            navigate("/chatbot");
+        } catch (err) {
+            setAuthError(err.message || "Erreur d'authentification.");
+        } finally{
+            setAuthLoading(false);
         }
     };
     // Gestion de la déconnexion
     const handleLogout = ()=>{
+        (0, _api.logoutUser)();
         setCurrentUser(null);
-        localStorage.removeItem("currentUser");
         setShowProfileMenu(false);
-        if (location.pathname === "/dashboard" || location.pathname === "/admin" || location.pathname === "/chatbot" || location.pathname === "/profile") navigate("/");
+        if (location.pathname === "/chatbot" || location.pathname === "/profile") navigate("/");
     };
     const toggleMenu = ()=>{
         setIsMenuOpen(!isMenuOpen);
@@ -35568,17 +35528,17 @@ const Header = ()=>{
                                 loading: "eager"
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 275,
+                                lineNumber: 262,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 264,
+                            lineNumber: 251,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 263,
+                        lineNumber: 250,
                         columnNumber: 9
                     }, undefined),
                     !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -35593,7 +35553,7 @@ const Header = ()=>{
                                         children: "Accueil"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 293,
+                                        lineNumber: 280,
                                         columnNumber: 15
                                     }, undefined),
                                     currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35603,7 +35563,7 @@ const Header = ()=>{
                                         children: "Chatbot"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 302,
+                                        lineNumber: 289,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35613,7 +35573,7 @@ const Header = ()=>{
                                         children: "Foyer Apeli"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 311,
+                                        lineNumber: 298,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35623,7 +35583,7 @@ const Header = ()=>{
                                         children: "Doctorante"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 319,
+                                        lineNumber: 306,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35633,13 +35593,13 @@ const Header = ()=>{
                                         children: "\xc9quipe"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 327,
+                                        lineNumber: 314,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 292,
+                                lineNumber: 279,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35660,7 +35620,7 @@ const Header = ()=>{
                                             children: currentUser.name.charAt(0).toUpperCase()
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 340,
+                                            lineNumber: 327,
                                             columnNumber: 19
                                         }, undefined),
                                         showProfileMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35675,7 +35635,7 @@ const Header = ()=>{
                                                             children: currentUser.name
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 357,
+                                                            lineNumber: 344,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35683,142 +35643,58 @@ const Header = ()=>{
                                                             children: currentUser.email
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 358,
+                                                            lineNumber: 345,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             className: "profile-type",
-                                                            children: currentUser.userType === "admin" ? "Administrateur" : "Client"
+                                                            children: "Utilisateur"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 359,
+                                                            lineNumber: 346,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 356,
+                                                    lineNumber: 343,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "profile-menu-items",
                                                     children: [
-                                                        currentUser.userType === "client" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                            onClick: ()=>{
+                                                                navigate("/chatbot");
+                                                                setShowProfileMenu(false);
+                                                            },
+                                                            style: profileMenuItemStyle,
+                                                            className: "profile-menu-item",
                                                             children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                    onClick: ()=>{
-                                                                        navigate("/chatbot");
-                                                                        setShowProfileMenu(false);
-                                                                    },
-                                                                    style: profileMenuItemStyle,
-                                                                    className: "profile-menu-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 375,
-                                                                            columnNumber: 31
-                                                                        }, undefined),
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                            children: "Chatbot Cuisine"
-                                                                        }, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 376,
-                                                                            columnNumber: 31
-                                                                        }, undefined)
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 367,
-                                                                    columnNumber: 29
+                                                                    lineNumber: 358,
+                                                                    columnNumber: 27
                                                                 }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                    onClick: ()=>{
-                                                                        navigate("/dashboard");
-                                                                        setShowProfileMenu(false);
-                                                                    },
-                                                                    style: profileMenuItemStyle,
-                                                                    className: "profile-menu-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 386,
-                                                                            columnNumber: 31
-                                                                        }, undefined),
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                            children: "Mon Tableau de Bord"
-                                                                        }, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 387,
-                                                                            columnNumber: 31
-                                                                        }, undefined)
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: "Chatbot Cuisine"
+                                                                }, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 378,
-                                                                    columnNumber: 29
+                                                                    lineNumber: 359,
+                                                                    columnNumber: 27
                                                                 }, undefined)
                                                             ]
-                                                        }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                    onClick: ()=>{
-                                                                        navigate("/admin");
-                                                                        setShowProfileMenu(false);
-                                                                    },
-                                                                    style: profileMenuItemStyle,
-                                                                    className: "profile-menu-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 400,
-                                                                            columnNumber: 31
-                                                                        }, undefined),
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                            children: "Administration"
-                                                                        }, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 401,
-                                                                            columnNumber: 31
-                                                                        }, undefined)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 392,
-                                                                    columnNumber: 29
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                    onClick: ()=>{
-                                                                        navigate("/chatbot");
-                                                                        setShowProfileMenu(false);
-                                                                    },
-                                                                    style: profileMenuItemStyle,
-                                                                    className: "profile-menu-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 411,
-                                                                            columnNumber: 31
-                                                                        }, undefined),
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                            children: "Chatbot Cuisine"
-                                                                        }, void 0, false, {
-                                                                            fileName: "src/Components/Header.jsx",
-                                                                            lineNumber: 412,
-                                                                            columnNumber: 31
-                                                                        }, undefined)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 403,
-                                                                    columnNumber: 29
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true),
+                                                        }, void 0, true, {
+                                                            fileName: "src/Components/Header.jsx",
+                                                            lineNumber: 350,
+                                                            columnNumber: 25
+                                                        }, undefined),
+                                                        "}",
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             className: "menu-divider"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 417,
+                                                            lineNumber: 362,
                                                             columnNumber: 25
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35831,26 +35707,26 @@ const Header = ()=>{
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 427,
+                                                                    lineNumber: 372,
                                                                     columnNumber: 27
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                     children: "Profile"
                                                                 }, void 0, false, {
                                                                     fileName: "src/Components/Header.jsx",
-                                                                    lineNumber: 428,
+                                                                    lineNumber: 373,
                                                                     columnNumber: 27
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/Components/Header.jsx",
-                                                            lineNumber: 419,
+                                                            lineNumber: 364,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 364,
+                                                    lineNumber: 349,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35861,37 +35737,37 @@ const Header = ()=>{
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                 fileName: "src/Components/Header.jsx",
-                                                                lineNumber: 437,
+                                                                lineNumber: 382,
                                                                 columnNumber: 27
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                 children: "D\xe9connexion"
                                                             }, void 0, false, {
                                                                 fileName: "src/Components/Header.jsx",
-                                                                lineNumber: 438,
+                                                                lineNumber: 383,
                                                                 columnNumber: 27
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/Components/Header.jsx",
-                                                        lineNumber: 433,
+                                                        lineNumber: 378,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 432,
+                                                    lineNumber: 377,
                                                     columnNumber: 23
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 355,
+                                            lineNumber: 342,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 339,
+                                    lineNumber: 326,
                                     columnNumber: 17
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "auth-buttons",
@@ -35907,7 +35783,7 @@ const Header = ()=>{
                                             children: "Connexion"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 446,
+                                            lineNumber: 391,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35921,18 +35797,18 @@ const Header = ()=>{
                                             children: "Inscription"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 457,
+                                            lineNumber: 402,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 445,
+                                    lineNumber: 390,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 337,
+                                lineNumber: 324,
                                 columnNumber: 13
                             }, undefined)
                         ]
@@ -35955,12 +35831,12 @@ const Header = ()=>{
                                             children: "Connexion"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 487,
+                                            lineNumber: 432,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 479,
+                                        lineNumber: 424,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35975,18 +35851,18 @@ const Header = ()=>{
                                             children: "Inscription"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 497,
+                                            lineNumber: 442,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 489,
+                                        lineNumber: 434,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 478,
+                                lineNumber: 423,
                                 columnNumber: 15
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35998,12 +35874,12 @@ const Header = ()=>{
                                     children: currentUser.name.charAt(0).toUpperCase()
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 504,
+                                    lineNumber: 449,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 503,
+                                lineNumber: 448,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36016,33 +35892,33 @@ const Header = ()=>{
                                         className: `hamburger-line ${isMenuOpen ? "active" : ""}`
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 521,
+                                        lineNumber: 466,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         className: `hamburger-line ${isMenuOpen ? "active" : ""}`
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 522,
+                                        lineNumber: 467,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         className: `hamburger-line ${isMenuOpen ? "active" : ""}`
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 523,
+                                        lineNumber: 468,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 515,
+                                lineNumber: 460,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 476,
+                        lineNumber: 421,
                         columnNumber: 11
                     }, undefined),
                     isMobile && isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36050,7 +35926,7 @@ const Header = ()=>{
                         onClick: ()=>setIsMenuOpen(false)
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 530,
+                        lineNumber: 475,
                         columnNumber: 11
                     }, undefined),
                     isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36064,7 +35940,7 @@ const Header = ()=>{
                                         children: currentUser.name.charAt(0).toUpperCase()
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 541,
+                                        lineNumber: 486,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36075,7 +35951,7 @@ const Header = ()=>{
                                                 children: currentUser.name
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 545,
+                                                lineNumber: 490,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36083,27 +35959,27 @@ const Header = ()=>{
                                                 children: currentUser.email
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 546,
+                                                lineNumber: 491,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "mobile-user-type",
-                                                children: currentUser.userType === "admin" ? "Administrateur" : "Client"
+                                                children: "Utilisateur"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 547,
+                                                lineNumber: 492,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 544,
+                                        lineNumber: 489,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 540,
+                                lineNumber: 485,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36115,14 +35991,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 559,
+                                        lineNumber: 502,
                                         columnNumber: 15
                                     }, undefined),
                                     "Accueil"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 554,
+                                lineNumber: 497,
                                 columnNumber: 13
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36135,14 +36011,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 570,
+                                        lineNumber: 513,
                                         columnNumber: 17
                                     }, undefined),
                                     "Chatbot IA"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 564,
+                                lineNumber: 507,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36155,14 +36031,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 581,
+                                        lineNumber: 524,
                                         columnNumber: 15
                                     }, undefined),
                                     "Foyer Apeli"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 575,
+                                lineNumber: 518,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36175,14 +36051,14 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 591,
+                                        lineNumber: 534,
                                         columnNumber: 15
                                     }, undefined),
                                     "Doctorante"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 585,
+                                lineNumber: 528,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36195,61 +36071,18 @@ const Header = ()=>{
                                         className: "menu-icon"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 601,
+                                        lineNumber: 544,
                                         columnNumber: 15
                                     }, undefined),
                                     "\xc9quipe"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 595,
+                                lineNumber: 538,
                                 columnNumber: 13
                             }, undefined),
                             currentUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                                 children: [
-                                    currentUser.userType === "admin" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: "/admin",
-                                            onClick: ()=>setIsMenuOpen(false),
-                                            style: mobileNavLinkStyle(location.pathname === "/admin"),
-                                            className: "mobile-menu-item",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "menu-icon"
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 615,
-                                                    columnNumber: 23
-                                                }, undefined),
-                                                "Administration"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/Components/Header.jsx",
-                                            lineNumber: 609,
-                                            columnNumber: 21
-                                        }, undefined)
-                                    }, void 0, false) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            to: "/dashboard",
-                                            onClick: ()=>setIsMenuOpen(false),
-                                            style: mobileNavLinkStyle(location.pathname === "/dashboard"),
-                                            className: "mobile-menu-item",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "menu-icon"
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 627,
-                                                    columnNumber: 23
-                                                }, undefined),
-                                                "Mon Tableau de Bord"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/Components/Header.jsx",
-                                            lineNumber: 621,
-                                            columnNumber: 21
-                                        }, undefined)
-                                    }, void 0, false),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/profile",
                                         onClick: ()=>setIsMenuOpen(false),
@@ -36260,14 +36093,14 @@ const Header = ()=>{
                                                 className: "menu-icon"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Header.jsx",
-                                                lineNumber: 639,
+                                                lineNumber: 556,
                                                 columnNumber: 19
                                             }, undefined),
                                             "Profil"
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 633,
+                                        lineNumber: 550,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36278,19 +36111,19 @@ const Header = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                     fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 648,
+                                                    lineNumber: 565,
                                                     columnNumber: 21
                                                 }, undefined),
                                                 "D\xe9connexion"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 644,
+                                            lineNumber: 561,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
-                                        lineNumber: 643,
+                                        lineNumber: 560,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
@@ -36298,13 +36131,13 @@ const Header = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 538,
+                        lineNumber: 483,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 261,
+                lineNumber: 248,
                 columnNumber: 7
             }, undefined),
             showAuthModal && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36322,7 +36155,7 @@ const Header = ()=>{
                                     children: isLoginMode ? "Connexion" : "Inscription"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 665,
+                                    lineNumber: 582,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36340,46 +36173,67 @@ const Header = ()=>{
                                     children: "\xd7"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 666,
+                                    lineNumber: 583,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 664,
+                            lineNumber: 581,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "auth-toggle",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    onClick: ()=>setIsLoginMode(true),
+                                    onClick: ()=>{
+                                        setIsLoginMode(true);
+                                        setAuthError("");
+                                    },
                                     className: isLoginMode ? "active" : "",
                                     children: "Connexion"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 679,
+                                    lineNumber: 596,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    onClick: ()=>setIsLoginMode(false),
+                                    onClick: ()=>{
+                                        setIsLoginMode(false);
+                                        setAuthError("");
+                                    },
                                     className: !isLoginMode ? "active" : "",
                                     children: "Inscription"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 685,
+                                    lineNumber: 602,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 678,
+                            lineNumber: 595,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                             onSubmit: handleAuth,
                             className: "auth-form",
                             children: [
+                                authError && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        background: "#fdeaea",
+                                        color: "#c0392b",
+                                        padding: "0.6rem 0.8rem",
+                                        borderRadius: "6px",
+                                        fontSize: "0.85rem",
+                                        marginBottom: "0.8rem"
+                                    },
+                                    children: authError
+                                }, void 0, false, {
+                                    fileName: "src/Components/Header.jsx",
+                                    lineNumber: 612,
+                                    columnNumber: 17
+                                }, undefined),
                                 !isLoginMode && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "form-group",
                                     children: [
@@ -36387,7 +36241,7 @@ const Header = ()=>{
                                             children: "Nom complet"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 696,
+                                            lineNumber: 625,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36401,13 +36255,13 @@ const Header = ()=>{
                                             required: !isLoginMode
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 697,
+                                            lineNumber: 626,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 695,
+                                    lineNumber: 624,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36417,7 +36271,7 @@ const Header = ()=>{
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 708,
+                                            lineNumber: 637,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36431,13 +36285,13 @@ const Header = ()=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 709,
+                                            lineNumber: 638,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 707,
+                                    lineNumber: 636,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36447,7 +36301,7 @@ const Header = ()=>{
                                             children: "Mot de passe"
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 719,
+                                            lineNumber: 648,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36461,81 +36315,29 @@ const Header = ()=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "src/Components/Header.jsx",
-                                            lineNumber: 720,
+                                            lineNumber: 649,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 718,
+                                    lineNumber: 647,
                                     columnNumber: 15
-                                }, undefined),
-                                !isLoginMode && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "form-group",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                            children: "Type de compte"
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Header.jsx",
-                                            lineNumber: 731,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                            value: authData.userType,
-                                            onChange: (e)=>setAuthData({
-                                                    ...authData,
-                                                    userType: e.target.value
-                                                }),
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                    value: "client",
-                                                    children: "Utilisateur (acc\xe8s chatbot)"
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 736,
-                                                    columnNumber: 21
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                    value: "admin",
-                                                    children: "Administrateur (r\xe9serv\xe9)"
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Header.jsx",
-                                                    lineNumber: 737,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/Components/Header.jsx",
-                                            lineNumber: 732,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        authData.userType === "admin" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "form-note",
-                                            children: "Note: Ce type de compte est r\xe9serv\xe9 \xe0 l'administrateur."
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Header.jsx",
-                                            lineNumber: 740,
-                                            columnNumber: 21
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/Components/Header.jsx",
-                                    lineNumber: 730,
-                                    columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     type: "submit",
                                     className: "auth-submit-btn",
-                                    children: isLoginMode ? "Se connecter" : "S'inscrire"
+                                    disabled: authLoading,
+                                    children: authLoading ? "Chargement..." : isLoginMode ? "Se connecter" : "S'inscrire"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 747,
+                                    lineNumber: 660,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 693,
+                            lineNumber: 610,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36547,24 +36349,24 @@ const Header = ()=>{
                                     children: isLoginMode ? "Inscrivez-vous" : "Connectez-vous"
                                 }, void 0, false, {
                                     fileName: "src/Components/Header.jsx",
-                                    lineNumber: 754,
+                                    lineNumber: 667,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 752,
+                            lineNumber: 665,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/Header.jsx",
-                    lineNumber: 663,
+                    lineNumber: 580,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 660,
+                lineNumber: 577,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
@@ -37359,13 +37161,13 @@ const Header = ()=>{
       `
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 763,
+                lineNumber: 676,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Header, "0fuXJWYF98rDH+dlgxp+EToTY04=", false, function() {
+_s(Header, "Lkw/zuz3ZWCR55TRUeZijQ+6LCA=", false, function() {
     return [
         (0, _reactRouterDom.useLocation),
         (0, _reactRouterDom.useNavigate)
@@ -37381,7 +37183,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../images/logo.png":"g4jYL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g4jYL":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../images/logo.png":"g4jYL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/api":"gsqud"}],"g4jYL":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "logo.c493797d.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -37418,7 +37220,257 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"jIEVO":[function(require,module,exports) {
+},{}],"gsqud":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "loginUser", ()=>loginUser);
+parcelHelpers.export(exports, "registerUser", ()=>registerUser);
+parcelHelpers.export(exports, "logoutUser", ()=>logoutUser);
+parcelHelpers.export(exports, "getProfile", ()=>getProfile);
+parcelHelpers.export(exports, "updateProfile", ()=>updateProfile);
+parcelHelpers.export(exports, "deleteAccount", ()=>deleteAccount);
+parcelHelpers.export(exports, "getArticles", ()=>getArticles);
+parcelHelpers.export(exports, "getArticlesByCategory", ()=>getArticlesByCategory);
+parcelHelpers.export(exports, "getSiteContent", ()=>getSiteContent);
+parcelHelpers.export(exports, "sendChatMessage", ()=>sendChatMessage);
+parcelHelpers.export(exports, "sendChatMessageStream", ()=>sendChatMessageStream);
+parcelHelpers.export(exports, "getMcpStatus", ()=>getMcpStatus);
+parcelHelpers.export(exports, "setMcpFan", ()=>setMcpFan);
+parcelHelpers.export(exports, "setMcpAuto", ()=>setMcpAuto);
+parcelHelpers.export(exports, "getMcpHistory", ()=>getMcpHistory);
+/**
+ * Service API pour communiquer avec le backend Apeli
+ */ const API_BASE_URL = "http://localhost:5249/api";
+// Récupérer le token JWT stocké
+const getToken = ()=>{
+    const user = localStorage.getItem("currentUser");
+    if (user) try {
+        return JSON.parse(user).token;
+    } catch  {
+        return null;
+    }
+    return null;
+};
+// Headers par défaut avec auth
+const authHeaders = ()=>{
+    const token = getToken();
+    const headers = {
+        "Content-Type": "application/json"
+    };
+    if (token) headers["Authorization"] = `Bearer ${token}`;
+    return headers;
+};
+const loginUser = async (email, password)=>{
+    const res = await fetch(`${API_BASE_URL}/utilisateur/login`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            email,
+            password
+        })
+    });
+    if (!res.ok) {
+        const msg = await res.text();
+        throw new Error(msg || "Identifiants incorrects.");
+    }
+    const data = await res.json();
+    // Stocker l'utilisateur avec le token dans localStorage
+    const user = {
+        id: data.userId,
+        name: `${data.firstName || ""} ${data.lastName || ""}`.trim(),
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email,
+        phone: data.phone,
+        company: data.company,
+        position: data.position,
+        bio: data.bio,
+        skills: data.skills,
+        website: data.website,
+        userType: (data.role || "Client").toLowerCase() === "admin" ? "admin" : "client",
+        token: data.token
+    };
+    localStorage.setItem("currentUser", JSON.stringify(user));
+    return user;
+};
+const registerUser = async ({ name , email , password  })=>{
+    // Séparer le nom en firstName / lastName
+    const parts = (name || "").trim().split(" ");
+    const firstName = parts[0] || "";
+    const lastName = parts.slice(1).join(" ") || "";
+    const res = await fetch(`${API_BASE_URL}/utilisateur`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            firstName,
+            lastName,
+            email,
+            password,
+            role: "Client"
+        })
+    });
+    if (!res.ok) {
+        const msg = await res.text();
+        throw new Error(msg || "Erreur lors de l'inscription.");
+    }
+    // Après inscription, connecter automatiquement
+    return await loginUser(email, password);
+};
+const logoutUser = ()=>{
+    localStorage.removeItem("currentUser");
+};
+const getProfile = async (userId)=>{
+    const res = await fetch(`${API_BASE_URL}/utilisateur/${userId}`, {
+        headers: authHeaders()
+    });
+    if (!res.ok) throw new Error("Impossible de charger le profil.");
+    return await res.json();
+};
+const updateProfile = async (profileData)=>{
+    const res = await fetch(`${API_BASE_URL}/utilisateur/profile`, {
+        method: "PUT",
+        headers: authHeaders(),
+        body: JSON.stringify(profileData)
+    });
+    if (!res.ok) throw new Error("Erreur lors de la mise \xe0 jour du profil.");
+    const data = await res.json();
+    // Mettre à jour le localStorage avec le nouveau token
+    const currentUser = JSON.parse(localStorage.getItem("currentUser") || "{}");
+    const updatedUser = {
+        ...currentUser,
+        name: `${data.utilisateur?.firstName || profileData.firstName || ""} ${data.utilisateur?.lastName || profileData.lastName || ""}`.trim(),
+        firstName: data.utilisateur?.firstName || profileData.firstName,
+        lastName: data.utilisateur?.lastName || profileData.lastName,
+        email: data.utilisateur?.email || profileData.email,
+        phone: data.utilisateur?.phone || profileData.phone,
+        company: data.utilisateur?.company || profileData.company,
+        position: data.utilisateur?.position || profileData.position,
+        bio: data.utilisateur?.bio || profileData.bio,
+        skills: data.utilisateur?.skills || profileData.skills,
+        website: data.utilisateur?.website || profileData.website,
+        token: data.token || currentUser.token
+    };
+    localStorage.setItem("currentUser", JSON.stringify(updatedUser));
+    return updatedUser;
+};
+const deleteAccount = async ()=>{
+    const res = await fetch(`${API_BASE_URL}/utilisateur/profile`, {
+        method: "DELETE",
+        headers: authHeaders()
+    });
+    if (!res.ok) throw new Error("Erreur lors de la suppression du compte.");
+    localStorage.removeItem("currentUser");
+};
+const getArticles = async ()=>{
+    const res = await fetch(`${API_BASE_URL}/article`);
+    if (!res.ok) throw new Error("Impossible de charger les articles.");
+    return await res.json();
+};
+const getArticlesByCategory = async (category)=>{
+    const res = await fetch(`${API_BASE_URL}/article/categorie/${category}`);
+    if (!res.ok) throw new Error("Impossible de charger les articles.");
+    return await res.json();
+};
+const getSiteContent = async ()=>{
+    const res = await fetch(`${API_BASE_URL}/sitecontent`);
+    if (!res.ok) throw new Error("Impossible de charger le contenu.");
+    return await res.json();
+};
+const sendChatMessage = async (messages)=>{
+    const res = await fetch(`${API_BASE_URL}/chat`, {
+        method: "POST",
+        headers: authHeaders(),
+        body: JSON.stringify({
+            messages
+        })
+    });
+    if (!res.ok) throw new Error("Erreur de communication avec ApeliChef.");
+    const data = await res.json();
+    return data.content;
+};
+const sendChatMessageStream = async (messages, onChunk, onDone, onError, onMcp)=>{
+    try {
+        const res = await fetch(`${API_BASE_URL}/chat/stream`, {
+            method: "POST",
+            headers: authHeaders(),
+            body: JSON.stringify({
+                messages
+            })
+        });
+        if (!res.ok) throw new Error("Erreur de communication avec ApeliChef.");
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+        while(true){
+            const { done , value  } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, {
+                stream: true
+            });
+            const lines = buffer.split("\n");
+            buffer = lines.pop() || "";
+            for (const line of lines){
+                if (line.startsWith("event: done")) {
+                    onDone();
+                    return;
+                }
+                if (line.startsWith("event: mcp")) continue;
+                if (line.startsWith("data: ") && !line.includes("[DONE]")) try {
+                    const data = JSON.parse(line.slice(6));
+                    if (data.content) onChunk(data.content);
+                    if (data.tool && onMcp) onMcp(data);
+                } catch  {
+                // ignore parse errors
+                }
+            }
+        }
+        onDone();
+    } catch (err) {
+        onError(err.message);
+    }
+};
+const getMcpStatus = async ()=>{
+    const res = await fetch(`${API_BASE_URL}/mcp/status`, {
+        headers: authHeaders()
+    });
+    if (!res.ok) return null;
+    return await res.json();
+};
+const setMcpFan = async (speed)=>{
+    const res = await fetch(`${API_BASE_URL}/mcp/ventilateur`, {
+        method: "POST",
+        headers: authHeaders(),
+        body: JSON.stringify({
+            speed
+        })
+    });
+    if (!res.ok) throw new Error("Erreur MCP ventilateur.");
+    return await res.json();
+};
+const setMcpAuto = async (targetTemperature)=>{
+    const res = await fetch(`${API_BASE_URL}/mcp/auto`, {
+        method: "POST",
+        headers: authHeaders(),
+        body: JSON.stringify({
+            targetTemperature
+        })
+    });
+    if (!res.ok) throw new Error("Erreur MCP auto.");
+    return await res.json();
+};
+const getMcpHistory = async ()=>{
+    const res = await fetch(`${API_BASE_URL}/mcp/historique`, {
+        headers: authHeaders()
+    });
+    if (!res.ok) return [];
+    return await res.json();
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jIEVO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0d4d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38145,6 +38197,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _api = require("../utils/api");
 var _s = $RefreshSig$();
 const Chatbot = ()=>{
     _s();
@@ -38162,12 +38215,14 @@ const Chatbot = ()=>{
     const [activeConversation, setActiveConversation] = (0, _react.useState)(1);
     const [sidebarOpen, setSidebarOpen] = (0, _react.useState)(false);
     const [isMobile, setIsMobile] = (0, _react.useState)(false);
-    // Données IoT simulées du foyer Apeli
+    // Données IoT du foyer Apeli (depuis le serveur MCP)
     const [iotData, setIotData] = (0, _react.useState)({
-        temperature: 180,
-        poids: 2.5,
-        ventilateur: "auto",
-        statut: "connect\xe9"
+        temperature: 0,
+        ventilateur: "...",
+        statut: "connexion...",
+        fanSpeed: 0,
+        weight: 0,
+        alerts: []
     });
     const messagesEndRef = (0, _react.useRef)(null);
     const inputRef = (0, _react.useRef)(null);
@@ -38191,15 +38246,28 @@ const Chatbot = ()=>{
         window.addEventListener("resize", handleResize);
         return ()=>window.removeEventListener("resize", handleResize);
     }, []);
-    // Simuler les mises à jour IoT en temps réel
+    // Polling des données IoT depuis le serveur MCP
     (0, _react.useEffect)(()=>{
-        const interval = setInterval(()=>{
-            setIotData((prev)=>({
-                    ...prev,
-                    temperature: Math.round(prev.temperature + (Math.random() - 0.5) * 5),
-                    poids: Math.round((prev.poids + (Math.random() - 0.5) * 0.1) * 100) / 100
-                }));
-        }, 3000);
+        const fetchMcpStatus = async ()=>{
+            try {
+                const data = await (0, _api.getMcpStatus)();
+                if (data) setIotData({
+                    temperature: data.temperature,
+                    ventilateur: `${data.fanMode} ${data.fanSpeed}%`,
+                    statut: data.status,
+                    fanSpeed: data.fanSpeed,
+                    weight: data.weight,
+                    alerts: data.alerts || []
+                });
+            } catch  {
+                setIotData((prev)=>({
+                        ...prev,
+                        statut: "d\xe9connect\xe9"
+                    }));
+            }
+        };
+        fetchMcpStatus();
+        const interval = setInterval(fetchMcpStatus, 3000);
         return ()=>clearInterval(interval);
     }, []);
     // Auto-scroll vers le dernier message
@@ -38216,22 +38284,11 @@ const Chatbot = ()=>{
             {
                 id: 1,
                 role: "assistant",
-                content: "Bonjour ! Je suis **ApeliChef**, votre assistant cuisine intelligent connect\xe9 au foyer am\xe9lior\xe9 Apeli.\n\nJe peux vous aider \xe0 :\n- **Cuire des plats** en contr\xf4lant la temp\xe9rature du foyer\n- **Surveiller** la temp\xe9rature et le poids de votre marmite en temps r\xe9el\n- **Ajuster le ventilateur** d'a\xe9ration via le serveur MCP\n- **Vous guider** \xe9tape par \xe9tape dans vos recettes\n\nQue souhaitez-vous cuisiner aujourd'hui ?",
+                content: "Bonjour ! Je suis **ApeliChef**, votre assistant cuisine intelligent connect\xe9 au foyer am\xe9lior\xe9 Apeli.\n\nJe peux vous aider \xe0 :\n- **Cuire des plats** en contr\xf4lant la temp\xe9rature du foyer\n- **Surveiller** la temp\xe9rature en temps r\xe9el\n- **Ajuster le ventilateur** d'a\xe9ration via le serveur MCP\n- **Vous guider** \xe9tape par \xe9tape dans vos recettes\n\nQue souhaitez-vous cuisiner aujourd'hui ?",
                 timestamp: new Date().toISOString()
             }, 
         ]);
     }, []);
-    // Réponses simulées du LLM cuisine
-    const getAIResponse = (userMessage)=>{
-        const msg = userMessage.toLowerCase();
-        if (msg.includes("riz") || msg.includes("rice")) return `## Cuisson du Riz au Foyer Apeli\n\n**Température recommandée :** 100°C\n**Temps de cuisson :** 20-25 minutes\n\n### Étapes :\n1. Versez **${iotData.poids}kg** d'eau dans la marmite (détecté par le capteur)\n2. *J'ajuste le ventilateur à 70% pour atteindre 100°C*\n3. Quand l'eau bout, ajoutez le riz lavé\n4. Réduisez à feu doux — *ventilateur à 30%*\n5. Couvrez et laissez cuire 20 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 70%*`;
-        if (msg.includes("p\xe2te") || msg.includes("pate") || msg.includes("fufu")) return `## Préparation de la Pâte (Fufu)\n\n**Température recommandée :** 95-100°C\n**Temps :** 15-20 minutes\n\n### Étapes :\n1. L'eau est en cours de chauffe sur le foyer\n2. *Ventilateur ajusté à 80% pour ébullition rapide*\n3. Versez la farine progressivement en remuant\n4. Réduisez le feu — *ventilateur à 40%*\n5. Tournez vigoureusement jusqu'à consistance lisse\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 80%*`;
-        if (msg.includes("sauce") || msg.includes("tomate")) return `## Sauce Tomate Maison\n\n**Température recommandée :** 85-90°C\n**Temps :** 30-40 minutes\n\n### Étapes :\n1. Faites chauffer l'huile — *ventilateur à 60%*\n2. Ajoutez les oignons et laissez revenir 5 min\n3. Ajoutez les tomates mixées\n4. *Réduction ventilateur à 45% pour mijotage doux*\n5. Assaisonnez et laissez mijoter 25 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 60%*`;
-        if (msg.includes("temp\xe9rature") || msg.includes("temp")) return `## État actuel du Foyer Apeli\n\n| Paramètre | Valeur |\n|---|---|\n| Température | **${iotData.temperature}°C** |\n| Poids marmite | **${iotData.poids}kg** |\n| Ventilateur | **${iotData.ventilateur}** |\n| Statut | **${iotData.statut}** |\n\nTout fonctionne normalement. Le foyer est prêt pour la cuisson !`;
-        if (msg.includes("ventilateur") || msg.includes("vent")) return `## Contrôle du Ventilateur d'Aération\n\nLe ventilateur du foyer Apeli est actuellement en mode **${iotData.ventilateur}**.\n\nVia le serveur MCP, je peux :\n- **Augmenter** la ventilation (monter la température)\n- **Réduire** la ventilation (baisser la température)\n- Passer en mode **auto** (régulation intelligente)\n\n> *Serveur MCP connecté et opérationnel*\n\nQuel réglage souhaitez-vous ?`;
-        if (msg.includes("bonjour") || msg.includes("salut") || msg.includes("hello")) return `Bonjour ! Je suis ravi de vous aider avec votre cuisine sur le foyer Apeli.\n\n**État du foyer :** ${iotData.statut}\n**Température :** ${iotData.temperature}°C\n\nQue souhaitez-vous préparer ? Je peux vous guider pas à pas tout en contrôlant automatiquement la température du foyer via le ventilateur d'aération.`;
-        return `Je comprends votre demande concernant "${userMessage}".\n\nEn tant qu'assistant cuisine du foyer Apeli, je peux vous aider avec :\n\n- **Recettes africaines et internationales** adaptées au foyer amélioré\n- **Contrôle de la température** via le ventilateur MCP\n- **Suivi en temps réel** du poids et de la température\n\nFoyer : **${iotData.statut}** | ${iotData.temperature}°C | ${iotData.poids}kg\n\nPourriez-vous préciser ce que vous souhaitez cuisiner ?`;
-    };
     const handleSend = ()=>{
         if (!input.trim() || isLoading) return;
         const userMsg = {
@@ -38240,26 +38297,48 @@ const Chatbot = ()=>{
             content: input,
             timestamp: new Date().toISOString()
         };
-        setMessages((prev)=>[
-                ...prev,
-                userMsg
-            ]);
+        const currentMessages = [
+            ...messages,
+            userMsg
+        ];
+        setMessages(currentMessages);
         setInput("");
         setIsLoading(true);
-        // Simuler le délai de réponse du LLM
-        setTimeout(()=>{
-            const aiResponse = {
-                id: Date.now() + 1,
-                role: "assistant",
-                content: getAIResponse(input),
-                timestamp: new Date().toISOString()
-            };
-            setMessages((prev)=>[
-                    ...prev,
-                    aiResponse
-                ]);
+        // Préparer l'historique pour l'API (sans le message de bienvenue initial côté client)
+        const apiMessages = currentMessages.filter((m)=>m.role === "user" || m.role === "assistant").map((m)=>({
+                role: m.role,
+                content: m.content
+            }));
+        const assistantMsgId = Date.now() + 1;
+        let fullContent = "";
+        // Ajouter un message assistant vide pour le streaming
+        setMessages((prev)=>[
+                ...prev,
+                {
+                    id: assistantMsgId,
+                    role: "assistant",
+                    content: "",
+                    timestamp: new Date().toISOString()
+                }, 
+            ]);
+        (0, _api.sendChatMessageStream)(apiMessages, // onChunk — chaque token reçu
+        (chunk)=>{
+            fullContent += chunk;
+            setMessages((prev)=>prev.map((m)=>m.id === assistantMsgId ? {
+                        ...m,
+                        content: fullContent
+                    } : m));
+        }, // onDone
+        ()=>{
             setIsLoading(false);
-        }, 1000 + Math.random() * 1500);
+        }, // onError
+        (errorMsg)=>{
+            setMessages((prev)=>prev.map((m)=>m.id === assistantMsgId ? {
+                        ...m,
+                        content: `⚠️ Erreur : ${errorMsg}\n\nVérifiez que le backend est bien lancé et que vous êtes connecté.`
+                    } : m));
+            setIsLoading(false);
+        });
     };
     const handleKeyPress = (e)=>{
         if (e.key === "Enter" && !e.shiftKey) {
@@ -38337,7 +38416,7 @@ const Chatbot = ()=>{
                         children: "✚ Nouvelle conversation"
                     }, void 0, false, {
                         fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 210,
+                        lineNumber: 230,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38360,7 +38439,7 @@ const Chatbot = ()=>{
                                 children: "Foyer Apeli"
                             }, void 0, false, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 243,
+                                lineNumber: 263,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38374,12 +38453,12 @@ const Chatbot = ()=>{
                                         children: "Temp."
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 254,
+                                        lineNumber: 274,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         style: {
-                                            color: iotData.temperature > 200 ? "#e74c3c" : "#2ecc71",
+                                            color: iotData.temperature > 200 ? "#e74c3c" : iotData.temperature > 100 ? "#e67e22" : "#2ecc71",
                                             fontWeight: "600"
                                         },
                                         children: [
@@ -38388,46 +38467,13 @@ const Chatbot = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 255,
+                                        lineNumber: 275,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 253,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    marginBottom: "0.3rem"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Poids"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 260,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            fontWeight: "600"
-                                        },
-                                        children: [
-                                            iotData.poids,
-                                            "kg"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 261,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 259,
+                                lineNumber: 273,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38441,7 +38487,7 @@ const Chatbot = ()=>{
                                         children: "Ventilo"
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 264,
+                                        lineNumber: 280,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38451,13 +38497,46 @@ const Chatbot = ()=>{
                                         children: iotData.ventilateur
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 265,
+                                        lineNumber: 281,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 263,
+                                lineNumber: 279,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    marginBottom: "0.3rem"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Poids"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 284,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            fontWeight: "600"
+                                        },
+                                        children: [
+                                            iotData.weight,
+                                            " kg"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Chatbot.jsx",
+                                        lineNumber: 285,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 283,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38470,12 +38549,12 @@ const Chatbot = ()=>{
                                         children: "Statut"
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 268,
+                                        lineNumber: 288,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         style: {
-                                            color: "#2ecc71",
+                                            color: iotData.statut === "connect\xe9" ? "#2ecc71" : "#e74c3c",
                                             fontWeight: "600"
                                         },
                                         children: [
@@ -38484,19 +38563,37 @@ const Chatbot = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 269,
+                                        lineNumber: 289,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 267,
+                                lineNumber: 287,
                                 columnNumber: 13
+                            }, undefined),
+                            iotData.alerts && iotData.alerts.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    marginTop: "0.5rem",
+                                    padding: "0.4rem",
+                                    background: "rgba(231,76,60,0.2)",
+                                    borderRadius: "4px",
+                                    fontSize: "0.7rem",
+                                    color: "#e74c3c"
+                                },
+                                children: [
+                                    "⚠️ ",
+                                    iotData.alerts[0]
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Chatbot.jsx",
+                                lineNumber: 292,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 233,
+                        lineNumber: 253,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38525,12 +38622,12 @@ const Chatbot = ()=>{
                                 children: conv.title
                             }, conv.id, false, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 276,
+                                lineNumber: 301,
                                 columnNumber: 15
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 274,
+                        lineNumber: 299,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38550,42 +38647,48 @@ const Chatbot = ()=>{
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         style: {
-                                            color: "#2ecc71",
+                                            color: iotData.statut === "connect\xe9" ? "#2ecc71" : "#e74c3c",
                                             fontSize: "0.6rem"
                                         },
                                         children: "●"
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 310,
+                                        lineNumber: 335,
                                         columnNumber: 15
                                     }, undefined),
-                                    "Serveur MCP connect\xe9"
+                                    "Serveur MCP ",
+                                    iotData.statut === "connect\xe9" ? "connect\xe9" : "d\xe9connect\xe9"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 309,
+                                lineNumber: 334,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 style: {
                                     marginTop: "0.3rem"
                                 },
-                                children: "Ventilateur d'a\xe9ration: Actif"
-                            }, void 0, false, {
+                                children: [
+                                    "Ventilateur : ",
+                                    iotData.fanSpeed,
+                                    "% | ",
+                                    iotData.ventilateur
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 313,
+                                lineNumber: 338,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 301,
+                        lineNumber: 326,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Chatbot.jsx",
-                lineNumber: 194,
+                lineNumber: 214,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38629,7 +38732,7 @@ const Chatbot = ()=>{
                                         children: "☰"
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 336,
+                                        lineNumber: 361,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38649,7 +38752,7 @@ const Chatbot = ()=>{
                                                 children: "ApeliChef — Assistant Cuisine IA"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 351,
+                                                lineNumber: 376,
                                                 columnNumber: 15
                                             }, undefined),
                                             !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38660,19 +38763,19 @@ const Chatbot = ()=>{
                                                 children: "RAG + LLM Cuisine • Connect\xe9 au foyer am\xe9lior\xe9 Apeli"
                                             }, void 0, false, {
                                                 fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 355,
+                                                lineNumber: 380,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 350,
+                                        lineNumber: 375,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 334,
+                                lineNumber: 359,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38683,47 +38786,30 @@ const Chatbot = ()=>{
                                     color: "#7f8c8d",
                                     flexShrink: 0
                                 },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            background: "#f0f0f0",
-                                            padding: "0.2rem 0.5rem",
-                                            borderRadius: "6px"
-                                        },
-                                        children: [
-                                            iotData.temperature,
-                                            "\xb0C"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 370,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        style: {
-                                            background: "#f0f0f0",
-                                            padding: "0.2rem 0.5rem",
-                                            borderRadius: "6px"
-                                        },
-                                        children: [
-                                            iotData.poids,
-                                            "kg"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 371,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    style: {
+                                        background: "#f0f0f0",
+                                        padding: "0.2rem 0.5rem",
+                                        borderRadius: "6px"
+                                    },
+                                    children: [
+                                        iotData.temperature,
+                                        "\xb0C"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/Chatbot.jsx",
+                                    lineNumber: 395,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 361,
+                                lineNumber: 386,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 323,
+                        lineNumber: 348,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38761,7 +38847,7 @@ const Chatbot = ()=>{
                                                 }
                                             }, void 0, false, {
                                                 fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 409,
+                                                lineNumber: 433,
                                                 columnNumber: 19
                                             }, undefined) : msg.content,
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38777,18 +38863,18 @@ const Chatbot = ()=>{
                                                 })
                                             }, void 0, false, {
                                                 fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 413,
+                                                lineNumber: 437,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 395,
+                                        lineNumber: 419,
                                         columnNumber: 15
                                     }, undefined)
                                 }, msg.id, false, {
                                     fileName: "src/Components/Chatbot.jsx",
-                                    lineNumber: 387,
+                                    lineNumber: 411,
                                     columnNumber: 13
                                 }, undefined)),
                             isLoading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38816,7 +38902,7 @@ const Chatbot = ()=>{
                                                 children: "."
                                             }, void 0, false, {
                                                 fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 444,
+                                                lineNumber: 468,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38826,7 +38912,7 @@ const Chatbot = ()=>{
                                                 children: "."
                                             }, void 0, false, {
                                                 fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 445,
+                                                lineNumber: 469,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38836,36 +38922,36 @@ const Chatbot = ()=>{
                                                 children: "."
                                             }, void 0, false, {
                                                 fileName: "src/Components/Chatbot.jsx",
-                                                lineNumber: 446,
+                                                lineNumber: 470,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 442,
+                                        lineNumber: 466,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Components/Chatbot.jsx",
-                                    lineNumber: 432,
+                                    lineNumber: 456,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 431,
+                                lineNumber: 455,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 ref: messagesEndRef
                             }, void 0, false, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 452,
+                                lineNumber: 476,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 376,
+                        lineNumber: 400,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38911,7 +38997,7 @@ const Chatbot = ()=>{
                                         }
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 472,
+                                        lineNumber: 496,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -38932,13 +39018,13 @@ const Chatbot = ()=>{
                                         children: "➤"
                                     }, void 0, false, {
                                         fileName: "src/Components/Chatbot.jsx",
-                                        lineNumber: 498,
+                                        lineNumber: 522,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 463,
+                                lineNumber: 487,
                                 columnNumber: 11
                             }, undefined),
                             !isMobile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -38951,29 +39037,29 @@ const Chatbot = ()=>{
                                 children: "ApeliChef — IA cuisine connect\xe9e au foyer am\xe9lior\xe9 Apeli • Innovation Crunch Time 2026"
                             }, void 0, false, {
                                 fileName: "src/Components/Chatbot.jsx",
-                                lineNumber: 518,
+                                lineNumber: 542,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Chatbot.jsx",
-                        lineNumber: 456,
+                        lineNumber: 480,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Chatbot.jsx",
-                lineNumber: 321,
+                lineNumber: 346,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Chatbot.jsx",
-        lineNumber: 183,
+        lineNumber: 203,
         columnNumber: 5
     }, undefined);
 };
-_s(Chatbot, "MCTzT8YQr/fFIJ8aL50IY5PQCsc=", false, function() {
+_s(Chatbot, "o8Rj/I76r1Izgo/BsKu9yiDg6uI=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -38988,7 +39074,7 @@ $RefreshReg$(_c, "Chatbot");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e5Nk6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../utils/api":"gsqud","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e5Nk6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e2fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40989,3677 +41075,7 @@ $RefreshReg$(_c, "FoyerApeli");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"alYNl":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4c29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4c29.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Admin component - Page d'administration pour gérer les ressources et projets
- * Version responsive
- */ var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-const Admin = ()=>{
-    _s();
-    const navigate = (0, _reactRouterDom.useNavigate)();
-    const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
-    const [isMobile, setIsMobile] = (0, _react.useState)(false);
-    const [isTablet, setIsTablet] = (0, _react.useState)(false);
-    const [resources, setResources] = (0, _react.useState)([]);
-    const [projects, setProjects] = (0, _react.useState)([]);
-    const [users, setUsers] = (0, _react.useState)([]);
-    const [activeTab, setActiveTab] = (0, _react.useState)("resources");
-    const [newResource, setNewResource] = (0, _react.useState)({
-        title: "",
-        description: "",
-        type: "tutorial",
-        category: "",
-        link: ""
-    });
-    (0, _react.useEffect)(()=>{
-        // Détecter la taille de l'écran
-        const checkScreenSize = ()=>{
-            const width = window.innerWidth;
-            setIsMobile(width <= 768);
-            setIsTablet(width > 768 && width <= 1024);
-        };
-        checkScreenSize();
-        window.addEventListener("resize", checkScreenSize);
-        // Vérifier la connexion et les privilèges admin
-        const savedUser = localStorage.getItem("currentUser");
-        if (!savedUser) {
-            navigate("/");
-            return;
-        }
-        const user = JSON.parse(savedUser);
-        if (user.userType !== "admin") {
-            navigate("/dashboard");
-            return;
-        }
-        setIsLoggedIn(true);
-        // Charger les données
-        const savedResources = localStorage.getItem("adminResources");
-        if (savedResources) setResources(JSON.parse(savedResources));
-        const savedProjects = localStorage.getItem("projects");
-        if (savedProjects) setProjects(JSON.parse(savedProjects));
-        const savedUsers = localStorage.getItem("users");
-        if (savedUsers) setUsers(JSON.parse(savedUsers));
-        return ()=>{
-            window.removeEventListener("resize", checkScreenSize);
-        };
-    }, [
-        navigate
-    ]);
-    const handleAddResource = ()=>{
-        if (!newResource.title || !newResource.description) {
-            alert("Veuillez remplir tous les champs obligatoires");
-            return;
-        }
-        const resourceToAdd = {
-            id: Date.now(),
-            ...newResource,
-            date: new Date().toISOString(),
-            status: "published",
-            author: "Emmanuel AMELA"
-        };
-        const updatedResources = [
-            ...resources,
-            resourceToAdd
-        ];
-        setResources(updatedResources);
-        localStorage.setItem("adminResources", JSON.stringify(updatedResources));
-        // Réinitialiser le formulaire
-        setNewResource({
-            title: "",
-            description: "",
-            type: "tutorial",
-            category: "",
-            link: ""
-        });
-        alert("Ressource ajout\xe9e avec succ\xe8s !");
-    };
-    const handleDeleteResource = (id)=>{
-        if (window.confirm("\xcates-vous s\xfbr de vouloir supprimer cette ressource ?")) {
-            const updatedResources = resources.filter((res)=>res.id !== id);
-            setResources(updatedResources);
-            localStorage.setItem("adminResources", JSON.stringify(updatedResources));
-            alert("Ressource supprim\xe9e avec succ\xe8s !");
-        }
-    };
-    const handleUpdateProjectStatus = (projectId, newStatus)=>{
-        const updatedProjects = projects.map((project)=>{
-            if (project.id === projectId) return {
-                ...project,
-                status: newStatus
-            };
-            return project;
-        });
-        setProjects(updatedProjects);
-        localStorage.setItem("projects", JSON.stringify(updatedProjects));
-        alert("Statut du projet mis \xe0 jour !");
-    };
-    const calculateProjectProgress = (tasks)=>{
-        if (!tasks || tasks.length === 0) return 0;
-        const completed = tasks.filter((t)=>t.status === "completed").length;
-        return Math.round(completed / tasks.length * 100);
-    };
-    if (!isLoggedIn) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            paddingTop: isMobile ? "4.5rem" : "5rem",
-            textAlign: "center",
-            minHeight: "60vh",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "#f5f7fa"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                style: {
-                    color: "#2c3e50",
-                    marginBottom: "1rem"
-                },
-                children: "Acc\xe8s non autoris\xe9"
-            }, void 0, false, {
-                fileName: "src/Components/Admin.jsx",
-                lineNumber: 143,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                style: {
-                    color: "#5d6d7e",
-                    maxWidth: "500px",
-                    padding: "0 1rem"
-                },
-                children: "Veuillez vous connecter en tant qu'administrateur pour acc\xe9der \xe0 cette page."
-            }, void 0, false, {
-                fileName: "src/Components/Admin.jsx",
-                lineNumber: 144,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: ()=>navigate("/"),
-                style: {
-                    backgroundColor: "#3498db",
-                    color: "white",
-                    border: "none",
-                    padding: "0.8rem 1.5rem",
-                    borderRadius: "6px",
-                    cursor: "pointer",
-                    marginTop: "1rem",
-                    fontSize: isMobile ? "0.9rem" : "1rem"
-                },
-                children: "Retour \xe0 l'accueil"
-            }, void 0, false, {
-                fileName: "src/Components/Admin.jsx",
-                lineNumber: 147,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Admin.jsx",
-        lineNumber: 133,
-        columnNumber: 7
-    }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            paddingTop: isMobile ? "4.5rem" : "5rem",
-            paddingLeft: isMobile ? "0.8rem" : "1rem",
-            paddingRight: isMobile ? "0.8rem" : "1rem",
-            paddingBottom: "2rem",
-            minHeight: "100vh",
-            backgroundColor: "#f5f7fa"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    maxWidth: "1400px",
-                    margin: "0 auto"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        style: {
-                            color: "#2c3e50",
-                            marginBottom: "0.5rem",
-                            fontSize: isMobile ? "1.5rem" : isTablet ? "1.8rem" : "2rem",
-                            lineHeight: "1.2"
-                        },
-                        children: "Administration"
-                    }, void 0, false, {
-                        fileName: "src/Components/Admin.jsx",
-                        lineNumber: 179,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            color: "#5d6d7e",
-                            marginBottom: isMobile ? "1.5rem" : "2rem",
-                            fontSize: isMobile ? "0.95rem" : "1rem",
-                            lineHeight: "1.4"
-                        },
-                        children: "Gestion des ressources, projets et utilisateurs"
-                    }, void 0, false, {
-                        fileName: "src/Components/Admin.jsx",
-                        lineNumber: 187,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "flex",
-                            borderBottom: "1px solid #eee",
-                            marginBottom: isMobile ? "1.5rem" : "2rem",
-                            flexWrap: "wrap",
-                            overflowX: "auto",
-                            WebkitOverflowScrolling: "touch"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                onClick: ()=>setActiveTab("resources"),
-                                style: {
-                                    padding: isMobile ? "0.8rem 1rem" : "1rem 1.5rem",
-                                    background: activeTab === "resources" ? "#3498db" : "transparent",
-                                    color: activeTab === "resources" ? "white" : "#2c3e50",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    fontWeight: "500",
-                                    borderTopLeftRadius: "6px",
-                                    borderTopRightRadius: "6px",
-                                    whiteSpace: "nowrap",
-                                    fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                    transition: "all 0.3s ease",
-                                    flex: "1",
-                                    minWidth: "120px"
-                                },
-                                children: [
-                                    "Ressources (",
-                                    resources.length,
-                                    ")"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 205,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                onClick: ()=>setActiveTab("projects"),
-                                style: {
-                                    padding: isMobile ? "0.8rem 1rem" : "1rem 1.5rem",
-                                    background: activeTab === "projects" ? "#3498db" : "transparent",
-                                    color: activeTab === "projects" ? "white" : "#2c3e50",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    fontWeight: "500",
-                                    whiteSpace: "nowrap",
-                                    fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                    transition: "all 0.3s ease",
-                                    flex: "1",
-                                    minWidth: "120px"
-                                },
-                                children: [
-                                    "Projets (",
-                                    projects.length,
-                                    ")"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 225,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                onClick: ()=>setActiveTab("users"),
-                                style: {
-                                    padding: isMobile ? "0.8rem 1rem" : "1rem 1.5rem",
-                                    background: activeTab === "users" ? "#3498db" : "transparent",
-                                    color: activeTab === "users" ? "white" : "#2c3e50",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    fontWeight: "500",
-                                    whiteSpace: "nowrap",
-                                    fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                    transition: "all 0.3s ease",
-                                    flex: "1",
-                                    minWidth: "120px"
-                                },
-                                children: [
-                                    "Utilisateurs (",
-                                    users.length,
-                                    ")"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 243,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                onClick: ()=>setActiveTab("analytics"),
-                                style: {
-                                    padding: isMobile ? "0.8rem 1rem" : "1rem 1.5rem",
-                                    background: activeTab === "analytics" ? "#3498db" : "transparent",
-                                    color: activeTab === "analytics" ? "white" : "#2c3e50",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    fontWeight: "500",
-                                    whiteSpace: "nowrap",
-                                    fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                    transition: "all 0.3s ease",
-                                    flex: "1",
-                                    minWidth: "120px"
-                                },
-                                children: "Statistiques"
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 261,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Admin.jsx",
-                        lineNumber: 197,
-                        columnNumber: 9
-                    }, undefined),
-                    activeTab === "resources" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    backgroundColor: "#f8f9fa",
-                                    padding: isMobile ? "1.2rem" : "1.5rem",
-                                    borderRadius: "12px",
-                                    marginBottom: isMobile ? "1.5rem" : "2rem",
-                                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        style: {
-                                            color: "#2c3e50",
-                                            marginBottom: "1rem",
-                                            fontSize: isMobile ? "1.1rem" : "1.3rem"
-                                        },
-                                        children: "Ajouter une nouvelle ressource"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 292,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            display: "grid",
-                                            gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fit, minmax(250px, 1fr))",
-                                            gap: "1rem",
-                                            marginBottom: "1rem"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                        style: {
-                                                            display: "block",
-                                                            marginBottom: "0.5rem",
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Titre *"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 307,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                        type: "text",
-                                                        value: newResource.title,
-                                                        onChange: (e)=>setNewResource({
-                                                                ...newResource,
-                                                                title: e.target.value
-                                                            }),
-                                                        style: {
-                                                            width: "100%",
-                                                            padding: "0.8rem",
-                                                            borderRadius: "6px",
-                                                            border: "1px solid #ddd",
-                                                            fontSize: isMobile ? "0.95rem" : "1rem"
-                                                        },
-                                                        placeholder: "Titre de la ressource"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 315,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 306,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                        style: {
-                                                            display: "block",
-                                                            marginBottom: "0.5rem",
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Type *"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 331,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                                        value: newResource.type,
-                                                        onChange: (e)=>setNewResource({
-                                                                ...newResource,
-                                                                type: e.target.value
-                                                            }),
-                                                        style: {
-                                                            width: "100%",
-                                                            padding: "0.8rem",
-                                                            borderRadius: "6px",
-                                                            border: "1px solid #ddd",
-                                                            fontSize: isMobile ? "0.95rem" : "1rem",
-                                                            backgroundColor: "white",
-                                                            cursor: "pointer"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: "tutorial",
-                                                                children: "Tutoriel"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 352,
-                                                                columnNumber: 21
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: "package",
-                                                                children: "Package NPM"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 353,
-                                                                columnNumber: 21
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: "snippet",
-                                                                children: "Snippet de code"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 354,
-                                                                columnNumber: 21
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: "article",
-                                                                children: "Article"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 355,
-                                                                columnNumber: 21
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: "video",
-                                                                children: "Vid\xe9o"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 356,
-                                                                columnNumber: 21
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 339,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 330,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 300,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            marginBottom: "1rem"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                style: {
-                                                    display: "block",
-                                                    marginBottom: "0.5rem",
-                                                    color: "#5d6d7e",
-                                                    fontSize: isMobile ? "0.9rem" : "1rem"
-                                                },
-                                                children: "Description *"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 362,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                                value: newResource.description,
-                                                onChange: (e)=>setNewResource({
-                                                        ...newResource,
-                                                        description: e.target.value
-                                                    }),
-                                                style: {
-                                                    width: "100%",
-                                                    padding: "0.8rem",
-                                                    borderRadius: "6px",
-                                                    border: "1px solid #ddd",
-                                                    minHeight: isMobile ? "100px" : "120px",
-                                                    fontSize: isMobile ? "0.95rem" : "1rem",
-                                                    resize: "vertical"
-                                                },
-                                                placeholder: "Description d\xe9taill\xe9e de la ressource..."
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 370,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 361,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            display: "grid",
-                                            gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fit, minmax(250px, 1fr))",
-                                            gap: "1rem",
-                                            marginBottom: "1.5rem"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                        style: {
-                                                            display: "block",
-                                                            marginBottom: "0.5rem",
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Cat\xe9gorie"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 393,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                        type: "text",
-                                                        value: newResource.category,
-                                                        onChange: (e)=>setNewResource({
-                                                                ...newResource,
-                                                                category: e.target.value
-                                                            }),
-                                                        style: {
-                                                            width: "100%",
-                                                            padding: "0.8rem",
-                                                            borderRadius: "6px",
-                                                            border: "1px solid #ddd",
-                                                            fontSize: isMobile ? "0.95rem" : "1rem"
-                                                        },
-                                                        placeholder: "React, JavaScript, CSS, etc."
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 401,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 392,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                        style: {
-                                                            display: "block",
-                                                            marginBottom: "0.5rem",
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Lien"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 417,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                        type: "text",
-                                                        value: newResource.link,
-                                                        onChange: (e)=>setNewResource({
-                                                                ...newResource,
-                                                                link: e.target.value
-                                                            }),
-                                                        style: {
-                                                            width: "100%",
-                                                            padding: "0.8rem",
-                                                            borderRadius: "6px",
-                                                            border: "1px solid #ddd",
-                                                            fontSize: isMobile ? "0.95rem" : "1rem"
-                                                        },
-                                                        placeholder: "URL de la ressource (optionnel)"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 425,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 416,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 386,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        onClick: handleAddResource,
-                                        style: {
-                                            backgroundColor: "#2ecc71",
-                                            color: "white",
-                                            border: "none",
-                                            padding: isMobile ? "0.8rem 1.5rem" : "1rem 2rem",
-                                            borderRadius: "6px",
-                                            cursor: "pointer",
-                                            fontSize: isMobile ? "0.9rem" : "1rem",
-                                            fontWeight: "500",
-                                            width: isMobile ? "100%" : "auto"
-                                        },
-                                        children: "+ Publier la ressource"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 441,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 285,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        style: {
-                                            color: "#2c3e50",
-                                            marginBottom: "1rem",
-                                            fontSize: isMobile ? "1.1rem" : "1.3rem"
-                                        },
-                                        children: "Ressources publi\xe9es"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 461,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    resources.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            textAlign: "center",
-                                            padding: isMobile ? "2rem" : "3rem",
-                                            color: "#7f8c8d",
-                                            backgroundColor: "white",
-                                            borderRadius: "12px",
-                                            boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                        },
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            style: {
-                                                fontSize: isMobile ? "0.95rem" : "1rem"
-                                            },
-                                            children: "Aucune ressource publi\xe9e pour le moment."
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Admin.jsx",
-                                            lineNumber: 478,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 470,
-                                        columnNumber: 17
-                                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            display: "grid",
-                                            gridTemplateColumns: isMobile ? "1fr" : isTablet ? "repeat(2, 1fr)" : "repeat(auto-fill, minmax(320px, 1fr))",
-                                            gap: "1.2rem"
-                                        },
-                                        children: resources.map((resource)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    backgroundColor: "white",
-                                                    padding: isMobile ? "1rem" : "1.2rem",
-                                                    borderRadius: "10px",
-                                                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                                                    borderLeft: `4px solid ${resource.type === "tutorial" ? "#3498db" : resource.type === "package" ? "#9b59b6" : resource.type === "snippet" ? "#2ecc71" : "#f39c12"}`,
-                                                    display: "flex",
-                                                    flexDirection: "column",
-                                                    height: "100%"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            display: "flex",
-                                                            justifyContent: "space-between",
-                                                            alignItems: "flex-start",
-                                                            marginBottom: "0.8rem"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                                style: {
-                                                                    margin: 0,
-                                                                    color: "#2c3e50",
-                                                                    fontSize: isMobile ? "1rem" : "1.1rem",
-                                                                    lineHeight: "1.3",
-                                                                    flex: 1,
-                                                                    marginRight: "0.5rem"
-                                                                },
-                                                                children: resource.title
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 512,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    backgroundColor: resource.type === "tutorial" ? "#3498db" : resource.type === "package" ? "#9b59b6" : resource.type === "snippet" ? "#2ecc71" : "#f39c12",
-                                                                    color: "white",
-                                                                    padding: "0.2rem 0.6rem",
-                                                                    borderRadius: "12px",
-                                                                    fontSize: isMobile ? "0.75rem" : "0.8rem",
-                                                                    textTransform: "capitalize",
-                                                                    whiteSpace: "nowrap"
-                                                                },
-                                                                children: resource.type
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 522,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 506,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        style: {
-                                                            color: "#5d6d7e",
-                                                            margin: "0.5rem 0",
-                                                            fontSize: isMobile ? "0.9rem" : "0.95rem",
-                                                            lineHeight: "1.4",
-                                                            flex: 1
-                                                        },
-                                                        children: resource.description.length > (isMobile ? 120 : 150) ? resource.description.substring(0, isMobile ? 120 : 150) + "..." : resource.description
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 537,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            display: "flex",
-                                                            justifyContent: "space-between",
-                                                            alignItems: "center",
-                                                            marginTop: "auto",
-                                                            paddingTop: "0.8rem"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                children: [
-                                                                    resource.category && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                        style: {
-                                                                            backgroundColor: "#e8f4fc",
-                                                                            color: "#3498db",
-                                                                            padding: "0.2rem 0.6rem",
-                                                                            borderRadius: "12px",
-                                                                            fontSize: isMobile ? "0.75rem" : "0.8rem",
-                                                                            marginRight: "0.5rem",
-                                                                            display: "inline-block",
-                                                                            marginBottom: isMobile ? "0.3rem" : "0"
-                                                                        },
-                                                                        children: resource.category
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 557,
-                                                                        columnNumber: 29
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                        style: {
-                                                                            fontSize: isMobile ? "0.75rem" : "0.8rem",
-                                                                            color: "#7f8c8d",
-                                                                            display: "block"
-                                                                        },
-                                                                        children: new Date(resource.date).toLocaleDateString("fr-FR", {
-                                                                            day: "2-digit",
-                                                                            month: "short",
-                                                                            year: "numeric"
-                                                                        })
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 570,
-                                                                        columnNumber: 27
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 555,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                onClick: ()=>handleDeleteResource(resource.id),
-                                                                style: {
-                                                                    backgroundColor: "#e74c3c",
-                                                                    color: "white",
-                                                                    border: "none",
-                                                                    padding: isMobile ? "0.4rem 0.8rem" : "0.5rem 1rem",
-                                                                    borderRadius: "6px",
-                                                                    cursor: "pointer",
-                                                                    fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                                                    whiteSpace: "nowrap"
-                                                                },
-                                                                children: "Supprimer"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 582,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 548,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                ]
-                                            }, resource.id, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 489,
-                                                columnNumber: 21
-                                            }, undefined))
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 483,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 460,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Admin.jsx",
-                        lineNumber: 283,
-                        columnNumber: 11
-                    }, undefined),
-                    activeTab === "projects" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                style: {
-                                    color: "#2c3e50",
-                                    marginBottom: "1rem",
-                                    fontSize: isMobile ? "1.1rem" : "1.3rem"
-                                },
-                                children: "Gestion des projets clients"
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 608,
-                                columnNumber: 13
-                            }, undefined),
-                            projects.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    textAlign: "center",
-                                    padding: isMobile ? "2rem" : "3rem",
-                                    color: "#7f8c8d",
-                                    backgroundColor: "white",
-                                    borderRadius: "12px",
-                                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    style: {
-                                        fontSize: isMobile ? "0.95rem" : "1rem"
-                                    },
-                                    children: "Aucun projet en cours pour le moment."
-                                }, void 0, false, {
-                                    fileName: "src/Components/Admin.jsx",
-                                    lineNumber: 625,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 617,
-                                columnNumber: 15
-                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    overflowX: "auto",
-                                    WebkitOverflowScrolling: "touch",
-                                    borderRadius: "12px",
-                                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                                    backgroundColor: "white"
-                                },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                                    style: {
-                                        width: "100%",
-                                        borderCollapse: "collapse",
-                                        minWidth: isMobile ? "800px" : "100%"
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                                style: {
-                                                    backgroundColor: "#f8f9fa"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                        style: {
-                                                            padding: isMobile ? "0.8rem" : "1rem",
-                                                            textAlign: "left",
-                                                            borderBottom: "2px solid #eee",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Client"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 644,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                        style: {
-                                                            padding: isMobile ? "0.8rem" : "1rem",
-                                                            textAlign: "left",
-                                                            borderBottom: "2px solid #eee",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Projet"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 652,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                        style: {
-                                                            padding: isMobile ? "0.8rem" : "1rem",
-                                                            textAlign: "left",
-                                                            borderBottom: "2px solid #eee",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Statut"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 660,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                        style: {
-                                                            padding: isMobile ? "0.8rem" : "1rem",
-                                                            textAlign: "left",
-                                                            borderBottom: "2px solid #eee",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Progression"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 668,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                        style: {
-                                                            padding: isMobile ? "0.8rem" : "1rem",
-                                                            textAlign: "left",
-                                                            borderBottom: "2px solid #eee",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "\xc9ch\xe9ance"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 676,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                        style: {
-                                                            padding: isMobile ? "0.8rem" : "1rem",
-                                                            textAlign: "left",
-                                                            borderBottom: "2px solid #eee",
-                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                        },
-                                                        children: "Actions"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 684,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 643,
-                                                columnNumber: 21
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Admin.jsx",
-                                            lineNumber: 642,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                                            children: projects.map((project)=>{
-                                                const client = users.find((u)=>u.id === project.clientId);
-                                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                                    style: {
-                                                        borderBottom: "1px solid #eee"
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                            style: {
-                                                                padding: isMobile ? "0.8rem" : "1rem"
-                                                            },
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                                                        style: {
-                                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                                        },
-                                                                        children: client?.name || "Client inconnu"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 701,
-                                                                        columnNumber: 31
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                        style: {
-                                                                            fontSize: isMobile ? "0.75rem" : "0.8rem",
-                                                                            color: "#7f8c8d",
-                                                                            wordBreak: "break-word"
-                                                                        },
-                                                                        children: client?.email || ""
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 704,
-                                                                        columnNumber: 31
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 700,
-                                                                columnNumber: 29
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Admin.jsx",
-                                                            lineNumber: 699,
-                                                            columnNumber: 27
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                            style: {
-                                                                padding: isMobile ? "0.8rem" : "1rem"
-                                                            },
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                                                        style: {
-                                                                            fontSize: isMobile ? "0.9rem" : "1rem"
-                                                                        },
-                                                                        children: project.title
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 715,
-                                                                        columnNumber: 31
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                        style: {
-                                                                            fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                                                            color: "#5d6d7e",
-                                                                            marginTop: "0.3rem",
-                                                                            maxWidth: "200px"
-                                                                        },
-                                                                        children: project.description.length > (isMobile ? 60 : 100) ? project.description.substring(0, isMobile ? 60 : 100) + "..." : project.description
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 718,
-                                                                        columnNumber: 31
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 714,
-                                                                columnNumber: 29
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Admin.jsx",
-                                                            lineNumber: 713,
-                                                            columnNumber: 27
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                            style: {
-                                                                padding: isMobile ? "0.8rem" : "1rem"
-                                                            },
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                                                value: project.status,
-                                                                onChange: (e)=>handleUpdateProjectStatus(project.id, e.target.value),
-                                                                style: {
-                                                                    padding: isMobile ? "0.4rem" : "0.5rem",
-                                                                    borderRadius: "6px",
-                                                                    border: "1px solid #ddd",
-                                                                    backgroundColor: project.status === "completed" ? "#d5f4e6" : project.status === "in-progress" ? "#d6eaf8" : "#f8f9fa",
-                                                                    fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                                                    width: isMobile ? "120px" : "auto",
-                                                                    cursor: "pointer"
-                                                                },
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                        value: "pending",
-                                                                        children: "En attente"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 744,
-                                                                        columnNumber: 31
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                        value: "in-progress",
-                                                                        children: "En cours"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 745,
-                                                                        columnNumber: 31
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                        value: "completed",
-                                                                        children: "Termin\xe9"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 746,
-                                                                        columnNumber: 31
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                        value: "paused",
-                                                                        children: "En pause"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 747,
-                                                                        columnNumber: 31
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 730,
-                                                                columnNumber: 29
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Admin.jsx",
-                                                            lineNumber: 729,
-                                                            columnNumber: 27
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                            style: {
-                                                                padding: isMobile ? "0.8rem" : "1rem",
-                                                                minWidth: isMobile ? "130px" : "150px"
-                                                            },
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                style: {
-                                                                    display: "flex",
-                                                                    alignItems: "center",
-                                                                    gap: "0.5rem"
-                                                                },
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                        style: {
-                                                                            width: isMobile ? "80px" : "100px",
-                                                                            height: "8px",
-                                                                            backgroundColor: "#e1e8ed",
-                                                                            borderRadius: "4px",
-                                                                            overflow: "hidden"
-                                                                        },
-                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                            style: {
-                                                                                width: `${calculateProjectProgress(project.tasks)}%`,
-                                                                                height: "100%",
-                                                                                backgroundColor: "#3498db"
-                                                                            }
-                                                                        }, void 0, false, {
-                                                                            fileName: "src/Components/Admin.jsx",
-                                                                            lineNumber: 759,
-                                                                            columnNumber: 33
-                                                                        }, undefined)
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 752,
-                                                                        columnNumber: 31
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                        style: {
-                                                                            fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                                                            color: "#3498db",
-                                                                            fontWeight: "500",
-                                                                            whiteSpace: "nowrap"
-                                                                        },
-                                                                        children: [
-                                                                            calculateProjectProgress(project.tasks),
-                                                                            "%"
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "src/Components/Admin.jsx",
-                                                                        lineNumber: 765,
-                                                                        columnNumber: 31
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 751,
-                                                                columnNumber: 29
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Admin.jsx",
-                                                            lineNumber: 750,
-                                                            columnNumber: 27
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                            style: {
-                                                                padding: isMobile ? "0.8rem" : "1rem"
-                                                            },
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                                },
-                                                                children: new Date(project.deadline).toLocaleDateString("fr-FR", {
-                                                                    day: "2-digit",
-                                                                    month: "short"
-                                                                })
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 776,
-                                                                columnNumber: 29
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Admin.jsx",
-                                                            lineNumber: 775,
-                                                            columnNumber: 27
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                                            style: {
-                                                                padding: isMobile ? "0.8rem" : "1rem"
-                                                            },
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                onClick: ()=>navigate(`/project/${project.id}`),
-                                                                style: {
-                                                                    backgroundColor: "#3498db",
-                                                                    color: "white",
-                                                                    border: "none",
-                                                                    padding: isMobile ? "0.4rem 0.8rem" : "0.5rem 1rem",
-                                                                    borderRadius: "6px",
-                                                                    cursor: "pointer",
-                                                                    fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                                                    whiteSpace: "nowrap"
-                                                                },
-                                                                children: "Voir"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 784,
-                                                                columnNumber: 29
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Admin.jsx",
-                                                            lineNumber: 783,
-                                                            columnNumber: 27
-                                                        }, undefined)
-                                                    ]
-                                                }, project.id, true, {
-                                                    fileName: "src/Components/Admin.jsx",
-                                                    lineNumber: 698,
-                                                    columnNumber: 25
-                                                }, undefined);
-                                            })
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Admin.jsx",
-                                            lineNumber: 694,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/Components/Admin.jsx",
-                                    lineNumber: 637,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 630,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Admin.jsx",
-                        lineNumber: 607,
-                        columnNumber: 11
-                    }, undefined),
-                    activeTab === "users" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                style: {
-                                    color: "#2c3e50",
-                                    marginBottom: "1rem",
-                                    fontSize: isMobile ? "1.1rem" : "1.3rem"
-                                },
-                                children: "Gestion des utilisateurs"
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 812,
-                                columnNumber: 13
-                            }, undefined),
-                            users.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    textAlign: "center",
-                                    padding: isMobile ? "2rem" : "3rem",
-                                    color: "#7f8c8d",
-                                    backgroundColor: "white",
-                                    borderRadius: "12px",
-                                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    style: {
-                                        fontSize: isMobile ? "0.95rem" : "1rem"
-                                    },
-                                    children: "Aucun utilisateur inscrit."
-                                }, void 0, false, {
-                                    fileName: "src/Components/Admin.jsx",
-                                    lineNumber: 829,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 821,
-                                columnNumber: 15
-                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "grid",
-                                    gridTemplateColumns: isMobile ? "1fr" : isTablet ? "repeat(2, 1fr)" : "repeat(auto-fill, minmax(280px, 1fr))",
-                                    gap: "1.2rem"
-                                },
-                                children: users.map((user)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "white",
-                                            padding: isMobile ? "1rem" : "1.2rem",
-                                            borderRadius: "10px",
-                                            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                                            borderLeft: `4px solid ${user.userType === "admin" ? "#e74c3c" : "#3498db"}`
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                    marginBottom: "1rem"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            width: isMobile ? "40px" : "50px",
-                                                            height: isMobile ? "40px" : "50px",
-                                                            borderRadius: "50%",
-                                                            backgroundColor: user.userType === "admin" ? "#e74c3c" : "#3498db",
-                                                            color: "white",
-                                                            display: "flex",
-                                                            alignItems: "center",
-                                                            justifyContent: "center",
-                                                            fontWeight: "bold",
-                                                            fontSize: isMobile ? "1rem" : "1.2rem",
-                                                            marginRight: "1rem",
-                                                            flexShrink: 0
-                                                        },
-                                                        children: user.name.charAt(0)
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 851,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            minWidth: 0
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                                style: {
-                                                                    margin: 0,
-                                                                    color: "#2c3e50",
-                                                                    fontSize: isMobile ? "1rem" : "1.1rem",
-                                                                    whiteSpace: "nowrap",
-                                                                    overflow: "hidden",
-                                                                    textOverflow: "ellipsis"
-                                                                },
-                                                                children: user.name
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 868,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    backgroundColor: user.userType === "admin" ? "#e74c3c" : "#3498db",
-                                                                    color: "white",
-                                                                    padding: "0.2rem 0.6rem",
-                                                                    borderRadius: "12px",
-                                                                    fontSize: isMobile ? "0.75rem" : "0.8rem",
-                                                                    fontWeight: "500",
-                                                                    display: "inline-block",
-                                                                    marginTop: "0.3rem"
-                                                                },
-                                                                children: user.userType === "admin" ? "Administrateur" : "Client"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Admin.jsx",
-                                                                lineNumber: 878,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 867,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 850,
-                                                columnNumber: 21
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    marginBottom: "0.5rem"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            fontWeight: "500",
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: "Email:"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 894,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            color: "#3498db",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem",
-                                                            wordBreak: "break-word",
-                                                            display: "block",
-                                                            marginTop: "0.2rem"
-                                                        },
-                                                        children: user.email
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 901,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 893,
-                                                columnNumber: 21
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    marginBottom: "0.5rem"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            fontWeight: "500",
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: "Inscrit le:"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 913,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            color: "#7f8c8d",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: new Date(user.createdAt).toLocaleDateString("fr-FR", {
-                                                            day: "2-digit",
-                                                            month: "short",
-                                                            year: "numeric"
-                                                        })
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 920,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 912,
-                                                columnNumber: 21
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            fontWeight: "500",
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: "Projets:"
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 933,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            color: "#7f8c8d",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: [
-                                                            projects.filter((p)=>p.clientId === user.id).length,
-                                                            " projet(s)"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 940,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 932,
-                                                columnNumber: 21
-                                            }, undefined)
-                                        ]
-                                    }, user.id, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 840,
-                                        columnNumber: 19
-                                    }, undefined))
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 834,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Admin.jsx",
-                        lineNumber: 811,
-                        columnNumber: 11
-                    }, undefined),
-                    activeTab === "analytics" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                style: {
-                                    color: "#2c3e50",
-                                    marginBottom: "1rem",
-                                    fontSize: isMobile ? "1.1rem" : "1.3rem"
-                                },
-                                children: "Statistiques"
-                            }, void 0, false, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 956,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "grid",
-                                    gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : isTablet ? "repeat(2, 1fr)" : "repeat(auto-fit, minmax(200px, 1fr))",
-                                    gap: "1rem",
-                                    marginBottom: isMobile ? "1.5rem" : "2rem"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#e8f4fc",
-                                            padding: isMobile ? "1rem" : "1.2rem",
-                                            borderRadius: "10px",
-                                            textAlign: "center",
-                                            boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                style: {
-                                                    color: "#3498db",
-                                                    margin: 0,
-                                                    fontSize: isMobile ? "1.8rem" : "2.5rem"
-                                                },
-                                                children: users.length
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 977,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: isMobile ? "0.85rem" : "1rem"
-                                                },
-                                                children: "Utilisateurs"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 984,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 970,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#e8f6f3",
-                                            padding: isMobile ? "1rem" : "1.2rem",
-                                            borderRadius: "10px",
-                                            textAlign: "center",
-                                            boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                style: {
-                                                    color: "#2ecc71",
-                                                    margin: 0,
-                                                    fontSize: isMobile ? "1.8rem" : "2.5rem"
-                                                },
-                                                children: projects.length
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1000,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: isMobile ? "0.85rem" : "1rem"
-                                                },
-                                                children: "Projets"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1007,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 993,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#f4ecf7",
-                                            padding: isMobile ? "1rem" : "1.2rem",
-                                            borderRadius: "10px",
-                                            textAlign: "center",
-                                            boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                style: {
-                                                    color: "#9b59b6",
-                                                    margin: 0,
-                                                    fontSize: isMobile ? "1.8rem" : "2.5rem"
-                                                },
-                                                children: resources.length
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1023,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: isMobile ? "0.85rem" : "1rem"
-                                                },
-                                                children: "Ressources"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1030,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 1016,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#fef9e7",
-                                            padding: isMobile ? "1rem" : "1.2rem",
-                                            borderRadius: "10px",
-                                            textAlign: "center",
-                                            boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                style: {
-                                                    color: "#f39c12",
-                                                    margin: 0,
-                                                    fontSize: isMobile ? "1.8rem" : "2.5rem"
-                                                },
-                                                children: projects.filter((p)=>p.status === "completed").length
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1046,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: isMobile ? "0.85rem" : "1rem"
-                                                },
-                                                children: "Projets termin\xe9s"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1053,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 1039,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 964,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    backgroundColor: "white",
-                                    padding: isMobile ? "1rem" : "1.2rem",
-                                    borderRadius: "10px",
-                                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                        style: {
-                                            color: "#2c3e50",
-                                            marginBottom: "1rem",
-                                            fontSize: isMobile ? "1rem" : "1.1rem"
-                                        },
-                                        children: "Statut des projets"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 1069,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            display: "flex",
-                                            alignItems: "center",
-                                            gap: "1rem",
-                                            flexWrap: "wrap",
-                                            justifyContent: isMobile ? "center" : "flex-start"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                    gap: "0.5rem"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            width: "12px",
-                                                            height: "12px",
-                                                            backgroundColor: "#3498db",
-                                                            borderRadius: "3px"
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1084,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: [
-                                                            "En cours: ",
-                                                            projects.filter((p)=>p.status === "in-progress").length
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1090,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1083,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                    gap: "0.5rem"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            width: "12px",
-                                                            height: "12px",
-                                                            backgroundColor: "#2ecc71",
-                                                            borderRadius: "3px"
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1098,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: [
-                                                            "Termin\xe9s: ",
-                                                            projects.filter((p)=>p.status === "completed").length
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1104,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1097,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                    gap: "0.5rem"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            width: "12px",
-                                                            height: "12px",
-                                                            backgroundColor: "#95a5a6",
-                                                            borderRadius: "3px"
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1112,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: [
-                                                            "En attente: ",
-                                                            projects.filter((p)=>p.status === "pending").length
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1118,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1111,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                    gap: "0.5rem"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            width: "12px",
-                                                            height: "12px",
-                                                            backgroundColor: "#f39c12",
-                                                            borderRadius: "3px"
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1126,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        style: {
-                                                            color: "#5d6d7e",
-                                                            fontSize: isMobile ? "0.85rem" : "0.9rem"
-                                                        },
-                                                        children: [
-                                                            "En pause: ",
-                                                            projects.filter((p)=>p.status === "paused").length
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Admin.jsx",
-                                                        lineNumber: 1132,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Admin.jsx",
-                                                lineNumber: 1125,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Admin.jsx",
-                                        lineNumber: 1076,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Admin.jsx",
-                                lineNumber: 1063,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Admin.jsx",
-                        lineNumber: 955,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Admin.jsx",
-                lineNumber: 175,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
-                children: `
-        /* Styles pour les petits écrans */
-        @media (max-width: 768px) {
-          .admin-container {
-            padding-top: 4.5rem !important;
-            padding-left: 0.5rem !important;
-            padding-right: 0.5rem !important;
-          }
-          
-          .tabs-container {
-            overflow-x: auto !important;
-            -webkit-overflow-scrolling: touch !important;
-            scrollbar-width: none !important;
-          }
-          
-          .tabs-container::-webkit-scrollbar {
-            display: none !important;
-          }
-          
-          .table-container {
-            border-radius: 8px !important;
-            overflow: hidden !important;
-          }
-          
-          .stats-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-            gap: 0.8rem !important;
-          }
-          
-          .resources-grid {
-            grid-template-columns: 1fr !important;
-          }
-          
-          .users-grid {
-            grid-template-columns: 1fr !important;
-          }
-        }
-        
-        @media (max-width: 480px) {
-          .admin-container {
-            padding-top: 4rem !important;
-          }
-          
-          .stats-grid {
-            grid-template-columns: 1fr !important;
-          }
-          
-          .project-table {
-            font-size: 0.8rem !important;
-          }
-          
-          .status-select {
-            width: 100% !important;
-          }
-        }
-        
-        /* Améliorations pour tablettes */
-        @media (min-width: 769px) and (max-width: 1024px) {
-          .resources-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-          }
-          
-          .users-grid {
-            grid-templateColumns: repeat(2, 1fr) !important;
-          }
-        }
-        
-        /* Amélioration de l'expérience utilisateur */
-        input:focus, textarea:focus, select:focus {
-          outline: none;
-          border-color: #3498db !important;
-          box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
-          transition: all 0.2s ease;
-        }
-        
-        button:active {
-          transform: translateY(1px);
-        }
-        
-        /* Styles pour les onglets au survol */
-        .tab-button:hover:not([style*="background: #3498db"]) {
-          background-color: #f8f9fa !important;
-        }
-        
-        /* Animation pour les cartes */
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        .resource-card, .user-card, .stat-card {
-          animation: fadeIn 0.3s ease forwards;
-        }
-        
-        /* Amélioration du scroll sur mobile */
-        .table-wrapper {
-          -webkit-overflow-scrolling: touch;
-        }
-        
-        /* Styles pour les lignes du tableau au survol */
-        tbody tr:hover {
-          background-color: #f8f9fa;
-        }
-        
-        /* Styles pour les boutons de suppression */
-        .delete-btn:hover {
-          background-color: #c0392b !important;
-        }
-        
-        /* Styles pour les boutons d'action */
-        .view-btn:hover {
-          background-color: #2980b9 !important;
-        }
-      `
-            }, void 0, false, {
-                fileName: "src/Components/Admin.jsx",
-                lineNumber: 1146,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Admin.jsx",
-        lineNumber: 167,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Admin, "LM8QX5aAMhxS/mFgl3YmmHBbI+g=", false, function() {
-    return [
-        (0, _reactRouterDom.useNavigate)
-    ];
-});
-_c = Admin;
-exports.default = Admin;
-var _c;
-$RefreshReg$(_c, "Admin");
-
-  $parcel$ReactRefreshHelpers$4c29.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"01Qkc":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e352 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e352.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Dashboard component - Tableau de bord pour les clients
- * Version responsive optimisée
- */ var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-const Dashboard = ()=>{
-    _s();
-    const navigate = (0, _reactRouterDom.useNavigate)();
-    const [currentUser, setCurrentUser] = (0, _react.useState)(null);
-    const [userProjects, setUserProjects] = (0, _react.useState)([]);
-    const [mentoringSessions, setMentoringSessions] = (0, _react.useState)([]);
-    const [activeTab, setActiveTab] = (0, _react.useState)("projects");
-    const [stats, setStats] = (0, _react.useState)({
-        totalProjects: 0,
-        completedProjects: 0,
-        inProgressProjects: 0,
-        upcomingSessions: 0
-    });
-    (0, _react.useEffect)(()=>{
-        const savedUser = localStorage.getItem("currentUser");
-        if (!savedUser) {
-            navigate("/");
-            return;
-        }
-        const user = JSON.parse(savedUser);
-        setCurrentUser(user);
-        // Charger les projets de l'utilisateur
-        const allProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-        const userProjects = allProjects.filter((p)=>p.clientId === user.id);
-        setUserProjects(userProjects);
-        // Charger les sessions de mentorat
-        const allSessions = JSON.parse(localStorage.getItem("mentoringSessions") || "[]");
-        const userSessions = allSessions.filter((s)=>s.clientId === user.id);
-        setMentoringSessions(userSessions);
-        // Calculer les statistiques
-        setStats({
-            totalProjects: userProjects.length,
-            completedProjects: userProjects.filter((p)=>p.status === "completed").length,
-            inProgressProjects: userProjects.filter((p)=>p.status === "in-progress").length,
-            upcomingSessions: userSessions.filter((s)=>new Date(s.dateTime) > new Date()).length
-        });
-    }, [
-        navigate
-    ]);
-    const calculateProgress = (tasks)=>{
-        if (!tasks || tasks.length === 0) return 0;
-        const completed = tasks.filter((t)=>t.status === "completed").length;
-        return Math.round(completed / tasks.length * 100);
-    };
-    const handleDeleteProject = (projectId)=>{
-        if (window.confirm("\xcates-vous s\xfbr de vouloir supprimer ce projet ?")) {
-            const allProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-            const updatedProjects = allProjects.filter((p)=>p.id !== projectId);
-            localStorage.setItem("projects", JSON.stringify(updatedProjects));
-            const userProjects = updatedProjects.filter((p)=>p.clientId === currentUser.id);
-            setUserProjects(userProjects);
-            setStats({
-                ...stats,
-                totalProjects: userProjects.length,
-                completedProjects: userProjects.filter((p)=>p.status === "completed").length,
-                inProgressProjects: userProjects.filter((p)=>p.status === "in-progress").length
-            });
-        }
-    };
-    if (!currentUser) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            paddingTop: "clamp(4rem, 8vw, 6rem)",
-            textAlign: "center",
-            minHeight: "60vh",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center"
-        },
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: "Chargement..."
-        }, void 0, false, {
-            fileName: "src/Components/Dashboard.jsx",
-            lineNumber: 85,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Components/Dashboard.jsx",
-        lineNumber: 76,
-        columnNumber: 7
-    }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            paddingTop: "clamp(4.5rem, 7vw, 5rem)",
-            paddingLeft: "clamp(0.5rem, 2vw, 1rem)",
-            paddingRight: "clamp(0.5rem, 2vw, 1rem)",
-            paddingBottom: "clamp(1.5rem, 3vw, 2rem)",
-            minHeight: "100vh",
-            backgroundColor: "#f5f7fa",
-            overflowX: "hidden"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    maxWidth: "1400px",
-                    margin: "0 auto",
-                    width: "100%"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            backgroundColor: "white",
-                            padding: "clamp(1rem, 2vw, 1.5rem)",
-                            borderRadius: "12px",
-                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
-                            marginBottom: "clamp(1rem, 2vw, 1.5rem)",
-                            width: "100%",
-                            boxSizing: "border-box"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    alignItems: "flex-start",
-                                    marginBottom: "clamp(1rem, 2vw, 1.5rem)",
-                                    flexDirection: "column",
-                                    gap: "clamp(0.8rem, 1.5vw, 1rem)"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            width: "100%"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                style: {
-                                                    margin: 0,
-                                                    color: "#2c3e50",
-                                                    fontSize: "clamp(1.3rem, 3vw, 2rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: "Mon Tableau de Bord"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 124,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    marginTop: "0.5rem",
-                                                    fontSize: "clamp(0.85rem, 1.5vw, 1rem)",
-                                                    lineHeight: "1.4"
-                                                },
-                                                children: [
-                                                    "Bonjour ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                                        children: currentUser.name
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Dashboard.jsx",
-                                                        lineNumber: 138,
-                                                        columnNumber: 25
-                                                    }, undefined),
-                                                    ", suivez ici l'avancement de vos projets"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 132,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 123,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            display: "flex",
-                                            gap: "clamp(0.5rem, 1.5vw, 0.8rem)",
-                                            flexWrap: "wrap",
-                                            width: "100%",
-                                            justifyContent: "flex-start"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: ()=>navigate("/new-project"),
-                                                style: {
-                                                    backgroundColor: "#2ecc71",
-                                                    color: "white",
-                                                    border: "none",
-                                                    padding: "clamp(0.6rem, 1.5vw, 0.7rem) clamp(1rem, 2vw, 1.2rem)",
-                                                    borderRadius: "6px",
-                                                    cursor: "pointer",
-                                                    fontWeight: "500",
-                                                    whiteSpace: "nowrap",
-                                                    fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
-                                                    flex: "1 1 auto",
-                                                    minWidth: "140px",
-                                                    maxWidth: "100%"
-                                                },
-                                                children: "+ Nouveau Projet"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 148,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: ()=>navigate("/schedule-mentoring"),
-                                                style: {
-                                                    backgroundColor: "#3498db",
-                                                    color: "white",
-                                                    border: "none",
-                                                    padding: "clamp(0.6rem, 1.5vw, 0.7rem) clamp(1rem, 2vw, 1.2rem)",
-                                                    borderRadius: "6px",
-                                                    cursor: "pointer",
-                                                    fontWeight: "500",
-                                                    whiteSpace: "nowrap",
-                                                    fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
-                                                    flex: "1 1 auto",
-                                                    minWidth: "140px",
-                                                    maxWidth: "100%"
-                                                },
-                                                children: "Planifier Mentorat"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 167,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: ()=>navigate("/profile"),
-                                                style: {
-                                                    backgroundColor: "#9b59b6",
-                                                    color: "white",
-                                                    border: "none",
-                                                    padding: "clamp(0.6rem, 1.5vw, 0.7rem) clamp(1rem, 2vw, 1.2rem)",
-                                                    borderRadius: "6px",
-                                                    cursor: "pointer",
-                                                    fontWeight: "500",
-                                                    whiteSpace: "nowrap",
-                                                    fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
-                                                    flex: "1 1 auto",
-                                                    minWidth: "140px",
-                                                    maxWidth: "100%"
-                                                },
-                                                children: "Mon Profil"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 186,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 141,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Dashboard.jsx",
-                                lineNumber: 115,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    display: "grid",
-                                    gridTemplateColumns: "repeat(auto-fit, minmax(145px, 1fr))",
-                                    gap: "clamp(0.6rem, 1.5vw, 0.8rem)",
-                                    width: "100%"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#e8f4fc",
-                                            padding: "clamp(0.8rem, 1.5vw, 1rem)",
-                                            borderRadius: "8px",
-                                            textAlign: "center",
-                                            minHeight: "80px",
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            justifyContent: "center",
-                                            alignItems: "center"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                style: {
-                                                    color: "#3498db",
-                                                    margin: 0,
-                                                    fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: stats.totalProjects
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 226,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: "clamp(0.75rem, 1.2vw, 0.85rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: "Projets"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 234,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 215,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#e8f6f3",
-                                            padding: "clamp(0.8rem, 1.5vw, 1rem)",
-                                            borderRadius: "8px",
-                                            textAlign: "center",
-                                            minHeight: "80px",
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            justifyContent: "center",
-                                            alignItems: "center"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                style: {
-                                                    color: "#2ecc71",
-                                                    margin: 0,
-                                                    fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: stats.completedProjects
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 255,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: "clamp(0.75rem, 1.2vw, 0.85rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: "Termin\xe9s"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 263,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 244,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#fef9e7",
-                                            padding: "clamp(0.8rem, 1.5vw, 1rem)",
-                                            borderRadius: "8px",
-                                            textAlign: "center",
-                                            minHeight: "80px",
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            justifyContent: "center",
-                                            alignItems: "center"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                style: {
-                                                    color: "#f39c12",
-                                                    margin: 0,
-                                                    fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: stats.inProgressProjects
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 284,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: "clamp(0.75rem, 1.2vw, 0.85rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: "En cours"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 292,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 273,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            backgroundColor: "#f4ecf7",
-                                            padding: "clamp(0.8rem, 1.5vw, 1rem)",
-                                            borderRadius: "8px",
-                                            textAlign: "center",
-                                            minHeight: "80px",
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            justifyContent: "center",
-                                            alignItems: "center"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                style: {
-                                                    color: "#9b59b6",
-                                                    margin: 0,
-                                                    fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: stats.upcomingSessions
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 313,
-                                                columnNumber: 15
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    margin: "0.3rem 0 0 0",
-                                                    fontSize: "clamp(0.75rem, 1.2vw, 0.85rem)",
-                                                    lineHeight: "1.2"
-                                                },
-                                                children: "Sessions \xe0 venir"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 321,
-                                                columnNumber: 15
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 302,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Dashboard.jsx",
-                                lineNumber: 209,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Dashboard.jsx",
-                        lineNumber: 106,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            display: "flex",
-                            borderBottom: "1px solid #eee",
-                            marginBottom: "clamp(1rem, 2vw, 1.5rem)",
-                            flexWrap: "nowrap",
-                            overflowX: "auto",
-                            WebkitOverflowScrolling: "touch",
-                            scrollbarWidth: "none",
-                            msOverflowStyle: "none"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                onClick: ()=>setActiveTab("projects"),
-                                style: {
-                                    padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1rem, 2vw, 1.5rem)",
-                                    background: activeTab === "projects" ? "#3498db" : "transparent",
-                                    color: activeTab === "projects" ? "white" : "#2c3e50",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    fontWeight: "500",
-                                    borderTopLeftRadius: "6px",
-                                    borderTopRightRadius: "6px",
-                                    whiteSpace: "nowrap",
-                                    fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
-                                    transition: "all 0.3s ease",
-                                    flex: "0 0 auto",
-                                    minWidth: "clamp(110px, 15vw, 120px)",
-                                    textAlign: "center"
-                                },
-                                children: [
-                                    "Mes Projets (",
-                                    userProjects.length,
-                                    ")"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Dashboard.jsx",
-                                lineNumber: 344,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                onClick: ()=>setActiveTab("mentoring"),
-                                style: {
-                                    padding: "clamp(0.6rem, 1.5vw, 0.8rem) clamp(1rem, 2vw, 1.5rem)",
-                                    background: activeTab === "mentoring" ? "#3498db" : "transparent",
-                                    color: activeTab === "mentoring" ? "white" : "#2c3e50",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    fontWeight: "500",
-                                    whiteSpace: "nowrap",
-                                    fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
-                                    transition: "all 0.3s ease",
-                                    flex: "0 0 auto",
-                                    minWidth: "clamp(110px, 15vw, 120px)",
-                                    textAlign: "center"
-                                },
-                                children: [
-                                    "Mentorat (",
-                                    mentoringSessions.length,
-                                    ")"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Dashboard.jsx",
-                                lineNumber: 365,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Dashboard.jsx",
-                        lineNumber: 334,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            backgroundColor: "white",
-                            padding: "clamp(1rem, 2vw, 1.5rem)",
-                            borderRadius: "12px",
-                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
-                            width: "100%",
-                            boxSizing: "border-box"
-                        },
-                        children: [
-                            activeTab === "projects" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: userProjects.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    style: {
-                                        textAlign: "center",
-                                        padding: "clamp(1.5rem, 3vw, 2rem) clamp(0.8rem, 2vw, 1rem)",
-                                        color: "#7f8c8d"
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            style: {
-                                                color: "#5d6d7e",
-                                                marginBottom: "clamp(0.8rem, 1.5vw, 1rem)",
-                                                fontSize: "clamp(1.1rem, 2vw, 1.3rem)"
-                                            },
-                                            children: "Aucun projet pour le moment"
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Dashboard.jsx",
-                                            lineNumber: 403,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            style: {
-                                                marginBottom: "clamp(1rem, 2vw, 1.5rem)",
-                                                fontSize: "clamp(0.85rem, 1.5vw, 0.95rem)",
-                                                lineHeight: "1.5"
-                                            },
-                                            children: "Commencez par cr\xe9er votre premier projet !"
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Dashboard.jsx",
-                                            lineNumber: 410,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            onClick: ()=>navigate("/new-project"),
-                                            style: {
-                                                backgroundColor: "#3498db",
-                                                color: "white",
-                                                border: "none",
-                                                padding: "clamp(0.7rem, 1.5vw, 0.8rem) clamp(1.2rem, 2.5vw, 1.5rem)",
-                                                borderRadius: "6px",
-                                                cursor: "pointer",
-                                                fontSize: "clamp(0.85rem, 1.5vw, 0.95rem)",
-                                                fontWeight: "500",
-                                                minWidth: "clamp(180px, 40vw, 220px)"
-                                            },
-                                            children: "Cr\xe9er mon premier projet"
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Dashboard.jsx",
-                                            lineNumber: 417,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/Components/Dashboard.jsx",
-                                    lineNumber: 398,
-                                    columnNumber: 17
-                                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    style: {
-                                        display: "grid",
-                                        gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-                                        gap: "clamp(0.8rem, 1.5vw, 1.2rem)",
-                                        width: "100%"
-                                    },
-                                    children: userProjects.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            style: {
-                                                backgroundColor: "#f8f9fa",
-                                                padding: "clamp(1rem, 1.5vw, 1.2rem)",
-                                                borderRadius: "8px",
-                                                borderLeft: `4px solid ${project.priority === "high" ? "#e74c3c" : project.priority === "medium" ? "#f39c12" : "#2ecc71"}`,
-                                                transition: "all 0.3s ease",
-                                                cursor: "pointer",
-                                                height: "100%",
-                                                display: "flex",
-                                                flexDirection: "column",
-                                                minHeight: "220px"
-                                            },
-                                            onClick: ()=>navigate(`/project/${project.id}`),
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    style: {
-                                                        display: "flex",
-                                                        justifyContent: "space-between",
-                                                        alignItems: "flex-start",
-                                                        marginBottom: "clamp(0.6rem, 1vw, 0.8rem)"
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                            style: {
-                                                                margin: 0,
-                                                                color: "#2c3e50",
-                                                                fontSize: "clamp(1rem, 1.5vw, 1.1rem)",
-                                                                lineHeight: "1.3",
-                                                                flex: "1",
-                                                                marginRight: "0.5rem",
-                                                                wordBreak: "break-word"
-                                                            },
-                                                            children: project.title
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 467,
-                                                            columnNumber: 25
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            style: {
-                                                                backgroundColor: project.status === "completed" ? "#2ecc71" : project.status === "in-progress" ? "#3498db" : "#95a5a6",
-                                                                color: "white",
-                                                                padding: "0.2rem 0.5rem",
-                                                                borderRadius: "12px",
-                                                                fontSize: "clamp(0.65rem, 0.9vw, 0.75rem)",
-                                                                fontWeight: "500",
-                                                                whiteSpace: "nowrap",
-                                                                flexShrink: 0
-                                                            },
-                                                            children: project.status === "completed" ? "Termin\xe9" : project.status === "in-progress" ? "En cours" : "En attente"
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 478,
-                                                            columnNumber: 25
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/Components/Dashboard.jsx",
-                                                    lineNumber: 461,
-                                                    columnNumber: 23
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    style: {
-                                                        color: "#5d6d7e",
-                                                        marginBottom: "clamp(0.8rem, 1.2vw, 1rem)",
-                                                        fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
-                                                        flex: "1",
-                                                        lineHeight: "1.4",
-                                                        overflow: "hidden",
-                                                        display: "-webkit-box",
-                                                        WebkitLineClamp: "3",
-                                                        WebkitBoxOrient: "vertical"
-                                                    },
-                                                    children: project.description
-                                                }, void 0, false, {
-                                                    fileName: "src/Components/Dashboard.jsx",
-                                                    lineNumber: 494,
-                                                    columnNumber: 23
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    style: {
-                                                        marginBottom: "clamp(0.6rem, 1vw, 0.8rem)"
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            style: {
-                                                                display: "flex",
-                                                                justifyContent: "space-between",
-                                                                marginBottom: "0.3rem"
-                                                            },
-                                                            children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    style: {
-                                                                        fontSize: "clamp(0.75rem, 1vw, 0.85rem)",
-                                                                        color: "#7f8c8d"
-                                                                    },
-                                                                    children: "Progression"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 515,
-                                                                    columnNumber: 27
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    style: {
-                                                                        fontSize: "clamp(0.75rem, 1vw, 0.85rem)",
-                                                                        color: "#3498db",
-                                                                        fontWeight: "500"
-                                                                    },
-                                                                    children: [
-                                                                        calculateProgress(project.tasks),
-                                                                        "%"
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 521,
-                                                                    columnNumber: 27
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 510,
-                                                            columnNumber: 25
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            style: {
-                                                                height: "6px",
-                                                                backgroundColor: "#e1e8ed",
-                                                                borderRadius: "3px",
-                                                                overflow: "hidden"
-                                                            },
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                style: {
-                                                                    width: `${calculateProgress(project.tasks)}%`,
-                                                                    height: "100%",
-                                                                    backgroundColor: "#3498db",
-                                                                    transition: "width 0.3s ease"
-                                                                }
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 535,
-                                                                columnNumber: 27
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 529,
-                                                            columnNumber: 25
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/Components/Dashboard.jsx",
-                                                    lineNumber: 509,
-                                                    columnNumber: 23
-                                                }, undefined),
-                                                project.tasks && project.tasks.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    style: {
-                                                        marginBottom: "clamp(0.6rem, 1vw, 0.8rem)"
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            style: {
-                                                                fontSize: "clamp(0.75rem, 1vw, 0.85rem)",
-                                                                color: "#7f8c8d",
-                                                                marginBottom: "0.3rem"
-                                                            },
-                                                            children: [
-                                                                "T\xe2ches: ",
-                                                                project.tasks.filter((t)=>t.status === "completed").length,
-                                                                "/",
-                                                                project.tasks.length
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 547,
-                                                            columnNumber: 27
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            style: {
-                                                                display: "flex",
-                                                                gap: "0.2rem",
-                                                                flexWrap: "wrap",
-                                                                alignItems: "center"
-                                                            },
-                                                            children: [
-                                                                project.tasks.slice(0, 3).map((task)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                        style: {
-                                                                            backgroundColor: task.status === "completed" ? "#2ecc71" : "#e1e8ed",
-                                                                            color: task.status === "completed" ? "white" : "#5d6d7e",
-                                                                            padding: "0.15rem 0.4rem",
-                                                                            borderRadius: "3px",
-                                                                            fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)",
-                                                                            whiteSpace: "nowrap"
-                                                                        },
-                                                                        children: task.title
-                                                                    }, task.id, false, {
-                                                                        fileName: "src/Components/Dashboard.jsx",
-                                                                        lineNumber: 561,
-                                                                        columnNumber: 31
-                                                                    }, undefined)),
-                                                                project.tasks.length > 3 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    style: {
-                                                                        fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)",
-                                                                        color: "#7f8c8d"
-                                                                    },
-                                                                    children: [
-                                                                        "+",
-                                                                        project.tasks.length - 3
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 576,
-                                                                    columnNumber: 31
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 554,
-                                                            columnNumber: 27
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/Components/Dashboard.jsx",
-                                                    lineNumber: 546,
-                                                    columnNumber: 25
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    style: {
-                                                        display: "flex",
-                                                        justifyContent: "space-between",
-                                                        alignItems: "center",
-                                                        marginTop: "auto",
-                                                        paddingTop: "clamp(0.6rem, 1vw, 0.8rem)",
-                                                        borderTop: "1px solid #eee"
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            style: {
-                                                                flex: "1",
-                                                                minWidth: 0
-                                                            },
-                                                            children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                    style: {
-                                                                        fontSize: "clamp(0.65rem, 0.9vw, 0.75rem)",
-                                                                        color: "#7f8c8d",
-                                                                        marginBottom: "0.2rem",
-                                                                        whiteSpace: "nowrap",
-                                                                        overflow: "hidden",
-                                                                        textOverflow: "ellipsis"
-                                                                    },
-                                                                    children: [
-                                                                        "D\xe9but: ",
-                                                                        new Date(project.startDate).toLocaleDateString("fr-FR", {
-                                                                            day: "2-digit",
-                                                                            month: "short"
-                                                                        })
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 597,
-                                                                    columnNumber: 27
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                    style: {
-                                                                        fontSize: "clamp(0.65rem, 0.9vw, 0.75rem)",
-                                                                        color: "#7f8c8d",
-                                                                        whiteSpace: "nowrap",
-                                                                        overflow: "hidden",
-                                                                        textOverflow: "ellipsis"
-                                                                    },
-                                                                    children: [
-                                                                        "\xc9ch\xe9ance: ",
-                                                                        new Date(project.deadline).toLocaleDateString("fr-FR", {
-                                                                            day: "2-digit",
-                                                                            month: "short"
-                                                                        })
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 607,
-                                                                    columnNumber: 27
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 596,
-                                                            columnNumber: 25
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            style: {
-                                                                display: "flex",
-                                                                gap: "clamp(0.3rem, 0.5vw, 0.4rem)",
-                                                                marginLeft: "0.5rem",
-                                                                flexShrink: 0
-                                                            },
-                                                            children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                    onClick: (e)=>{
-                                                                        e.stopPropagation();
-                                                                        navigate(`/project/${project.id}`);
-                                                                    },
-                                                                    style: {
-                                                                        backgroundColor: "transparent",
-                                                                        color: "#3498db",
-                                                                        border: "1px solid #3498db",
-                                                                        padding: "clamp(0.3rem, 0.5vw, 0.4rem) clamp(0.6rem, 1vw, 0.8rem)",
-                                                                        borderRadius: "4px",
-                                                                        cursor: "pointer",
-                                                                        fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)",
-                                                                        whiteSpace: "nowrap",
-                                                                        minWidth: "50px"
-                                                                    },
-                                                                    children: "Voir"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 623,
-                                                                    columnNumber: 27
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                    onClick: (e)=>{
-                                                                        e.stopPropagation();
-                                                                        handleDeleteProject(project.id);
-                                                                    },
-                                                                    style: {
-                                                                        backgroundColor: "#e74c3c",
-                                                                        color: "white",
-                                                                        border: "none",
-                                                                        padding: "clamp(0.3rem, 0.5vw, 0.4rem) clamp(0.6rem, 1vw, 0.8rem)",
-                                                                        borderRadius: "4px",
-                                                                        cursor: "pointer",
-                                                                        fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)",
-                                                                        whiteSpace: "nowrap",
-                                                                        minWidth: "60px"
-                                                                    },
-                                                                    children: "Suppr"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 642,
-                                                                    columnNumber: 27
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/Components/Dashboard.jsx",
-                                                            lineNumber: 617,
-                                                            columnNumber: 25
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/Components/Dashboard.jsx",
-                                                    lineNumber: 588,
-                                                    columnNumber: 23
-                                                }, undefined)
-                                            ]
-                                        }, project.id, true, {
-                                            fileName: "src/Components/Dashboard.jsx",
-                                            lineNumber: 442,
-                                            columnNumber: 21
-                                        }, undefined))
-                                }, void 0, false, {
-                                    fileName: "src/Components/Dashboard.jsx",
-                                    lineNumber: 435,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/Dashboard.jsx",
-                                lineNumber: 396,
-                                columnNumber: 13
-                            }, undefined),
-                            activeTab === "mentoring" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            textAlign: "center",
-                                            marginBottom: "clamp(1rem, 2vw, 1.5rem)",
-                                            padding: "0.5rem"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                style: {
-                                                    color: "#2c3e50",
-                                                    marginBottom: "clamp(0.6rem, 1.2vw, 0.8rem)",
-                                                    fontSize: "clamp(1.1rem, 2vw, 1.5rem)"
-                                                },
-                                                children: "Service de Mentorat"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 677,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                style: {
-                                                    color: "#5d6d7e",
-                                                    maxWidth: "600px",
-                                                    margin: "0 auto clamp(0.8rem, 1.5vw, 1rem)",
-                                                    fontSize: "clamp(0.85rem, 1.5vw, 0.95rem)",
-                                                    lineHeight: "1.5"
-                                                },
-                                                children: "B\xe9n\xe9ficiez d'un accompagnement personnalis\xe9 pour vos projets de d\xe9veloppement. Planifiez des sessions de mentorat avec Emmanuel pour progresser rapidement."
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 684,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: ()=>navigate("/schedule-mentoring"),
-                                                style: {
-                                                    backgroundColor: "#3498db",
-                                                    color: "white",
-                                                    border: "none",
-                                                    padding: "clamp(0.7rem, 1.5vw, 0.8rem) clamp(1.2rem, 2.5vw, 1.5rem)",
-                                                    borderRadius: "6px",
-                                                    cursor: "pointer",
-                                                    fontSize: "clamp(0.85rem, 1.5vw, 0.95rem)",
-                                                    fontWeight: "500",
-                                                    minWidth: "clamp(180px, 40vw, 200px)"
-                                                },
-                                                children: "Planifier une session"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 694,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 672,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    mentoringSessions.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            textAlign: "center",
-                                            padding: "clamp(1rem, 2vw, 1.5rem)",
-                                            color: "#7f8c8d"
-                                        },
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            style: {
-                                                fontSize: "clamp(0.85rem, 1.5vw, 0.95rem)",
-                                                lineHeight: "1.5"
-                                            },
-                                            children: "Aucune session de mentorat planifi\xe9e."
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Dashboard.jsx",
-                                            lineNumber: 718,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 713,
-                                        columnNumber: 17
-                                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        style: {
-                                            display: "grid",
-                                            gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-                                            gap: "clamp(0.8rem, 1.5vw, 1.2rem)",
-                                            width: "100%"
-                                        },
-                                        children: mentoringSessions.map((session)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                style: {
-                                                    backgroundColor: "#f8f9fa",
-                                                    padding: "clamp(1rem, 1.5vw, 1.2rem)",
-                                                    borderRadius: "8px",
-                                                    borderLeft: `4px solid ${new Date(session.dateTime) < new Date() ? "#95a5a6" : session.status === "confirmed" ? "#2ecc71" : "#f39c12"}`,
-                                                    display: "flex",
-                                                    flexDirection: "column",
-                                                    height: "100%",
-                                                    minHeight: "220px"
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            display: "flex",
-                                                            justifyContent: "space-between",
-                                                            alignItems: "flex-start",
-                                                            marginBottom: "clamp(0.6rem, 1vw, 0.8rem)"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                                style: {
-                                                                    margin: 0,
-                                                                    color: "#2c3e50",
-                                                                    fontSize: "clamp(0.95rem, 1.2vw, 1rem)",
-                                                                    flex: "1",
-                                                                    marginRight: "0.5rem",
-                                                                    wordBreak: "break-word",
-                                                                    lineHeight: "1.3"
-                                                                },
-                                                                children: session.topic
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 755,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    backgroundColor: new Date(session.dateTime) < new Date() ? "#95a5a6" : session.status === "confirmed" ? "#2ecc71" : "#f39c12",
-                                                                    color: "white",
-                                                                    padding: "0.2rem 0.5rem",
-                                                                    borderRadius: "12px",
-                                                                    fontSize: "clamp(0.65rem, 0.9vw, 0.75rem)",
-                                                                    whiteSpace: "nowrap",
-                                                                    flexShrink: 0
-                                                                },
-                                                                children: new Date(session.dateTime) < new Date() ? "Pass\xe9e" : session.status === "confirmed" ? "Confirm\xe9e" : "En attente"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 766,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Dashboard.jsx",
-                                                        lineNumber: 749,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        style: {
-                                                            color: "#5d6d7e",
-                                                            marginBottom: "clamp(0.6rem, 1vw, 0.8rem)",
-                                                            fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
-                                                            flex: "1",
-                                                            lineHeight: "1.4",
-                                                            overflow: "hidden",
-                                                            display: "-webkit-box",
-                                                            WebkitLineClamp: "3",
-                                                            WebkitBoxOrient: "vertical"
-                                                        },
-                                                        children: session.description
-                                                    }, void 0, false, {
-                                                        fileName: "src/Components/Dashboard.jsx",
-                                                        lineNumber: 781,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            marginBottom: "0.3rem"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    fontWeight: "500",
-                                                                    color: "#7f8c8d",
-                                                                    fontSize: "clamp(0.75rem, 1vw, 0.85rem)"
-                                                                },
-                                                                children: "Date:"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 796,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    color: "#2c3e50",
-                                                                    fontSize: "clamp(0.75rem, 1vw, 0.85rem)",
-                                                                    marginLeft: "0.3rem"
-                                                                },
-                                                                children: [
-                                                                    new Date(session.dateTime).toLocaleDateString("fr-FR", {
-                                                                        day: "2-digit",
-                                                                        month: "short",
-                                                                        year: "numeric"
-                                                                    }),
-                                                                    " \xe0 ",
-                                                                    new Date(session.dateTime).toLocaleTimeString([], {
-                                                                        hour: "2-digit",
-                                                                        minute: "2-digit"
-                                                                    })
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 803,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Dashboard.jsx",
-                                                        lineNumber: 795,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            marginBottom: "0.3rem"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    fontWeight: "500",
-                                                                    color: "#7f8c8d",
-                                                                    fontSize: "clamp(0.75rem, 1vw, 0.85rem)"
-                                                                },
-                                                                children: "Dur\xe9e:"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 817,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    color: "#2c3e50",
-                                                                    fontSize: "clamp(0.75rem, 1vw, 0.85rem)",
-                                                                    marginLeft: "0.3rem"
-                                                                },
-                                                                children: [
-                                                                    session.duration,
-                                                                    " min"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 824,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Dashboard.jsx",
-                                                        lineNumber: 816,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            marginBottom: "clamp(0.8rem, 1.2vw, 1rem)"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    fontWeight: "500",
-                                                                    color: "#7f8c8d",
-                                                                    fontSize: "clamp(0.75rem, 1vw, 0.85rem)"
-                                                                },
-                                                                children: "Type:"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 834,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                style: {
-                                                                    backgroundColor: "#e8f4fc",
-                                                                    color: "#3498db",
-                                                                    padding: "0.15rem 0.5rem",
-                                                                    borderRadius: "12px",
-                                                                    fontSize: "clamp(0.65rem, 0.9vw, 0.75rem)",
-                                                                    marginLeft: "0.3rem"
-                                                                },
-                                                                children: session.sessionType === "video" ? "Vid\xe9o" : "Audio"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 841,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Dashboard.jsx",
-                                                        lineNumber: 833,
-                                                        columnNumber: 23
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        style: {
-                                                            display: "flex",
-                                                            justifyContent: "space-between",
-                                                            alignItems: "center",
-                                                            marginTop: "auto",
-                                                            paddingTop: "clamp(0.6rem, 1vw, 0.8rem)",
-                                                            borderTop: "1px solid #eee"
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                children: session.link && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                                    href: session.link,
-                                                                    target: "_blank",
-                                                                    rel: "noopener noreferrer",
-                                                                    style: {
-                                                                        color: "#3498db",
-                                                                        textDecoration: "none",
-                                                                        fontSize: "clamp(0.75rem, 1vw, 0.85rem)",
-                                                                        fontWeight: "500",
-                                                                        wordBreak: "break-all"
-                                                                    },
-                                                                    children: "Lien de connexion"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/Components/Dashboard.jsx",
-                                                                    lineNumber: 863,
-                                                                    columnNumber: 29
-                                                                }, undefined)
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 861,
-                                                                columnNumber: 25
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                onClick: ()=>{
-                                                                    if (window.confirm("Voulez-vous annuler cette session ?")) {
-                                                                        const allSessions = JSON.parse(localStorage.getItem("mentoringSessions") || "[]");
-                                                                        const updatedSessions = allSessions.filter((s)=>s.id !== session.id);
-                                                                        localStorage.setItem("mentoringSessions", JSON.stringify(updatedSessions));
-                                                                        const userSessions = updatedSessions.filter((s)=>s.clientId === currentUser.id);
-                                                                        setMentoringSessions(userSessions);
-                                                                        setStats({
-                                                                            ...stats,
-                                                                            upcomingSessions: userSessions.filter((s)=>new Date(s.dateTime) > new Date()).length
-                                                                        });
-                                                                    }
-                                                                },
-                                                                style: {
-                                                                    backgroundColor: "#e74c3c",
-                                                                    color: "white",
-                                                                    border: "none",
-                                                                    padding: "clamp(0.3rem, 0.5vw, 0.4rem) clamp(0.6rem, 1vw, 0.8rem)",
-                                                                    borderRadius: "4px",
-                                                                    cursor: "pointer",
-                                                                    fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)",
-                                                                    whiteSpace: "nowrap",
-                                                                    minWidth: "70px"
-                                                                },
-                                                                children: "Annuler"
-                                                            }, void 0, false, {
-                                                                fileName: "src/Components/Dashboard.jsx",
-                                                                lineNumber: 879,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/Components/Dashboard.jsx",
-                                                        lineNumber: 853,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                ]
-                                            }, session.id, true, {
-                                                fileName: "src/Components/Dashboard.jsx",
-                                                lineNumber: 733,
-                                                columnNumber: 21
-                                            }, undefined))
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Dashboard.jsx",
-                                        lineNumber: 726,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Dashboard.jsx",
-                                lineNumber: 671,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Dashboard.jsx",
-                        lineNumber: 387,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Dashboard.jsx",
-                lineNumber: 100,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
-                children: `
-        /* Styles pour les petits écrans */
-        @media (max-width: 768px) {
-          .dashboard-container {
-            padding-top: 4.5rem !important;
-            padding-left: 0.8rem !important;
-            padding-right: 0.8rem !important;
-          }
-          
-          .stats-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-            gap: 0.6rem !important;
-          }
-          
-          .projects-grid {
-            grid-template-columns: 1fr !important;
-            gap: 0.8rem !important;
-          }
-          
-          .tabs-container {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-          }
-          
-          .tabs-container::-webkit-scrollbar {
-            display: none;
-          }
-          
-          /* Amélioration de l'affichage des cartes sur mobile */
-          .project-card {
-            min-height: 200px !important;
-            padding: 0.9rem !important;
-          }
-          
-          .project-title {
-            font-size: 1rem !important;
-            line-height: 1.2 !important;
-          }
-        }
-        
-        @media (max-width: 480px) {
-          .dashboard-container {
-            padding-top: 4rem !important;
-            padding-left: 0.5rem !important;
-            padding-right: 0.5rem !important;
-          }
-          
-          .stats-grid {
-            grid-template-columns: 1fr !important;
-          }
-          
-          .header-buttons {
-            flex-direction: column;
-            width: 100%;
-          }
-          
-          .header-buttons button {
-            width: 100%;
-            min-width: 100% !important;
-            margin-bottom: 0.5rem;
-          }
-          
-          /* Cartes plus compactes sur très petit mobile */
-          .project-card {
-            min-height: 180px !important;
-            padding: 0.8rem !important;
-          }
-          
-          .project-actions {
-            flex-direction: column;
-            gap: 0.3rem;
-          }
-          
-          .action-button {
-            width: 100%;
-            justify-content: center;
-          }
-        }
-        
-        /* Améliorations pour tablettes */
-        @media (min-width: 769px) and (max-width: 1024px) {
-          .projects-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-            gap: 1rem !important;
-          }
-          
-          .mentoring-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-          }
-        }
-        
-        /* Pour les grands écrans */
-        @media (min-width: 1400px) {
-          .projects-grid {
-            grid-template-columns: repeat(3, 1fr) !important;
-            gap: 1.5rem !important;
-          }
-          
-          .mentoring-grid {
-            grid-template-columns: repeat(3, 1fr) !important;
-            gap: 1.5rem !important;
-          }
-        }
-        
-        /* Animation pour les cartes de projet */
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        .project-card {
-          animation: fadeIn 0.3s ease forwards;
-        }
-        
-        /* Amélioration du scroll sur mobile */
-        body {
-          overflow-x: hidden;
-        }
-        
-        /* Styles pour les boutons au survol */
-        button:hover {
-          opacity: 0.9;
-          transform: translateY(-1px);
-          transition: all 0.2s ease;
-        }
-        
-        /* Empêcher le zoom sur les inputs sur iOS */
-        @media screen and (max-width: 992px) {
-          input, select, textarea {
-            font-size: 16px !important;
-          }
-        }
-        
-        /* Améliorations pour le mode paysage */
-        @media (max-height: 500px) and (orientation: landscape) {
-          .dashboard-container {
-            padding-top: 3.5rem !important;
-          }
-          
-          .project-card {
-            min-height: 160px !important;
-          }
-        }
-        
-        /* Support des très petits écrans */
-        @media (max-width: 360px) {
-          .dashboard-container {
-            padding-left: 0.4rem !important;
-            padding-right: 0.4rem !important;
-          }
-          
-          .project-card {
-            padding: 0.7rem !important;
-          }
-          
-          .tab-button {
-            padding: 0.5rem 0.8rem !important;
-            font-size: 0.75rem !important;
-          }
-        }
-      `
-            }, void 0, false, {
-                fileName: "src/Components/Dashboard.jsx",
-                lineNumber: 920,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Dashboard.jsx",
-        lineNumber: 91,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Dashboard, "EWg4PEr0mydprIEs/Jm1UwheYS0=", false, function() {
-    return [
-        (0, _reactRouterDom.useNavigate)
-    ];
-});
-_c = Dashboard;
-exports.default = Dashboard;
-var _c;
-$RefreshReg$(_c, "Dashboard");
-
-  $parcel$ReactRefreshHelpers$e352.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"029VM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"029VM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fca5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -44674,6 +41090,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _api = require("../utils/api");
 var _s = $RefreshSig$();
 const ClientProfile = ()=>{
     _s();
@@ -44712,64 +41129,51 @@ const ClientProfile = ()=>{
         }
         const user = JSON.parse(savedUser);
         setCurrentUser(user);
-        // Charger les données du profil
-        const userProfile = JSON.parse(localStorage.getItem(`userProfile_${user.id}`) || "{}");
         setProfileData({
-            name: user.name || "",
+            name: user.name || `${user.firstName || ""} ${user.lastName || ""}`.trim(),
             email: user.email || "",
-            phone: userProfile.phone || "",
-            company: userProfile.company || "",
-            position: userProfile.position || "",
-            bio: userProfile.bio || "",
-            skills: userProfile.skills || "",
-            website: userProfile.website || ""
+            phone: user.phone || "",
+            company: user.company || "",
+            position: user.position || "",
+            bio: user.bio || "",
+            skills: user.skills || "",
+            website: user.website || ""
         });
-        // Charger les projets de l'utilisateur
-        const allProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-        const userProjects = allProjects.filter((p)=>p.clientId === user.id);
-        setUserProjects(userProjects);
-        // Charger les sessions de mentorat
-        const allSessions = JSON.parse(localStorage.getItem("mentoringSessions") || "[]");
-        const userSessions = allSessions.filter((s)=>s.clientId === user.id);
-        setMentoringSessions(userSessions);
-        // Calculer les statistiques
+        // Stats (données locales pour l'instant)
         setStats({
-            totalProjects: userProjects.length,
-            completedProjects: userProjects.filter((p)=>p.status === "completed").length,
-            inProgressProjects: userProjects.filter((p)=>p.status === "in-progress").length,
-            upcomingSessions: userSessions.filter((s)=>new Date(s.dateTime) > new Date()).length
+            totalProjects: 0,
+            completedProjects: 0,
+            inProgressProjects: 0,
+            upcomingSessions: 0
         });
     }, [
         navigate
     ]);
-    const handleSaveProfile = ()=>{
-        // Mettre à jour les données utilisateur
-        const updatedUser = {
-            ...currentUser,
-            name: profileData.name,
-            email: profileData.email
-        };
-        // Sauvegarder l'utilisateur
-        const users = JSON.parse(localStorage.getItem("users") || "[]");
-        const updatedUsers = users.map((u)=>u.id === currentUser.id ? updatedUser : u);
-        localStorage.setItem("users", JSON.stringify(updatedUsers));
-        localStorage.setItem("currentUser", JSON.stringify(updatedUser));
-        // Sauvegarder le profil
-        const userProfile = {
-            phone: profileData.phone,
-            company: profileData.company,
-            position: profileData.position,
-            bio: profileData.bio,
-            skills: profileData.skills,
-            website: profileData.website,
-            updatedAt: new Date().toISOString()
-        };
-        localStorage.setItem(`userProfile_${currentUser.id}`, JSON.stringify(userProfile));
-        setCurrentUser(updatedUser);
-        setIsEditing(false);
-        alert("Profil mis \xe0 jour avec succ\xe8s !");
+    const handleSaveProfile = async ()=>{
+        try {
+            const parts = (profileData.name || "").trim().split(" ");
+            const firstName = parts[0] || "";
+            const lastName = parts.slice(1).join(" ") || "";
+            const updatedUser = await (0, _api.updateProfile)({
+                id: currentUser.id,
+                firstName,
+                lastName,
+                email: profileData.email,
+                phone: profileData.phone,
+                company: profileData.company,
+                position: profileData.position,
+                bio: profileData.bio,
+                skills: profileData.skills,
+                website: profileData.website
+            });
+            setCurrentUser(updatedUser);
+            setIsEditing(false);
+            alert("Profil mis \xe0 jour avec succ\xe8s !");
+        } catch (err) {
+            alert("Erreur : " + (err.message || "Impossible de mettre \xe0 jour le profil."));
+        }
     };
-    const handleChangePassword = ()=>{
+    const handleChangePassword = async ()=>{
         if (passwordData.newPassword !== passwordData.confirmPassword) {
             alert("Les nouveaux mots de passe ne correspondent pas");
             return;
@@ -44778,52 +41182,34 @@ const ClientProfile = ()=>{
             alert("Le mot de passe doit contenir au moins 6 caract\xe8res");
             return;
         }
-        // Vérifier l'ancien mot de passe
-        const users = JSON.parse(localStorage.getItem("users") || "[]");
-        const user = users.find((u)=>u.id === currentUser.id);
-        if (user.password !== passwordData.currentPassword) {
-            alert("Mot de passe actuel incorrect");
-            return;
-        }
-        // Mettre à jour le mot de passe
-        const updatedUsers = users.map((u)=>u.id === currentUser.id ? {
-                ...u,
+        try {
+            const parts = (profileData.name || "").trim().split(" ");
+            await (0, _api.updateProfile)({
+                id: currentUser.id,
+                firstName: parts[0] || "",
+                lastName: parts.slice(1).join(" ") || "",
+                email: profileData.email,
                 password: passwordData.newPassword
-            } : u);
-        localStorage.setItem("users", JSON.stringify(updatedUsers));
-        // Mettre à jour l'utilisateur courant
-        const updatedUser = {
-            ...currentUser,
-            password: passwordData.newPassword
-        };
-        localStorage.setItem("currentUser", JSON.stringify(updatedUser));
-        setPasswordData({
-            currentPassword: "",
-            newPassword: "",
-            confirmPassword: ""
-        });
-        alert("Mot de passe chang\xe9 avec succ\xe8s !");
+            });
+            setPasswordData({
+                currentPassword: "",
+                newPassword: "",
+                confirmPassword: ""
+            });
+            alert("Mot de passe chang\xe9 avec succ\xe8s !");
+        } catch (err) {
+            alert("Erreur : " + (err.message || "Impossible de changer le mot de passe."));
+        }
     };
-    const handleDeleteAccount = ()=>{
+    const handleDeleteAccount = async ()=>{
         if (!window.confirm("\xcates-vous s\xfbr de vouloir supprimer votre compte ? Cette action est irr\xe9versible.")) return;
-        // Supprimer l'utilisateur
-        const users = JSON.parse(localStorage.getItem("users") || "[]");
-        const updatedUsers = users.filter((u)=>u.id !== currentUser.id);
-        localStorage.setItem("users", JSON.stringify(updatedUsers));
-        // Supprimer le profil
-        localStorage.removeItem(`userProfile_${currentUser.id}`);
-        // Supprimer les sessions de l'utilisateur
-        const sessions = JSON.parse(localStorage.getItem("mentoringSessions") || "[]");
-        const updatedSessions = sessions.filter((s)=>s.clientId !== currentUser.id);
-        localStorage.setItem("mentoringSessions", JSON.stringify(updatedSessions));
-        // Supprimer les projets de l'utilisateur (ou les garder avec client inconnu)
-        const projects = JSON.parse(localStorage.getItem("projects") || "[]");
-        const updatedProjects = projects.filter((p)=>p.clientId !== currentUser.id);
-        localStorage.setItem("projects", JSON.stringify(updatedProjects));
-        // Déconnexion
-        localStorage.removeItem("currentUser");
-        navigate("/");
-        alert("Compte supprim\xe9 avec succ\xe8s.");
+        try {
+            await (0, _api.deleteAccount)();
+            navigate("/");
+            alert("Compte supprim\xe9 avec succ\xe8s.");
+        } catch (err) {
+            alert("Erreur : " + (err.message || "Impossible de supprimer le compte."));
+        }
     };
     if (!currentUser) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
@@ -44839,12 +41225,12 @@ const ClientProfile = ()=>{
             children: "Chargement..."
         }, void 0, false, {
             fileName: "src/Components/ClientProfile.jsx",
-            lineNumber: 195,
+            lineNumber: 154,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/Components/ClientProfile.jsx",
-        lineNumber: 186,
+        lineNumber: 145,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -44881,7 +41267,7 @@ const ClientProfile = ()=>{
                             children: "Mon Profil"
                         }, void 0, false, {
                             fileName: "src/Components/ClientProfile.jsx",
-                            lineNumber: 221,
+                            lineNumber: 180,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -44892,13 +41278,13 @@ const ClientProfile = ()=>{
                             children: "G\xe9rez vos informations personnelles et consultez votre activit\xe9"
                         }, void 0, false, {
                             fileName: "src/Components/ClientProfile.jsx",
-                            lineNumber: 229,
+                            lineNumber: 188,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/ClientProfile.jsx",
-                    lineNumber: 214,
+                    lineNumber: 173,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -44937,7 +41323,7 @@ const ClientProfile = ()=>{
                                                     children: "Informations personnelles"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 259,
+                                                    lineNumber: 218,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 !isEditing ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -44954,7 +41340,7 @@ const ClientProfile = ()=>{
                                                     children: "Modifier"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 267,
+                                                    lineNumber: 226,
                                                     columnNumber: 19
                                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     style: {
@@ -44976,7 +41362,7 @@ const ClientProfile = ()=>{
                                                             children: "Enregistrer"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/ClientProfile.jsx",
-                                                            lineNumber: 283,
+                                                            lineNumber: 242,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -44993,19 +41379,19 @@ const ClientProfile = ()=>{
                                                             children: "Annuler"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/ClientProfile.jsx",
-                                                            lineNumber: 297,
+                                                            lineNumber: 256,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 282,
+                                                    lineNumber: 241,
                                                     columnNumber: 19
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 253,
+                                            lineNumber: 212,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45023,7 +41409,7 @@ const ClientProfile = ()=>{
                                                     children: "Nom complet *"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 316,
+                                                    lineNumber: 275,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45045,13 +41431,13 @@ const ClientProfile = ()=>{
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 324,
+                                                    lineNumber: 283,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 315,
+                                            lineNumber: 274,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45069,7 +41455,7 @@ const ClientProfile = ()=>{
                                                     children: "Email *"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 342,
+                                                    lineNumber: 301,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45091,13 +41477,13 @@ const ClientProfile = ()=>{
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 350,
+                                                    lineNumber: 309,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 341,
+                                            lineNumber: 300,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45115,7 +41501,7 @@ const ClientProfile = ()=>{
                                                     children: "T\xe9l\xe9phone"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 368,
+                                                    lineNumber: 327,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45137,13 +41523,13 @@ const ClientProfile = ()=>{
                                                     placeholder: "+33 1 23 45 67 89"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 376,
+                                                    lineNumber: 335,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 367,
+                                            lineNumber: 326,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45166,7 +41552,7 @@ const ClientProfile = ()=>{
                                                             children: "Entreprise"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/ClientProfile.jsx",
-                                                            lineNumber: 400,
+                                                            lineNumber: 359,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45188,13 +41574,13 @@ const ClientProfile = ()=>{
                                                             placeholder: "Nom de l'entreprise"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/ClientProfile.jsx",
-                                                            lineNumber: 408,
+                                                            lineNumber: 367,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 399,
+                                                    lineNumber: 358,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45209,7 +41595,7 @@ const ClientProfile = ()=>{
                                                             children: "Poste"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/ClientProfile.jsx",
-                                                            lineNumber: 426,
+                                                            lineNumber: 385,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45231,19 +41617,19 @@ const ClientProfile = ()=>{
                                                             placeholder: "D\xe9veloppeur, Chef de projet..."
                                                         }, void 0, false, {
                                                             fileName: "src/Components/ClientProfile.jsx",
-                                                            lineNumber: 434,
+                                                            lineNumber: 393,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 425,
+                                                    lineNumber: 384,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 393,
+                                            lineNumber: 352,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45261,7 +41647,7 @@ const ClientProfile = ()=>{
                                                     children: "Site web / Portfolio"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 453,
+                                                    lineNumber: 412,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45283,13 +41669,13 @@ const ClientProfile = ()=>{
                                                     placeholder: "https://votresite.com"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 461,
+                                                    lineNumber: 420,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 452,
+                                            lineNumber: 411,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45307,7 +41693,7 @@ const ClientProfile = ()=>{
                                                     children: "Comp\xe9tences"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 479,
+                                                    lineNumber: 438,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45329,13 +41715,13 @@ const ClientProfile = ()=>{
                                                     placeholder: "React, Node.js, Python, UX Design..."
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 487,
+                                                    lineNumber: 446,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 478,
+                                            lineNumber: 437,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45350,7 +41736,7 @@ const ClientProfile = ()=>{
                                                     children: "Biographie"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 505,
+                                                    lineNumber: 464,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -45372,19 +41758,19 @@ const ClientProfile = ()=>{
                                                     placeholder: "Pr\xe9sentez-vous en quelques mots..."
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 513,
+                                                    lineNumber: 472,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 504,
+                                            lineNumber: 463,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/ClientProfile.jsx",
-                                    lineNumber: 246,
+                                    lineNumber: 205,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45404,7 +41790,7 @@ const ClientProfile = ()=>{
                                             children: "R\xe9capitulatif d'activit\xe9"
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 538,
+                                            lineNumber: 497,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45421,7 +41807,7 @@ const ClientProfile = ()=>{
                                                     children: "Projets"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 547,
+                                                    lineNumber: 506,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45450,7 +41836,7 @@ const ClientProfile = ()=>{
                                                                         children: "Total"
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 565,
+                                                                        lineNumber: 524,
                                                                         columnNumber: 23
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -45461,13 +41847,13 @@ const ClientProfile = ()=>{
                                                                         children: stats.totalProjects
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 571,
+                                                                        lineNumber: 530,
                                                                         columnNumber: 23
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 561,
+                                                                lineNumber: 520,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45479,18 +41865,18 @@ const ClientProfile = ()=>{
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 578,
+                                                                lineNumber: 537,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                        lineNumber: 560,
+                                                        lineNumber: 519,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 554,
+                                                    lineNumber: 513,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45519,7 +41905,7 @@ const ClientProfile = ()=>{
                                                                         children: "En cours"
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 597,
+                                                                        lineNumber: 556,
                                                                         columnNumber: 23
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -45530,13 +41916,13 @@ const ClientProfile = ()=>{
                                                                         children: stats.inProgressProjects
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 603,
+                                                                        lineNumber: 562,
                                                                         columnNumber: 23
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 593,
+                                                                lineNumber: 552,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45549,18 +41935,18 @@ const ClientProfile = ()=>{
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 610,
+                                                                lineNumber: 569,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                        lineNumber: 592,
+                                                        lineNumber: 551,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 586,
+                                                    lineNumber: 545,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45588,7 +41974,7 @@ const ClientProfile = ()=>{
                                                                         children: "Termin\xe9s"
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 629,
+                                                                        lineNumber: 588,
                                                                         columnNumber: 23
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -45599,13 +41985,13 @@ const ClientProfile = ()=>{
                                                                         children: stats.completedProjects
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 635,
+                                                                        lineNumber: 594,
                                                                         columnNumber: 23
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 625,
+                                                                lineNumber: 584,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45618,24 +42004,24 @@ const ClientProfile = ()=>{
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 642,
+                                                                lineNumber: 601,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                        lineNumber: 624,
+                                                        lineNumber: 583,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 619,
+                                                    lineNumber: 578,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 546,
+                                            lineNumber: 505,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45649,7 +42035,7 @@ const ClientProfile = ()=>{
                                                     children: "Mentorat"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 654,
+                                                    lineNumber: 613,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45677,7 +42063,7 @@ const ClientProfile = ()=>{
                                                                         children: "Sessions planifi\xe9es"
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 671,
+                                                                        lineNumber: 630,
                                                                         columnNumber: 23
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -45688,13 +42074,13 @@ const ClientProfile = ()=>{
                                                                         children: stats.upcomingSessions
                                                                     }, void 0, false, {
                                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                                        lineNumber: 677,
+                                                                        lineNumber: 636,
                                                                         columnNumber: 23
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 667,
+                                                                lineNumber: 626,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45706,30 +42092,30 @@ const ClientProfile = ()=>{
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                                lineNumber: 684,
+                                                                lineNumber: 643,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                        lineNumber: 666,
+                                                        lineNumber: 625,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 661,
+                                                    lineNumber: 620,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 653,
+                                            lineNumber: 612,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/ClientProfile.jsx",
-                                    lineNumber: 532,
+                                    lineNumber: 491,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -45751,13 +42137,13 @@ const ClientProfile = ()=>{
                                     children: "D\xe9connexion"
                                 }, void 0, false, {
                                     fileName: "src/Components/ClientProfile.jsx",
-                                    lineNumber: 696,
+                                    lineNumber: 655,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/ClientProfile.jsx",
-                            lineNumber: 245,
+                            lineNumber: 204,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45780,7 +42166,7 @@ const ClientProfile = ()=>{
                                             children: "Changer le mot de passe"
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 727,
+                                            lineNumber: 686,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45798,7 +42184,7 @@ const ClientProfile = ()=>{
                                                     children: "Mot de passe actuel"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 736,
+                                                    lineNumber: 695,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45817,13 +42203,13 @@ const ClientProfile = ()=>{
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 744,
+                                                    lineNumber: 703,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 735,
+                                            lineNumber: 694,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45841,7 +42227,7 @@ const ClientProfile = ()=>{
                                                     children: "Nouveau mot de passe"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 759,
+                                                    lineNumber: 718,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45860,13 +42246,13 @@ const ClientProfile = ()=>{
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 767,
+                                                    lineNumber: 726,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 758,
+                                            lineNumber: 717,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45884,7 +42270,7 @@ const ClientProfile = ()=>{
                                                     children: "Confirmer le nouveau mot de passe"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 782,
+                                                    lineNumber: 741,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -45903,13 +42289,13 @@ const ClientProfile = ()=>{
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 790,
+                                                    lineNumber: 749,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 781,
+                                            lineNumber: 740,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -45928,13 +42314,13 @@ const ClientProfile = ()=>{
                                             children: "Changer le mot de passe"
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 804,
+                                            lineNumber: 763,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/ClientProfile.jsx",
-                                    lineNumber: 720,
+                                    lineNumber: 679,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45955,7 +42341,7 @@ const ClientProfile = ()=>{
                                             children: "Informations du compte"
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 830,
+                                            lineNumber: 789,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45972,7 +42358,7 @@ const ClientProfile = ()=>{
                                                     children: "Type de compte:"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 839,
+                                                    lineNumber: 798,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -45987,13 +42373,13 @@ const ClientProfile = ()=>{
                                                     children: currentUser.userType === "admin" ? "Administrateur" : "Client"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 846,
+                                                    lineNumber: 805,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 838,
+                                            lineNumber: 797,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -46010,7 +42396,7 @@ const ClientProfile = ()=>{
                                                     children: "Date d'inscription:"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 859,
+                                                    lineNumber: 818,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -46025,13 +42411,13 @@ const ClientProfile = ()=>{
                                                     })
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 866,
+                                                    lineNumber: 825,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 858,
+                                            lineNumber: 817,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -46048,7 +42434,7 @@ const ClientProfile = ()=>{
                                                     children: "ID utilisateur:"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 879,
+                                                    lineNumber: 838,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -46060,13 +42446,13 @@ const ClientProfile = ()=>{
                                                     children: currentUser.id
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 886,
+                                                    lineNumber: 845,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 878,
+                                            lineNumber: 837,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -46083,7 +42469,7 @@ const ClientProfile = ()=>{
                                                     children: "Derni\xe8re connexion:"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 896,
+                                                    lineNumber: 855,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -46098,13 +42484,13 @@ const ClientProfile = ()=>{
                                                     })
                                                 }, void 0, false, {
                                                     fileName: "src/Components/ClientProfile.jsx",
-                                                    lineNumber: 903,
+                                                    lineNumber: 862,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 895,
+                                            lineNumber: 854,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -46126,25 +42512,25 @@ const ClientProfile = ()=>{
                                                         children: "Note :"
                                                     }, void 0, false, {
                                                         fileName: "src/Components/ClientProfile.jsx",
-                                                        lineNumber: 927,
+                                                        lineNumber: 886,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     " Pour toute question concernant votre compte, contactez-nous \xe0 contact@emmanuelamela.com"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Components/ClientProfile.jsx",
-                                                lineNumber: 922,
+                                                lineNumber: 881,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 915,
+                                            lineNumber: 874,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/ClientProfile.jsx",
-                                    lineNumber: 823,
+                                    lineNumber: 782,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -46165,7 +42551,7 @@ const ClientProfile = ()=>{
                                             children: "Zone dangereuse"
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 940,
+                                            lineNumber: 899,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -46177,7 +42563,7 @@ const ClientProfile = ()=>{
                                             children: "La suppression de votre compte est irr\xe9versible. Toutes vos donn\xe9es, projets et sessions seront d\xe9finitivement supprim\xe9s."
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 947,
+                                            lineNumber: 906,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -46196,36 +42582,36 @@ const ClientProfile = ()=>{
                                             children: "Supprimer mon compte"
                                         }, void 0, false, {
                                             fileName: "src/Components/ClientProfile.jsx",
-                                            lineNumber: 955,
+                                            lineNumber: 914,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/ClientProfile.jsx",
-                                    lineNumber: 933,
+                                    lineNumber: 892,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/ClientProfile.jsx",
-                            lineNumber: 718,
+                            lineNumber: 677,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/ClientProfile.jsx",
-                    lineNumber: 238,
+                    lineNumber: 197,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/Components/ClientProfile.jsx",
-            lineNumber: 209,
+            lineNumber: 168,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/Components/ClientProfile.jsx",
-        lineNumber: 201,
+        lineNumber: 160,
         columnNumber: 5
     }, undefined);
 };
@@ -46244,7 +42630,7 @@ $RefreshReg$(_c, "ClientProfile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3uBgY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/api":"gsqud"}],"3uBgY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a714 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -57506,22 +53892,8 @@ parcelHelpers.export(exports, "isAdmin", ()=>isAdmin);
 parcelHelpers.export(exports, "formatDate", ()=>formatDate);
 parcelHelpers.export(exports, "formatTime", ()=>formatTime);
 const initializeData = ()=>{
-    // Créer l'admin par défaut s'il n'existe pas
-    const adminUser = {
-        id: 1,
-        name: "Admin Apeli",
-        email: "admin@apeli.com",
-        password: "admin123",
-        userType: "admin",
-        createdAt: new Date().toISOString()
-    };
-    // Initialiser les données si elles n'existent pas
-    if (!localStorage.getItem("users")) localStorage.setItem("users", JSON.stringify([
-        adminUser
-    ]));
-    if (!localStorage.getItem("projects")) localStorage.setItem("projects", JSON.stringify([]));
-    if (!localStorage.getItem("adminResources")) localStorage.setItem("adminResources", JSON.stringify([]));
-    if (!localStorage.getItem("mentoringSessions")) localStorage.setItem("mentoringSessions", JSON.stringify([]));
+// Les utilisateurs sont gérés par le backend — plus de seeding localStorage
+// On conserve uniquement les données locales annexes si nécessaire
 };
 const getCurrentUser = ()=>{
     const savedUser = localStorage.getItem("currentUser");
