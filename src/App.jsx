@@ -15,8 +15,6 @@ import Chatbot from "./Components/Chatbot";
 import Doctorante from "./Components/Doctorante";
 import Team from "./Components/Team";
 import FoyerApeli from "./Components/FoyerApeli";
-import Admin from "./Components/Admin";
-import Dashboard from "./Components/Dashboard";
 import ClientProfile from "./Components/ClientProfile";
 import MentionsLegales from "./Components/MentionsLegales";
 import ConditionsGeneralesUtilisation from "./Components/ConditionsGeneralesUtilisation";
@@ -132,20 +130,6 @@ const App = () => {
         <Route path="/foyer" element={
           <Layout>
             <FoyerApeli />
-          </Layout>
-        } />
-        
-        {/* Administration */}
-        <Route path="/admin" element={
-          <Layout>
-            <Admin />
-          </Layout>
-        } />
-        
-        {/* Tableau de bord */}
-        <Route path="/dashboard" element={
-          <Layout>
-            <Dashboard />
           </Layout>
         } />
         

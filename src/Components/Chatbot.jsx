@@ -4,6 +4,7 @@
  */
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { sendChatMessageStream, getMcpStatus } from "../utils/api";
 
 const Chatbot = () => {
   const navigate = useNavigate();
@@ -17,12 +18,14 @@ const Chatbot = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Données IoT simulées du foyer Apeli
+  // Données IoT du foyer Apeli (depuis le serveur MCP)
   const [iotData, setIotData] = useState({
-    temperature: 180,
-    poids: 2.5,
-    ventilateur: "auto",
-    statut: "connecté",
+    temperature: 0,
+    ventilateur: "...",
+    statut: "connexion...",
+    fanSpeed: 0,
+    weight: 0,
+    alerts: [],
   });
 
   const messagesEndRef = useRef(null);
@@ -48,15 +51,27 @@ const Chatbot = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Simuler les mises à jour IoT en temps réel
+  // Polling des données IoT depuis le serveur MCP
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIotData((prev) => ({
-        ...prev,
-        temperature: Math.round(prev.temperature + (Math.random() - 0.5) * 5),
-        poids: Math.round((prev.poids + (Math.random() - 0.5) * 0.1) * 100) / 100,
-      }));
-    }, 3000);
+    const fetchMcpStatus = async () => {
+      try {
+        const data = await getMcpStatus();
+        if (data) {
+          setIotData({
+            temperature: data.temperature,
+            ventilateur: `${data.fanMode} ${data.fanSpeed}%`,
+            statut: data.status,
+            fanSpeed: data.fanSpeed,
+            weight: data.weight,
+            alerts: data.alerts || [],
+          });
+        }
+      } catch {
+        setIotData((prev) => ({ ...prev, statut: "déconnecté" }));
+      }
+    };
+    fetchMcpStatus();
+    const interval = setInterval(fetchMcpStatus, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -72,42 +87,11 @@ const Chatbot = () => {
         id: 1,
         role: "assistant",
         content:
-          "Bonjour ! Je suis **ApeliChef**, votre assistant cuisine intelligent connecté au foyer amélioré Apeli.\n\nJe peux vous aider à :\n- **Cuire des plats** en contrôlant la température du foyer\n- **Surveiller** la température et le poids de votre marmite en temps réel\n- **Ajuster le ventilateur** d'aération via le serveur MCP\n- **Vous guider** étape par étape dans vos recettes\n\nQue souhaitez-vous cuisiner aujourd'hui ?",
+          "Bonjour ! Je suis **ApeliChef**, votre assistant cuisine intelligent connecté au foyer amélioré Apeli.\n\nJe peux vous aider à :\n- **Cuire des plats** en contrôlant la température du foyer\n- **Surveiller** la température en temps réel\n- **Ajuster le ventilateur** d'aération via le serveur MCP\n- **Vous guider** étape par étape dans vos recettes\n\nQue souhaitez-vous cuisiner aujourd'hui ?",
         timestamp: new Date().toISOString(),
       },
     ]);
   }, []);
-
-  // Réponses simulées du LLM cuisine
-  const getAIResponse = (userMessage) => {
-    const msg = userMessage.toLowerCase();
-
-    if (msg.includes("riz") || msg.includes("rice")) {
-      return `## Cuisson du Riz au Foyer Apeli\n\n**Température recommandée :** 100°C\n**Temps de cuisson :** 20-25 minutes\n\n### Étapes :\n1. Versez **${iotData.poids}kg** d'eau dans la marmite (détecté par le capteur)\n2. *J'ajuste le ventilateur à 70% pour atteindre 100°C*\n3. Quand l'eau bout, ajoutez le riz lavé\n4. Réduisez à feu doux — *ventilateur à 30%*\n5. Couvrez et laissez cuire 20 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 70%*`;
-    }
-
-    if (msg.includes("pâte") || msg.includes("pate") || msg.includes("fufu")) {
-      return `## Préparation de la Pâte (Fufu)\n\n**Température recommandée :** 95-100°C\n**Temps :** 15-20 minutes\n\n### Étapes :\n1. L'eau est en cours de chauffe sur le foyer\n2. *Ventilateur ajusté à 80% pour ébullition rapide*\n3. Versez la farine progressivement en remuant\n4. Réduisez le feu — *ventilateur à 40%*\n5. Tournez vigoureusement jusqu'à consistance lisse\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 80%*`;
-    }
-
-    if (msg.includes("sauce") || msg.includes("tomate")) {
-      return `## Sauce Tomate Maison\n\n**Température recommandée :** 85-90°C\n**Temps :** 30-40 minutes\n\n### Étapes :\n1. Faites chauffer l'huile — *ventilateur à 60%*\n2. Ajoutez les oignons et laissez revenir 5 min\n3. Ajoutez les tomates mixées\n4. *Réduction ventilateur à 45% pour mijotage doux*\n5. Assaisonnez et laissez mijoter 25 min\n\n**Température actuelle :** ${iotData.temperature}°C\n**Poids marmite :** ${iotData.poids}kg\n\n> *Commande MCP envoyée : ventilateur → 60%*`;
-    }
-
-    if (msg.includes("température") || msg.includes("temp")) {
-      return `## État actuel du Foyer Apeli\n\n| Paramètre | Valeur |\n|---|---|\n| Température | **${iotData.temperature}°C** |\n| Poids marmite | **${iotData.poids}kg** |\n| Ventilateur | **${iotData.ventilateur}** |\n| Statut | **${iotData.statut}** |\n\nTout fonctionne normalement. Le foyer est prêt pour la cuisson !`;
-    }
-
-    if (msg.includes("ventilateur") || msg.includes("vent")) {
-      return `## Contrôle du Ventilateur d'Aération\n\nLe ventilateur du foyer Apeli est actuellement en mode **${iotData.ventilateur}**.\n\nVia le serveur MCP, je peux :\n- **Augmenter** la ventilation (monter la température)\n- **Réduire** la ventilation (baisser la température)\n- Passer en mode **auto** (régulation intelligente)\n\n> *Serveur MCP connecté et opérationnel*\n\nQuel réglage souhaitez-vous ?`;
-    }
-
-    if (msg.includes("bonjour") || msg.includes("salut") || msg.includes("hello")) {
-      return `Bonjour ! Je suis ravi de vous aider avec votre cuisine sur le foyer Apeli.\n\n**État du foyer :** ${iotData.statut}\n**Température :** ${iotData.temperature}°C\n\nQue souhaitez-vous préparer ? Je peux vous guider pas à pas tout en contrôlant automatiquement la température du foyer via le ventilateur d'aération.`;
-    }
-
-    return `Je comprends votre demande concernant "${userMessage}".\n\nEn tant qu'assistant cuisine du foyer Apeli, je peux vous aider avec :\n\n- **Recettes africaines et internationales** adaptées au foyer amélioré\n- **Contrôle de la température** via le ventilateur MCP\n- **Suivi en temps réel** du poids et de la température\n\nFoyer : **${iotData.statut}** | ${iotData.temperature}°C | ${iotData.poids}kg\n\nPourriez-vous préciser ce que vous souhaitez cuisiner ?`;
-  };
 
   const handleSend = () => {
     if (!input.trim() || isLoading) return;
@@ -119,21 +103,57 @@ const Chatbot = () => {
       timestamp: new Date().toISOString(),
     };
 
-    setMessages((prev) => [...prev, userMsg]);
+    const currentMessages = [...messages, userMsg];
+    setMessages(currentMessages);
     setInput("");
     setIsLoading(true);
 
-    // Simuler le délai de réponse du LLM
-    setTimeout(() => {
-      const aiResponse = {
-        id: Date.now() + 1,
+    // Préparer l'historique pour l'API (sans le message de bienvenue initial côté client)
+    const apiMessages = currentMessages
+      .filter((m) => m.role === "user" || m.role === "assistant")
+      .map((m) => ({ role: m.role, content: m.content }));
+
+    const assistantMsgId = Date.now() + 1;
+    let fullContent = "";
+
+    // Ajouter un message assistant vide pour le streaming
+    setMessages((prev) => [
+      ...prev,
+      {
+        id: assistantMsgId,
         role: "assistant",
-        content: getAIResponse(input),
+        content: "",
         timestamp: new Date().toISOString(),
-      };
-      setMessages((prev) => [...prev, aiResponse]);
-      setIsLoading(false);
-    }, 1000 + Math.random() * 1500);
+      },
+    ]);
+
+    sendChatMessageStream(
+      apiMessages,
+      // onChunk — chaque token reçu
+      (chunk) => {
+        fullContent += chunk;
+        setMessages((prev) =>
+          prev.map((m) =>
+            m.id === assistantMsgId ? { ...m, content: fullContent } : m
+          )
+        );
+      },
+      // onDone
+      () => {
+        setIsLoading(false);
+      },
+      // onError
+      (errorMsg) => {
+        setMessages((prev) =>
+          prev.map((m) =>
+            m.id === assistantMsgId
+              ? { ...m, content: `⚠️ Erreur : ${errorMsg}\n\nVérifiez que le backend est bien lancé et que vous êtes connecté.` }
+              : m
+          )
+        );
+        setIsLoading(false);
+      }
+    );
   };
 
   const handleKeyPress = (e) => {
@@ -252,22 +272,27 @@ const Chatbot = () => {
             </div>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.3rem" }}>
               <span>Temp.</span>
-              <span style={{ color: iotData.temperature > 200 ? "#e74c3c" : "#2ecc71", fontWeight: "600" }}>
+              <span style={{ color: iotData.temperature > 200 ? "#e74c3c" : iotData.temperature > 100 ? "#e67e22" : "#2ecc71", fontWeight: "600" }}>
                 {iotData.temperature}°C
               </span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.3rem" }}>
-              <span>Poids</span>
-              <span style={{ fontWeight: "600" }}>{iotData.poids}kg</span>
             </div>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.3rem" }}>
               <span>Ventilo</span>
               <span style={{ fontWeight: "600" }}>{iotData.ventilateur}</span>
             </div>
+            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.3rem" }}>
+              <span>Poids</span>
+              <span style={{ fontWeight: "600" }}>{iotData.weight} kg</span>
+            </div>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <span>Statut</span>
-              <span style={{ color: "#2ecc71", fontWeight: "600" }}>● {iotData.statut}</span>
+              <span style={{ color: iotData.statut === "connecté" ? "#2ecc71" : "#e74c3c", fontWeight: "600" }}>● {iotData.statut}</span>
             </div>
+            {iotData.alerts && iotData.alerts.length > 0 && (
+              <div style={{ marginTop: "0.5rem", padding: "0.4rem", background: "rgba(231,76,60,0.2)", borderRadius: "4px", fontSize: "0.7rem", color: "#e74c3c" }}>
+                ⚠️ {iotData.alerts[0]}
+              </div>
+            )}
           </div>
 
           {/* Conversations list */}
@@ -307,11 +332,11 @@ const Chatbot = () => {
             }}
           >
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-              <span style={{ color: "#2ecc71", fontSize: "0.6rem" }}>●</span>
-              Serveur MCP connecté
+              <span style={{ color: iotData.statut === "connecté" ? "#2ecc71" : "#e74c3c", fontSize: "0.6rem" }}>●</span>
+              Serveur MCP {iotData.statut === "connecté" ? "connecté" : "déconnecté"}
             </div>
             <div style={{ marginTop: "0.3rem" }}>
-              Ventilateur d'aération: Actif
+              Ventilateur : {iotData.fanSpeed}% | {iotData.ventilateur}
             </div>
           </div>
         </div>
@@ -368,7 +393,6 @@ const Chatbot = () => {
             }}
           >
             <span style={{ background: "#f0f0f0", padding: "0.2rem 0.5rem", borderRadius: "6px" }}>{iotData.temperature}°C</span>
-            <span style={{ background: "#f0f0f0", padding: "0.2rem 0.5rem", borderRadius: "6px" }}>{iotData.poids}kg</span>
           </div>
         </div>
 

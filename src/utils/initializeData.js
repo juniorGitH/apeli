@@ -1,34 +1,11 @@
 /**
  * Utilitaires pour initialiser les données du système
+ * L'authentification est désormais gérée par le backend API
  */
 
 export const initializeData = () => {
-  // Créer l'admin par défaut s'il n'existe pas
-  const adminUser = {
-    id: 1,
-    name: "Admin Apeli",
-    email: "admin@apeli.com",
-    password: "admin123",
-    userType: "admin",
-    createdAt: new Date().toISOString()
-  };
-
-  // Initialiser les données si elles n'existent pas
-  if (!localStorage.getItem('users')) {
-    localStorage.setItem('users', JSON.stringify([adminUser]));
-  }
-  
-  if (!localStorage.getItem('projects')) {
-    localStorage.setItem('projects', JSON.stringify([]));
-  }
-  
-  if (!localStorage.getItem('adminResources')) {
-    localStorage.setItem('adminResources', JSON.stringify([]));
-  }
-  
-  if (!localStorage.getItem('mentoringSessions')) {
-    localStorage.setItem('mentoringSessions', JSON.stringify([]));
-  }
+  // Les utilisateurs sont gérés par le backend — plus de seeding localStorage
+  // On conserve uniquement les données locales annexes si nécessaire
 };
 
 // Fonction pour obtenir l'utilisateur courant

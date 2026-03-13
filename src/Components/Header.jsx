@@ -5,6 +5,7 @@
  */
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { loginUser, registerUser, logoutUser } from "../utils/api";
 import logo from "../images/logo.png";
 
 
@@ -117,56 +118,42 @@ const Header = () => {
   };
 
   // Gestion de l'authentification
-  const handleAuth = (e) => {
+  const [authError, setAuthError] = useState("");
+  const [authLoading, setAuthLoading] = useState(false);
+
+  const handleAuth = async (e) => {
     e.preventDefault();
+    setAuthError("");
+    setAuthLoading(true);
     
-    if (isLoginMode) {
-      const users = JSON.parse(localStorage.getItem('users') || '[]');
-      const user = users.find(u => 
-        u.email === authData.email && u.password === authData.password
-      );
-      
-      if (user) {
-        setCurrentUser(user);
-        localStorage.setItem('currentUser', JSON.stringify(user));
-        setShowAuthModal(false);
-        setAuthData({ email: "", password: "", name: "", userType: "client" });
-        navigate(user.userType === 'admin' ? '/admin' : '/dashboard');
+    try {
+      let user;
+      if (isLoginMode) {
+        user = await loginUser(authData.email, authData.password);
       } else {
-        alert("Identifiants incorrects. Inscrivez-vous si vous n'avez pas de compte.");
+        user = await registerUser({
+          name: authData.name,
+          email: authData.email,
+          password: authData.password,
+        });
       }
-    } else {
-      const users = JSON.parse(localStorage.getItem('users') || '[]');
-      
-      if (users.find(u => u.email === authData.email)) {
-        alert("Cet email est déjà utilisé. Connectez-vous ou utilisez un autre email.");
-        return;
-      }
-      
-      const newUser = {
-        id: Date.now(),
-        ...authData,
-        createdAt: new Date().toISOString(),
-        projects: []
-      };
-      
-      const updatedUsers = [...users, newUser];
-      localStorage.setItem('users', JSON.stringify(updatedUsers));
-      setCurrentUser(newUser);
-      localStorage.setItem('currentUser', JSON.stringify(newUser));
+      setCurrentUser(user);
       setShowAuthModal(false);
       setAuthData({ email: "", password: "", name: "", userType: "client" });
-      navigate(newUser.userType === 'admin' ? '/admin' : '/dashboard');
+      navigate('/chatbot');
+    } catch (err) {
+      setAuthError(err.message || "Erreur d'authentification.");
+    } finally {
+      setAuthLoading(false);
     }
   };
 
   // Gestion de la déconnexion
   const handleLogout = () => {
+    logoutUser();
     setCurrentUser(null);
-    localStorage.removeItem('currentUser');
     setShowProfileMenu(false);
-    if (location.pathname === '/dashboard' || location.pathname === '/admin' || 
-        location.pathname === '/chatbot' || location.pathname === '/profile') {
+    if (location.pathname === '/chatbot' || location.pathname === '/profile') {
       navigate('/');
     }
   };
@@ -356,63 +343,21 @@ const Header = () => {
                       <div className="profile-menu-header">
                         <div className="profile-name">{currentUser.name}</div>
                         <div className="profile-email">{currentUser.email}</div>
-                        <div className="profile-type">
-                          {currentUser.userType === 'admin' ? 'Administrateur' : 'Client'}
-                        </div>
+                        <div className="profile-type">Utilisateur</div>
                       </div>
                       
                       <div className="profile-menu-items">
-                        {currentUser.userType === 'client' ? (
-                          <>
-                            <button
-                              onClick={() => {
-                                navigate('/chatbot');
-                                setShowProfileMenu(false);
-                              }}
-                              style={profileMenuItemStyle}
-                              className="profile-menu-item"
-                            >
-                              <span></span>
-                              <span>Chatbot Cuisine</span>
-                            </button>
-                            <button
-                              onClick={() => {
-                                navigate('/dashboard');
-                                setShowProfileMenu(false);
-                              }}
-                              style={profileMenuItemStyle}
-                              className="profile-menu-item"
-                            >
-                              <span></span>
-                              <span>Mon Tableau de Bord</span>
-                            </button>
-                          </>
-                        ) : (
-                          <>
-                            <button
-                              onClick={() => {
-                                navigate('/admin');
-                                setShowProfileMenu(false);
-                              }}
-                              style={profileMenuItemStyle}
-                              className="profile-menu-item"
-                            >
-                              <span></span>
-                              <span>Administration</span>
-                            </button>
-                            <button
-                              onClick={() => {
-                                navigate('/chatbot');
-                                setShowProfileMenu(false);
-                              }}
-                              style={profileMenuItemStyle}
-                              className="profile-menu-item"
-                            >
-                              <span></span>
-                              <span>Chatbot Cuisine</span>
-                            </button>
-                          </>
-                        )}
+                        <button
+                          onClick={() => {
+                            navigate('/chatbot');
+                            setShowProfileMenu(false);
+                          }}
+                          style={profileMenuItemStyle}
+                          className="profile-menu-item"
+                        >
+                          <span></span>
+                          <span>Chatbot Cuisine</span>
+                        </button>}
                         
                         <div className="menu-divider"></div>
                         
@@ -544,9 +489,7 @@ const Header = () => {
                 <div className="mobile-user-details">
                   <div className="mobile-user-name">{currentUser.name}</div>
                   <div className="mobile-user-email">{currentUser.email}</div>
-                  <div className="mobile-user-type">
-                    {currentUser.userType === 'admin' ? 'Administrateur' : 'Client'}
-                  </div>
+                  <div className="mobile-user-type">Utilisateur</div>
                 </div>
               </div>
             )}
@@ -604,33 +547,7 @@ const Header = () => {
 
             {currentUser && (
               <>
-                {currentUser.userType === 'admin' ? (
-                  <>
-                    <Link 
-                      to="/admin" 
-                      onClick={() => setIsMenuOpen(false)}
-                      style={mobileNavLinkStyle(location.pathname === '/admin')}
-                      className="mobile-menu-item"
-                    >
-                      <span className="menu-icon"></span>
-                      Administration
-                    </Link>
-                  </>
-                ) : (
-                  <>
-                    <Link 
-                      to="/dashboard" 
-                      onClick={() => setIsMenuOpen(false)}
-                      style={mobileNavLinkStyle(location.pathname === '/dashboard')}
-                      className="mobile-menu-item"
-                    >
-                      <span className="menu-icon"></span>
-                      Mon Tableau de Bord
-                    </Link>
-                  </>
-                )}
-                
-                <Link 
+                <Link
                   to="/profile" 
                   onClick={() => setIsMenuOpen(false)}
                   style={mobileNavLinkStyle(location.pathname === '/profile')}
@@ -677,13 +594,13 @@ const Header = () => {
             
             <div className="auth-toggle">
               <button
-                onClick={() => setIsLoginMode(true)}
+                onClick={() => { setIsLoginMode(true); setAuthError(""); }}
                 className={isLoginMode ? 'active' : ''}
               >
                 Connexion
               </button>
               <button
-                onClick={() => setIsLoginMode(false)}
+                onClick={() => { setIsLoginMode(false); setAuthError(""); }}
                 className={!isLoginMode ? 'active' : ''}
               >
                 Inscription
@@ -691,6 +608,18 @@ const Header = () => {
             </div>
             
             <form onSubmit={handleAuth} className="auth-form">
+              {authError && (
+                <div style={{
+                  background: "#fdeaea",
+                  color: "#c0392b",
+                  padding: "0.6rem 0.8rem",
+                  borderRadius: "6px",
+                  fontSize: "0.85rem",
+                  marginBottom: "0.8rem"
+                }}>
+                  {authError}
+                </div>
+              )}
               {!isLoginMode && (
                 <div className="form-group">
                   <label>Nom complet</label>
@@ -726,26 +655,10 @@ const Header = () => {
                 />
               </div>
               
-              {!isLoginMode && (
-                <div className="form-group">
-                  <label>Type de compte</label>
-                  <select
-                    value={authData.userType}
-                    onChange={(e) => setAuthData({...authData, userType: e.target.value})}
-                  >
-                    <option value="client">Utilisateur (accès chatbot)</option>
-                    <option value="admin">Administrateur (réservé)</option>
-                  </select>
-                  {authData.userType === 'admin' && (
-                    <p className="form-note">
-                      Note: Ce type de compte est réservé à l'administrateur.
-                    </p>
-                  )}
-                </div>
-              )}
+
               
-              <button type="submit" className="auth-submit-btn">
-                {isLoginMode ? "Se connecter" : "S'inscrire"}
+              <button type="submit" className="auth-submit-btn" disabled={authLoading}>
+                {authLoading ? "Chargement..." : (isLoginMode ? "Se connecter" : "S'inscrire")}
               </button>
             </form>
             

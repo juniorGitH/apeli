@@ -4,6 +4,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { updateProfile, deleteAccount } from "../utils/api";
 
 const ClientProfile = () => {
   const navigate = useNavigate();
@@ -45,74 +46,54 @@ const ClientProfile = () => {
     const user = JSON.parse(savedUser);
     setCurrentUser(user);
     
-    // Charger les données du profil
-    const userProfile = JSON.parse(localStorage.getItem(`userProfile_${user.id}`) || '{}');
-    
     setProfileData({
-      name: user.name || "",
+      name: user.name || `${user.firstName || ""} ${user.lastName || ""}`.trim(),
       email: user.email || "",
-      phone: userProfile.phone || "",
-      company: userProfile.company || "",
-      position: userProfile.position || "",
-      bio: userProfile.bio || "",
-      skills: userProfile.skills || "",
-      website: userProfile.website || ""
+      phone: user.phone || "",
+      company: user.company || "",
+      position: user.position || "",
+      bio: user.bio || "",
+      skills: user.skills || "",
+      website: user.website || ""
     });
     
-    // Charger les projets de l'utilisateur
-    const allProjects = JSON.parse(localStorage.getItem('projects') || '[]');
-    const userProjects = allProjects.filter(p => p.clientId === user.id);
-    setUserProjects(userProjects);
-    
-    // Charger les sessions de mentorat
-    const allSessions = JSON.parse(localStorage.getItem('mentoringSessions') || '[]');
-    const userSessions = allSessions.filter(s => s.clientId === user.id);
-    setMentoringSessions(userSessions);
-    
-    // Calculer les statistiques
+    // Stats (données locales pour l'instant)
     setStats({
-      totalProjects: userProjects.length,
-      completedProjects: userProjects.filter(p => p.status === 'completed').length,
-      inProgressProjects: userProjects.filter(p => p.status === 'in-progress').length,
-      upcomingSessions: userSessions.filter(s => new Date(s.dateTime) > new Date()).length
+      totalProjects: 0,
+      completedProjects: 0,
+      inProgressProjects: 0,
+      upcomingSessions: 0
     });
   }, [navigate]);
 
-  const handleSaveProfile = () => {
-    // Mettre à jour les données utilisateur
-    const updatedUser = {
-      ...currentUser,
-      name: profileData.name,
-      email: profileData.email
-    };
-    
-    // Sauvegarder l'utilisateur
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const updatedUsers = users.map(u => 
-      u.id === currentUser.id ? updatedUser : u
-    );
-    localStorage.setItem('users', JSON.stringify(updatedUsers));
-    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
-    
-    // Sauvegarder le profil
-    const userProfile = {
-      phone: profileData.phone,
-      company: profileData.company,
-      position: profileData.position,
-      bio: profileData.bio,
-      skills: profileData.skills,
-      website: profileData.website,
-      updatedAt: new Date().toISOString()
-    };
-    
-    localStorage.setItem(`userProfile_${currentUser.id}`, JSON.stringify(userProfile));
-    
-    setCurrentUser(updatedUser);
-    setIsEditing(false);
-    alert("Profil mis à jour avec succès !");
+  const handleSaveProfile = async () => {
+    try {
+      const parts = (profileData.name || "").trim().split(" ");
+      const firstName = parts[0] || "";
+      const lastName = parts.slice(1).join(" ") || "";
+
+      const updatedUser = await updateProfile({
+        id: currentUser.id,
+        firstName,
+        lastName,
+        email: profileData.email,
+        phone: profileData.phone,
+        company: profileData.company,
+        position: profileData.position,
+        bio: profileData.bio,
+        skills: profileData.skills,
+        website: profileData.website,
+      });
+      
+      setCurrentUser(updatedUser);
+      setIsEditing(false);
+      alert("Profil mis à jour avec succès !");
+    } catch (err) {
+      alert("Erreur : " + (err.message || "Impossible de mettre à jour le profil."));
+    }
   };
 
-  const handleChangePassword = () => {
+  const handleChangePassword = async () => {
     if (passwordData.newPassword !== passwordData.confirmPassword) {
       alert("Les nouveaux mots de passe ne correspondent pas");
       return;
@@ -123,62 +104,40 @@ const ClientProfile = () => {
       return;
     }
     
-    // Vérifier l'ancien mot de passe
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const user = users.find(u => u.id === currentUser.id);
-    
-    if (user.password !== passwordData.currentPassword) {
-      alert("Mot de passe actuel incorrect");
-      return;
+    try {
+      const parts = (profileData.name || "").trim().split(" ");
+      await updateProfile({
+        id: currentUser.id,
+        firstName: parts[0] || "",
+        lastName: parts.slice(1).join(" ") || "",
+        email: profileData.email,
+        password: passwordData.newPassword,
+      });
+      
+      setPasswordData({
+        currentPassword: "",
+        newPassword: "",
+        confirmPassword: ""
+      });
+      
+      alert("Mot de passe changé avec succès !");
+    } catch (err) {
+      alert("Erreur : " + (err.message || "Impossible de changer le mot de passe."));
     }
-    
-    // Mettre à jour le mot de passe
-    const updatedUsers = users.map(u => 
-      u.id === currentUser.id ? { ...u, password: passwordData.newPassword } : u
-    );
-    
-    localStorage.setItem('users', JSON.stringify(updatedUsers));
-    
-    // Mettre à jour l'utilisateur courant
-    const updatedUser = { ...currentUser, password: passwordData.newPassword };
-    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
-    
-    setPasswordData({
-      currentPassword: "",
-      newPassword: "",
-      confirmPassword: ""
-    });
-    
-    alert("Mot de passe changé avec succès !");
   };
 
-  const handleDeleteAccount = () => {
+  const handleDeleteAccount = async () => {
     if (!window.confirm("Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.")) {
       return;
     }
     
-    // Supprimer l'utilisateur
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const updatedUsers = users.filter(u => u.id !== currentUser.id);
-    localStorage.setItem('users', JSON.stringify(updatedUsers));
-    
-    // Supprimer le profil
-    localStorage.removeItem(`userProfile_${currentUser.id}`);
-    
-    // Supprimer les sessions de l'utilisateur
-    const sessions = JSON.parse(localStorage.getItem('mentoringSessions') || '[]');
-    const updatedSessions = sessions.filter(s => s.clientId !== currentUser.id);
-    localStorage.setItem('mentoringSessions', JSON.stringify(updatedSessions));
-    
-    // Supprimer les projets de l'utilisateur (ou les garder avec client inconnu)
-    const projects = JSON.parse(localStorage.getItem('projects') || '[]');
-    const updatedProjects = projects.filter(p => p.clientId !== currentUser.id);
-    localStorage.setItem('projects', JSON.stringify(updatedProjects));
-    
-    // Déconnexion
-    localStorage.removeItem('currentUser');
-    navigate('/');
-    alert("Compte supprimé avec succès.");
+    try {
+      await deleteAccount();
+      navigate('/');
+      alert("Compte supprimé avec succès.");
+    } catch (err) {
+      alert("Erreur : " + (err.message || "Impossible de supprimer le compte."));
+    }
   };
 
   if (!currentUser) {
