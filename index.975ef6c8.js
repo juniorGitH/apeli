@@ -27385,7 +27385,7 @@ const App = ()=>{
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/doctorante",
+                    path: "/recherche",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _doctoranteDefault.default), {}, void 0, false, void 0, void 0)
                     }, void 0, false, void 0, void 0)
@@ -35088,13 +35088,13 @@ const Footer = ({ primaryColor ="#1a1a2e" ,  })=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/doctorante",
+                        to: "/recherche",
                         style: {
                             color: "rgba(255,255,255,0.8)",
                             textDecoration: "none",
                             fontSize: "0.9rem"
                         },
-                        children: "Doctorante"
+                        children: "Recherche"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
                         lineNumber: 49,
@@ -35577,10 +35577,10 @@ const Header = ()=>{
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/doctorante",
-                                        style: navLinkStyle(location.pathname === "/doctorante"),
+                                        to: "/recherche",
+                                        style: navLinkStyle(location.pathname === "/recherche"),
                                         onClick: ()=>setShowProfileMenu(false),
-                                        children: "Doctorante"
+                                        children: "Recherche"
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.jsx",
                                         lineNumber: 306,
@@ -36042,9 +36042,9 @@ const Header = ()=>{
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/doctorante",
+                                to: "/recherche",
                                 onClick: ()=>setIsMenuOpen(false),
-                                style: mobileNavLinkStyle(location.pathname === "/doctorante"),
+                                style: mobileNavLinkStyle(location.pathname === "/recherche"),
                                 className: "mobile-menu-item",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -36054,7 +36054,7 @@ const Header = ()=>{
                                         lineNumber: 534,
                                         columnNumber: 15
                                     }, undefined),
-                                    "Doctorante"
+                                    "Recherche"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.jsx",
@@ -38021,7 +38021,7 @@ const featureList = [
     {
         title: "Ventilation Intelligente (MCP)",
         description: "Un serveur MCP (Model Context Protocol) permet \xe0 l'IA de contr\xf4ler automatiquement le ventilateur d'a\xe9ration du foyer pour r\xe9guler la temp\xe9rature selon les besoins de la recette en cours.",
-        link: "/doctorante",
+        link: "/recherche",
         linkText: "Voir la recherche"
     }, 
 ];
@@ -39085,7 +39085,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 /**
- * Doctorante component - Page dédiée à Mme AMOUZOU-ATCHOE Akoua Gabriela
+ * Doctorante component - Page Recherche dédiée à Mme AMOUZOU-ATCHOE Akoua Gabriela
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _doctorantePng = require("../images/doctorante.png");
@@ -39114,14 +39114,61 @@ const Doctorante = ()=>{
                     marginBottom: isMobile ? "2rem" : "3rem"
                 },
                 children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        style: {
+                            fontSize: isMobile ? "1.5rem" : "2.2rem",
+                            color: "#2c3e50",
+                            fontWeight: "700",
+                            marginBottom: "0.5rem",
+                            lineHeight: "1.3"
+                        },
+                        children: "Recherche"
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            fontSize: isMobile ? "0.9rem" : "1rem",
+                            color: "#7f8c8d",
+                            maxWidth: "700px",
+                            margin: "0 auto",
+                            lineHeight: "1.7"
+                        },
+                        children: "D\xe9couvrez les travaux de recherche \xe0 l'origine du projet Apeli et la chercheuse qui encadre notre d\xe9marche d'innovation."
+                    }, void 0, false, {
+                        fileName: "src/Components/Doctorante.jsx",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Doctorante.jsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    background: "linear-gradient(135deg, #1a1a2e, #16213e)",
+                    borderRadius: isMobile ? "12px" : "16px",
+                    padding: isMobile ? "1.5rem" : "2.5rem",
+                    marginBottom: isMobile ? "1.5rem" : "2rem",
+                    color: "white",
+                    display: "flex",
+                    flexDirection: isMobile ? "column" : "row",
+                    alignItems: "center",
+                    gap: isMobile ? "1.5rem" : "2rem"
+                },
+                children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         style: {
                             width: isMobile ? "100px" : "140px",
                             height: isMobile ? "100px" : "140px",
                             borderRadius: "50%",
-                            margin: "0 auto 1.5rem",
                             overflow: "hidden",
-                            boxShadow: "0 8px 25px rgba(230, 126, 34, 0.3)"
+                            boxShadow: "0 8px 25px rgba(230, 126, 34, 0.3)",
+                            flexShrink: 0
                         },
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _doctorantePngDefault.default),
@@ -39133,56 +39180,78 @@ const Doctorante = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "src/Components/Doctorante.jsx",
-                            lineNumber: 43,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 33,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         style: {
-                            fontSize: isMobile ? "1.5rem" : "2.2rem",
-                            color: "#2c3e50",
-                            fontWeight: "700",
-                            marginBottom: "0.5rem",
-                            lineHeight: "1.3"
+                            textAlign: isMobile ? "center" : "left"
                         },
-                        children: "Mme AMOUZOU-ATCHOE Akoua Gabriela"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                style: {
+                                    fontSize: isMobile ? "1.2rem" : "1.5rem",
+                                    fontWeight: "700",
+                                    marginBottom: "0.3rem"
+                                },
+                                children: "Mme AMOUZOU-ATCHOE Akoua Gabriela"
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 92,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: isMobile ? "1rem" : "1.1rem",
+                                    color: "#e67e22",
+                                    fontWeight: "500",
+                                    marginBottom: "0.3rem"
+                                },
+                                children: "Doctorante — Chercheuse"
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 101,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "0.95rem",
+                                    opacity: 0.7
+                                },
+                                children: "Universit\xe9 de Lom\xe9"
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 111,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "0.9rem",
+                                    lineHeight: "1.7",
+                                    opacity: 0.85,
+                                    marginTop: "0.8rem"
+                                },
+                                children: "Sp\xe9cialis\xe9e dans l'\xe9tude et l'optimisation des foyers am\xe9lior\xe9s, ses recherches visent \xe0 am\xe9liorer l'efficacit\xe9 \xe9nerg\xe9tique de la cuisson domestique en Afrique de l'Ouest."
+                            }, void 0, false, {
+                                fileName: "src/Components/Doctorante.jsx",
+                                lineNumber: 114,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: isMobile ? "1rem" : "1.2rem",
-                            color: "#e67e22",
-                            fontWeight: "500",
-                            marginBottom: "0.3rem"
-                        },
-                        children: "Doctorante — Chercheuse"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 64,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            fontSize: "0.95rem",
-                            color: "#7f8c8d"
-                        },
-                        children: "Universit\xe9 de Lom\xe9"
-                    }, void 0, false, {
-                        fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 74,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 27,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39206,7 +39275,7 @@ const Doctorante = ()=>{
                         children: "Article de Recherche"
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 94,
+                        lineNumber: 137,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39228,7 +39297,7 @@ const Doctorante = ()=>{
                                 children: "\xc9tude et Optimisation du Foyer Am\xe9lior\xe9 Apeli : Vers une Cuisson Efficiente et Durable"
                             }, void 0, false, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 114,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39241,7 +39310,7 @@ const Doctorante = ()=>{
                                 children: "Cet article pr\xe9sente une \xe9tude approfondie du foyer am\xe9lior\xe9 Apeli, un dispositif de cuisson con\xe7u pour r\xe9duire la consommation de combustible et am\xe9liorer l'efficacit\xe9 \xe9nerg\xe9tique dans les m\xe9nages. La recherche analyse les performances thermiques du foyer, identifie les axes d'am\xe9lioration et propose des solutions innovantes pour optimiser son fonctionnement."
                             }, void 0, false, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 125,
+                                lineNumber: 168,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39254,7 +39323,7 @@ const Doctorante = ()=>{
                                 children: "Les r\xe9sultats montrent que l'int\xe9gration de capteurs de temp\xe9rature et de syst\xe8mes de contr\xf4le automatis\xe9 de la ventilation peut significativement am\xe9liorer la r\xe9gulation thermique, permettant une cuisson plus pr\xe9cise et \xe9conome en \xe9nergie."
                             }, void 0, false, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 135,
+                                lineNumber: 178,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39282,12 +39351,12 @@ const Doctorante = ()=>{
                                         children: tag
                                     }, tag, false, {
                                         fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 154,
+                                        lineNumber: 197,
                                         columnNumber: 15
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 145,
+                                lineNumber: 188,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39308,7 +39377,7 @@ const Doctorante = ()=>{
                                         children: "R\xe9f\xe9rences et liens"
                                     }, void 0, false, {
                                         fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 178,
+                                        lineNumber: 221,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -39327,14 +39396,14 @@ const Doctorante = ()=>{
                                                         children: "\xc9tude et Optimisation du Foyer Am\xe9lior\xe9 Apeli"
                                                     }, void 0, false, {
                                                         fileName: "src/Components/Doctorante.jsx",
-                                                        lineNumber: 183,
+                                                        lineNumber: 226,
                                                         columnNumber: 47
                                                     }, undefined),
                                                     ". Universit\xe9 de Lom\xe9."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 182,
+                                                lineNumber: 225,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -39349,12 +39418,12 @@ const Doctorante = ()=>{
                                                     children: "Profil ResearchGate — Mme AMOUZOU-ATCHOE"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Doctorante.jsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 229,
                                                     columnNumber: 17
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 185,
+                                                lineNumber: 228,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -39369,12 +39438,12 @@ const Doctorante = ()=>{
                                                     children: "Google Scholar — Publications associ\xe9es"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Doctorante.jsx",
-                                                    lineNumber: 196,
+                                                    lineNumber: 239,
                                                     columnNumber: 17
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 195,
+                                                lineNumber: 238,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -39389,36 +39458,36 @@ const Doctorante = ()=>{
                                                     children: "Universit\xe9 de Lom\xe9 — Site officiel"
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Doctorante.jsx",
-                                                    lineNumber: 206,
+                                                    lineNumber: 249,
                                                     columnNumber: 17
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 205,
+                                                lineNumber: 248,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 181,
+                                        lineNumber: 224,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 169,
+                                lineNumber: 212,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 106,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 85,
+                lineNumber: 128,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39442,7 +39511,7 @@ const Doctorante = ()=>{
                         children: "Le Foyer Am\xe9lior\xe9 Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 230,
+                        lineNumber: 273,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39455,7 +39524,7 @@ const Doctorante = ()=>{
                         children: "Le foyer am\xe9lior\xe9 Apeli est un dispositif de cuisson innovant d\xe9velopp\xe9 dans le cadre des recherches de Mme AMOUZOU-ATCHOE. Con\xe7u pour les besoins sp\xe9cifiques des m\xe9nages togolais et ouest-africains, il vise \xe0 :"
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 242,
+                        lineNumber: 285,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39508,7 +39577,7 @@ const Doctorante = ()=>{
                                         children: item.title.charAt(0)
                                     }, void 0, false, {
                                         fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 276,
+                                        lineNumber: 319,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39522,7 +39591,7 @@ const Doctorante = ()=>{
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 294,
+                                                lineNumber: 337,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39535,30 +39604,30 @@ const Doctorante = ()=>{
                                                 children: item.desc
                                             }, void 0, false, {
                                                 fileName: "src/Components/Doctorante.jsx",
-                                                lineNumber: 297,
+                                                lineNumber: 340,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 293,
+                                        lineNumber: 336,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, item.title, true, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 265,
+                                lineNumber: 308,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 252,
+                        lineNumber: 295,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 221,
+                lineNumber: 264,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39582,7 +39651,7 @@ const Doctorante = ()=>{
                         children: "Notre Contribution — Innovation Crunch Time 2026"
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 316,
+                        lineNumber: 359,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39598,14 +39667,14 @@ const Doctorante = ()=>{
                                 children: "Elephant"
                             }, void 0, false, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 336,
+                                lineNumber: 379,
                                 columnNumber: 91
                             }, undefined),
                             " (Team 19) travaille durant 5 jours intensifs pour am\xe9liorer le foyer Apeli de Mme AMOUZOU-ATCHOE avec des technologies innovantes :"
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 328,
+                        lineNumber: 371,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39654,7 +39723,7 @@ const Doctorante = ()=>{
                                         children: i + 1
                                     }, void 0, false, {
                                         fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 356,
+                                        lineNumber: 399,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39667,31 +39736,31 @@ const Doctorante = ()=>{
                                         children: item.text
                                     }, void 0, false, {
                                         fileName: "src/Components/Doctorante.jsx",
-                                        lineNumber: 373,
+                                        lineNumber: 416,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, i, true, {
                                 fileName: "src/Components/Doctorante.jsx",
-                                lineNumber: 345,
+                                lineNumber: 388,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 338,
+                        lineNumber: 381,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 307,
+                lineNumber: 350,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     textAlign: "center",
                     padding: isMobile ? "1.5rem 1rem" : "2rem",
-                    background: "linear-gradient(135deg, #1a1a2e, #16213e)",
+                    background: "linear-gradient(135deg, #e67e22, #f39c12)",
                     borderRadius: isMobile ? "12px" : "16px",
                     color: "white"
                 },
@@ -39707,24 +39776,24 @@ const Doctorante = ()=>{
                         children: '"L\'innovation au service de la cuisson durable — ensemble, nous pouvons transformer le quotidien de millions de foyers africains."'
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 391,
+                        lineNumber: 434,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         style: {
                             fontSize: "0.85rem",
-                            opacity: 0.7
+                            opacity: 0.9
                         },
-                        children: "— Mme AMOUZOU-ATCHOE Akoua Gabriela"
+                        children: "— Mme AMOUZOU-ATCHOE Akoua Gabriela, Doctorante-Chercheuse"
                     }, void 0, false, {
                         fileName: "src/Components/Doctorante.jsx",
-                        lineNumber: 402,
+                        lineNumber: 445,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Doctorante.jsx",
-                lineNumber: 382,
+                lineNumber: 425,
                 columnNumber: 7
             }, undefined)
         ]
