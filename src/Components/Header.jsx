@@ -304,11 +304,11 @@ const Header = () => {
               </Link>
               
               <Link 
-                to="/doctorante" 
-                style={navLinkStyle(location.pathname === '/doctorante')}
+                to="/recherche" 
+                style={navLinkStyle(location.pathname === '/recherche')}
                 onClick={() => setShowProfileMenu(false)}
               >
-                Doctorante
+                Recherche
               </Link>
               
               <Link 
@@ -526,13 +526,13 @@ const Header = () => {
             </Link>
             
             <Link 
-              to="/doctorante" 
+              to="/recherche" 
               onClick={() => setIsMenuOpen(false)}
-              style={mobileNavLinkStyle(location.pathname === '/doctorante')}
+              style={mobileNavLinkStyle(location.pathname === '/recherche')}
               className="mobile-menu-item"
             >
               <span className="menu-icon"></span>
-              Doctorante
+              Recherche
             </Link>
             
             <Link 

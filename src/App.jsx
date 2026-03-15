@@ -112,8 +112,8 @@ const App = () => {
           </Layout>
         } />
 
-        {/* Page Doctorante */}
-        <Route path="/doctorante" element={
+        {/* Page Recherche */}
+        <Route path="/recherche" element={
           <Layout>
             <Doctorante />
           </Layout>

@@ -30,7 +30,7 @@ const featureList = [
     title: "Ventilation Intelligente (MCP)",
     description:
       "Un serveur MCP (Model Context Protocol) permet à l'IA de contrôler automatiquement le ventilateur d'aération du foyer pour réguler la température selon les besoins de la recette en cours.",
-    link: "/doctorante",
+    link: "/recherche",
     linkText: "Voir la recherche",
   },
 ];

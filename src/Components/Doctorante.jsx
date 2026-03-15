@@ -1,5 +1,5 @@
 /**
- * Doctorante component - Page dédiée à Mme AMOUZOU-ATCHOE Akoua Gabriela
+ * Doctorante component - Page Recherche dédiée à Mme AMOUZOU-ATCHOE Akoua Gabriela
  */
 import React, { useState, useEffect } from "react";
 import doctorantePhoto from "../images/doctorante.png";
@@ -30,14 +30,52 @@ const Doctorante = () => {
           marginBottom: isMobile ? "2rem" : "3rem",
         }}
       >
+        <h1
+          style={{
+            fontSize: isMobile ? "1.5rem" : "2.2rem",
+            color: "#2c3e50",
+            fontWeight: "700",
+            marginBottom: "0.5rem",
+            lineHeight: "1.3",
+          }}
+        >
+          Recherche
+        </h1>
+        <p
+          style={{
+            fontSize: isMobile ? "0.9rem" : "1rem",
+            color: "#7f8c8d",
+            maxWidth: "700px",
+            margin: "0 auto",
+            lineHeight: "1.7",
+          }}
+        >
+          Découvrez les travaux de recherche à l'origine du projet Apeli et la chercheuse qui encadre notre démarche d'innovation.
+        </p>
+      </div>
+
+      {/* Profil de la doctorante */}
+      <div
+        style={{
+          background: "linear-gradient(135deg, #1a1a2e, #16213e)",
+          borderRadius: isMobile ? "12px" : "16px",
+          padding: isMobile ? "1.5rem" : "2.5rem",
+          marginBottom: isMobile ? "1.5rem" : "2rem",
+          color: "white",
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          alignItems: "center",
+          gap: isMobile ? "1.5rem" : "2rem",
+        }}
+      >
         <div
           style={{
             width: isMobile ? "100px" : "140px",
             height: isMobile ? "100px" : "140px",
             borderRadius: "50%",
-            margin: "0 auto 1.5rem",
             overflow: "hidden",
             boxShadow: "0 8px 25px rgba(230, 126, 34, 0.3)",
+            flexShrink: 0,
           }}
         >
           <img
@@ -50,35 +88,40 @@ const Doctorante = () => {
             }}
           />
         </div>
-        <h1
-          style={{
-            fontSize: isMobile ? "1.5rem" : "2.2rem",
-            color: "#2c3e50",
-            fontWeight: "700",
-            marginBottom: "0.5rem",
-            lineHeight: "1.3",
-          }}
-        >
-          Mme AMOUZOU-ATCHOE Akoua Gabriela
-        </h1>
-        <p
-          style={{
-            fontSize: isMobile ? "1rem" : "1.2rem",
-            color: "#e67e22",
-            fontWeight: "500",
-            marginBottom: "0.3rem",
-          }}
-        >
-          Doctorante — Chercheuse
-        </p>
-        <p
-          style={{
-            fontSize: "0.95rem",
-            color: "#7f8c8d",
-          }}
-        >
-          Université de Lomé
-        </p>
+        <div style={{ textAlign: isMobile ? "center" : "left" }}>
+          <h2
+            style={{
+              fontSize: isMobile ? "1.2rem" : "1.5rem",
+              fontWeight: "700",
+              marginBottom: "0.3rem",
+            }}
+          >
+            Mme AMOUZOU-ATCHOE Akoua Gabriela
+          </h2>
+          <p
+            style={{
+              fontSize: isMobile ? "1rem" : "1.1rem",
+              color: "#e67e22",
+              fontWeight: "500",
+              marginBottom: "0.3rem",
+            }}
+          >
+            Doctorante — Chercheuse
+          </p>
+          <p style={{ fontSize: "0.95rem", opacity: 0.7 }}>
+            Université de Lomé
+          </p>
+          <p
+            style={{
+              fontSize: "0.9rem",
+              lineHeight: "1.7",
+              opacity: 0.85,
+              marginTop: "0.8rem",
+            }}
+          >
+            Spécialisée dans l'étude et l'optimisation des foyers améliorés, ses recherches visent à améliorer l'efficacité énergétique de la cuisson domestique en Afrique de l'Ouest.
+          </p>
+        </div>
       </div>
 
       {/* Section Article de recherche */}
@@ -383,7 +426,7 @@ const Doctorante = () => {
         style={{
           textAlign: "center",
           padding: isMobile ? "1.5rem 1rem" : "2rem",
-          background: "linear-gradient(135deg, #1a1a2e, #16213e)",
+          background: "linear-gradient(135deg, #e67e22, #f39c12)",
           borderRadius: isMobile ? "12px" : "16px",
           color: "white",
         }}
@@ -402,10 +445,10 @@ const Doctorante = () => {
         <p
           style={{
             fontSize: "0.85rem",
-            opacity: 0.7,
+            opacity: 0.9,
           }}
         >
-          — Mme AMOUZOU-ATCHOE Akoua Gabriela
+          — Mme AMOUZOU-ATCHOE Akoua Gabriela, Doctorante-Chercheuse
         </p>
       </div>
     </section>
