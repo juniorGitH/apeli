@@ -3,41 +3,47 @@
  * Présentation, composants, évolution et problématique
  */
 import React, { useState, useEffect } from "react";
+import foyerPrincipalImg from "../images/FoyerPrincipaleApeli.jpg";
+import chambreCombustionImg from "../images/chambreDeCombutionEnFer.jpg";
+import coqueCeramiqueImg from "../images/coquePrincipalEnCeramique.jpg";
+import coupeLateraleImg from "../images/coupeLateraleDuFoyer.jpg";
+import supportMarmiteImg from "../images/suportDeMarmite.jpg";
+import vaseRechargementImg from "../images/VaseDeRechargement.jpg";
 
-const foyerParts = [
+const foyerImages = [
   {
-    name: "Chambre de combustion",
-    description: "Zone principale de combustion des pellets. Conçue pour optimiser la circulation d'air et maintenir une température élevée pour une combustion complète.",
-    placeholder: "CC",
+    name: "Foyer Apeli — Vue d'ensemble",
+    description: "Vue complète du foyer amélioré Apeli avec son armature métallique, ses poignées de transport, le support de marmite et la coque en céramique.",
+    image: foyerPrincipalImg,
   },
   {
-    name: "Grille de support",
-    description: "Support perforé qui maintient le combustible en place tout en permettant la circulation d'air par le bas et l'évacuation des cendres.",
-    placeholder: "GS",
+    name: "Chambre de combustion en fer",
+    description: "Cylindre métallique perforé qui accueille les pellets. Les trous assurent une circulation d'air optimale pour une combustion complète et efficace.",
+    image: chambreCombustionImg,
   },
   {
-    name: "Cendrier",
-    description: "Compartiment amovible situé sous la grille pour collecter et faciliter l'évacuation des cendres produites par la combustion.",
-    placeholder: "CE",
+    name: "Coque principale en céramique",
+    description: "Corps isolant en céramique réfractaire qui retient la chaleur à l'intérieur du foyer, réduit les pertes énergétiques et protège l'utilisateur.",
+    image: coqueCeramiqueImg,
+  },
+  {
+    name: "Coupe latérale du foyer",
+    description: "Vue en coupe montrant l'agencement interne : la chambre de combustion en fer insérée dans la coque céramique, avec le système de ventilation latérale.",
+    image: coupeLateraleImg,
   },
   {
     name: "Support de marmite",
-    description: "Structure adaptable conçue pour accueillir différentes tailles de marmites, assurant un transfert thermique optimal entre la flamme et le récipient.",
-    placeholder: "SM",
+    description: "Pièce conique en métal qui accueille la marmite au sommet du foyer, assurant un transfert thermique optimal entre la flamme et le récipient de cuisson.",
+    image: supportMarmiteImg,
   },
   {
-    name: "Paroi isolante",
-    description: "Revêtement en matériau réfractaire qui retient la chaleur à l'intérieur du foyer, réduisant les pertes énergétiques et protégeant l'utilisateur.",
-    placeholder: "PI",
-  },
-  {
-    name: "Entrée d'air (ventilation)",
-    description: "Ouverture réglable permettant de contrôler le flux d'air entrant dans la chambre de combustion pour moduler l'intensité de la flamme.",
-    placeholder: "EA",
+    name: "Vase de rechargement",
+    description: "Entonnoir de rechargement en combustible avec sa poignée, permettant d'alimenter le foyer en pellets sans interrompre la cuisson.",
+    image: vaseRechargementImg,
   },
 ];
 
-const evolution = [
+const evolution= [
   {
     phase: "Foyer traditionnel",
     period: "Avant Apeli",
@@ -172,7 +178,7 @@ const FoyerApeli = () => {
         </div>
       </div>
 
-      {/* Composants du foyer */}
+      {/* Modélisation 3D du foyer */}
       <div style={{ marginBottom: isMobile ? "2rem" : "3rem" }}>
         <h2
           style={{
@@ -188,11 +194,11 @@ const FoyerApeli = () => {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: isMobile ? "1fr" : isTablet ? "1fr 1fr" : "1fr 1fr 1fr",
+            gridTemplateColumns: isMobile ? "1fr" : isTablet ? "1fr 1fr" : "1fr 1fr",
             gap: isMobile ? "1rem" : "1.5rem",
           }}
         >
-          {foyerParts.map((part, index) => (
+          {foyerImages.map((item, index) => (
             <div
               key={index}
               style={{
@@ -201,42 +207,28 @@ const FoyerApeli = () => {
                 padding: isMobile ? "1.2rem" : "1.5rem",
                 boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
                 border: "1px solid #f0f0f0",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
               }}
             >
-              {/* Placeholder photo */}
               <div
                 style={{
                   width: "100%",
-                  height: isMobile ? "120px" : "140px",
+                  height: isMobile ? "180px" : "220px",
                   borderRadius: "8px",
-                  background: "linear-gradient(135deg, #f5f5f5, #e8e8e8)",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  overflow: "hidden",
                   marginBottom: "1rem",
-                  border: "2px dashed #ddd",
+                  background: "#f5f5f5",
                 }}
               >
-                <span
+                <img
+                  src={item.image}
+                  alt={item.name}
                   style={{
-                    fontSize: isMobile ? "1.5rem" : "1.8rem",
-                    fontWeight: "700",
-                    color: "#e67e22",
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    display: "block",
                   }}
-                >
-                  {part.placeholder}
-                </span>
-                <span
-                  style={{
-                    fontSize: "0.7rem",
-                    color: "#999",
-                    marginTop: "0.3rem",
-                  }}
-                >
-                  Photo a venir
-                </span>
+                />
               </div>
               <h3
                 style={{
@@ -246,7 +238,7 @@ const FoyerApeli = () => {
                   fontWeight: "600",
                 }}
               >
-                {part.name}
+                {item.name}
               </h3>
               <p
                 style={{
@@ -255,7 +247,7 @@ const FoyerApeli = () => {
                   lineHeight: "1.6",
                 }}
               >
-                {part.description}
+                {item.description}
               </p>
             </div>
           ))}

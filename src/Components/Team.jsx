@@ -5,6 +5,7 @@
 import React, { useState, useEffect } from "react";
 import amelaPhoto from "../images/jr2.jpg";
 import hyacinthaPhoto from "../images/Hycintas.jpg";
+import juliePhoto from "../images/julie.jpg";
 
 const teamMembers = [
   {
@@ -68,6 +69,7 @@ const teamMembers = [
     role: "Communication",
     description: "Stratégie de communication et promotion du projet",
     initials: "JB",
+    image: juliePhoto,
   },
 ];
 
