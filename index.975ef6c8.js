@@ -37240,7 +37240,7 @@ parcelHelpers.export(exports, "setMcpAuto", ()=>setMcpAuto);
 parcelHelpers.export(exports, "getMcpHistory", ()=>getMcpHistory);
 /**
  * Service API pour communiquer avec le backend Apeli
- */ const API_BASE_URL = "http://localhost:5249/api";
+ */ const API_BASE_URL = "https://apeli-api-app.azurewebsites.net/api";
 // Récupérer le token JWT stocké
 const getToken = ()=>{
     const user = localStorage.getItem("currentUser");
@@ -39074,7 +39074,7 @@ $RefreshReg$(_c, "Chatbot");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../utils/api":"gsqud","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e5Nk6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/api":"gsqud"}],"e5Nk6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e2fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39767,6 +39767,8 @@ var _jr2Jpg = require("../images/jr2.jpg");
 var _jr2JpgDefault = parcelHelpers.interopDefault(_jr2Jpg);
 var _hycintasJpg = require("../images/Hycintas.jpg");
 var _hycintasJpgDefault = parcelHelpers.interopDefault(_hycintasJpg);
+var _julieJpg = require("../images/julie.jpg");
+var _julieJpgDefault = parcelHelpers.interopDefault(_julieJpg);
 var _s = $RefreshSig$();
 const teamMembers = [
     {
@@ -39818,6 +39820,19 @@ const teamMembers = [
         role: "Communication",
         description: "Communication du projet et relations avec les parties prenantes",
         initials: "AT"
+    },
+    {
+        name: "Kisito AGBEHOM",
+        role: "Designer 3D",
+        description: "Mod\xe9lisation 3D et conception visuelle du projet",
+        initials: "KA"
+    },
+    {
+        name: "Tagnambime Julie BLOACK",
+        role: "Communication",
+        description: "Strat\xe9gie de communication et promotion du projet",
+        initials: "JB",
+        image: (0, _julieJpgDefault.default)
     }, 
 ];
 const Team = ()=>{
@@ -39858,7 +39873,7 @@ const Team = ()=>{
                         children: "ELEPHANT"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 87,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -39872,7 +39887,7 @@ const Team = ()=>{
                         children: "Team Elephant"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 98,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39885,7 +39900,7 @@ const Team = ()=>{
                         children: "\xc9quipe 19"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 109,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39899,13 +39914,13 @@ const Team = ()=>{
                         children: "Innovation Crunch Time 2026 — Universit\xe9 de Lom\xe9"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 119,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 86,
+                lineNumber: 100,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39927,7 +39942,7 @@ const Team = ()=>{
                         children: "Notre Mission"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 143,
+                        lineNumber: 157,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39941,13 +39956,13 @@ const Team = ()=>{
                         children: "Optimiser le foyer am\xe9lior\xe9 Apeli en int\xe9grant des technologies de pointe : Intelligence Artificielle, Internet des Objets (IoT) et automatisation. Notre objectif est de rendre la cuisson plus pr\xe9cise, plus efficiente et plus accessible gr\xe2ce \xe0 un assistant cuisine intelligent connect\xe9 directement au foyer."
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 152,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 133,
+                lineNumber: 147,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -39960,7 +39975,7 @@ const Team = ()=>{
                 children: "Membres de l'\xc9quipe"
             }, void 0, false, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 166,
+                lineNumber: 180,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39993,7 +40008,9 @@ const Team = ()=>{
                                         "#e74c3c, #c0392b",
                                         "#1abc9c, #16a085",
                                         "#34495e, #2c3e50",
-                                        "#d35400, #e67e22"
+                                        "#d35400, #e67e22",
+                                        "#8e44ad, #9b59b6",
+                                        "#2980b9, #3498db"
                                     ][index]})`,
                                     margin: "0 auto 1rem",
                                     display: "flex",
@@ -40012,7 +40029,7 @@ const Team = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "src/Components/Team.jsx",
-                                    lineNumber: 214,
+                                    lineNumber: 228,
                                     columnNumber: 17
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     style: {
@@ -40023,12 +40040,12 @@ const Team = ()=>{
                                     children: member.initials
                                 }, void 0, false, {
                                     fileName: "src/Components/Team.jsx",
-                                    lineNumber: 224,
+                                    lineNumber: 238,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 197,
+                                lineNumber: 211,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -40041,7 +40058,7 @@ const Team = ()=>{
                                 children: member.name
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 229,
+                                lineNumber: 243,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40054,7 +40071,7 @@ const Team = ()=>{
                                 children: member.role
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 239,
+                                lineNumber: 253,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40067,18 +40084,18 @@ const Team = ()=>{
                                 children: member.description
                             }, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 249,
+                                lineNumber: 263,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, index, true, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 186,
+                        lineNumber: 200,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 177,
+                lineNumber: 191,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40100,7 +40117,7 @@ const Team = ()=>{
                         children: "Notre Projet : Optimisation du Foyer Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 273,
+                        lineNumber: 287,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40151,12 +40168,12 @@ const Team = ()=>{
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Team.jsx",
-                                            lineNumber: 319,
+                                            lineNumber: 333,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 318,
+                                        lineNumber: 332,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40169,24 +40186,24 @@ const Team = ()=>{
                                         children: item.desc
                                     }, void 0, false, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 323,
+                                        lineNumber: 337,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, i, true, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 309,
+                                lineNumber: 323,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 284,
+                        lineNumber: 298,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 264,
+                lineNumber: 278,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40208,7 +40225,7 @@ const Team = ()=>{
                         children: "5 Jours d'Innovation"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 341,
+                        lineNumber: 355,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40271,7 +40288,7 @@ const Team = ()=>{
                                         children: item.day
                                     }, void 0, false, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 370,
+                                        lineNumber: 384,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40285,7 +40302,7 @@ const Team = ()=>{
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "src/Components/Team.jsx",
-                                                lineNumber: 389,
+                                                lineNumber: 403,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40298,30 +40315,30 @@ const Team = ()=>{
                                                 children: item.desc
                                             }, void 0, false, {
                                                 fileName: "src/Components/Team.jsx",
-                                                lineNumber: 392,
+                                                lineNumber: 406,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Team.jsx",
-                                        lineNumber: 388,
+                                        lineNumber: 402,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, i, true, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 359,
+                                lineNumber: 373,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 351,
+                        lineNumber: 365,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 332,
+                lineNumber: 346,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40341,7 +40358,7 @@ const Team = ()=>{
                         children: "Team Elephant — \xc9quipe 19"
                     }, void 0, false, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 411,
+                        lineNumber: 425,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40356,26 +40373,26 @@ const Team = ()=>{
                             "Innovation Crunch Time 2026 • Universit\xe9 de Lom\xe9",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/Components/Team.jsx",
-                                lineNumber: 429,
+                                lineNumber: 443,
                                 columnNumber: 11
                             }, undefined),
                             "Optimisation du Foyer Am\xe9lior\xe9 Apeli"
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Team.jsx",
-                        lineNumber: 419,
+                        lineNumber: 433,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Team.jsx",
-                lineNumber: 402,
+                lineNumber: 416,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Team.jsx",
-        lineNumber: 77,
+        lineNumber: 91,
         columnNumber: 5
     }, undefined);
 };
@@ -40390,11 +40407,14 @@ $RefreshReg$(_c, "Team");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/jr2.jpg":"l6CBF","../images/Hycintas.jpg":"7yGaI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l6CBF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/jr2.jpg":"l6CBF","../images/Hycintas.jpg":"7yGaI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/julie.jpg":"51EVV"}],"l6CBF":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "jr2.85b4a567.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"7yGaI":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Hycintas.22a4829d.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"51EVV":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "julie.1c560ec7.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"dLVXT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$80a0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -40411,37 +40431,49 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  * Présentation, composants, évolution et problématique
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _foyerPrincipaleApeliJpg = require("../images/FoyerPrincipaleApeli.jpg");
+var _foyerPrincipaleApeliJpgDefault = parcelHelpers.interopDefault(_foyerPrincipaleApeliJpg);
+var _chambreDeCombutionEnFerJpg = require("../images/chambreDeCombutionEnFer.jpg");
+var _chambreDeCombutionEnFerJpgDefault = parcelHelpers.interopDefault(_chambreDeCombutionEnFerJpg);
+var _coquePrincipalEnCeramiqueJpg = require("../images/coquePrincipalEnCeramique.jpg");
+var _coquePrincipalEnCeramiqueJpgDefault = parcelHelpers.interopDefault(_coquePrincipalEnCeramiqueJpg);
+var _coupeLateraleDuFoyerJpg = require("../images/coupeLateraleDuFoyer.jpg");
+var _coupeLateraleDuFoyerJpgDefault = parcelHelpers.interopDefault(_coupeLateraleDuFoyerJpg);
+var _suportDeMarmiteJpg = require("../images/suportDeMarmite.jpg");
+var _suportDeMarmiteJpgDefault = parcelHelpers.interopDefault(_suportDeMarmiteJpg);
+var _vaseDeRechargementJpg = require("../images/VaseDeRechargement.jpg");
+var _vaseDeRechargementJpgDefault = parcelHelpers.interopDefault(_vaseDeRechargementJpg);
 var _s = $RefreshSig$();
-const foyerParts = [
+const foyerImages = [
     {
-        name: "Chambre de combustion",
-        description: "Zone principale de combustion des pellets. Con\xe7ue pour optimiser la circulation d'air et maintenir une temp\xe9rature \xe9lev\xe9e pour une combustion compl\xe8te.",
-        placeholder: "CC"
+        name: "Foyer Apeli — Vue d'ensemble",
+        description: "Vue compl\xe8te du foyer am\xe9lior\xe9 Apeli avec son armature m\xe9tallique, ses poign\xe9es de transport, le support de marmite et la coque en c\xe9ramique.",
+        image: (0, _foyerPrincipaleApeliJpgDefault.default)
     },
     {
-        name: "Grille de support",
-        description: "Support perfor\xe9 qui maintient le combustible en place tout en permettant la circulation d'air par le bas et l'\xe9vacuation des cendres.",
-        placeholder: "GS"
+        name: "Chambre de combustion en fer",
+        description: "Cylindre m\xe9tallique perfor\xe9 qui accueille les pellets. Les trous assurent une circulation d'air optimale pour une combustion compl\xe8te et efficace.",
+        image: (0, _chambreDeCombutionEnFerJpgDefault.default)
     },
     {
-        name: "Cendrier",
-        description: "Compartiment amovible situ\xe9 sous la grille pour collecter et faciliter l'\xe9vacuation des cendres produites par la combustion.",
-        placeholder: "CE"
+        name: "Coque principale en c\xe9ramique",
+        description: "Corps isolant en c\xe9ramique r\xe9fractaire qui retient la chaleur \xe0 l'int\xe9rieur du foyer, r\xe9duit les pertes \xe9nerg\xe9tiques et prot\xe8ge l'utilisateur.",
+        image: (0, _coquePrincipalEnCeramiqueJpgDefault.default)
+    },
+    {
+        name: "Coupe lat\xe9rale du foyer",
+        description: "Vue en coupe montrant l'agencement interne : la chambre de combustion en fer ins\xe9r\xe9e dans la coque c\xe9ramique, avec le syst\xe8me de ventilation lat\xe9rale.",
+        image: (0, _coupeLateraleDuFoyerJpgDefault.default)
     },
     {
         name: "Support de marmite",
-        description: "Structure adaptable con\xe7ue pour accueillir diff\xe9rentes tailles de marmites, assurant un transfert thermique optimal entre la flamme et le r\xe9cipient.",
-        placeholder: "SM"
+        description: "Pi\xe8ce conique en m\xe9tal qui accueille la marmite au sommet du foyer, assurant un transfert thermique optimal entre la flamme et le r\xe9cipient de cuisson.",
+        image: (0, _suportDeMarmiteJpgDefault.default)
     },
     {
-        name: "Paroi isolante",
-        description: "Rev\xeatement en mat\xe9riau r\xe9fractaire qui retient la chaleur \xe0 l'int\xe9rieur du foyer, r\xe9duisant les pertes \xe9nerg\xe9tiques et prot\xe9geant l'utilisateur.",
-        placeholder: "PI"
-    },
-    {
-        name: "Entr\xe9e d'air (ventilation)",
-        description: "Ouverture r\xe9glable permettant de contr\xf4ler le flux d'air entrant dans la chambre de combustion pour moduler l'intensit\xe9 de la flamme.",
-        placeholder: "EA"
+        name: "Vase de rechargement",
+        description: "Entonnoir de rechargement en combustible avec sa poign\xe9e, permettant d'alimenter le foyer en pellets sans interrompre la cuisson.",
+        image: (0, _vaseDeRechargementJpgDefault.default)
     }, 
 ];
 const evolution = [
@@ -40525,7 +40557,7 @@ const FoyerApeli = ()=>{
                         children: "Le Foyer Ameliore Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 92,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40539,13 +40571,13 @@ const FoyerApeli = ()=>{
                         children: "Decouvrez le foyer ameliore Apeli, ses composants, son evolution et la problematique que notre equipe cherche a resoudre durant l'Innovation Crunch Time 2026."
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 102,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/FoyerApeli.jsx",
-                lineNumber: 91,
+                lineNumber: 97,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40567,7 +40599,7 @@ const FoyerApeli = ()=>{
                         children: "Problematique"
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 126,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40580,7 +40612,7 @@ const FoyerApeli = ()=>{
                         children: "Bien que le foyer Apeli constitue une solution prometteuse pour ameliorer l'efficacite de la cuisson domestique, certaines limites liees a l'alimentation en combustible, a l'evacuation des cendres et a l'adaptation aux differentes tailles de marmites persistent."
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 136,
+                        lineNumber: 142,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40595,7 +40627,7 @@ const FoyerApeli = ()=>{
                         children: "Comment optimiser le foyer Apeli (reconception) avec l'utilisation de pellets (combustibles issus de residus agricoles) pour ameliorer les performances energetiques ainsi que ses conditions d'utilisation (differentes tailles de menage et differents environnements de cuisine) ?"
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 149,
+                        lineNumber: 155,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40607,13 +40639,13 @@ const FoyerApeli = ()=>{
                         children: "-- Problematique posee par Mme AMOUZOU-ATCHOE Akoua Gabriela, Doctorante"
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 164,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/FoyerApeli.jsx",
-                lineNumber: 117,
+                lineNumber: 123,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40632,67 +40664,50 @@ const FoyerApeli = ()=>{
                         children: "Composants du Foyer Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 177,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         style: {
                             display: "grid",
-                            gridTemplateColumns: isMobile ? "1fr" : isTablet ? "1fr 1fr" : "1fr 1fr 1fr",
+                            gridTemplateColumns: isMobile ? "1fr" : isTablet ? "1fr 1fr" : "1fr 1fr",
                             gap: isMobile ? "1rem" : "1.5rem"
                         },
-                        children: foyerParts.map((part, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: foyerImages.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 style: {
                                     background: "white",
                                     borderRadius: "12px",
                                     padding: isMobile ? "1.2rem" : "1.5rem",
                                     boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
-                                    border: "1px solid #f0f0f0",
-                                    transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                                    border: "1px solid #f0f0f0"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         style: {
                                             width: "100%",
-                                            height: isMobile ? "120px" : "140px",
+                                            height: isMobile ? "180px" : "220px",
                                             borderRadius: "8px",
-                                            background: "linear-gradient(135deg, #f5f5f5, #e8e8e8)",
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            alignItems: "center",
-                                            justifyContent: "center",
+                                            overflow: "hidden",
                                             marginBottom: "1rem",
-                                            border: "2px dashed #ddd"
+                                            background: "#f5f5f5"
                                         },
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                style: {
-                                                    fontSize: isMobile ? "1.5rem" : "1.8rem",
-                                                    fontWeight: "700",
-                                                    color: "#e67e22"
-                                                },
-                                                children: part.placeholder
-                                            }, void 0, false, {
-                                                fileName: "src/Components/FoyerApeli.jsx",
-                                                lineNumber: 222,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                style: {
-                                                    fontSize: "0.7rem",
-                                                    color: "#999",
-                                                    marginTop: "0.3rem"
-                                                },
-                                                children: "Photo a venir"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/FoyerApeli.jsx",
-                                                lineNumber: 231,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: item.image,
+                                            alt: item.name,
+                                            style: {
+                                                width: "100%",
+                                                height: "100%",
+                                                objectFit: "contain",
+                                                display: "block"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/Components/FoyerApeli.jsx",
+                                            lineNumber: 222,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
                                         fileName: "src/Components/FoyerApeli.jsx",
-                                        lineNumber: 208,
+                                        lineNumber: 212,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -40702,10 +40717,10 @@ const FoyerApeli = ()=>{
                                             marginBottom: "0.5rem",
                                             fontWeight: "600"
                                         },
-                                        children: part.name
+                                        children: item.name
                                     }, void 0, false, {
                                         fileName: "src/Components/FoyerApeli.jsx",
-                                        lineNumber: 241,
+                                        lineNumber: 233,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40714,27 +40729,27 @@ const FoyerApeli = ()=>{
                                             color: "#666",
                                             lineHeight: "1.6"
                                         },
-                                        children: part.description
+                                        children: item.description
                                     }, void 0, false, {
                                         fileName: "src/Components/FoyerApeli.jsx",
-                                        lineNumber: 251,
+                                        lineNumber: 243,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, index, true, {
                                 fileName: "src/Components/FoyerApeli.jsx",
-                                lineNumber: 196,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 188,
+                        lineNumber: 194,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/FoyerApeli.jsx",
-                lineNumber: 176,
+                lineNumber: 182,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40753,7 +40768,7 @@ const FoyerApeli = ()=>{
                         children: "Evolution du Foyer Apeli"
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 267,
+                        lineNumber: 259,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40773,7 +40788,7 @@ const FoyerApeli = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/Components/FoyerApeli.jsx",
-                                lineNumber: 281,
+                                lineNumber: 273,
                                 columnNumber: 13
                             }, undefined),
                             evolution.map((step, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40804,12 +40819,12 @@ const FoyerApeli = ()=>{
                                                 }
                                             }, void 0, false, {
                                                 fileName: "src/Components/FoyerApeli.jsx",
-                                                lineNumber: 316,
+                                                lineNumber: 308,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/Components/FoyerApeli.jsx",
-                                            lineNumber: 306,
+                                            lineNumber: 298,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40841,7 +40856,7 @@ const FoyerApeli = ()=>{
                                                             children: step.phase
                                                         }, void 0, false, {
                                                             fileName: "src/Components/FoyerApeli.jsx",
-                                                            lineNumber: 356,
+                                                            lineNumber: 348,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -40856,13 +40871,13 @@ const FoyerApeli = ()=>{
                                                             children: step.period
                                                         }, void 0, false, {
                                                             fileName: "src/Components/FoyerApeli.jsx",
-                                                            lineNumber: 365,
+                                                            lineNumber: 357,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/FoyerApeli.jsx",
-                                                    lineNumber: 346,
+                                                    lineNumber: 338,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40875,7 +40890,7 @@ const FoyerApeli = ()=>{
                                                     children: step.description
                                                 }, void 0, false, {
                                                     fileName: "src/Components/FoyerApeli.jsx",
-                                                    lineNumber: 378,
+                                                    lineNumber: 370,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40896,36 +40911,36 @@ const FoyerApeli = ()=>{
                                                             children: imp
                                                         }, i, false, {
                                                             fileName: "src/Components/FoyerApeli.jsx",
-                                                            lineNumber: 396,
+                                                            lineNumber: 388,
                                                             columnNumber: 21
                                                         }, undefined))
                                                 }, void 0, false, {
                                                     fileName: "src/Components/FoyerApeli.jsx",
-                                                    lineNumber: 388,
+                                                    lineNumber: 380,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/FoyerApeli.jsx",
-                                            lineNumber: 330,
+                                            lineNumber: 322,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, index, true, {
                                     fileName: "src/Components/FoyerApeli.jsx",
-                                    lineNumber: 295,
+                                    lineNumber: 287,
                                     columnNumber: 13
                                 }, undefined))
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 278,
+                        lineNumber: 270,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/FoyerApeli.jsx",
-                lineNumber: 266,
+                lineNumber: 258,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40947,7 +40962,7 @@ const FoyerApeli = ()=>{
                         children: "Objectifs de l'optimisation"
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 428,
+                        lineNumber: 420,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41006,7 +41021,7 @@ const FoyerApeli = ()=>{
                                                 children: i + 1
                                             }, void 0, false, {
                                                 fileName: "src/Components/FoyerApeli.jsx",
-                                                lineNumber: 481,
+                                                lineNumber: 473,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -41018,13 +41033,13 @@ const FoyerApeli = ()=>{
                                                 children: obj.title
                                             }, void 0, false, {
                                                 fileName: "src/Components/FoyerApeli.jsx",
-                                                lineNumber: 498,
+                                                lineNumber: 490,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/FoyerApeli.jsx",
-                                        lineNumber: 473,
+                                        lineNumber: 465,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -41037,30 +41052,30 @@ const FoyerApeli = ()=>{
                                         children: obj.desc
                                     }, void 0, false, {
                                         fileName: "src/Components/FoyerApeli.jsx",
-                                        lineNumber: 508,
+                                        lineNumber: 500,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, i, true, {
                                 fileName: "src/Components/FoyerApeli.jsx",
-                                lineNumber: 464,
+                                lineNumber: 456,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/FoyerApeli.jsx",
-                        lineNumber: 439,
+                        lineNumber: 431,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/FoyerApeli.jsx",
-                lineNumber: 420,
+                lineNumber: 412,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/FoyerApeli.jsx",
-        lineNumber: 82,
+        lineNumber: 88,
         columnNumber: 5
     }, undefined);
 };
@@ -41075,7 +41090,25 @@ $RefreshReg$(_c, "FoyerApeli");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"029VM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/FoyerPrincipaleApeli.jpg":"4mCY7","../images/chambreDeCombutionEnFer.jpg":"cCj23","../images/coquePrincipalEnCeramique.jpg":"h0Zzo","../images/coupeLateraleDuFoyer.jpg":"fYCHV","../images/suportDeMarmite.jpg":"dRpUh","../images/VaseDeRechargement.jpg":"dem5p"}],"4mCY7":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "FoyerPrincipaleApeli.2c54d3f0.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"cCj23":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "chambreDeCombutionEnFer.2b908acb.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"h0Zzo":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "coquePrincipalEnCeramique.df2a5aa8.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"fYCHV":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "coupeLateraleDuFoyer.bef86fb2.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dRpUh":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "suportDeMarmite.44430122.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dem5p":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "VaseDeRechargement.9b74db9c.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"029VM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fca5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
